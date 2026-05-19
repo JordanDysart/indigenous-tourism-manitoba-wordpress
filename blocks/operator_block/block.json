@@ -1,0 +1,12 @@
+{
+    "name": "relish/operator_block",
+    "title": "Operator Information",
+    "description": "A block that displays information about an operator.",
+    "category": "widgets",
+    "icon": "admin-users",
+    "keywords": ["operator", "information", "business"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "operator_block.php"
+    }
+}

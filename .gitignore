@@ -1,0 +1,22 @@
+# WordPress core — not yours to version
+wordpress/
+
+# Lando local state
+.lando.local.yml
+.lando/
+
+# Node dependencies — both package.json locations
+node_modules/
+assets/node_modules/
+
+# Build artifacts
+dist/
+*.log
+
+# Source maps (optional — commit if you want them in production)
+assets/css/*.map
+blocks/*.css.map
+
+# NOTE: blocks/*/index.js (compiled block editor scripts) ARE committed.
+# The deployment target (Plesk Git pull) has no build step, so compiled
+# files must be in the repo for the theme to work on the live server.

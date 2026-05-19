@@ -1,0 +1,16 @@
+{
+    "name": "relish/banner-block",
+    "title": "Custom Banner",
+    "description": "A custom block with background, overlay, and content images.",
+    "category": "widgets",
+    "icon": "format-image",
+    "keywords": ["background", "image", "overlay"],
+    "supports": {
+        "align": true,
+        "anchor": true
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "banner_block.php"
+    }
+}

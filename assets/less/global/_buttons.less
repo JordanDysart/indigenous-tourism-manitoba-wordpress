@@ -1,0 +1,142 @@
+@import (reference) './_variables.less';
+
+// =============================================================================
+// Buttons
+// =============================================================================
+
+@btn-transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow       250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color     250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color            250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.btn {
+    display:         inline-flex;
+    align-items:     center;
+    justify-content: center;
+    gap:             8px;
+    min-width:       64px;
+    height:          48px;
+    padding:         8px 22px;
+    border-radius:   @radius-md;
+    font-family:     @font-primary;
+    font-size:       1rem;
+    font-weight:     800;
+    line-height:     1;
+    white-space:     nowrap;
+    text-decoration: none;
+    border:          none;
+    outline:         none;
+    cursor:          pointer;
+    transition:      @btn-transition;
+
+    &:focus-visible {
+        outline:        2px solid @color-gold;
+        outline-offset: 3px;
+    }
+
+    &:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    &:disabled,
+    &[aria-disabled="true"] {
+        opacity: 0.5;
+        cursor:  not-allowed;
+        pointer-events: none;
+    }
+}
+
+.btn--primary {
+    background-color: @color-orange;
+    color:            #fff;
+
+    &:hover,
+    &:active {
+        background-color: @color-blue;
+        color:            #fff;
+        opacity:          1;
+    }
+}
+
+.btn--dark {
+    background-color: @color-dark;
+    color:            #fff;
+
+    &:hover,
+    &:active {
+        background-color: lighten(@color-dark, 10%);
+        color:            #fff;
+        opacity:          1;
+    }
+}
+
+.btn--gold {
+    background-color: @color-gold;
+    color:            @color-dark;
+
+    &:hover,
+    &:active {
+        background-color: #B3200E;
+        color:            #fff;
+        opacity:          1;
+    }
+}
+
+.btn--outline {
+    background-color: transparent;
+    color:            @color-orange;
+    border:           2px solid @color-orange;
+
+    &:hover,
+    &:active {
+        background-color: @color-orange;
+        color:            #fff;
+        opacity:          1;
+    }
+}
+
+.btn--ghost {
+    background-color: transparent;
+    color:            @color-orange;
+    padding:          4px 0;
+    height:           auto;
+    min-width:        0;
+    font-weight:      700;
+    border-bottom:    1px solid transparent;
+
+    &:hover,
+    &:active {
+        border-bottom-color: @color-orange;
+        opacity: 1;
+    }
+}
+
+.btn--sm {
+    height:        auto;
+    padding:       8px 14px;
+    font-size:     0.875rem;
+    border-radius: @radius-sm;
+    font-weight:   700;
+}
+
+.btn--lg {
+    height:        56px;
+    padding:       12px 32px;
+    font-size:     1.125rem;
+    border-radius: @radius-md;
+}
+
+.btn--full {
+    width: 100%;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+    border:     none;
+    background: none;
+    padding:    0;
+}

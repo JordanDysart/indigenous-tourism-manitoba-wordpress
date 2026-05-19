@@ -1,0 +1,50 @@
+@import (reference) '../global/_variables.less';
+@import (reference) '../global/_mixins.less';
+
+@import 'banner_block.less';
+@import 'operator_block_map.less';
+@import 'operator_block_list';
+
+.has-black-color, a.has-black-color {
+  color: @black-color;
+
+  a,
+  a:link,
+  a:visited {
+    color: @black-color;
+    cursor: pointer;
+  }
+}
+
+.has-white-color, a.has-white-color {
+  color: @white-color;
+
+  a,
+  a:link,
+  a:visited {
+    color: @white-color;
+  }
+}
+
+// Background color classes
+.has-black-background-color,
+.wp-block-button__link.has-black-background-color {
+  background-color: @black-color;
+
+  a,
+  a:link,
+  a:visited {
+    background-color: @black-color;
+  }
+}
+
+.has-white-background-color,
+.wp-block-button__link.has-white-background-color {
+  background-color: @white-color;
+
+  a,
+  a:link,
+  a:visited {
+    background-color: @white-color;
+  }
+}

@@ -1,0 +1,40 @@
+@import (reference) '../global/_variables.less';
+@import (reference) '../global/_mixins.less';
+
+.operator-list-module {
+  &-items {
+    &.columns-4 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      .breakpoint(@breakpoint-xl, {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        padding-bottom: (@gap*2); 
+      });
+    }
+    li {
+      display: flex;
+      flex-direction: column;
+      background-color: @white-color;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+
+      .taxonomy-operator_region,
+      .wp-block-post-title {
+        padding: 15px;
+      }
+
+      .taxonomy-operator_region {
+        padding-bottom: 0;
+      }
+
+      .wp-block-post-title {
+        padding-top: 8px;
+        padding-bottom: 20px;
+      }
+    }
+
+    figure {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "relish/operator_search_block",
+    "title": "Operator Filter",
+    "description": "A block that displays information about an operator.",
+    "category": "widgets",
+    "icon": "admin-site-alt",
+    "keywords": ["operator", "information", "business"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "operator_search_block.php"
+    }
+}

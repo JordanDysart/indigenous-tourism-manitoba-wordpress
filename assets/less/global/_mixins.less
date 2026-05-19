@@ -1,0 +1,128 @@
+@import (reference) './_variables.less';
+
+.getFontSize(@size: 16) {
+  font-size: calc(@size / 16 * 1rem);
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+
+  100% {
+    width: 80%;
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(360deg);
+  }
+  100% {
+      transform: rotate(720deg);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+      display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes bounce-effect {
+  0% {
+    transform: scaleY(1);
+  }
+  80% {
+    transform: scaleY(1.02);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.breakpoint(@breakpoint, @styles) {
+  @media (min-width: @breakpoint) {
+    @styles();
+  }
+}
+
+.aspect-ratio {
+  aspect-ratio: @aspect-ratio-mobile;
+  .breakpoint(@breakpoint-lg, {
+    aspect-ratio: @aspect-ratio-tablet;
+  });
+  .breakpoint(@breakpoint-xl, {
+    aspect-ratio: @aspect-ratio-desktop;
+  });
+}
+
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.breadcrumb-container {
+  ol {
+    padding: 0;
+    li {
+      display: inline-flex;
+      align-items: center;
+
+      &:first-child {
+        a {
+          margin-left: 0;
+          padding-left: 0;
+        }
+      }
+      &:last-child {
+        a {
+          color: #637381 !important;
+          cursor: default;
+          pointer-events: none;
+          margin: 0;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      a {
+        margin: 0;
+        padding: 5px 0 !important;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .separator {
+        display: block;
+        padding: 3px;
+        margin: 0 2px;
+        border-radius: 100%;
+        background-color: #637381;
+      }
+    }
+  }
+}

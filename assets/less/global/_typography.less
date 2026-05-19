@@ -1,0 +1,162 @@
+@import (reference) './_variables.less';
+
+// =============================================================================
+// Typography
+// =============================================================================
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    font-family:             @font-primary;
+    font-size:               1rem;
+    font-weight:             400;
+    line-height:             1.5;
+    color:                   @color-body-text;
+    -webkit-font-smoothing:  antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:             @font-secondary;
+    font-weight:             700;
+    line-height:             1.25;
+    margin:                  0 0 0.5em;
+    color:                   @color-dark;
+    -webkit-font-smoothing:  antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 { font-size: 2.5rem;   }
+h2 { font-size: 2rem;     }
+h3 { font-size: 1.5rem;   }
+h4 { font-size: 1.25rem;  }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem;     }
+
+p {
+    margin: 0 0 1em;
+    line-height: 1.6;
+}
+
+.lead {
+    font-size:   1.125rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+small,
+.text-small {
+    font-size: 0.875rem;
+}
+
+.sr-only {
+    border:     0;
+    clip:       rect(1px, 1px, 1px, 1px);
+    clip-path:  inset(50%);
+    height:     1px;
+    margin:     -1px;
+    overflow:   hidden;
+    padding:    0;
+    position:   absolute !important;
+    width:      1px;
+    word-wrap:  normal !important;
+}
+
+strong, b { font-weight: 700; }
+em, i     { font-style: italic; }
+
+abbr[title] {
+    border-bottom: 1px dotted @color-mid-gray;
+    cursor: help;
+}
+
+mark {
+    background: #fff9c0;
+    text-decoration: none;
+}
+
+blockquote {
+    border-left: 3px solid @color-gold-dark;
+    margin:      0 0 1em 0;
+    padding:     0.5em 1.25em;
+    color:       @color-mid-gray;
+    font-style:  italic;
+    font-size:   1.125rem;
+    line-height: 1.6;
+}
+
+code,
+kbd,
+samp,
+tt,
+var {
+    font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+    font-size:   0.9375rem;
+}
+
+pre {
+    background:     #eee;
+    font-family:    'Courier 10 Pitch', Courier, monospace;
+    font-size:      0.9375rem;
+    line-height:    1.6;
+    margin-bottom:  1.6em;
+    max-width:      100%;
+    overflow:       auto;
+    padding:        1.6em;
+}
+
+ul,
+ol {
+    margin:  0 0 1em;
+    padding: 0 0 0 1.5em;
+}
+
+ul { list-style: disc; }
+ol { list-style: decimal; }
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+}
+
+.list-unstyled {
+    list-style: none;
+    margin:     0;
+    padding:    0;
+}
+
+hr {
+    border:           0;
+    border-bottom:    1px solid rgba(145, 158, 171, 0.24);
+    margin:           1.5em 0;
+}
+
+.dashed-line {
+    border:            0;
+    border-bottom:     thin solid rgba(145, 158, 171, 0.24);
+    margin:            40px 0;
+}
+
+img {
+    display:   block;
+    max-width: 100%;
+    height:    auto;
+}
+
+figure {
+    margin: 0;
+}
