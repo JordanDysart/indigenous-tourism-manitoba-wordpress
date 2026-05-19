@@ -1,0 +1,12 @@
+{
+	"name": "relish/blank_block",
+	"title": "Blank",
+	"description": "A list of resource links/files.",
+	"category": "formatting",
+	"icon": "admin-comments",
+	"keywords": ["relish", "file"],
+	"acf": {
+			"mode": "preview",
+			"renderTemplate": "blank_block.php"
+	}
+}

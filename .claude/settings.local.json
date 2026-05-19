@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__serena__initial_instructions",
+      "Read(//Users/jordandysart/workspace/itmwordpress/**)",
+      "Bash(lando wp *)",
+      "mcp__serena__replace_content",
+      "mcp__serena__insert_after_symbol",
+      "Bash(node *)",
+      "Bash(npm run *)",
+      "Bash(cp -r /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/legacy/js /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/)",
+      "Bash(cp -r /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/legacy/getwid /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/)",
+      "Bash(cp -r /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/legacy/languages /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/)",
+      "Bash(cp -r /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/legacy/layouts /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/)",
+      "Bash(cp '/Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/legacy/assets/less/blocks/*.less' /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/assets/less/blocks/)"
+    ]
+  }
+}

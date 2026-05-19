@@ -1,0 +1,18 @@
+/*
+Theme Name: itm_indigpro
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 99
+License: GNU General Public License
+License URI: license.txt
+Tags:
+*/
+
+
+
+@import 'base.css';
+@import 'extend.css';
+@import 'mobile.css';
+

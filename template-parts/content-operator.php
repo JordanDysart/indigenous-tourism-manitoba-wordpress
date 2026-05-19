@@ -12,8 +12,8 @@ $operator_region = itm_get_field('operator_region', $operator_id);
 $operator_category = itm_get_field('operator_category', $operator_id);
 
 $operator_short_description = itm_get_field('operator_short_description', $operator_id);
-$operator_feature_image = itm_get_field('operator_feature_image', $operator_id);
-$operator_photos = itm_get_field('operator_photos',$operator_id);
+$operator_feature_image = itm_normalize_image( itm_get_field('operator_feature_image', $operator_id) );
+$operator_photos = itm_normalize_gallery( itm_get_field('operator_photos', $operator_id) );
 
 $operator_coordinates_latitude = itm_get_field('operator_coordinates_latitude', $operator_id);
 $operator_coordinates_longitude = itm_get_field('operator_coordinates_longitude', $operator_id);

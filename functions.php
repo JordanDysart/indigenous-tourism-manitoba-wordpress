@@ -437,3 +437,60 @@ function itm_get_field( $field, $post_id = false ) {
 	}
 	return null;
 }
+
+/**
+ * Normalise an image field value to an ACF-compatible array.
+ *
+ * ACF image fields return ['url'=>…, 'alt'=>…, 'width'=>…, 'height'=>…].
+ * When ACF is absent, itm_get_field() returns the raw attachment ID stored
+ * by get_post_meta(). This helper accepts either format and always returns
+ * the same array shape, or null if the value is empty/invalid.
+ *
+ * Usage:
+ *   $img = itm_normalize_image( itm_get_field( 'operator_feature_image', $id ) );
+ *   if ( $img ) { echo $img['url']; }
+ *
+ * @param mixed $image  ACF image array OR attachment ID.
+ * @return array|null   Normalised ['url', 'alt', 'width', 'height'] or null.
+ */
+function itm_normalize_image( $image ) {
+	if ( is_array( $image ) && ! empty( $image['url'] ) ) {
+		return $image;
+	}
+	if ( is_numeric( $image ) && (int) $image > 0 ) {
+		$src = wp_get_attachment_image_src( (int) $image, 'full' );
+		if ( $src ) {
+			return [
+				'url'    => $src[0],
+				'alt'    => (string) get_post_meta( (int) $image, '_wp_attachment_image_alt', true ),
+				'width'  => $src[1],
+				'height' => $src[2],
+			];
+		}
+	}
+	return null;
+}
+
+/**
+ * Normalise a gallery field value to an array of ACF-compatible image arrays.
+ *
+ * ACF gallery fields return an array of image arrays. Without ACF,
+ * get_post_meta() returns a serialised array of attachment IDs which
+ * WordPress auto-unserialises on read.
+ *
+ * @param mixed $gallery  ACF gallery array OR array of attachment IDs.
+ * @return array          Array of normalised image arrays (may be empty).
+ */
+function itm_normalize_gallery( $gallery ) {
+	if ( ! is_array( $gallery ) ) {
+		return [];
+	}
+	$result = [];
+	foreach ( $gallery as $item ) {
+		$normalised = itm_normalize_image( $item );
+		if ( $normalised ) {
+			$result[] = $normalised;
+		}
+	}
+	return $result;
+}
