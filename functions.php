@@ -96,6 +96,14 @@ function itm_indigpro_scripts()
 
 	wp_register_script('animated-menu', get_template_directory_uri() . '/js/animated-menu.js', array('jquery'));
 	wp_enqueue_script('animated-menu');
+
+	// Bootstrap Icons — required by nav walker toggle chevrons and footer nav headings
+	wp_enqueue_style(
+		'bootstrap-icons',
+		'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css',
+		[],
+		'1.11.3'
+	);
 }
 
 add_action('wp_enqueue_scripts', 'itm_indigpro_scripts', 99);

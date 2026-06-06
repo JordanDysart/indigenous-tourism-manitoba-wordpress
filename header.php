@@ -45,8 +45,9 @@
 					<?php
 						wp_nav_menu(array(
 							'theme_location' => 'primary-menu',
-							'menu_id' => 'primary-menu',
-							'walker' => new GAC_Menu_Walker()
+							'menu_id'        => 'primary-menu',
+							'menu_class'     => 'nav-menu',
+							'walker'         => new GAC_Menu_Walker()
 						));
 					?>
 				</nav>

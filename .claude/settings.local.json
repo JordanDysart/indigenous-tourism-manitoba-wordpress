@@ -12,7 +12,11 @@
       "Bash(cp -r /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/legacy/getwid /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/)",
       "Bash(cp -r /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/legacy/languages /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/)",
       "Bash(cp -r /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/legacy/layouts /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/)",
-      "Bash(cp '/Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/legacy/assets/less/blocks/*.less' /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/assets/less/blocks/)"
+      "Bash(cp '/Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/legacy/assets/less/blocks/*.less' /Users/jordandysart/workspace/itmwordpress/wordpress/wp-content/themes/kiwatinook/assets/less/blocks/)",
+      "mcp__serena__find_symbol",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{redirect_url}\" https://indigenous-tourism-manitoba-wordpress.lndo.site/)",
+      "Bash(curl -v --max-redirs 0 https://indigenous-tourism-manitoba-wordpress.lndo.site/)",
+      "Bash(curl -s https://indigenous-tourism-manitoba-wordpress.lndo.site/)"
     ]
   }
 }
