@@ -16,7 +16,9 @@
       "mcp__serena__find_symbol",
       "Bash(curl -s -o /dev/null -w \"%{http_code} %{redirect_url}\" https://indigenous-tourism-manitoba-wordpress.lndo.site/)",
       "Bash(curl -v --max-redirs 0 https://indigenous-tourism-manitoba-wordpress.lndo.site/)",
-      "Bash(curl -s https://indigenous-tourism-manitoba-wordpress.lndo.site/)"
+      "Bash(curl -s https://indigenous-tourism-manitoba-wordpress.lndo.site/)",
+      "Bash(./node_modules/.bin/wp-scripts build *)",
+      "Bash(node_modules/.bin/wp-scripts build *)"
     ]
   }
 }

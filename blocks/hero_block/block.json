@@ -1,0 +1,49 @@
+{
+    "name": "relish/hero-block",
+    "title": "Page Hero",
+    "description": "Full-bleed hero for the top of a page. Breaks out of the content max-width and fills the viewport.",
+    "category": "widgets",
+    "icon": "cover-image",
+    "keywords": ["hero", "banner", "full width", "home", "cover"],
+    "supports": {
+        "align": ["full"],
+        "anchor": true,
+        "customClassName": true
+    },
+    "render": "file:./hero_block.php",
+    "editorScript": "file:./index.js",
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "full"
+        },
+        "backgroundImage": {
+            "type": "object",
+            "properties": {
+                "id":  { "type": "number" },
+                "url": { "type": "string" },
+                "alt": { "type": "string" }
+            }
+        },
+        "title": {
+            "type": "string",
+            "default": ""
+        },
+        "overlayOpacity": {
+            "type": "number",
+            "default": 35
+        },
+        "overlayColor": {
+            "type": "string",
+            "default": "#000000"
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#ffffff"
+        },
+        "minHeight": {
+            "type": "number",
+            "default": 100
+        }
+    }
+}

@@ -1,16 +1,73 @@
 {
     "name": "relish/banner-block",
     "title": "Custom Banner",
-    "description": "A custom block with background, overlay, and content images.",
+    "description": "A custom block with background image, overlay, and a circular side image. No ACF required.",
     "category": "widgets",
     "icon": "format-image",
-    "keywords": ["background", "image", "overlay"],
+    "keywords": ["background", "image", "overlay", "banner", "hero"],
     "supports": {
         "align": true,
-        "anchor": true
+        "anchor": true,
+        "customClassName": true
     },
-    "acf": {
-        "mode": "preview",
-        "renderTemplate": "banner_block.php"
+    "render": "file:./banner_block.php",
+    "editorScript": "file:./index.js",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": ""
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#ffffff"
+        },
+        "fontSize": {
+            "type": "number",
+            "default": 2
+        },
+        "description": {
+            "type": "string",
+            "default": ""
+        },
+        "descriptionColor": {
+            "type": "string",
+            "default": "#ffffff"
+        },
+        "descriptionFontSize": {
+            "type": "number",
+            "default": 1
+        },
+        "descriptionFontWeight": {
+            "type": "string",
+            "default": "normal"
+        },
+        "backgroundImage": {
+            "type": "object",
+            "properties": {
+                "id":  { "type": "number" },
+                "url": { "type": "string" },
+                "alt": { "type": "string" }
+            }
+        },
+        "overlayOpacity": {
+            "type": "number",
+            "default": 20
+        },
+        "overlayColor": {
+            "type": "string",
+            "default": "#000000"
+        },
+        "mainImage": {
+            "type": "object",
+            "properties": {
+                "id":  { "type": "number" },
+                "url": { "type": "string" },
+                "alt": { "type": "string" }
+            }
+        },
+        "textAlignment": {
+            "type": "string",
+            "default": "left"
+        }
     }
 }
