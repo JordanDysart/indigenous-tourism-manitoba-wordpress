@@ -1,0 +1,34 @@
+@import (reference) '../global/_variables.less';
+@import (reference) '../global/_mixins.less';
+
+.outlook-highlight {
+  max-width: @content-width;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+
+  &-text {
+    font-family: @font-primary;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: @color-mid-gray;
+    max-width: 900px;
+    margin: 0 auto 40px;
+  }
+
+  &-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+    }
+  }
+}

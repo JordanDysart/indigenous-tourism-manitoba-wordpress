@@ -1,0 +1,66 @@
+@import (reference) '../global/_variables.less';
+@import (reference) '../global/_mixins.less';
+
+.mvo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: @content-width;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.mvo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  border-radius: @radius-lg;
+  box-shadow: 0 10px 30px rgba(33, 43, 54, 0.08);
+  padding: 32px 28px;
+
+  .breakpoint(@breakpoint-md, {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 56px;
+  });
+}
+
+.mvo-card-label {
+  flex: 0 0 auto;
+
+  .breakpoint(@breakpoint-md, {
+    flex: 0 0 240px;
+  });
+}
+
+.mvo-card-dash {
+  display: block;
+  width: 28px;
+  height: 4px;
+  border-radius: 2px;
+  background: @color-gold-dark;
+  margin-bottom: 12px;
+}
+
+.mvo-card-heading {
+  font-family: @font-secondary;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: @color-dark;
+  margin: 0;
+}
+
+.mvo-card-body {
+  flex: 1 1 auto;
+
+  p {
+    font-family: @font-primary;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: @color-mid-gray;
+    margin: 0;
+  }
+}
