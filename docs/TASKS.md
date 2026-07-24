@@ -19,6 +19,7 @@
 | 5 | Import production database to local | [task-05-import-db.md](task-05-import-db.md) | `[x]` |
 | 6 | Set up deployment pipeline | [task-06-deploy-pipeline.md](task-06-deploy-pipeline.md) | `[ ]` |
 | 7 | Set up staging environment | [task-07-staging.md](task-07-staging.md) | `[ ]` |
+| 8 | Self-hosted theme updates (Plugin Update Checker + GitHub Releases) | [task-08-self-hosted-theme-updates.md](task-08-self-hosted-theme-updates.md) | `[~]` |
 
 ---
 
@@ -29,3 +30,4 @@
 - Task 03 is resolved — the `operator` CPT and its taxonomies are registered directly in `functions.php`.
 - Task 04 is blocked on Task 02 (ACF Pro ZIP).
 - Task 06 updated — SSH rsync replaced with Plesk Git, GitHub Actions SFTP, or WP Pusher. Blocked on Task 01 to confirm which is available.
+- Task 08 is independent of Task 06 and not blocked by it — it lets the admin manually apply theme updates from Appearance > Themes (their own schedule, their own backup first), rather than auto-deploying every push. Code is in place; only the production GitHub PAT install step remains.

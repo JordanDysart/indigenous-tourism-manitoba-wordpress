@@ -211,6 +211,11 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Self-hosted theme updates (GitHub Releases).
+ */
+require get_template_directory() . '/inc/plugin-updates.php';
+
 function mytheme_setup()
 {
 	add_theme_support('align-wide');

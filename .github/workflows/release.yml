@@ -1,0 +1,78 @@
+name: Release Theme
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tag
+        uses: actions/checkout@v4
+
+      - name: Derive version from tag
+        id: version
+        run: |
+          TAG="${GITHUB_REF#refs/tags/}"
+          VERSION="${TAG#v}"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Stamp version into style.css and readme.txt (working copy only)
+        run: |
+          sed -i "s/^Version:.*/Version: ${{ steps.version.outputs.version }}/" style.css
+          sed -i "s/^Stable tag:.*/Stable tag: ${{ steps.version.outputs.version }}/" readme.txt
+          grep '^Version:' style.css
+          grep '^Stable tag:' readme.txt
+
+      - name: Stage theme files under slug-named directory
+        run: |
+          STAGE_ROOT="${RUNNER_TEMP}/release"
+          STAGE_DIR="${STAGE_ROOT}/kiwatinook"
+          mkdir -p "$STAGE_DIR"
+          rsync -a ./ "$STAGE_DIR"/ \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='.gitignore' \
+            --exclude='.gitattributes' \
+            --exclude='.serena/' \
+            --exclude='.claude/' \
+            --exclude='.lando.yml' \
+            --exclude='.lando.local.yml' \
+            --exclude='.lando/' \
+            --exclude='node_modules/' \
+            --exclude='assets/node_modules/' \
+            --exclude='docs/' \
+            --exclude='*.map' \
+            --exclude='package.json' \
+            --exclude='package-lock.json' \
+            --exclude='assets/package.json' \
+            --exclude='assets/package-lock.json' \
+            --exclude='phpcs.xml.dist' \
+            --exclude='webpack.config.js' \
+            --exclude='README.md'
+          echo "STAGE_ROOT=$STAGE_ROOT" >> "$GITHUB_ENV"
+
+      - name: Build release zip
+        run: |
+          cd "$STAGE_ROOT"
+          zip -rq "${GITHUB_WORKSPACE}/kiwatinook-${{ steps.version.outputs.version }}.zip" kiwatinook
+
+      - name: Sanity-check zip layout
+        run: |
+          unzip -l "kiwatinook-${{ steps.version.outputs.version }}.zip" | grep -q "kiwatinook/style.css"
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: ${{ steps.version.outputs.tag }}
+          generate_release_notes: true
+          files: kiwatinook-${{ steps.version.outputs.version }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

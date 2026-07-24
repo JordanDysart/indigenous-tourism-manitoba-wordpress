@@ -18,7 +18,11 @@
       "Bash(curl -v --max-redirs 0 https://indigenous-tourism-manitoba-wordpress.lndo.site/)",
       "Bash(curl -s https://indigenous-tourism-manitoba-wordpress.lndo.site/)",
       "Bash(./node_modules/.bin/wp-scripts build *)",
-      "Bash(node_modules/.bin/wp-scripts build *)"
+      "Bash(node_modules/.bin/wp-scripts build *)",
+      "Bash(curl -sk \"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/12/Group-4.png\" -o /tmp/group4.png -w \"%{http_code} %{size_download}\\\\n\")",
+      "Bash(curl -sk \"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/12/Group-5.png\" -o /tmp/group5.png -w \"%{http_code} %{size_download}\\\\n\")",
+      "Bash(python3 -)",
+      "Bash(awk '/\\\\*\\\\//{print;exit}1' style.css)"
     ]
   }
 }
