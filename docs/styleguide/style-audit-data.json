@@ -1,5 +1,5 @@
 {
-  "auditedAt": "2026-08-14T22:39:08.046Z",
+  "auditedAt": "2026-08-14T22:56:45.666Z",
   "baseUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site",
   "canonicalTokens": {
     "colors": {
@@ -5381,7 +5381,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-hkgd0ks62s5c\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-8ihtl3g6c7wf\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "About Indigenous Tourism Manitoba",
@@ -5445,7 +5445,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-u3gpo1481p6c\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-cc22hg6a62fi\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Operators Directory",
@@ -5981,7 +5981,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-1ibj98ac89jf\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ht7lvrof75bn\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Single Operator (Prairie Berry)",
@@ -6029,7 +6029,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-qa9si3g141mk\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-9rocd7bh319p\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Experience Map",
@@ -6077,7 +6077,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ulqqv3stuq99\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-7z5yum9a2i7r\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Program",
@@ -6125,7 +6125,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-v0h0ox7lnz8d\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-xqyzr6er8scb\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Contact Us",
@@ -6205,7 +6205,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-60g3da5pv4p\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ox48pcj8hct7\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Reconciliation",
@@ -6429,7 +6429,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-8ax42pa23scm\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-wipdfcmvaea6\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Member Benefits",
@@ -6557,7 +6557,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-w3eeyqw70hqk\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-mgb82lkojjyc\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "404 Error Page",
@@ -6605,7 +6605,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-pq7huw680erb\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-urdcaprym7qr\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       }
     ],
     "orphanPluginClasses": [
@@ -8002,7 +8002,7 @@
         "alt": "(MISSING ALT ATTRIBUTE)",
         "isMissingAlt": true,
         "isLikelyTextBanner": false,
-        "dimensions": "270x258"
+        "dimensions": "2560x1708"
       },
       {
         "page": "Single Operator (Prairie Berry)",
@@ -8072,175 +8072,39 @@
     "consoleErrors": [
       {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/about-itm/",
         "text": "WPLeafletMapPlugin is not available."
       },
       {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/about-itm/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/about-itm/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
+        "text": "WPLeafletMapPlugin is not available."
       },
       {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operators/",
         "text": "WPLeafletMapPlugin is not available."
       },
       {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operators/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operators/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operators/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operators/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operators/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operators/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/prairie-berry/",
         "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/prairie-berry/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/prairie-berry/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/prairie-berry/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/prairie-berry/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/prairie-berry/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/prairie-berry/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/prairie-berry/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
       },
       {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
         "text": "WPLeafletMapPlugin is not available."
       },
       {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/guide-training-program/",
         "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/guide-training-program/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/guide-training-program/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
       },
       {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/contact-us/",
         "text": "WPLeafletMapPlugin is not available."
       },
       {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/contact-us/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/contact-us/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
         "text": "WPLeafletMapPlugin is not available."
       },
       {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/member-benefits/",
         "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/member-benefits/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/member-benefits/",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
       },
       {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/non-existent-page-404",
@@ -8249,14 +8113,6 @@
       {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/non-existent-page-404",
         "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/non-existent-page-404",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/non-existent-page-404",
-        "text": "Failed to load resource: the server responded with a status of 404 ()"
       }
     ]
   },

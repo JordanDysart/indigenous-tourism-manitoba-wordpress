@@ -14,7 +14,9 @@
     "audit:styles":     "node tools/audit-styles.js",
     "build:styleguide": "node tools/generate-styleguide.js",
     "styleguide":       "node tools/audit-styles.js && node tools/generate-styleguide.js",
-    "feedback:test":    "node tools/feedback-loop.js"
+    "feedback:test":    "node tools/feedback-loop.js",
+    "compare:prod":     "node tools/compare-production.js",
+    "sync:media":       "node tools/sync-media-from-prod.js"
   },
   "devDependencies": {
     "@wordpress/scripts": "^30.0.0",

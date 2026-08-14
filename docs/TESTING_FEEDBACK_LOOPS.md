@@ -70,7 +70,21 @@ npm run screenshot
 
 ---
 
-## 4. Interactive Style Guide Generation
+## 4. Production Parity & Media Synchronization Loop
+
+To synchronize missing media library uploads from the live production site and run visual diffs:
+
+```bash
+# High-speed parallel download of all missing media assets from production
+npm run sync:media
+
+# Crawl and capture production viewports & mega menu structures for side-by-side comparison
+npm run compare:prod
+```
+
+---
+
+## 5. Interactive Style Guide Generation
 
 To generate the browsable client-facing Style Guide and developer documentation:
 

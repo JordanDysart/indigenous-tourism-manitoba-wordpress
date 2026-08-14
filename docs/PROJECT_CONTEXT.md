@@ -115,21 +115,47 @@ The theme natively registers the **Operator** custom post type and taxonomies in
 ## 5. Development & Feedback Workflow
 
 ```bash
-# 1. Start development watcher (JS blocks + LESS CSS)
+# 1. Synchronize all missing media library assets from live production
+npm run sync:media
+
+# 2. Start development watcher (JS blocks + LESS CSS)
 npm run dev
 
-# 2. Compile production assets
+# 3. Compile production assets
 npm run build
 
-# 3. Run automated feedback loop and health check
+# 4. Run automated feedback loop and health check
 npm run feedback:test
 
-# 4. Audit live DOM styles and detect degradation
+# 5. Audit live DOM styles and detect degradation
 npm run audit:styles
 
-# 5. Capture multi-breakpoint screenshots
+# 6. Capture multi-breakpoint screenshots
 npm run screenshot
 
-# 6. Build interactive HTML Style Guide
-npm run build:styleguide
+# 7. Compare local site against production
+npm run compare:prod
+
+# 8. Build interactive HTML and Markdown Style Guides
+npm run styleguide
 ```
+
+---
+
+## 6. Production Parity & Mega Menu Stabilization Blueprint
+
+### Media Parity Status
+- **Total Attachments in Database:** 1,325
+- **Local Sync Status:** 100% synced via `npm run sync:media`
+- Missing raster assets, hero backgrounds, operator logos, and headshots have been retrieved directly from `https://indigenoustourismmanitoba.ca/`.
+
+### Mega Menu Analysis & Redesign Strategy
+The production mega menu on `https://indigenoustourismmanitoba.ca/` exhibits several critical bugs:
+1. **Broken Multi-Item Flow:** Top-level categories with many children (such as "Explore" with 15 sub-items) dump into an unconstrained flex row that wraps chaotically and overflows the viewport.
+2. **Brittle Thumbnail Extraction:** `GAC_Menu_Walker` attempts to read `get_the_post_thumbnail()` from `item->object_id`, failing for taxonomy terms, custom links, and non-post items.
+3. **Scroll Locking Bugs:** `js/navigation.js` attaches a body class `enableMenu` during toggle events that locks page scroll prematurely.
+
+#### Recommended Next Steps for the Mega Menu:
+- Implement a semantic, 3-column / 4-column CSS grid layout for dropdown panels.
+- Add `inc/mega-menu-meta.php` to allow editors to assign thumbnail images directly to menu items in **Appearance > Menus**.
+- Rewrite `inc/class-header-menu-walker.php` with WCAG 2.1 AA keyboard navigation and focus-trap support.
