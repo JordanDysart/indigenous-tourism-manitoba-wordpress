@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-require get_template_directory() . '/inc/plugin-update-checker/plugin-update-checker.php';
+require_once get_template_directory() . '/inc/plugin-update-checker/plugin-update-checker.php';
 
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 

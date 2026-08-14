@@ -1,0 +1,310 @@
+@import (reference) '../global/_variables.less';
+@import (reference) '../global/_mixins.less';
+
+// =============================================================================
+// The Forks Location Page Template
+// =============================================================================
+
+.forks-container {
+  max-width: @content-width;
+  margin: 0 auto;
+  padding: 0 @gap;
+}
+
+// 1. Hero Section
+.forks-hero {
+  position: relative;
+  min-height: 480px;
+  background-color: @color-dark;
+  background-image: url('../../../screenshot.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 120px 20px 80px;
+  color: #ffffff;
+
+  &-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(33, 43, 54, 0.92) 0%, rgba(97, 0, 0, 0.85) 60%, rgba(218, 82, 37, 0.75) 100%);
+    z-index: 1;
+  }
+
+  &-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(224, 172, 15, 0.2);
+    border: 1px solid @color-gold;
+    color: @color-gold;
+    border-radius: @radius-full;
+    font-family: @font-secondary;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+  }
+
+  &-title {
+    font-family: @font-secondary;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #ffffff;
+
+    .breakpoint(@breakpoint-md, {
+      font-size: 3.2rem;
+    });
+  }
+
+  &-subtitle {
+    font-family: @font-primary;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+// 2. Visitor Info Bar
+.forks-visitor-bar {
+  background: #ffffff;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(145, 158, 171, 0.2);
+
+  .visitor-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    .breakpoint(@breakpoint-md, {
+      grid-template-columns: repeat(3, 1fr);
+    });
+  }
+
+  .visitor-info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    background: @color-off-white;
+    border-radius: @radius-md;
+    border: 1px solid rgba(145, 158, 171, 0.16);
+
+    .info-icon {
+      color: @color-orange;
+      background: rgba(218, 82, 37, 0.1);
+      padding: 10px;
+      border-radius: @radius-sm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .info-title {
+      font-family: @font-secondary;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: @color-dark;
+      margin: 0 0 6px;
+    }
+
+    .info-detail {
+      font-family: @font-primary;
+      font-size: 0.9rem;
+      color: @color-body-text;
+      line-height: 1.45;
+      margin: 0;
+    }
+  }
+}
+
+// 3. Experience Highlights & Pillars
+.forks-highlights-section {
+  padding: 70px 0;
+  background: #ffffff;
+
+  .section-header {
+    max-width: 680px;
+    margin: 0 auto 50px;
+    text-align: center;
+
+    .section-badge {
+      color: @color-orange;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-family: @font-secondary;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: @color-dark;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      color: @color-mid-gray;
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+  }
+
+  .forks-pillars-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+
+    .breakpoint(@breakpoint-md, {
+      grid-template-columns: repeat(3, 1fr);
+    });
+  }
+
+  .pillar-card {
+    background: #ffffff;
+    border-radius: @radius-lg;
+    border: 1px solid rgba(145, 158, 171, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+    }
+
+    &--featured {
+      border-color: @color-gold;
+      background: linear-gradient(to bottom, rgba(224, 172, 15, 0.03), #ffffff);
+    }
+
+    .pillar-tag {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 4px 12px;
+      background: rgba(218, 82, 37, 0.1);
+      color: @color-orange;
+      font-weight: 700;
+      font-size: 0.8rem;
+      border-radius: @radius-full;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 16px;
+
+      &--gold {
+        background: rgba(224, 172, 15, 0.2);
+        color: @color-gold-dark;
+      }
+    }
+
+    .pillar-title {
+      font-family: @font-secondary;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: @color-dark;
+      margin-bottom: 14px;
+    }
+
+    .pillar-text {
+      font-family: @font-primary;
+      font-size: 0.95rem;
+      color: @color-body-text;
+      line-height: 1.55;
+      margin-bottom: 24px;
+    }
+
+    .pillar-features {
+      list-style: none;
+      margin: auto 0 0;
+      padding: 0;
+      border-top: 1px solid rgba(145, 158, 171, 0.16);
+      padding-top: 16px;
+
+      li {
+        font-size: 0.88rem;
+        color: @color-dark;
+        font-weight: 600;
+        margin-bottom: 8px;
+        position: relative;
+        padding-left: 18px;
+
+        &::before {
+          content: "✓";
+          position: absolute;
+          left: 0;
+          color: @color-orange;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// 4. Content Area
+.forks-content-wrapper {
+  padding: 40px 0;
+}
+
+// 5. CTA Box
+.forks-cta-section {
+  padding: 0 0 80px;
+
+  .forks-cta-box {
+    background: @color-dark;
+    border-radius: @radius-xl;
+    padding: 50px 40px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    text-align: center;
+
+    .breakpoint(@breakpoint-md, {
+      flex-direction: row;
+      text-align: left;
+    });
+
+    .cta-title {
+      font-family: @font-secondary;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .cta-text {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+}

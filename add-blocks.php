@@ -9,6 +9,7 @@ function relish_register_native_blocks() {
 	// register_block_type( get_template_directory() . '/blocks/blank_block/block.json' );
 	register_block_type( get_template_directory() . '/blocks/banner_block/block.json' );
 	register_block_type( get_template_directory() . '/blocks/hero_block/block.json' );
+	register_block_type( get_template_directory() . '/blocks/operator-search-block/block.json' );
 }
 add_action('init', 'relish_register_native_blocks');
 

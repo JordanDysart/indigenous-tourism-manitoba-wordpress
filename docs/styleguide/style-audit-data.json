@@ -1,5 +1,5 @@
 {
-  "auditedAt": "2026-08-14T22:56:45.666Z",
+  "auditedAt": "2026-08-14T23:40:46.123Z",
   "baseUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site",
   "canonicalTokens": {
     "colors": {
@@ -1878,6 +1878,45 @@
         {
           "page": "Guide Training Program",
           "tag": "h4",
+          "text": "Introductory Session",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "26px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "step-title"
+        },
+        {
+          "page": "Guide Training Program",
+          "tag": "h4",
+          "text": "7-Day In-Person Training",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "26px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "step-title"
+        },
+        {
+          "page": "Guide Training Program",
+          "tag": "h4",
+          "text": "Practicum & Certification",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "26px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "step-title"
+        },
+        {
+          "page": "Guide Training Program",
+          "tag": "h4",
           "text": "Discover",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
@@ -2286,7 +2325,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "About ITM\nABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur ",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2297,7 +2336,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "ABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur Operators\n",
+        "text": "About ITM",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2308,7 +2347,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Who We Are",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2319,7 +2358,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Meet Our Team",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2330,7 +2369,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "ITM Events",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2341,7 +2380,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Our Operators",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2352,7 +2391,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Reconciliation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2363,7 +2402,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Explore\nTHINGS TO DO\nExperience Map\nAccommodation\nCulinary\nT",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2374,7 +2413,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "THINGS TO DO\nExperience Map\nAccommodation\nCulinary\nTour and ",
+        "text": "Explore",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2385,7 +2424,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Experience Map",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2396,7 +2435,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Accommodation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2407,7 +2446,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Culinary",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2418,7 +2457,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Tour and Related Services",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2429,7 +2468,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Workshops, Art & Culture",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2440,7 +2479,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Attractions",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2451,7 +2490,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Indigenous Tourism Events in Manitoba",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2462,7 +2501,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Retail and Other",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2473,7 +2512,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Outdoors and Adventures",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2484,7 +2523,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "Central",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2495,7 +2534,7 @@
       {
         "page": "Home Page",
         "tag": "li",
-        "text": "East",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2506,7 +2545,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "About ITM\nABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur ",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2517,7 +2556,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "ABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur Operators\n",
+        "text": "About ITM",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2528,7 +2567,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Who We Are",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2539,7 +2578,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Meet Our Team",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2550,7 +2589,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "ITM Events",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2561,7 +2600,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Our Operators",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2572,7 +2611,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Reconciliation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2583,7 +2622,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Explore\nTHINGS TO DO\nExperience Map\nAccommodation\nCulinary\nT",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2594,7 +2633,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "THINGS TO DO\nExperience Map\nAccommodation\nCulinary\nTour and ",
+        "text": "Explore",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2605,7 +2644,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Experience Map",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2616,7 +2655,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Accommodation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2627,7 +2666,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Culinary",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2638,7 +2677,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Tour and Related Services",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2649,7 +2688,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Workshops, Art & Culture",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2660,7 +2699,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Attractions",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2671,7 +2710,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Indigenous Tourism Events in Manitoba",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2682,7 +2721,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Retail and Other",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2693,7 +2732,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Outdoors and Adventures",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2704,7 +2743,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "Central",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2715,7 +2754,7 @@
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "li",
-        "text": "East",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2726,7 +2765,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "About ITM\nABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur ",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2737,7 +2776,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "ABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur Operators\n",
+        "text": "About ITM",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2748,7 +2787,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Who We Are",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2759,7 +2798,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Meet Our Team",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2770,7 +2809,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "ITM Events",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2781,7 +2820,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Our Operators",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2792,7 +2831,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Reconciliation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2803,7 +2842,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Explore\nTHINGS TO DO\nExperience Map\nAccommodation\nCulinary\nT",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2814,7 +2853,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "THINGS TO DO\nExperience Map\nAccommodation\nCulinary\nTour and ",
+        "text": "Explore",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2825,7 +2864,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Experience Map",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2836,7 +2875,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Accommodation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2847,7 +2886,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Culinary",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2858,7 +2897,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Tour and Related Services",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2869,7 +2908,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Workshops, Art & Culture",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2880,7 +2919,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Attractions",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2891,7 +2930,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Indigenous Tourism Events in Manitoba",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2902,7 +2941,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Retail and Other",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2913,7 +2952,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Outdoors and Adventures",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2924,7 +2963,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "Central",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2935,7 +2974,7 @@
       {
         "page": "Operators Directory",
         "tag": "li",
-        "text": "East",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2946,7 +2985,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "About ITM\nABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur ",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2957,7 +2996,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "ABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur Operators\n",
+        "text": "About ITM",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2968,7 +3007,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Who We Are",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2979,7 +3018,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Meet Our Team",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -2990,7 +3029,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "ITM Events",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3001,7 +3040,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Our Operators",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3012,7 +3051,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Reconciliation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3023,7 +3062,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Explore\nTHINGS TO DO\nExperience Map\nAccommodation\nCulinary\nT",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3034,7 +3073,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "THINGS TO DO\nExperience Map\nAccommodation\nCulinary\nTour and ",
+        "text": "Explore",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3045,7 +3084,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Experience Map",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3056,7 +3095,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Accommodation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3067,7 +3106,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Culinary",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3078,7 +3117,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Tour and Related Services",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3089,7 +3128,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Workshops, Art & Culture",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3100,7 +3139,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Attractions",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3111,7 +3150,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Indigenous Tourism Events in Manitoba",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3122,7 +3161,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Retail and Other",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3133,7 +3172,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Outdoors and Adventures",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3144,7 +3183,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "Central",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3155,7 +3194,7 @@
       {
         "page": "Single Operator (Prairie Berry)",
         "tag": "li",
-        "text": "East",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3166,7 +3205,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "About ITM\nABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur ",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3177,7 +3216,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "ABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur Operators\n",
+        "text": "About ITM",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3188,7 +3227,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Who We Are",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3199,7 +3238,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Meet Our Team",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3210,7 +3249,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "ITM Events",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3221,7 +3260,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Our Operators",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3232,7 +3271,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Reconciliation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3243,7 +3282,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Explore\nTHINGS TO DO\nExperience Map\nAccommodation\nCulinary\nT",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3254,7 +3293,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "THINGS TO DO\nExperience Map\nAccommodation\nCulinary\nTour and ",
+        "text": "Explore",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3265,7 +3304,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Experience Map",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3276,7 +3315,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Accommodation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3287,7 +3326,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Culinary",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3298,7 +3337,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Tour and Related Services",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3309,7 +3348,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Workshops, Art & Culture",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3320,7 +3359,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Attractions",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3331,7 +3370,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Indigenous Tourism Events in Manitoba",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3342,7 +3381,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Retail and Other",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3353,7 +3392,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Outdoors and Adventures",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3364,7 +3403,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "Central",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3375,7 +3414,7 @@
       {
         "page": "Experience Map",
         "tag": "li",
-        "text": "East",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3386,7 +3425,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "About ITM\nABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur ",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3397,7 +3436,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "ABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur Operators\n",
+        "text": "About ITM",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3408,7 +3447,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Who We Are",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3419,7 +3458,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Meet Our Team",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3430,7 +3469,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "ITM Events",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3441,7 +3480,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Our Operators",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3452,7 +3491,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Reconciliation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3463,7 +3502,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Explore\nTHINGS TO DO\nExperience Map\nAccommodation\nCulinary\nT",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3474,7 +3513,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "THINGS TO DO\nExperience Map\nAccommodation\nCulinary\nTour and ",
+        "text": "Explore",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3485,7 +3524,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Experience Map",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3496,7 +3535,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Accommodation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3507,7 +3546,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Culinary",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3518,7 +3557,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Tour and Related Services",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3529,7 +3568,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Workshops, Art & Culture",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3540,7 +3579,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Attractions",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3551,7 +3590,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Indigenous Tourism Events in Manitoba",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3562,7 +3601,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Retail and Other",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3573,7 +3612,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Outdoors and Adventures",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3584,7 +3623,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "Central",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3595,7 +3634,7 @@
       {
         "page": "Guide Training Program",
         "tag": "li",
-        "text": "East",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3606,7 +3645,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "About ITM\nABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur ",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3617,7 +3656,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "ABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur Operators\n",
+        "text": "About ITM",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3628,7 +3667,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Who We Are",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3639,7 +3678,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Meet Our Team",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3650,7 +3689,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "ITM Events",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3661,7 +3700,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Our Operators",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3672,7 +3711,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Reconciliation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3683,7 +3722,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Explore\nTHINGS TO DO\nExperience Map\nAccommodation\nCulinary\nT",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3694,7 +3733,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "THINGS TO DO\nExperience Map\nAccommodation\nCulinary\nTour and ",
+        "text": "Explore",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3705,7 +3744,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Experience Map",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3716,7 +3755,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Accommodation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3727,7 +3766,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Culinary",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3738,7 +3777,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Tour and Related Services",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3749,7 +3788,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Workshops, Art & Culture",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3760,7 +3799,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Attractions",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3771,7 +3810,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Indigenous Tourism Events in Manitoba",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3782,7 +3821,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Retail and Other",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3793,7 +3832,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Outdoors and Adventures",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3804,7 +3843,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "Central",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3815,7 +3854,7 @@
       {
         "page": "Contact Us",
         "tag": "li",
-        "text": "East",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3826,7 +3865,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "About ITM\nABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur ",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3837,7 +3876,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "ABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur Operators\n",
+        "text": "About ITM",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3848,7 +3887,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Who We Are",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3859,7 +3898,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Meet Our Team",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3870,7 +3909,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "ITM Events",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3881,7 +3920,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Our Operators",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3892,7 +3931,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Reconciliation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3903,7 +3942,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Explore\nTHINGS TO DO\nExperience Map\nAccommodation\nCulinary\nT",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3914,7 +3953,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "THINGS TO DO\nExperience Map\nAccommodation\nCulinary\nTour and ",
+        "text": "Explore",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3925,7 +3964,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Experience Map",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3936,7 +3975,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Accommodation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3947,7 +3986,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Culinary",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3958,7 +3997,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Tour and Related Services",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3969,7 +4008,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Workshops, Art & Culture",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3980,7 +4019,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Attractions",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -3991,7 +4030,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Indigenous Tourism Events in Manitoba",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4002,7 +4041,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Retail and Other",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4013,7 +4052,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Outdoors and Adventures",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4024,7 +4063,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "Central",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4035,7 +4074,7 @@
       {
         "page": "Reconciliation",
         "tag": "li",
-        "text": "East",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4046,7 +4085,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "About ITM\nABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur ",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4057,7 +4096,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "ABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur Operators\n",
+        "text": "About ITM",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4068,7 +4107,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Who We Are",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4079,7 +4118,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Meet Our Team",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4090,7 +4129,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "ITM Events",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4101,7 +4140,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Our Operators",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4112,7 +4151,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Reconciliation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4123,7 +4162,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Explore\nTHINGS TO DO\nExperience Map\nAccommodation\nCulinary\nT",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4134,7 +4173,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "THINGS TO DO\nExperience Map\nAccommodation\nCulinary\nTour and ",
+        "text": "Explore",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4145,7 +4184,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Experience Map",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4156,7 +4195,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Accommodation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4167,7 +4206,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Culinary",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4178,7 +4217,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Tour and Related Services",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4189,7 +4228,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Workshops, Art & Culture",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4200,7 +4239,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Attractions",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4211,7 +4250,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Indigenous Tourism Events in Manitoba",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4222,7 +4261,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Retail and Other",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4233,7 +4272,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Outdoors and Adventures",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4244,7 +4283,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "Central",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4255,7 +4294,7 @@
       {
         "page": "Member Benefits",
         "tag": "li",
-        "text": "East",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4266,7 +4305,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "About ITM\nABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur ",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4277,7 +4316,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "ABOUT ITM\nWho We Are\nMeet Our Team\nITM Events\nOur Operators\n",
+        "text": "About ITM",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4288,7 +4327,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Who We Are",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4299,7 +4338,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Meet Our Team",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4310,7 +4349,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "ITM Events",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4321,7 +4360,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Our Operators",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4332,7 +4371,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Reconciliation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4343,7 +4382,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Explore\nTHINGS TO DO\nExperience Map\nAccommodation\nCulinary\nT",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4354,7 +4393,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "THINGS TO DO\nExperience Map\nAccommodation\nCulinary\nTour and ",
+        "text": "Explore",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4365,7 +4404,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Experience Map",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4376,7 +4415,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Accommodation",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4387,7 +4426,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Culinary",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4398,7 +4437,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Tour and Related Services",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4409,7 +4448,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Workshops, Art & Culture",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4420,7 +4459,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Attractions",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4431,7 +4470,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Indigenous Tourism Events in Manitoba",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4442,7 +4481,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Retail and Other",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4453,7 +4492,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Outdoors and Adventures",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4464,7 +4503,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "Central",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4475,7 +4514,7 @@
       {
         "page": "404 Error Page",
         "tag": "li",
-        "text": "East",
+        "text": "",
         "fontFamily": "Nunito Sans",
         "fontSize": "16px",
         "fontWeight": "400",
@@ -4485,7 +4524,7 @@
       }
     ],
     "fontFamiliesFound": {
-      "Ubuntu": 139,
+      "Ubuntu": 142,
       "Helvetica Neue": 20,
       "Nunito Sans": 200
     }
@@ -4493,7 +4532,7 @@
   "colorInventory": {
     "#404040": {
       "hex": "#404040",
-      "count": 1009,
+      "count": 1439,
       "types": [
         "color"
       ],
@@ -4501,33 +4540,41 @@
     },
     "#610000": {
       "hex": "#610000",
-      "count": 114,
+      "count": 56,
       "types": [
         "color"
       ],
       "isCanonical": true
     },
-    "#ffffff": {
-      "hex": "#ffffff",
-      "count": 769,
-      "types": [
-        "backgroundColor",
-        "color"
-      ],
-      "isCanonical": true
-    },
-    "#000000": {
-      "hex": "#000000",
-      "count": 324,
+    "#212b36": {
+      "hex": "#212b36",
+      "count": 456,
       "types": [
         "color",
         "backgroundColor"
       ],
       "isCanonical": true
     },
-    "#637381": {
-      "hex": "#637381",
-      "count": 456,
+    "#f9f9f9": {
+      "hex": "#f9f9f9",
+      "count": 90,
+      "types": [
+        "backgroundColor"
+      ],
+      "isCanonical": true
+    },
+    "#000000": {
+      "hex": "#000000",
+      "count": 61,
+      "types": [
+        "backgroundColor",
+        "color"
+      ],
+      "isCanonical": true
+    },
+    "#ffffff": {
+      "hex": "#ffffff",
+      "count": 720,
       "types": [
         "color",
         "backgroundColor"
@@ -4544,23 +4591,25 @@
     },
     "#da5225": {
       "hex": "#da5225",
-      "count": 40,
+      "count": 53,
       "types": [
-        "color"
+        "color",
+        "backgroundColor"
       ],
       "isCanonical": true
     },
     "#dca12b": {
       "hex": "#dca12b",
-      "count": 3,
+      "count": 4,
       "types": [
-        "backgroundColor"
+        "backgroundColor",
+        "color"
       ],
       "isCanonical": true
     },
-    "#212b36": {
-      "hex": "#212b36",
-      "count": 88,
+    "#637381": {
+      "hex": "#637381",
+      "count": 86,
       "types": [
         "color",
         "backgroundColor"
@@ -4584,6 +4633,23 @@
       ],
       "isCanonical": true
     },
+    "#f9fafb": {
+      "hex": "#f9fafb",
+      "count": 1,
+      "types": [
+        "backgroundColor"
+      ],
+      "isCanonical": false
+    },
+    "#919eab": {
+      "hex": "#919eab",
+      "count": 5,
+      "types": [
+        "backgroundColor",
+        "color"
+      ],
+      "isCanonical": true
+    },
     "#808080": {
       "hex": "#808080",
       "count": 2,
@@ -4600,11 +4666,12 @@
       ],
       "isCanonical": false
     },
-    "#919eab": {
-      "hex": "#919eab",
-      "count": 4,
+    "#605e43": {
+      "hex": "#605e43",
+      "count": 3,
       "types": [
-        "color"
+        "color",
+        "backgroundColor"
       ],
       "isCanonical": true
     },
@@ -4640,6 +4707,66 @@
       "padding": "0px",
       "borderRadius": "3px",
       "height": "50px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Home Page",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Home Page",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Home Page",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Home Page",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
       "hasInlineStyle": null
     },
     {
@@ -4685,6 +4812,66 @@
       "padding": "0px",
       "borderRadius": "3px",
       "height": "50px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "About Indigenous Tourism Manitoba",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "About Indigenous Tourism Manitoba",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "About Indigenous Tourism Manitoba",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "About Indigenous Tourism Manitoba",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
       "hasInlineStyle": null
     },
     {
@@ -4731,6 +4918,96 @@
       "borderRadius": "3px",
       "height": "50px",
       "hasInlineStyle": null
+    },
+    {
+      "page": "Operators Directory",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Operators Directory",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Operators Directory",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Operators Directory",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Operators Directory",
+      "text": "Search",
+      "classes": "operator-search-btn",
+      "tagName": "button",
+      "backgroundColor": "rgb(218, 82, 37)",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "15.2px",
+      "fontWeight": "700",
+      "padding": "0px 24px",
+      "borderRadius": "8px",
+      "height": "48px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Operators Directory",
+      "text": "Reset",
+      "classes": "operator-reset-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(99, 115, 129)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "padding": "0px 16px",
+      "borderRadius": "8px",
+      "height": "48px",
+      "hasInlineStyle": "display: none;"
     },
     {
       "page": "Operators Directory",
@@ -4775,6 +5052,66 @@
       "padding": "0px",
       "borderRadius": "3px",
       "height": "50px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Single Operator (Prairie Berry)",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Single Operator (Prairie Berry)",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Single Operator (Prairie Berry)",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Single Operator (Prairie Berry)",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
       "hasInlineStyle": null
     },
     {
@@ -4820,6 +5157,66 @@
       "padding": "0px",
       "borderRadius": "3px",
       "height": "50px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Experience Map",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Experience Map",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Experience Map",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Experience Map",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
       "hasInlineStyle": null
     },
     {
@@ -4865,6 +5262,66 @@
       "padding": "0px",
       "borderRadius": "3px",
       "height": "50px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Guide Training Program",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Guide Training Program",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Guide Training Program",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Guide Training Program",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
       "hasInlineStyle": null
     },
     {
@@ -4910,6 +5367,66 @@
       "padding": "0px",
       "borderRadius": "3px",
       "height": "50px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Contact Us",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Contact Us",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Contact Us",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Contact Us",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
       "hasInlineStyle": null
     },
     {
@@ -4955,6 +5472,66 @@
       "padding": "0px",
       "borderRadius": "3px",
       "height": "50px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Reconciliation",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Reconciliation",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Reconciliation",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Reconciliation",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
       "hasInlineStyle": null
     },
     {
@@ -5000,6 +5577,66 @@
       "padding": "0px",
       "borderRadius": "3px",
       "height": "50px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Member Benefits",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Member Benefits",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Member Benefits",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Member Benefits",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
       "hasInlineStyle": null
     },
     {
@@ -5045,6 +5682,66 @@
       "padding": "0px",
       "borderRadius": "3px",
       "height": "50px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "404 Error Page",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "404 Error Page",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "404 Error Page",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "404 Error Page",
+      "text": "Icon/Empty",
+      "classes": "submenu-toggle-btn",
+      "tagName": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "3px",
+      "height": "auto",
       "hasInlineStyle": null
     },
     {
@@ -5149,7 +5846,7 @@
         "tag": "a",
         "classes": "",
         "styleAttr": "height:300px",
-        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/anne-mulaire/\" target=\"_self\" style=\"height:300px\"><img loading=\"lazy\" decod"
+        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/anne-mulaire/\" target=\"_self\" style=\"height:300px\"><img decoding=\"async\" wid"
       },
       {
         "page": "Home Page",
@@ -5157,7 +5854,7 @@
         "tag": "img",
         "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
         "styleAttr": "width:100%;height:100%;object-fit:cover;",
-        "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"1500\" height=\"1500\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/1"
+        "snippet": "<img decoding=\"async\" width=\"1500\" height=\"1500\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/10/Anne-2024_fc3"
       },
       {
         "page": "Home Page",
@@ -5189,7 +5886,7 @@
         "tag": "a",
         "classes": "",
         "styleAttr": "height:300px",
-        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/wyndham-garden-winnipeg-airport/\" target=\"_self\" style=\"height:300px\"><img l"
+        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/wyndham-garden-winnipeg-airport/\" target=\"_self\" style=\"height:300px\"><img d"
       },
       {
         "page": "Home Page",
@@ -5197,7 +5894,7 @@
         "tag": "img",
         "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
         "styleAttr": "width:100%;height:100%;object-fit:cover;",
-        "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"2560\" height=\"1707\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/1"
+        "snippet": "<img decoding=\"async\" width=\"2560\" height=\"1707\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/WGWA_Exterior"
       },
       {
         "page": "Home Page",
@@ -5237,7 +5934,7 @@
         "tag": "img",
         "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
         "styleAttr": "width:100%;height:100%;object-fit:cover;",
-        "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"2560\" height=\"1707\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/1"
+        "snippet": "<img decoding=\"async\" width=\"2560\" height=\"1707\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/WhiteShellPet"
       },
       {
         "page": "Home Page",
@@ -5381,7 +6078,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-8ihtl3g6c7wf\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-oyy9yb1ofei5\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "About Indigenous Tourism Manitoba",
@@ -5445,7 +6142,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-cc22hg6a62fi\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-irjrpu27xems\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Operators Directory",
@@ -5461,7 +6158,7 @@
         "tag": "a",
         "classes": "",
         "styleAttr": "height:300px",
-        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/agowiidiwinan-centre/\" target=\"_self\" style=\"height:300px\"><img loading=\"laz"
+        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/agowiidiwinan-centre/\" target=\"_self\" style=\"height:300px\"><img decoding=\"as"
       },
       {
         "page": "Operators Directory",
@@ -5469,7 +6166,7 @@
         "tag": "img",
         "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
         "styleAttr": "width:100%;height:100%;object-fit:cover;",
-        "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"792\" height=\"593\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/"
+        "snippet": "<img decoding=\"async\" width=\"792\" height=\"593\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/Agowiidiwinan-C"
       },
       {
         "page": "Operators Directory",
@@ -5501,7 +6198,7 @@
         "tag": "a",
         "classes": "",
         "styleAttr": "height:300px",
-        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/anne-mulaire/\" target=\"_self\" style=\"height:300px\"><img loading=\"lazy\" decod"
+        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/anne-mulaire/\" target=\"_self\" style=\"height:300px\"><img decoding=\"async\" wid"
       },
       {
         "page": "Operators Directory",
@@ -5509,7 +6206,7 @@
         "tag": "img",
         "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
         "styleAttr": "width:100%;height:100%;object-fit:cover;",
-        "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"1500\" height=\"1500\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/1"
+        "snippet": "<img decoding=\"async\" width=\"1500\" height=\"1500\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/10/Anne-2024_fc3"
       },
       {
         "page": "Operators Directory",
@@ -5541,7 +6238,7 @@
         "tag": "a",
         "classes": "",
         "styleAttr": "height:300px",
-        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/bistro-on-notre-dame/\" target=\"_self\" style=\"height:300px\"><img loading=\"laz"
+        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/bistro-on-notre-dame/\" target=\"_self\" style=\"height:300px\"><img decoding=\"as"
       },
       {
         "page": "Operators Directory",
@@ -5549,7 +6246,7 @@
         "tag": "img",
         "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
         "styleAttr": "width:100%;height:100%;object-fit:cover;",
-        "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"414\" height=\"414\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/"
+        "snippet": "<img decoding=\"async\" width=\"414\" height=\"414\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/173858717_59249"
       },
       {
         "page": "Operators Directory",
@@ -5981,7 +6678,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ht7lvrof75bn\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-n8uqq08xzpz9\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Single Operator (Prairie Berry)",
@@ -6029,7 +6726,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-9rocd7bh319p\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-5f9mt33ihkq\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow"
       },
       {
         "page": "Experience Map",
@@ -6077,7 +6774,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-7z5yum9a2i7r\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-6tozknq2knk5\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Program",
@@ -6125,7 +6822,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-xqyzr6er8scb\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-qaxqd1njc8om\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Contact Us",
@@ -6205,7 +6902,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ox48pcj8hct7\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-doafqmlpgcj5\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Reconciliation",
@@ -6237,7 +6934,7 @@
         "tag": "a",
         "classes": "",
         "styleAttr": "height:300px",
-        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/anne-mulaire/\" target=\"_self\" style=\"height:300px\"><img loading=\"lazy\" decod"
+        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/anne-mulaire/\" target=\"_self\" style=\"height:300px\"><img decoding=\"async\" wid"
       },
       {
         "page": "Reconciliation",
@@ -6245,7 +6942,7 @@
         "tag": "img",
         "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
         "styleAttr": "width:100%;height:100%;object-fit:cover;",
-        "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"1500\" height=\"1500\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/1"
+        "snippet": "<img decoding=\"async\" width=\"1500\" height=\"1500\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/10/Anne-2024_fc3"
       },
       {
         "page": "Reconciliation",
@@ -6277,7 +6974,7 @@
         "tag": "a",
         "classes": "",
         "styleAttr": "height:300px",
-        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/wyndham-garden-winnipeg-airport/\" target=\"_self\" style=\"height:300px\"><img l"
+        "snippet": "<a href=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/wyndham-garden-winnipeg-airport/\" target=\"_self\" style=\"height:300px\"><img d"
       },
       {
         "page": "Reconciliation",
@@ -6285,7 +6982,7 @@
         "tag": "img",
         "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
         "styleAttr": "width:100%;height:100%;object-fit:cover;",
-        "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"2560\" height=\"1707\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/1"
+        "snippet": "<img decoding=\"async\" width=\"2560\" height=\"1707\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/WGWA_Exterior"
       },
       {
         "page": "Reconciliation",
@@ -6325,7 +7022,7 @@
         "tag": "img",
         "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
         "styleAttr": "width:100%;height:100%;object-fit:cover;",
-        "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"2560\" height=\"1707\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/1"
+        "snippet": "<img decoding=\"async\" width=\"2560\" height=\"1707\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/WhiteShellPet"
       },
       {
         "page": "Reconciliation",
@@ -6429,7 +7126,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-wipdfcmvaea6\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-8mvbvj6q84j0\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Member Benefits",
@@ -6557,7 +7254,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-mgb82lkojjyc\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-txffybbtkw2o\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "404 Error Page",
@@ -6605,7 +7302,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-urdcaprym7qr\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ycxys1rpuz2p\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       }
     ],
     "orphanPluginClasses": [
@@ -6841,13 +7538,13 @@
         "page": "About Indigenous Tourism Manitoba",
         "tag": "div",
         "classes": "wp-block-getwid-video-popup__wrapper has-background has-black-background-color",
-        "snippet": "<div class=\"wp-block-getwid-video-popup__wrapper has-background has-black-background-color\"><img loading=\"lazy\" decoding"
+        "snippet": "<div class=\"wp-block-getwid-video-popup__wrapper has-background has-black-background-color\"><img decoding=\"async\" width="
       },
       {
         "page": "About Indigenous Tourism Manitoba",
         "tag": "img",
         "classes": "wp-block-getwid-video-popup__image wp-block-getwid-video-popup__source wp-image-1227",
-        "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"1920\" height=\"1080\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo."
+        "snippet": "<img decoding=\"async\" width=\"1920\" height=\"1080\" src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content"
       },
       {
         "page": "About Indigenous Tourism Manitoba",
@@ -6871,7 +7568,7 @@
         "page": "Operators Directory",
         "tag": "div",
         "classes": "kt-inside-inner-col",
-        "snippet": "<div class=\"kt-inside-inner-col\"></div>"
+        "snippet": "<div class=\"kt-inside-inner-col\">\n<div class=\"operator-search-container\" id=\"operator-search-wrapper\">\n\t<div class=\"oper"
       },
       {
         "page": "Operators Directory",
@@ -7112,24 +7809,6 @@
         "tag": "div",
         "classes": "kt-inside-inner-col",
         "snippet": "<div class=\"kt-inside-inner-col\">\n<ol class=\"wp-block-list\">\n<li>Develop professional skills to become a confident and c"
-      },
-      {
-        "page": "Guide Training Program",
-        "tag": "div",
-        "classes": "kt-inside-inner-col",
-        "snippet": "<div class=\"kt-inside-inner-col\">\n<div class=\"wp-block-kadence-advancedbtn kb-buttons-wrap kb-btns2734_ba92e9-ff\"></div>"
-      },
-      {
-        "page": "Guide Training Program",
-        "tag": "div",
-        "classes": "kt-inside-inner-col",
-        "snippet": "<div class=\"kt-inside-inner-col\">\n<div class=\"wp-block-kadence-advancedbtn kb-buttons-wrap kb-btns2734_21ad30-a9\"></div>"
-      },
-      {
-        "page": "Guide Training Program",
-        "tag": "div",
-        "classes": "kt-inside-inner-col",
-        "snippet": "<div class=\"kt-inside-inner-col\">\n<div class=\"wp-block-kadence-advancedbtn kb-buttons-wrap kb-btns2734_39a603-91\"></div>"
       },
       {
         "page": "Contact Us",
@@ -7923,6 +8602,10 @@
         "count": 2
       },
       {
+        "hex": "#f9fafb",
+        "count": 1
+      },
+      {
         "hex": "#808080",
         "count": 2
       },
@@ -7978,7 +8661,7 @@
         "alt": "(MISSING ALT ATTRIBUTE)",
         "isMissingAlt": true,
         "isLikelyTextBanner": false,
-        "dimensions": "1150x646"
+        "dimensions": "1280x720"
       },
       {
         "page": "About Indigenous Tourism Manitoba",
@@ -8019,14 +8702,6 @@
         "isMissingAlt": true,
         "isLikelyTextBanner": false,
         "dimensions": "28x28"
-      },
-      {
-        "page": "Guide Training Program",
-        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/07/New-Course-Outline.jpg",
-        "alt": "(MISSING ALT ATTRIBUTE)",
-        "isMissingAlt": true,
-        "isLikelyTextBanner": false,
-        "dimensions": "852x720"
       },
       {
         "page": "Guide Training Program",
@@ -8118,7 +8793,7 @@
   },
   "summaryScores": {
     "canonicalAlignmentScore": 20,
-    "totalDegradationFlags": 427,
+    "totalDegradationFlags": 424,
     "inlineOverridesCount": 189,
     "contrastViolationsCount": 0
   }

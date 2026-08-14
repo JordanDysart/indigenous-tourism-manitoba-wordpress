@@ -75,79 +75,127 @@ REL.initMenuToggle = function () {
 	});
 };
 
-REL.handleSearchClick = function () {
-	const category = REL.E.operatorCategorySelect.val();
-	const region = REL.E.operatorRegionSelect.val();
+REL.handleSearchClick = function (triggerUrlUpdate = true) {
+	const category = REL.E.operatorCategorySelect.val() || '';
+	const region = REL.E.operatorRegionSelect.val() || '';
+	const resetBtn = jQuery('#operator_reset_btn');
+
+	if (triggerUrlUpdate && window.history && window.history.pushState) {
+		const url = new URL(window.location.href);
+		if (category) {
+			url.searchParams.set('category', category);
+		} else {
+			url.searchParams.delete('category');
+		}
+		if (region) {
+			url.searchParams.set('region', region);
+		} else {
+			url.searchParams.delete('region');
+		}
+		window.history.pushState({}, '', url.toString());
+	}
 
 	if (category === '' && region === '') {
-		REL.E.operatorResults.removeClass('fade-in').addClass('fade-out');
-		setTimeout(function () {
-			REL.E.operatorResults.empty().hide();
-		}, 200);
-
-		setTimeout(function () {
-			REL.E.operatorList.removeClass('fade-out').addClass('fade-in').show();
-		}, 200);
+		resetBtn.hide();
+		REL.E.operatorResults.removeClass('fade-in').addClass('fade-out').empty().hide();
+		REL.E.operatorList.removeClass('fade-out').addClass('fade-in').show();
 		return;
 	}
 
-	if (REL.E.operatorList.is(':visible')) {
-			REL.E.operatorList.addClass('fade-out');
-			setTimeout(function () {
-					REL.E.operatorList.hide();
-			}, 200);
-	}
+	resetBtn.show();
+	REL.E.operatorList.hide();
+	REL.E.operatorResults.html('<div class="operator-loading"><p>Loading operators...</p></div>').show();
 
-	if (REL.E.operatorResults.is(':visible')) {
-			REL.E.operatorResults.removeClass('fade-in').addClass('fade-out');
-			setTimeout(function () {
-					REL.E.operatorResults.empty().hide();
-			}, 200);
-	}
-
-	setTimeout(function () {
-			jQuery.ajax({
-					url: adminAjaxUrl,
-					method: 'POST',
-					data: {
-							action: 'filter_operators',
-							operator_cat: category,
-							operator_region: region
-					},
-					success: function(data) {
-							REL.E.operatorResults.html(data).show().removeClass('fade-out').addClass('fade-in');
-					},
-					error: function(error) {
-							console.error('Error fetching operators:', error);
-					}
-			});
-	}, 200);
+	jQuery.ajax({
+		url: adminAjaxUrl || '/wp-admin/admin-ajax.php',
+		method: 'POST',
+		data: {
+			action: 'filter_operators',
+			operator_cat: category,
+			operator_region: region
+		},
+		success: function(data) {
+			REL.E.operatorResults.html(data).show().removeClass('fade-out').addClass('fade-in');
+		},
+		error: function(error) {
+			console.error('Error fetching operators:', error);
+			REL.E.operatorResults.html('<div class="operator-empty-state"><p>Unable to load operators. Please try again.</p></div>');
+		}
+	});
 };
 
 REL.initDropdowns = function () {
 	jQuery('.custom-dropdown').each(function () {
-			const $dropdown = jQuery(this);
-			const $header = $dropdown.find('.dropdown-header');
-			const $options = $dropdown.find('.dropdown-options');
-			const $selectedText = $dropdown.find('.dropdown-header span');
+		const $dropdown = jQuery(this);
+		const $header = $dropdown.find('.dropdown-header');
+		const $options = $dropdown.find('.dropdown-options');
+		const $selectedText = $dropdown.find('.dropdown-header .selected-label, .dropdown-header span');
 
-			$header.on('click', function () {
-					$dropdown.toggleClass('open');
-			});
+		$header.on('click', function (e) {
+			e.stopPropagation();
+			jQuery('.custom-dropdown').not($dropdown).removeClass('open').attr('aria-expanded', 'false');
+			const isOpen = $dropdown.toggleClass('open').hasClass('open');
+			$dropdown.attr('aria-expanded', isOpen);
+		});
 
-			$options.find('.dropdown-option').on('click', function () {
-					$selectedText.text(jQuery(this).text());
-					const optionValue = jQuery(this).data('value');
+		$options.find('.dropdown-option').on('click', function () {
+			const optionValue = jQuery(this).data('value');
+			$selectedText.text(jQuery(this).text().split('(')[0].trim());
+			$options.find('.dropdown-option').removeClass('is-selected');
+			jQuery(this).addClass('is-selected');
+			$dropdown.removeClass('open').attr('aria-expanded', 'false');
 
-					$dropdown.removeClass('open');
+			if ($dropdown.attr('id') === 'operator_category_dropdown') {
+				REL.E.operatorCategorySelect.val(optionValue);
+			} else if ($dropdown.attr('id') === 'operator_region_dropdown') {
+				REL.E.operatorRegionSelect.val(optionValue);
+			}
 
-					if ($dropdown.attr('id') === 'operator_category_dropdown') {
-							REL.E.operatorCategorySelect.val(optionValue);
-					} else if ($dropdown.attr('id') === 'operator_region_dropdown') {
-							REL.E.operatorRegionSelect.val(optionValue);
-					}
-			});
+			REL.handleSearchClick(true);
+		});
 	});
+
+	// Close dropdown when clicking outside
+	jQuery(document).on('click', function () {
+		jQuery('.custom-dropdown').removeClass('open').attr('aria-expanded', 'false');
+	});
+
+	// Reset button handler
+	jQuery(document).on('click', '#operator_reset_btn, .operator-reset-btn', function (e) {
+		e.preventDefault();
+		REL.E.operatorCategorySelect.val('');
+		REL.E.operatorRegionSelect.val('');
+		jQuery('#selected_category').text('All Categories');
+		jQuery('#selected_region').text('All Regions');
+		jQuery('.custom-dropdown .dropdown-option').removeClass('is-selected');
+		jQuery('.custom-dropdown .dropdown-option[data-value=""]').addClass('is-selected');
+		REL.handleSearchClick(true);
+	});
+
+	// Check URL params on initial load
+	if (window.location.search) {
+		const params = new URLSearchParams(window.location.search);
+		const catParam = params.get('category');
+		const regParam = params.get('region');
+
+		if (catParam || regParam) {
+			if (catParam) {
+				REL.E.operatorCategorySelect.val(catParam);
+				const catOption = jQuery('#operator_category_dropdown .dropdown-option[data-value="' + catParam + '"], #operator_category_dropdown .dropdown-option[data-slug="' + catParam + '"]');
+				if (catOption.length) {
+					jQuery('#selected_category').text(catOption.first().text().split('(')[0].trim());
+				}
+			}
+			if (regParam) {
+				REL.E.operatorRegionSelect.val(regParam);
+				const regOption = jQuery('#operator_region_dropdown .dropdown-option[data-value="' + regParam + '"], #operator_region_dropdown .dropdown-option[data-slug="' + regParam + '"]');
+				if (regOption.length) {
+					jQuery('#selected_region').text(regOption.first().text().split('(')[0].trim());
+				}
+			}
+			REL.handleSearchClick(false);
+		}
+	}
 };
 
 REL.fancyBox = function () {

@@ -193,6 +193,7 @@ require get_template_directory() . '/inc/template-functions.php';
 
 function itm_indigpro_load_walker_classes()
 {
+	require_once get_template_directory() . '/inc/mega-menu-meta.php';
 	require_once get_template_directory() . '/inc/class-header-menu-walker.php';
 	require_once get_template_directory() . '/inc/class-footer-menu-walker.php';
 }
@@ -266,67 +267,70 @@ add_theme_support('editor-font-sizes', array(
 function ajax_filter_operators()
 {
 	$category = isset($_POST['operator_cat']) ? intval($_POST['operator_cat']) : 0;
-	$region = isset($_POST['operator_region']) ? intval($_POST['operator_region']) : 0;
+	$region   = isset($_POST['operator_region']) ? intval($_POST['operator_region']) : 0;
 
-	if (!$category && !$region) {
-		die();
-	}
+	$args = array(
+		'post_type'      => 'operator',
+		'posts_per_page' => -1,
+		'orderby'        => 'title',
+		'order'          => 'ASC',
+	);
 
 	$tax_query = array('relation' => 'AND');
 
-	if ($category) {
+	if ($category > 0) {
 		$tax_query[] = array(
-			'taxonomy' => 'operator_category',
-			'field' => 'term_id',
-			'terms' => $category,
+			'taxonomy'         => 'operator_category',
+			'field'            => 'term_id',
+			'terms'            => $category,
 			'include_children' => false,
 		);
 	}
 
-	if ($region) {
+	if ($region > 0) {
 		$tax_query[] = array(
-			'taxonomy' => 'operator_region',
-			'field' => 'term_id',
-			'terms' => $region,
+			'taxonomy'         => 'operator_region',
+			'field'            => 'term_id',
+			'terms'            => $region,
 			'include_children' => false,
 		);
 	}
 
-	$args = array(
-		'post_type' => 'operator',
-		'numberposts' => -1,
-		'tax_query' => count($tax_query) > 1 ? $tax_query : '',
-	);
+	if (count($tax_query) > 1 || (!empty($tax_query[0]))) {
+		$args['tax_query'] = $tax_query;
+	}
 
 	$operators = get_posts($args);
 
 	if ($operators) {
-		echo '<ul class="columns-4 operator-list-module-items wp-block-post-template is-layout-grid wp-container-core-post-template-is-layout-1 wp-block-post-template-is-layout-grid">';
+		echo '<ul class="operator-list-module-items wp-block-post-template is-layout-grid">';
 
 		foreach ($operators as $op) {
 			$operator_category = wp_get_post_terms($op->ID, 'operator_category');
-			$operator_region = wp_get_post_terms($op->ID, 'operator_region');
-			$thumbnail_url = get_the_post_thumbnail_url($op->ID, 'full');
+			$operator_region   = wp_get_post_terms($op->ID, 'operator_region');
+			$thumbnail_url     = get_the_post_thumbnail_url($op->ID, 'medium_large');
 
-			echo '<li class="wp-block-post post-' . esc_attr($op->ID) . ' operator type-operator status-publish has-post-thumbnail hentry '
-				. (!empty($operator_category) ? 'operator_category-' . sanitize_html_class($operator_category[0]->slug) . ' ' : '')
-				. (!empty($operator_region) ? 'operator_region-' . sanitize_html_class($operator_region[0]->slug) : '') . '">';
-
-			if ($thumbnail_url) {
-				echo '<figure style="aspect-ratio:1;width:300px;height:300px;" class="wp-block-post-featured-image">';
-				echo '<a href="' . esc_url(get_permalink($op->ID)) . '" target="_self" style="height:300px">';
-				echo '<img loading="lazy" decoding="async" src="' . esc_url($thumbnail_url) . '" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="' . esc_attr(get_the_title($op->ID)) . '" style="width:100%;height:100%;object-fit:cover;">';
-				echo '</a>';
-				echo '</figure>';
+			if (!$thumbnail_url) {
+				$thumbnail_url = get_template_directory_uri() . '/screenshot.png';
 			}
 
+			echo '<li class="wp-block-post operator-card post-' . esc_attr($op->ID) . ' '
+				. (!empty($operator_category) ? 'cat-' . sanitize_html_class($operator_category[0]->slug) . ' ' : '')
+				. (!empty($operator_region) ? 'region-' . sanitize_html_class($operator_region[0]->slug) : '') . '">';
+
+			echo '<figure class="operator-card-image-wrap wp-block-post-featured-image">';
+			echo '<a href="' . esc_url(get_permalink($op->ID)) . '" target="_self">';
+			echo '<img loading="lazy" decoding="async" src="' . esc_url($thumbnail_url) . '" class="operator-card-img attachment-post-thumbnail size-post-thumbnail" alt="' . esc_attr(get_the_title($op->ID)) . '">';
+			echo '</a>';
+			echo '</figure>';
+
 			if (!empty($operator_region)) {
-				echo '<div style="color:#da5225;font-size:1.13rem;font-style:normal;font-weight:700" class="taxonomy-operator_region has-link-color wp-elements-f73f0efa918dea6e52bc4da62e4f3cf0 wp-block-post-terms has-text-color">';
+				echo '<div class="taxonomy-operator_region wp-block-post-terms">';
 				echo '<a href="' . esc_url(get_term_link($operator_region[0])) . '" rel="tag">' . esc_html($operator_region[0]->name) . '</a>';
 				echo '</div>';
 			}
 
-			echo '<h2 style="font-size:1.13rem;font-style:normal;font-weight:700;" class="has-link-color wp-elements-992cb9ba7baa2105e31fa2add54a631a wp-block-post-title has-text-color has-black-color">';
+			echo '<h2 class="operator-card-title wp-block-post-title">';
 			echo '<a href="' . esc_url(get_permalink($op->ID)) . '" target="_self">' . esc_html(get_the_title($op->ID)) . '</a>';
 			echo '</h2>';
 
@@ -335,9 +339,13 @@ function ajax_filter_operators()
 
 		echo '</ul>';
 	} else {
-		echo '<p>No operators found.</p>';
+		echo '<div class="operator-empty-state">';
+		echo '<h3>' . esc_html__('No operators found', 'itm_indigpro') . '</h3>';
+		echo '<p>' . esc_html__('No experiences match the selected filters. Please try selecting a different region or category.', 'itm_indigpro') . '</p>';
+		echo '<button type="button" class="btn btn--outline btn--sm operator-reset-btn">' . esc_html__('Reset Filters', 'itm_indigpro') . '</button>';
+		echo '</div>';
 	}
-	die();
+	wp_die();
 }
 
 add_action('wp_ajax_nopriv_filter_operators', 'ajax_filter_operators');
