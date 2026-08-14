@@ -1,0 +1,139 @@
+{
+  "generatedAt": "2026-08-14T22:39:42.877Z",
+  "baseUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site",
+  "breakpoints": [
+    "desktop",
+    "tablet",
+    "mobile"
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "name": "Home Page",
+      "path": "/",
+      "desktopFull": "screenshots/desktop/home-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/home-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/home-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/home-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/home-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/home-mobile-viewport.png"
+    },
+    {
+      "id": "about",
+      "name": "About Indigenous Tourism Manitoba",
+      "path": "/about-itm/",
+      "desktopFull": "screenshots/desktop/about-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/about-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/about-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/about-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/about-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/about-mobile-viewport.png"
+    },
+    {
+      "id": "operators",
+      "name": "Operators Directory",
+      "path": "/operators/",
+      "desktopFull": "screenshots/desktop/operators-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/operators-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/operators-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/operators-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/operators-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/operators-mobile-viewport.png"
+    },
+    {
+      "id": "operator-single",
+      "name": "Single Operator (Prairie Berry)",
+      "path": "/operator/prairie-berry/",
+      "desktopFull": "screenshots/desktop/operator-single-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/operator-single-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/operator-single-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/operator-single-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/operator-single-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/operator-single-mobile-viewport.png"
+    },
+    {
+      "id": "experience-map",
+      "name": "Experience Map",
+      "path": "/experience-map/",
+      "desktopFull": "screenshots/desktop/experience-map-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/experience-map-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/experience-map-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/experience-map-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/experience-map-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/experience-map-mobile-viewport.png"
+    },
+    {
+      "id": "guide-training",
+      "name": "Guide Training Program",
+      "path": "/guide-training-program/",
+      "desktopFull": "screenshots/desktop/guide-training-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/guide-training-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/guide-training-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/guide-training-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/guide-training-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/guide-training-mobile-viewport.png"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "path": "/contact-us/",
+      "desktopFull": "screenshots/desktop/contact-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/contact-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/contact-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/contact-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/contact-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/contact-mobile-viewport.png"
+    },
+    {
+      "id": "reconciliation",
+      "name": "Reconciliation",
+      "path": "/reconciliation/",
+      "desktopFull": "screenshots/desktop/reconciliation-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/reconciliation-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/reconciliation-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/reconciliation-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/reconciliation-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/reconciliation-mobile-viewport.png"
+    },
+    {
+      "id": "member-benefits",
+      "name": "Member Benefits",
+      "path": "/member-benefits/",
+      "desktopFull": "screenshots/desktop/member-benefits-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/member-benefits-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/member-benefits-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/member-benefits-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/member-benefits-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/member-benefits-mobile-viewport.png"
+    },
+    {
+      "id": "not-found",
+      "name": "404 Error Page",
+      "path": "/non-existent-page-404",
+      "desktopFull": "screenshots/desktop/not-found-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/not-found-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/not-found-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/not-found-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/not-found-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/not-found-mobile-viewport.png"
+    }
+  ],
+  "components": [
+    {
+      "name": "Header (Desktop)",
+      "file": "screenshots/components/header-desktop.png"
+    },
+    {
+      "name": "Footer (Desktop)",
+      "file": "screenshots/components/footer-desktop.png"
+    },
+    {
+      "name": "Operator Card Grid",
+      "file": "screenshots/components/operator-card-grid.png"
+    },
+    {
+      "name": "Operator Single Card",
+      "file": "screenshots/components/operator-card-single.png"
+    }
+  ]
+}

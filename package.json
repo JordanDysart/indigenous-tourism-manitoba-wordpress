@@ -6,10 +6,15 @@
   "scripts": {
     "build":     "npm run build:js && npm run build:css",
     "dev":       "concurrently --names \"JS,CSS\" --prefix-colors \"cyan,magenta\" \"npm run dev:js\" \"npm run dev:css\"",
-    "build:js":  "wp-scripts build",
-    "build:css": "cd assets && npm run build",
-    "dev:js":    "wp-scripts start",
-    "dev:css":   "cd assets && npm run dev"
+    "build:js":         "wp-scripts build",
+    "build:css":        "cd assets && npm run build",
+    "dev:js":           "wp-scripts start",
+    "dev:css":          "cd assets && npm run dev",
+    "screenshot":       "node tools/capture-screenshots.js",
+    "audit:styles":     "node tools/audit-styles.js",
+    "build:styleguide": "node tools/generate-styleguide.js",
+    "styleguide":       "node tools/audit-styles.js && node tools/generate-styleguide.js",
+    "feedback:test":    "node tools/feedback-loop.js"
   },
   "devDependencies": {
     "@wordpress/scripts": "^30.0.0",
