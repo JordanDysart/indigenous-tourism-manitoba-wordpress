@@ -82,15 +82,6 @@ class GAC_Menu_Walker extends Walker_Nav_Menu {
 			$classes[] = 'mega-menu-parent';
 		}
 
-		// Inject logo in slide menu on mobile/drawer if first item
-		if ( 0 === $depth && 1 === (int) $item->menu_order ) {
-			$output .= '<li class="site-header-logo site-header-logo-slide">';
-			ob_start();
-			the_custom_logo();
-			$output .= ob_get_clean();
-			$output .= '</li>';
-		}
-
 		$class_names = implode( ' ', array_filter( $classes ) );
 		$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
 

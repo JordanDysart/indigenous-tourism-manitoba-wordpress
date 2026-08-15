@@ -36,7 +36,13 @@
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-container">
 				<div class="site-header-logo">
-					<?php the_custom_logo(); ?>
+					<?php
+					if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
+						the_custom_logo();
+					} else {
+						echo '<a href="' . esc_url( home_url( '/' ) ) . '" class="custom-logo-link" rel="home">' . esc_html( get_bloginfo( 'name' ) ) . '</a>';
+					}
+					?>
 				</div>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button id="bar_menu" class="c-hamburger c-hamburger--htx">

@@ -38,6 +38,34 @@ $description_style = sprintf(
 
 $text_alignment_class = 'text-align-' . sanitize_html_class( $text_alignment );
 
+// Dynamic attachment URL resolution
+if ( is_numeric( $main_image ) ) {
+	$img_id = (int) $main_image;
+	$main_image = array(
+		'id'  => $img_id,
+		'url' => wp_get_attachment_image_url( $img_id, 'large' ),
+		'alt' => get_post_meta( $img_id, '_wp_attachment_image_alt', true ),
+	);
+} elseif ( is_array( $main_image ) && ! empty( $main_image['id'] ) ) {
+	$resolved_url = wp_get_attachment_image_url( (int) $main_image['id'], 'large' );
+	if ( $resolved_url ) {
+		$main_image['url'] = $resolved_url;
+	}
+}
+
+if ( is_numeric( $background_image ) ) {
+	$bg_id = (int) $background_image;
+	$background_image = array(
+		'id'  => $bg_id,
+		'url' => wp_get_attachment_image_url( $bg_id, 'full' ),
+	);
+} elseif ( is_array( $background_image ) && ! empty( $background_image['id'] ) ) {
+	$resolved_bg = wp_get_attachment_image_url( (int) $background_image['id'], 'full' );
+	if ( $resolved_bg ) {
+		$background_image['url'] = $resolved_bg;
+	}
+}
+
 $bg_style = $background_image && ! empty( $background_image['url'] )
 	? sprintf( "background-image:url('%s');", esc_url( $background_image['url'] ) )
 	: '';
