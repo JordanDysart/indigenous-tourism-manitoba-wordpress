@@ -1,5 +1,6 @@
 import { registerBlockType } from '@wordpress/blocks';
 import {
+	BlockControls,
 	InspectorControls,
 	MediaUpload,
 	MediaUploadCheck,
@@ -13,6 +14,8 @@ import {
 	RangeControl,
 	SelectControl,
 	ToggleControl,
+	ToolbarGroup,
+	ToolbarButton,
 	Button,
 } from '@wordpress/components';
 import { Fragment } from '@wordpress/element';
@@ -136,6 +139,33 @@ registerBlockType( metadata.name, {
 
 		return (
 			<Fragment>
+				<BlockControls>
+					<ToolbarGroup>
+						<MediaUploadCheck>
+							<MediaUpload
+								onSelect={ ( media ) =>
+									setAttributes( {
+										posterImage: {
+											id: media.id,
+											url: media.url,
+											alt: media.alt || '',
+										},
+									} )
+								}
+								allowedTypes={ [ 'image' ] }
+								value={ posterImage?.id }
+								render={ ( { open } ) => (
+									<ToolbarButton
+										icon="format-image"
+										label={ posterImage?.url ? 'Replace Cover Image' : 'Add Cover Image' }
+										onClick={ open }
+									/>
+								) }
+							/>
+						</MediaUploadCheck>
+					</ToolbarGroup>
+				</BlockControls>
+
 				<InspectorControls>
 					<PanelBody title="Video Settings" initialOpen={ true }>
 						<TextControl
@@ -320,19 +350,39 @@ registerBlockType( metadata.name, {
 								</p>
 							) }
 
-							{ ! posterImage?.url && ! title && ! videoUrl && (
-								<div
-									style={ {
-										marginTop: '12px',
-										padding: '8px 16px',
-										background: 'rgba(0,0,0,0.6)',
-										borderRadius: '6px',
-										color: '#d1d5db',
-										fontSize: '0.85rem',
-									} }
-								>
-									Configure Video URL and Cover Image in the block sidebar.
-								</div>
+							{ ! posterImage?.url && (
+								<MediaUploadCheck>
+									<MediaUpload
+										onSelect={ ( media ) =>
+											setAttributes( {
+												posterImage: {
+													id: media.id,
+													url: media.url,
+													alt: media.alt || '',
+												},
+											} )
+										}
+										allowedTypes={ [ 'image' ] }
+										value={ posterImage?.id }
+										render={ ( { open } ) => (
+											<div style={ { marginTop: '12px' } }>
+												<Button
+													onClick={ open }
+													variant="secondary"
+													style={ {
+														backgroundColor: 'rgba(255, 255, 255, 0.9)',
+														color: '#1f2937',
+														fontWeight: 600,
+														borderRadius: '8px',
+														padding: '6px 16px',
+													} }
+												>
+													📷 Upload / Select Cover Image
+												</Button>
+											</div>
+										) }
+									/>
+								</MediaUploadCheck>
 							) }
 						</div>
 					</div>

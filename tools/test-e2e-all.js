@@ -195,9 +195,24 @@ async function runMasterE2ETestSuite() {
   });
 
   // ---------------------------------------------------------------------------
-  // STAGE 8: Visual Regression Baselines & Forensic Integrity (Tier 5)
+  // STAGE 8: Breadcrumbs, Redesigned Footer & Sitemap Suite (Tier 4.7)
   // ---------------------------------------------------------------------------
-  console.log(`\n📸 [Stage 8/8] Verifying Visual Baselines & Forensic Integrity...`);
+  console.log(`\n🍞 [Stage 8/9] Executing Breadcrumbs, Redesigned Footer & Sitemap Suite...`);
+  console.log(`   Command: node tools/test-breadcrumbs-footer.js\n`);
+  const stageBreadcrumbsFooter = await runProcess('node', ['tools/test-breadcrumbs-footer.js']);
+  const stageBreadcrumbsFooterSuccess = stageBreadcrumbsFooter.exitCode === 0;
+
+  results.push({
+    stage: 'Tier 4.7: Breadcrumbs, Redesigned Footer & Sitemap Suite',
+    success: stageBreadcrumbsFooterSuccess,
+    durationMs: stageBreadcrumbsFooter.durationMs,
+    details: stageBreadcrumbsFooterSuccess ? 'Breadcrumbs render without raw shortcode leakage, 4-column modern footer verified, sitemap page active' : `Breadcrumbs/footer suite failed with code ${stageBreadcrumbsFooter.exitCode}`,
+  });
+
+  // ---------------------------------------------------------------------------
+  // STAGE 9: Visual Regression Baselines & Forensic Integrity (Tier 5)
+  // ---------------------------------------------------------------------------
+  console.log(`\n📸 [Stage 9/9] Verifying Visual Baselines & Forensic Integrity...`);
   const manifestPath = path.join(screenshotsDir, 'manifest.json');
   const hasManifest = fs.existsSync(manifestPath);
 

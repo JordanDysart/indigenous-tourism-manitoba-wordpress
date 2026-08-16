@@ -237,6 +237,19 @@ function mytheme_setup()
 }
 add_action('after_setup_theme', 'mytheme_setup');
 
+/**
+ * Register block pattern categories.
+ */
+function relish_register_pattern_categories() {
+	if ( function_exists( 'register_block_pattern_category' ) ) {
+		register_block_pattern_category(
+			'itm-patterns',
+			array( 'label' => __( 'ITM Patterns', 'itm_indigpro' ) )
+		);
+	}
+}
+add_action( 'init', 'relish_register_pattern_categories' );
+
 add_theme_support('editor-color-palette', array(
 	array(
 		'name' => __('Black', 'custom'),
@@ -525,3 +538,151 @@ function itm_normalize_gallery( $gallery ) {
 	}
 	return $result;
 }
+
+/**
+ * Render Breadcrumbs matching production layout.
+ *
+ * @param array $args Optional configuration arguments.
+ * @return string HTML markup for the breadcrumb navigation.
+ */
+function itm_render_breadcrumbs( $args = [] ) {
+	if ( is_front_page() || is_home() ) {
+		return '';
+	}
+
+	$items = [];
+	$home_url = home_url( '/' );
+
+	// 1. Single Operator Post Type: Operators > [Operator Title]
+	if ( is_singular( 'operator' ) ) {
+		$items[] = [
+			'title' => __( 'Operators', 'itm_indigpro' ),
+			'url'   => home_url( '/operators/' ),
+		];
+		$items[] = [
+			'title' => get_the_title(),
+			'url'   => get_permalink(),
+		];
+	}
+	// 2. Operator Taxonomies: Operators > [Term Name]
+	elseif ( is_tax( 'operator_region' ) || is_tax( 'operator_category' ) ) {
+		$term = get_queried_object();
+		$items[] = [
+			'title' => __( 'Operators', 'itm_indigpro' ),
+			'url'   => home_url( '/operators/' ),
+		];
+		if ( $term && ! is_wp_error( $term ) ) {
+			$items[] = [
+				'title' => $term->name,
+				'url'   => get_term_link( $term ),
+			];
+		}
+	}
+	// 3. Standard Single Post (News / Articles)
+	elseif ( is_singular( 'post' ) ) {
+		$items[] = [
+			'title' => __( 'Home', 'itm_indigpro' ),
+			'url'   => $home_url,
+		];
+		$categories = get_the_category();
+		if ( ! empty( $categories ) ) {
+			$items[] = [
+				'title' => $categories[0]->name,
+				'url'   => get_category_link( $categories[0]->term_id ),
+			];
+		}
+		$items[] = [
+			'title' => get_the_title(),
+			'url'   => get_permalink(),
+		];
+	}
+	// 4. Hierarchical Page
+	elseif ( is_page() ) {
+		$items[] = [
+			'title' => __( 'Home', 'itm_indigpro' ),
+			'url'   => $home_url,
+		];
+		$ancestors = get_post_ancestors( get_the_ID() );
+		if ( ! empty( $ancestors ) ) {
+			$ancestors = array_reverse( $ancestors );
+			foreach ( $ancestors as $ancestor_id ) {
+				$items[] = [
+					'title' => get_the_title( $ancestor_id ),
+					'url'   => get_permalink( $ancestor_id ),
+				];
+			}
+		}
+		$items[] = [
+			'title' => get_the_title(),
+			'url'   => get_permalink(),
+		];
+	}
+	// 5. General Archive / Taxonomy
+	elseif ( is_archive() ) {
+		$items[] = [
+			'title' => __( 'Home', 'itm_indigpro' ),
+			'url'   => $home_url,
+		];
+		$items[] = [
+			'title' => get_the_archive_title(),
+			'url'   => '',
+		];
+	}
+	// 6. Search Results
+	elseif ( is_search() ) {
+		$items[] = [
+			'title' => __( 'Home', 'itm_indigpro' ),
+			'url'   => $home_url,
+		];
+		$items[] = [
+			'title' => sprintf( __( 'Search: %s', 'itm_indigpro' ), get_search_query() ),
+			'url'   => '',
+		];
+	}
+	// 7. 404
+	elseif ( is_404() ) {
+		$items[] = [
+			'title' => __( 'Home', 'itm_indigpro' ),
+			'url'   => $home_url,
+		];
+		$items[] = [
+			'title' => __( 'Page Not Found', 'itm_indigpro' ),
+			'url'   => '',
+		];
+	}
+
+	if ( empty( $items ) ) {
+		return '';
+	}
+
+	$output  = '<div class="breadcrumb-container theme1">';
+	$output .= '<ol itemscope itemtype="https://schema.org/BreadcrumbList">';
+
+	$count = count( $items );
+	foreach ( $items as $index => $item ) {
+		$position = $index + 1;
+		$is_last  = ( $position === $count );
+
+		$output .= '<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">';
+		$output .= '<a itemprop="item" title="' . esc_attr( $item['title'] ) . '" href="' . esc_url( $item['url'] ? $item['url'] : '#' ) . '"><span itemprop="name">' . esc_html( $item['title'] ) . '</span></a>';
+		$output .= '<meta itemprop="position" content="' . esc_attr( $position ) . '" />';
+		if ( ! $is_last ) {
+			$output .= '<span class="separator"></span>';
+		}
+		$output .= '</li>';
+	}
+
+	$output .= '</ol>';
+	$output .= '</div>';
+
+	return $output;
+}
+
+/**
+ * Shortcode handler for [breadcrumb]
+ */
+function itm_breadcrumb_shortcode( $atts ) {
+	return itm_render_breadcrumbs( $atts );
+}
+add_shortcode( 'breadcrumb', 'itm_breadcrumb_shortcode' );
+

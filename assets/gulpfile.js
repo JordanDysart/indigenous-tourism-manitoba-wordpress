@@ -6,7 +6,8 @@ import concat       from 'gulp-concat';
 import cleanCSS     from 'gulp-clean-css';
 
 const paths = {
-  less:       [ './less/**/*.less', '!./less/blocks/**/*.less' ],
+  less:       './less/style.less',
+  lessWatch:  './less/**/*.less',
   blocksLess: './less/blocks/*.less',
   blocksWatch: './less/blocks/**/*.less',
   css:        './css/',

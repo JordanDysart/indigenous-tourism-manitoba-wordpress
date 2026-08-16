@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class ITM_M2_Pages_Migration {
 
-	const MIGRATION_VERSION = '2.2.0';
+	const MIGRATION_VERSION = '2.7.0';
 
 	public static function init() {
 		add_action( 'init', [ __CLASS__, 'maybe_run_migration' ], 20 );
@@ -44,64 +44,101 @@ class ITM_M2_Pages_Migration {
 
 <!-- wp:relish/featured-operators-block {"title":"Discover Authentic Experiences","showViewAll":true,"viewAllText":"View All","viewAllUrl":"/operators/","numberOfPosts":4,"orderBy":"rand","backgroundColor":"off-white"} /-->
 
-<!-- wp:relish/banner-block {"backgroundImage":{"id":2716,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/05/4-1.png","alt":"Teaching others to bead"},"title":"Experience Manitoba\'s Indigenous Culture"} /-->
-
-<!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1200px"}} -->
-<div class="wp-block-group page-section constrained-content">
-<div class="mvo-section alignwide">
-<div class="mvo-card">
-<div class="mvo-card-label"><span class="mvo-card-dash"></span><h2 class="mvo-card-heading">Mission</h2></div>
-<div class="mvo-card-body"><p>Empowering Indigenous voices to share their stories for the advancement and benefit of Indigenous people and the growth of Manitoba\'s tourism industry.</p></div>
-</div>
-<div class="mvo-card">
-<div class="mvo-card-label"><span class="mvo-card-dash"></span><h2 class="mvo-card-heading">Vision</h2></div>
-<div class="mvo-card-body"><p>A prosperous Indigenous tourism industry across Manitoba, providing authentic, unique and engaging experiences.</p></div>
-</div>
-<div class="mvo-card">
-<div class="mvo-card-label"><span class="mvo-card-dash"></span><h2 class="mvo-card-heading">Outlook</h2></div>
-<div class="mvo-card-body"><p>With eagerness, we look forward to working closely with our members, stakeholders, and partners to overcome challenges and celebrate successes.</p></div>
-</div>
-</div>
-
-<div class="outlook-highlight alignwide">
-<p class="outlook-highlight-text">In the coming year, we aim to increase our membership and offer tailored support, training, and education to help our members revitalize or rebuild their businesses. This will be achieved through partnerships and securing funding from both federal and provincial governments to sustain and enhance our support for our members.</p>
-<div class="outlook-highlight-images">
-<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2024/12/Group-4.png" alt="" class="wp-image-2201"/></figure>
-<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2024/12/Group-5.png" alt="" class="wp-image-2202"/></figure>
-</div>
-</div>
-</div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"page-section video-feature-section","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"1200px"}} -->
-<div class="wp-block-group page-section video-feature-section has-off-white-background-color has-background">
-<!-- wp:heading {"level":2,"className":"section-heading text-center"} -->
-<h2 class="wp-block-heading section-heading text-center">The History of Indigenous Tourism Manitoba</h2>
-<!-- /wp:heading -->
-<!-- wp:relish/video-popup-block {"videoUrl":"https://youtu.be/fIRzNja1yPo?si=TIcVr_vqTm-9nLvH","title":"The History of Indigenous Tourism Manitoba","caption":"A journey through Indigenous cultural heritage and tourism growth.","overlayColor":"#000000","overlayOpacity":25,"playButtonColor":"#e0ac0f","aspectRatio":"16-9"} /-->
-</div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"page-section cta-section text-center","layout":{"type":"constrained","contentSize":"900px"}} -->
-<div class="wp-block-group page-section cta-section text-center">
-<!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Indigenous Tourism Manitoba Membership</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Indigenous Tourism Manitoba provides access to invaluable marketing, sales, and business development programs that build capacity to produce high quality tourism products and services. ITM is well aligned and positioned to support Indigenous communities and entrepreneurs in all stages of business development.</p>
-<!-- /wp:paragraph -->
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:html -->
+<div class="page-section culture-feature-section constrained-content">
+<div class="culture-feature-grid">
+<div class="culture-text-col">
+<span class="culture-badge">Authentic Hospitality &amp; Living Culture</span>
+<h2 class="culture-title">Experience Manitoba\'s Indigenous Culture</h2>
+<p class="culture-lead">Immerse yourself in authentic Indigenous hospitality, where traditions are shared with open hearts and every encounter creates lasting understanding.</p>
+<p class="culture-body">From sacred petroform teachings and traditional birchbark craft workshops to fireside storytelling and culinary journeys featuring regional botanicals, our Indigenous operators invite you to experience Manitoba through living heritage and ancestral wisdom.</p>
 <div class="wp-block-buttons">
-<!-- wp:button {"className":"btn btn--primary"} -->
+<div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="/things-to-do/">Explore Experiences</a></div>
+<div class="wp-block-button btn btn--outline"><a class="wp-block-button__link wp-element-button" href="/experience-map/">View Experience Map</a></div>
+</div>
+</div>
+<div class="culture-image-col">
+<div class="culture-image-card">
+<img src="https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/05/4-1.png" alt="Teaching others traditional craft and hospitality" class="wp-image-2716" />
+</div>
+</div>
+</div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div class="page-section constrained-content has-off-white-background-color has-background" style="padding:60px 20px;">
+<div class="text-center" style="max-width:720px;margin:0 auto 30px auto;text-align:center;">
+<span class="culture-badge" style="background:rgba(224,172,15,0.15);color:#9a6700;">Our Guiding Purpose</span>
+<h2 class="wp-block-heading" style="font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;">Advancing Indigenous Tourism Across Manitoba</h2>
+</div>
+
+<div class="mvo-pillar-grid">
+<div class="mvo-pillar-card mvo-pillar-card--mission">
+<div class="mvo-card-header">
+<h3 class="mvo-card-title">Mission</h3>
+<span class="mvo-card-badge">Empower</span>
+</div>
+<p class="mvo-card-body">Empowering Indigenous voices to share their stories for the advancement and benefit of Indigenous people and the growth of Manitoba\'s tourism industry.</p>
+</div>
+
+<div class="mvo-pillar-card mvo-pillar-card--vision">
+<div class="mvo-card-header">
+<h3 class="mvo-card-title">Vision</h3>
+<span class="mvo-card-badge">Prosper</span>
+</div>
+<p class="mvo-card-body">A prosperous Indigenous tourism industry across Manitoba, providing authentic, unique and engaging experiences.</p>
+</div>
+
+<div class="mvo-pillar-card mvo-pillar-card--outlook">
+<div class="mvo-card-header">
+<h3 class="mvo-card-title">Outlook</h3>
+<span class="mvo-card-badge">Collaborate</span>
+</div>
+<p class="mvo-card-body">With eagerness, we look forward to working closely with our members, stakeholders, and partners to overcome challenges and celebrate successes.</p>
+</div>
+</div>
+
+<div class="outlook-highlight-card">
+<p class="outlook-highlight-lead">In the coming year, we aim to increase our membership and offer tailored support, training, and education to help our members revitalize or rebuild their businesses. This will be achieved through partnerships and securing funding from both federal and provincial governments to sustain and enhance our support for our members.</p>
+<div class="outlook-badges-grid">
+<figure class="wp-block-image size-full"><img src="https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/12/Group-4.png" alt="Strategic Partnership Badge" class="wp-image-2201"/></figure>
+<figure class="wp-block-image size-full"><img src="https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/12/Group-5.png" alt="Tourism Growth Badge" class="wp-image-2202"/></figure>
+</div>
+</div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div class="page-section video-feature-section constrained-content" style="padding-bottom:10px;">
+<div class="text-center" style="max-width:720px;margin:0 auto 20px auto;text-align:center;">
+<span class="culture-badge">Featured Story</span>
+<h2 class="wp-block-heading section-heading text-center" style="margin-top:10px;">The History of Indigenous Tourism Manitoba</h2>
+</div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:relish/video-popup-block {"videoUrl":"https://youtu.be/fIRzNja1yPo?si=TIcVr_vqTm-9nLvH","posterImage":{"id":1099,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/11/Screenshot-2023-10-27-at-1.17.24-PM.png","alt":"The History of Indigenous Tourism Manitoba"},"title":"The History of Indigenous Tourism Manitoba","caption":"A journey through Indigenous cultural heritage, community leadership, and tourism growth.","overlayColor":"#000000","overlayOpacity":30,"playButtonColor":"#e0ac0f","aspectRatio":"16-9"} /-->
+
+<!-- wp:html -->
+<section class="membership-cta-section alignfull">
+<div class="membership-cta-section__image-pane">
+<img src="https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/05/CedarLakeRanch_ITACManitoba_PhotoByTaylorBurk_Print-7475-scaled.jpg" alt="Indigenous Tourism Manitoba Member" class="membership-cta-section__image" />
+<div class="membership-cta-section__image-fade"></div>
+</div>
+<div class="membership-cta-section__container">
+<div class="membership-cta-section__content">
+<span class="membership-lead-tag">Building a Sustainable Future</span>
+<h2 class="wp-block-heading membership-title">Indigenous Tourism Manitoba Membership</h2>
+<p class="membership-desc">Indigenous Tourism Manitoba provides access to invaluable marketing, sales, and business development programs that build capacity to produce high-quality tourism products and services across Manitoba.</p>
+<div class="wp-block-buttons">
 <div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="/become-a-member/">Become a Member</a></div>
-<!-- /wp:button -->
-<!-- wp:button {"className":"btn btn--gold"} -->
 <div class="wp-block-button btn btn--gold"><a class="wp-block-button__link wp-element-button" href="/member-benefits/">Member Benefits</a></div>
-<!-- /wp:button -->
 </div>
-<!-- /wp:buttons -->
 </div>
-<!-- /wp:group -->',
+</div>
+</section>
+<!-- /wp:html -->',
 			],
 
 			// 1. About ITM (Page ID 22)
@@ -161,7 +198,7 @@ class ITM_M2_Pages_Migration {
 <p class="section-subheading text-center">Discover how Indigenous Tourism Manitoba is expanding economic opportunities and celebrating cultural storytelling across our province.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:relish/video-popup-block {"videoUrl":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","title":"Building the Brand","caption":"Discover how Indigenous Tourism Manitoba is expanding opportunities.","overlayColor":"#000000","overlayOpacity":25,"playButtonColor":"#e0ac0f","aspectRatio":"16-9"} /-->
+<!-- wp:relish/video-popup-block {"videoUrl":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","posterImage":{"id":1227,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/11/placeholderAboutVideo.png","alt":"Building the Brand"},"title":"Building the Brand","caption":"Discover how Indigenous Tourism Manitoba is expanding opportunities.","overlayColor":"#000000","overlayOpacity":25,"playButtonColor":"#e0ac0f","aspectRatio":"16-9"} /-->
 </div>
 <!-- /wp:group -->
 
@@ -394,81 +431,47 @@ class ITM_M2_Pages_Migration {
 				'slug'  => 'our-team',
 				'content' => '<!-- wp:relish/banner-block {"title":"Our Team","description":"Meet the dedicated leaders and advocates behind Indigenous Tourism Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
-<!-- wp:group {"className":"page-section constrained-content section-team-members","layout":{"type":"constrained","contentSize":"1200px"}} -->
-<div class="wp-block-group page-section constrained-content section-team-members">
-<!-- wp:heading {"level":2,"className":"text-center"} -->
+<!-- wp:html -->
+<div class="page-section constrained-content section-team-members">
 <h2 class="wp-block-heading text-center">Leadership &amp; Staff</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph {"className":"text-center"} -->
 <p class="text-center">Our team brings together passionate leaders in tourism development, cultural education, marketing, and community advocacy.</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:columns {"className":"team-grid-container"} -->
-<div class="wp-block-columns team-grid-container">
-<!-- wp:column {"className":"team-member-col"} -->
+<div class="team-grid-container wp-block-columns">
 <div class="wp-block-column team-member-col">
-<!-- wp:group {"className":"team-member-card text-center"} -->
-<div class="wp-block-group team-member-card text-center">
+<div class="team-member-card text-center">
 <div class="img-circular-wrap">
 <img src="/wp-content/themes/kiwatinook/screenshot.png" alt="Executive Director" class="img-circular team-photo" />
 </div>
-<!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Executive Leadership</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph {"className":"team-member-role"} -->
 <p class="team-member-role">Executive Director</p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph -->
 <p>Guiding ITM’s strategic vision, partnerships, and advocacy for Indigenous tourism operators throughout Manitoba.</p>
-<!-- /wp:paragraph -->
 </div>
-<!-- /wp:group -->
 </div>
-<!-- /wp:column -->
 
-<!-- wp:column {"className":"team-member-col"} -->
 <div class="wp-block-column team-member-col">
-<!-- wp:group {"className":"team-member-card text-center"} -->
-<div class="wp-block-group team-member-card text-center">
+<div class="team-member-card text-center">
 <div class="img-circular-wrap">
 <img src="/wp-content/themes/kiwatinook/screenshot.png" alt="Marketing Manager" class="img-circular team-photo" />
 </div>
-<!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Marketing &amp; Communications</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph {"className":"team-member-role"} -->
 <p class="team-member-role">Marketing Manager</p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph -->
 <p>Promoting Manitoba’s authentic Indigenous experiences to provincial, national, and international travelers.</p>
-<!-- /wp:paragraph -->
 </div>
-<!-- /wp:group -->
 </div>
-<!-- /wp:column -->
 
-<!-- wp:column {"className":"team-member-col"} -->
 <div class="wp-block-column team-member-col">
-<!-- wp:group {"className":"team-member-card text-center"} -->
-<div class="wp-block-group team-member-card text-center">
+<div class="team-member-card text-center">
 <div class="img-circular-wrap">
 <img src="/wp-content/themes/kiwatinook/screenshot.png" alt="Program Coordinator" class="img-circular team-photo" />
 </div>
-<!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Training &amp; Development</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph {"className":"team-member-role"} -->
 <p class="team-member-role">Program Coordinator</p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph -->
 <p>Delivering operator capacity training, guide certification, and cultural safety workshops across communities.</p>
-<!-- /wp:paragraph -->
 </div>
-<!-- /wp:group -->
 </div>
-<!-- /wp:column -->
 </div>
-<!-- /wp:columns -->
+</div>
+<!-- /wp:html -->
 
 <!-- wp:group {"className":"page-section board-section text-center","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"900px"}} -->
 <div class="wp-block-group page-section board-section text-center has-off-white-background-color has-background">
@@ -940,87 +943,41 @@ class ITM_M2_Pages_Migration {
 				'slug'  => 'guide-training-program',
 				'content' => '<!-- wp:relish/banner-block {"title":"Indigenous Guide Training Program","description":"Empowering Indigenous storytellers, cultural ambassadors, and wilderness guides across Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
-<!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1200px"}} -->
-<div class="wp-block-group page-section constrained-content">
-<!-- wp:heading {"level":2,"className":"text-center"} -->
+<!-- wp:html -->
+<div class="page-section constrained-content">
 <h2 class="wp-block-heading text-center">A Three-Step Pathway to Professional Guiding</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph {"className":"text-center"} -->
 <p class="text-center">The ITM Indigenous Guide Training Program provides culturally grounded, industry-certified education for individuals aspiring to lead authentic tourism experiences across Manitoba.</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:columns {"className":"program-pathway-grid"} -->
 <div class="wp-block-columns program-pathway-grid">
-<!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:group {"className":"program-step-card"} -->
-<div class="wp-block-group program-step-card">
+<div class="program-step-card">
 <div class="step-badge">Step 1</div>
-<!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Introduction</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
 <p>Orientation to Indigenous tourism fundamentals, cultural protocols, and foundational storytelling skills.</p>
-<!-- /wp:paragraph -->
-<!-- wp:buttons -->
-<div class="wp-block-buttons">
-<!-- wp:button {"className":"btn btn--primary btn--sm"} -->
-<div class="wp-block-button btn btn--primary btn--sm"><a class="wp-block-button__link wp-element-button" href="/indigenous-guide-training-program-step-1/">Explore Step 1</a></div>
-<!-- /wp:button -->
+<div class="wp-block-buttons"><div class="wp-block-button btn btn--primary btn--sm"><a class="wp-block-button__link wp-element-button" href="/indigenous-guide-training-program-step-1/">Explore Step 1</a></div></div>
 </div>
-<!-- /wp:buttons -->
 </div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:column -->
 
-<!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:group {"className":"program-step-card"} -->
-<div class="wp-block-group program-step-card">
+<div class="program-step-card">
 <div class="step-badge">Step 2</div>
-<!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">7-Day Training</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
 <p>Intensive hands-on field training, wilderness safety, first aid certification, and group dynamics.</p>
-<!-- /wp:paragraph -->
-<!-- wp:buttons -->
-<div class="wp-block-buttons">
-<!-- wp:button {"className":"btn btn--primary btn--sm"} -->
-<div class="wp-block-button btn btn--primary btn--sm"><a class="wp-block-button__link wp-element-button" href="/indigenous-guide-training-program-step-2/">Explore Step 2</a></div>
-<!-- /wp:button -->
+<div class="wp-block-buttons"><div class="wp-block-button btn btn--primary btn--sm"><a class="wp-block-button__link wp-element-button" href="/indigenous-guide-training-program-step-2/">Explore Step 2</a></div></div>
 </div>
-<!-- /wp:buttons -->
 </div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:column -->
 
-<!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:group {"className":"program-step-card"} -->
-<div class="wp-block-group program-step-card">
+<div class="program-step-card">
 <div class="step-badge">Step 3</div>
-<!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Practicum</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
 <p>Mentored workplace placement with certified Indigenous tourism operators in Manitoba.</p>
-<!-- /wp:paragraph -->
-<!-- wp:buttons -->
-<div class="wp-block-buttons">
-<!-- wp:button {"className":"btn btn--primary btn--sm"} -->
-<div class="wp-block-button btn btn--primary btn--sm"><a class="wp-block-button__link wp-element-button" href="/indigenous-guide-training-program-step-3/">Explore Step 3</a></div>
-<!-- /wp:button -->
+<div class="wp-block-buttons"><div class="wp-block-button btn btn--primary btn--sm"><a class="wp-block-button__link wp-element-button" href="/indigenous-guide-training-program-step-3/">Explore Step 3</a></div></div>
 </div>
-<!-- /wp:buttons -->
 </div>
-<!-- /wp:group -->
 </div>
-<!-- /wp:column -->
 </div>
-<!-- /wp:columns -->
+<!-- /wp:html -->
 
 <!-- wp:group {"className":"page-section cta-section text-center","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"900px"}} -->
 <div class="wp-block-group page-section cta-section text-center has-off-white-background-color has-background">
@@ -1385,6 +1342,25 @@ class ITM_M2_Pages_Migration {
 			} else {
 				$log[] = "Warning: Page ID {$id} ({$data['slug']}) not found in database.";
 			}
+		}
+
+		// Ensure Sitemap page exists
+		$sitemap_page = get_page_by_path( 'sitemap' );
+		if ( ! $sitemap_page ) {
+			$sitemap_id = wp_insert_post( [
+				'post_title'     => 'Site Map & Directory',
+				'post_name'      => 'sitemap',
+				'post_status'    => 'publish',
+				'post_type'      => 'page',
+				'comment_status' => 'closed',
+				'ping_status'    => 'closed',
+			] );
+			if ( $sitemap_id && ! is_wp_error( $sitemap_id ) ) {
+				update_post_meta( $sitemap_id, '_wp_page_template', 'page-sitemap.php' );
+				$log[] = "Created Sitemap Page (ID {$sitemap_id}) with template page-sitemap.php.";
+			}
+		} else {
+			update_post_meta( $sitemap_page->ID, '_wp_page_template', 'page-sitemap.php' );
 		}
 
 		update_option( 'itm_m2_migration_version', self::MIGRATION_VERSION );

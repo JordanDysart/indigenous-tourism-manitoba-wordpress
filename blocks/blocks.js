@@ -11,6 +11,9 @@
   };
 
   REL.initializeMapScript = function() {
+    if (!document.querySelector(".content-operators-map")) {
+      return;
+    }
     if (!window.WPLeafletMapPlugin || !window.WPLeafletMapPlugin.maps) {
       console.error("WPLeafletMapPlugin is not available.");
       return;

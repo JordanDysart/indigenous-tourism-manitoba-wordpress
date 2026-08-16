@@ -1,6 +1,6 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
-    "apiVersion": 2,
+    "apiVersion": 3,
     "name": "relish/featured-operators-block",
     "title": "Featured Operators Grid",
     "description": "Showcase featured operator cards with dynamic taxonomy filtering, manual curation, customizable header, and quick link.",

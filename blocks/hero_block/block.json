@@ -1,6 +1,6 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
-    "apiVersion": 2,
+    "apiVersion": 3,
     "name": "relish/hero-block",
     "title": "Page Hero (Full Width)",
     "description": "Full-bleed hero section with background image, optional brand hoop overlay, and nested child blocks.",

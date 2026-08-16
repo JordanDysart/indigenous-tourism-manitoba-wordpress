@@ -1,12 +1,43 @@
 {
-    "name": "relish/operator_block",
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "relish/operator-block",
     "title": "Operator Information",
-    "description": "A block that displays information about an operator.",
+    "description": "An interactive Leaflet map showcasing Indigenous tourism operators with tabbed cards and custom markers.",
     "category": "widgets",
-    "icon": "admin-users",
-    "keywords": ["operator", "information", "business"],
-    "acf": {
-        "mode": "preview",
-        "renderTemplate": "operator_block.php"
+    "icon": "location-alt",
+    "keywords": ["operator", "information", "business", "map", "leaflet"],
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "customClassName": true
+    },
+    "render": "file:./operator_block.php",
+    "editorScript": "file:./index.js",
+    "attributes": {
+        "operatorsToDisplay": {
+            "type": "array",
+            "default": []
+        },
+        "operators_to_display": {
+            "type": "array",
+            "default": []
+        },
+        "title": {
+            "type": "string",
+            "default": "Operators"
+        },
+        "centerLat": {
+            "type": "number",
+            "default": 49.88531957670153
+        },
+        "centerLng": {
+            "type": "number",
+            "default": -97.17762828465725
+        },
+        "zoom": {
+            "type": "number",
+            "default": 10
+        }
     }
 }

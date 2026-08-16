@@ -1,5 +1,5 @@
 {
-  "auditedAt": "2026-08-16T16:46:09.262Z",
+  "auditedAt": "2026-08-16T19:24:24.981Z",
   "baseUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site",
   "canonicalTokens": {
     "colors": {
@@ -297,9 +297,9 @@
           "text": "Prairie Berry",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "40px",
           "fontWeight": "700",
-          "lineHeight": "30px",
+          "lineHeight": "50px",
           "color": "rgb(33, 43, 54)",
           "hasInlineStyle": null,
           "classes": "operator-title"
@@ -374,54 +374,28 @@
         {
           "page": "Home Page",
           "tag": "h2",
-          "text": "Experience Manitoba's Indigenous Culture",
+          "text": "Experience Manitoba’s Indigenous Culture",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "32px",
+          "fontSize": "40.96px",
+          "fontWeight": "700",
+          "lineHeight": "49.152px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "culture-title"
+        },
+        {
+          "page": "Home Page",
+          "tag": "h2",
+          "text": "Advancing Indigenous Tourism Across Manitoba",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "38.4px",
           "fontWeight": "700",
           "lineHeight": "48px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": "color:#ffffff;font-size:2em;",
-          "classes": "banner-block-title"
-        },
-        {
-          "page": "Home Page",
-          "tag": "h2",
-          "text": "Mission",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "32px",
-          "fontWeight": "700",
-          "lineHeight": "35.2px",
           "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "mvo-card-heading"
-        },
-        {
-          "page": "Home Page",
-          "tag": "h2",
-          "text": "Vision",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "32px",
-          "fontWeight": "700",
-          "lineHeight": "35.2px",
-          "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "mvo-card-heading"
-        },
-        {
-          "page": "Home Page",
-          "tag": "h2",
-          "text": "Outlook",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "32px",
-          "fontWeight": "700",
-          "lineHeight": "35.2px",
-          "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "mvo-card-heading"
+          "hasInlineStyle": "font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;",
+          "classes": "wp-block-heading"
         },
         {
           "page": "Home Page",
@@ -433,7 +407,7 @@
           "fontWeight": "700",
           "lineHeight": "40px",
           "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
+          "hasInlineStyle": "margin-top:10px;",
           "classes": "wp-block-heading section-heading text-center"
         },
         {
@@ -442,12 +416,12 @@
           "text": "Indigenous Tourism Manitoba Membership",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "32px",
+          "fontSize": "40.96px",
           "fontWeight": "700",
-          "lineHeight": "40px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "49.152px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "wp-block-heading"
+          "classes": "wp-block-heading membership-title"
         },
         {
           "page": "Home Page",
@@ -747,6 +721,292 @@
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
           "classes": "ctct-form-header"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Agowiidiwinan Centre",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Anne Mulaire",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Bistro on Notre Dame",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Borealis Beading",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Feast Cafe Bistro",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Kikiwak Inn",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "La Brasserie Nonsuch Brewing Co.",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Manito Ahbee Festival",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Manitoba Indigenous Cultural Education Centre Inc.",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Moon Gate Guest House",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "National Indigenous Residential School Museum of Canada",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Nature’s Edge Tourism",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Prairie Berry",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Sharecuterie",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Shelly’s Bistro",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Spence Custom Carving",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Sub-Arctic Tours",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Teekca’s Boutique",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Turtle Village",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Wapusk Adventures",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Whiteshell Petroforms Authentic Indigenous Tours",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h2",
+          "text": "Wyndham Garden Winnipeg Airport",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "block-map-content-title"
         },
         {
           "page": "Experience Map",
@@ -1728,33 +1988,7 @@
         {
           "page": "Home Page",
           "tag": "h3",
-          "text": "Turtle Village",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "26px",
-          "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "featured-operator-card-title"
-        },
-        {
-          "page": "Home Page",
-          "tag": "h3",
-          "text": "Prairie Berry",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "26px",
-          "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "featured-operator-card-title"
-        },
-        {
-          "page": "Home Page",
-          "tag": "h3",
-          "text": "Shelly’s Bistro",
+          "text": "Agowiidiwinan Centre",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "20px",
@@ -1780,6 +2014,71 @@
         {
           "page": "Home Page",
           "tag": "h3",
+          "text": "Teekca’s Boutique",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "26px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "featured-operator-card-title"
+        },
+        {
+          "page": "Home Page",
+          "tag": "h3",
+          "text": "Prairie Berry",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "26px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "featured-operator-card-title"
+        },
+        {
+          "page": "Home Page",
+          "tag": "h3",
+          "text": "Mission",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "27.2px",
+          "fontWeight": "700",
+          "lineHeight": "34px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "mvo-card-title"
+        },
+        {
+          "page": "Home Page",
+          "tag": "h3",
+          "text": "Vision",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "27.2px",
+          "fontWeight": "700",
+          "lineHeight": "34px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "mvo-card-title"
+        },
+        {
+          "page": "Home Page",
+          "tag": "h3",
+          "text": "Outlook",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "27.2px",
+          "fontWeight": "700",
+          "lineHeight": "34px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "mvo-card-title"
+        },
+        {
+          "page": "Home Page",
+          "tag": "h3",
           "text": "The History of Indigenous Tourism Manitoba",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
@@ -1793,15 +2092,15 @@
         {
           "page": "Home Page",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "About Indigenous Tourism Manitoba",
@@ -1897,15 +2196,15 @@
         {
           "page": "About Indigenous Tourism Manitoba",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Operators Directory",
@@ -1962,15 +2261,15 @@
         {
           "page": "Operators Directory",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Single Operator (Prairie Berry)",
@@ -2040,15 +2339,15 @@
         {
           "page": "Single Operator (Prairie Berry)",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Experience Map",
@@ -2105,15 +2404,28 @@
         {
           "page": "Experience Map",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Operators",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
-          "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "fontSize": "32px",
+          "fontWeight": "900",
+          "lineHeight": "40px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "content-operators-map-title"
+        },
+        {
+          "page": "Experience Map",
+          "tag": "h3",
+          "text": "Adventure to Understanding",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
+          "hasInlineStyle": null,
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Reconciliation",
@@ -2209,15 +2521,15 @@
         {
           "page": "Reconciliation",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Things To Do",
@@ -2313,15 +2625,15 @@
         {
           "page": "Things To Do",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Our Team",
@@ -2417,15 +2729,15 @@
         {
           "page": "Our Team",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Become a Member",
@@ -2508,15 +2820,15 @@
         {
           "page": "Become a Member",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Member Benefits",
@@ -2625,15 +2937,15 @@
         {
           "page": "Member Benefits",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Contact Us",
@@ -2716,15 +3028,15 @@
         {
           "page": "Contact Us",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Privacy Policy",
@@ -2781,15 +3093,15 @@
         {
           "page": "Privacy Policy",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "New Account Request",
@@ -2859,15 +3171,15 @@
         {
           "page": "New Account Request",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Guide Training Inquiry Form",
@@ -2950,15 +3262,15 @@
         {
           "page": "Guide Training Inquiry Form",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Guide Training Program (Hub)",
@@ -3054,15 +3366,15 @@
         {
           "page": "Guide Training Program (Hub)",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Guide Training Step 1",
@@ -3119,15 +3431,15 @@
         {
           "page": "Guide Training Step 1",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Guide Training Step 2",
@@ -3184,15 +3496,15 @@
         {
           "page": "Guide Training Step 2",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Guide Training Step 3",
@@ -3249,15 +3561,15 @@
         {
           "page": "Guide Training Step 3",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "Guide Training More Opportunities",
@@ -3353,15 +3665,15 @@
         {
           "page": "Guide Training More Opportunities",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         },
         {
           "page": "404 Error Page",
@@ -3418,1577 +3730,797 @@
         {
           "page": "404 Error Page",
           "tag": "h3",
-          "text": "Adventure To Understanding",
+          "text": "Adventure to Understanding",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "site-footer-title"
+          "classes": "site-footer__tagline"
         }
       ],
       "h4": [
         {
           "page": "Home Page",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Home Page",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Home Page",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Home Page",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Home Page",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Home Page",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "About Indigenous Tourism Manitoba",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "About Indigenous Tourism Manitoba",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "About Indigenous Tourism Manitoba",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "About Indigenous Tourism Manitoba",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "About Indigenous Tourism Manitoba",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "About Indigenous Tourism Manitoba",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Operators Directory",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Operators Directory",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Operators Directory",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Operators Directory",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Operators Directory",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Operators Directory",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Single Operator (Prairie Berry)",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Single Operator (Prairie Berry)",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Single Operator (Prairie Berry)",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Single Operator (Prairie Berry)",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Single Operator (Prairie Berry)",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Single Operator (Prairie Berry)",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Experience Map",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Experience Map",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Experience Map",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Experience Map",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Experience Map",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Experience Map",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Reconciliation",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Reconciliation",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Reconciliation",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Reconciliation",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Reconciliation",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Reconciliation",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Things To Do",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Things To Do",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Things To Do",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Things To Do",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Things To Do",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Things To Do",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Our Team",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Our Team",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Our Team",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Our Team",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Our Team",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Our Team",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Become a Member",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Become a Member",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Become a Member",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Become a Member",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Become a Member",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Become a Member",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Member Benefits",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Member Benefits",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Member Benefits",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Member Benefits",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Member Benefits",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Member Benefits",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Contact Us",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Contact Us",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Contact Us",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Contact Us",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Contact Us",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Contact Us",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Privacy Policy",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Privacy Policy",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Privacy Policy",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Privacy Policy",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Privacy Policy",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Privacy Policy",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "New Account Request",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "New Account Request",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "New Account Request",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "New Account Request",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "New Account Request",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "New Account Request",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Inquiry Form",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Inquiry Form",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Inquiry Form",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Inquiry Form",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Inquiry Form",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Inquiry Form",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Program (Hub)",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Program (Hub)",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Program (Hub)",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Program (Hub)",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Program (Hub)",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Program (Hub)",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Step 1",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Step 1",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Step 1",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Step 1",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Step 1",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Step 1",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Step 2",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Step 2",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Step 2",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Step 2",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Step 2",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Step 2",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Step 3",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Step 3",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training Step 3",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Step 3",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Step 3",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training Step 3",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training More Opportunities",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training More Opportunities",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "Guide Training More Opportunities",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training More Opportunities",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training More Opportunities",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "Guide Training More Opportunities",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "404 Error Page",
           "tag": "h4",
-          "text": "Discover",
+          "text": "EXPLORE",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "404 Error Page",
           "tag": "h4",
-          "text": "About ITM",
+          "text": "ABOUT ITM",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         },
         {
           "page": "404 Error Page",
           "tag": "h4",
-          "text": "Guide Training Program",
+          "text": "PROGRAMS & MEMBERS",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
+          "fontSize": "16.8px",
           "fontWeight": "700",
-          "lineHeight": "25px",
+          "lineHeight": "21px",
           "color": "rgb(255, 255, 255)",
           "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "404 Error Page",
-          "tag": "h4",
-          "text": "Experience",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "404 Error Page",
-          "tag": "h4",
-          "text": "Member Benefits",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
-        },
-        {
-          "page": "404 Error Page",
-          "tag": "h4",
-          "text": "Experience Map",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "25px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": null,
-          "classes": "footer-menu-title"
+          "classes": "site-footer__nav-heading"
         }
       ]
     },
@@ -9395,7 +8927,7 @@
       }
     ],
     "fontFamiliesFound": {
-      "Ubuntu": 323,
+      "Ubuntu": 287,
       "Helvetica Neue": 40,
       "Nunito Sans": 400
     }
@@ -9403,7 +8935,7 @@
   "colorInventory": {
     "#404040": {
       "hex": "#404040",
-      "count": 2686,
+      "count": 2914,
       "types": [
         "color"
       ],
@@ -9411,7 +8943,7 @@
     },
     "#610000": {
       "hex": "#610000",
-      "count": 170,
+      "count": 172,
       "types": [
         "color"
       ],
@@ -9419,16 +8951,15 @@
     },
     "#637381": {
       "hex": "#637381",
-      "count": 386,
+      "count": 227,
       "types": [
-        "color",
-        "backgroundColor"
+        "color"
       ],
       "isCanonical": true
     },
     "#212b36": {
       "hex": "#212b36",
-      "count": 1482,
+      "count": 1472,
       "types": [
         "color",
         "backgroundColor"
@@ -9453,7 +8984,7 @@
     },
     "#ffffff": {
       "hex": "#ffffff",
-      "count": 1683,
+      "count": 842,
       "types": [
         "color",
         "backgroundColor"
@@ -9462,15 +8993,16 @@
     },
     "#242b35": {
       "hex": "#242b35",
-      "count": 80,
+      "count": 82,
       "types": [
-        "backgroundColor"
+        "backgroundColor",
+        "color"
       ],
       "isCanonical": false
     },
     "#000000": {
       "hex": "#000000",
-      "count": 69,
+      "count": 52,
       "types": [
         "backgroundColor",
         "color"
@@ -9495,34 +9027,108 @@
     },
     "#da5225": {
       "hex": "#da5225",
-      "count": 100,
+      "count": 106,
       "types": [
         "color",
         "backgroundColor"
       ],
       "isCanonical": true
     },
-    "#dca12b": {
-      "hex": "#dca12b",
-      "count": 3,
-      "types": [
-        "backgroundColor"
-      ],
-      "isCanonical": true
-    },
-    "#e0ac0f": {
-      "hex": "#e0ac0f",
-      "count": 12,
-      "types": [
-        "backgroundColor"
-      ],
-      "isCanonical": true
-    },
-    "#f3f4f6": {
-      "hex": "#f3f4f6",
+    "#2d3748": {
+      "hex": "#2d3748",
       "count": 2,
       "types": [
         "color"
+      ],
+      "isCanonical": false
+    },
+    "#4b5563": {
+      "hex": "#4b5563",
+      "count": 24,
+      "types": [
+        "color"
+      ],
+      "isCanonical": false
+    },
+    "#f3f4f6": {
+      "hex": "#f3f4f6",
+      "count": 3,
+      "types": [
+        "backgroundColor",
+        "color"
+      ],
+      "isCanonical": false
+    },
+    "#9a6700": {
+      "hex": "#9a6700",
+      "count": 2,
+      "types": [
+        "color"
+      ],
+      "isCanonical": false
+    },
+    "#e0ac0f": {
+      "hex": "#e0ac0f",
+      "count": 37,
+      "types": [
+        "backgroundColor",
+        "color"
+      ],
+      "isCanonical": true
+    },
+    "#faf8f5": {
+      "hex": "#faf8f5",
+      "count": 1,
+      "types": [
+        "backgroundColor"
+      ],
+      "isCanonical": false
+    },
+    "#121820": {
+      "hex": "#121820",
+      "count": 1,
+      "types": [
+        "backgroundColor"
+      ],
+      "isCanonical": false
+    },
+    "#e5e7eb": {
+      "hex": "#e5e7eb",
+      "count": 61,
+      "types": [
+        "color"
+      ],
+      "isCanonical": false
+    },
+    "#d1d5db": {
+      "hex": "#d1d5db",
+      "count": 780,
+      "types": [
+        "color"
+      ],
+      "isCanonical": false
+    },
+    "#0c1017": {
+      "hex": "#0c1017",
+      "count": 20,
+      "types": [
+        "backgroundColor"
+      ],
+      "isCanonical": false
+    },
+    "#9ca3af": {
+      "hex": "#9ca3af",
+      "count": 180,
+      "types": [
+        "color"
+      ],
+      "isCanonical": false
+    },
+    "#06090e": {
+      "hex": "#06090e",
+      "count": 20,
+      "types": [
+        "backgroundColor"
       ],
       "isCanonical": false
     },
@@ -9536,10 +9142,9 @@
     },
     "#919eab": {
       "hex": "#919eab",
-      "count": 5,
+      "count": 2,
       "types": [
-        "backgroundColor",
-        "color"
+        "backgroundColor"
       ],
       "isCanonical": true
     },
@@ -9558,6 +9163,38 @@
         "backgroundColor"
       ],
       "isCanonical": false
+    },
+    "#dddddd": {
+      "hex": "#dddddd",
+      "count": 1,
+      "types": [
+        "backgroundColor"
+      ],
+      "isCanonical": false
+    },
+    "#333333": {
+      "hex": "#333333",
+      "count": 3,
+      "types": [
+        "color"
+      ],
+      "isCanonical": false
+    },
+    "#0078a8": {
+      "hex": "#0078a8",
+      "count": 2,
+      "types": [
+        "color"
+      ],
+      "isCanonical": false
+    },
+    "#605e43": {
+      "hex": "#605e43",
+      "count": 1,
+      "types": [
+        "backgroundColor"
+      ],
+      "isCanonical": true
     },
     "#666666": {
       "hex": "#666666",
@@ -9702,6 +9339,66 @@
       "padding": "8px 18px",
       "borderRadius": "9999px",
       "height": "36px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Home Page",
+      "text": "Explore Experiences",
+      "classes": "wp-block-button btn btn--primary",
+      "tagName": "div",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "height": "44px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Home Page",
+      "text": "Explore Experiences",
+      "classes": "wp-block-button__link wp-element-button",
+      "tagName": "a",
+      "backgroundColor": "rgb(218, 82, 37)",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "padding": "10px 24px",
+      "borderRadius": "8px",
+      "height": "44px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Home Page",
+      "text": "View Experience Map",
+      "classes": "wp-block-button btn btn--outline",
+      "tagName": "div",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "height": "44px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Home Page",
+      "text": "View Experience Map",
+      "classes": "wp-block-button__link wp-element-button",
+      "tagName": "a",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(218, 82, 37)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "padding": "10px 24px",
+      "borderRadius": "8px",
+      "height": "44px",
       "hasInlineStyle": null
     },
     {
@@ -14070,7 +13767,7 @@
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
         "tag": "section",
         "classes": "hero-block alignfull text-align-center valign-middle has-hoop-overlay",
-        "styleAttr": "background-image:url('https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2026/06/whiteshell-petroforms-resized.jpg'); min-height:80vh;",
+        "styleAttr": "background-image:url('https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2026/06/whiteshell-petroforms-resized.jpg'); min-height:70vh;",
         "snippet": "<section class=\"hero-block alignfull text-align-center valign-middle has-hoop-overlay\" style=\"background-image:url('https://indigenous-tourism-manitob"
       },
       {
@@ -14085,33 +13782,73 @@
         "page": "Home Page",
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
         "tag": "div",
-        "classes": "banner-block text-align-left",
-        "styleAttr": "background-image:url('https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/05/4-1.png');",
-        "snippet": "<div class=\"banner-block text-align-left\" style=\"background-image:url('https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025"
+        "classes": "page-section constrained-content has-off-white-background-color has-background",
+        "styleAttr": "padding:60px 20px;",
+        "snippet": "<div class=\"page-section constrained-content has-off-white-background-color has-background\" style=\"padding:60px 20px;\">\n<div class=\"text-center\" style"
       },
       {
         "page": "Home Page",
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
         "tag": "div",
-        "classes": "banner-block-overlay",
-        "styleAttr": "background-color:#000000;opacity:0.2;",
-        "snippet": "<div class=\"banner-block-overlay\" style=\"background-color:#000000;opacity:0.2;\"></div>"
+        "classes": "text-center",
+        "styleAttr": "max-width:720px;margin:0 auto 30px auto;text-align:center;",
+        "snippet": "<div class=\"text-center\" style=\"max-width:720px;margin:0 auto 30px auto;text-align:center;\">\n<span class=\"culture-badge\" style=\"background:rgba(224,17"
+      },
+      {
+        "page": "Home Page",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
+        "tag": "span",
+        "classes": "culture-badge",
+        "styleAttr": "background:rgba(224,172,15,0.15);color:#9a6700;",
+        "snippet": "<span class=\"culture-badge\" style=\"background:rgba(224,172,15,0.15);color:#9a6700;\">Our Guiding Purpose</span>"
       },
       {
         "page": "Home Page",
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
         "tag": "h2",
-        "classes": "banner-block-title",
-        "styleAttr": "color:#ffffff;font-size:2em;",
-        "snippet": "<h2 class=\"banner-block-title\" style=\"color:#ffffff;font-size:2em;\">\n\t\t\t\t\tExperience Manitoba's Indigenous Culture\t\t\t\t</h2>"
+        "classes": "wp-block-heading",
+        "styleAttr": "font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;",
+        "snippet": "<h2 class=\"wp-block-heading\" style=\"font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;\">Advancing Indigenous Tourism Across Manitoba</h2>"
+      },
+      {
+        "page": "Home Page",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
+        "tag": "div",
+        "classes": "page-section video-feature-section constrained-content",
+        "styleAttr": "padding-bottom:10px;",
+        "snippet": "<div class=\"page-section video-feature-section constrained-content\" style=\"padding-bottom:10px;\">\n<div class=\"text-center\" style=\"max-width:720px;marg"
+      },
+      {
+        "page": "Home Page",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
+        "tag": "div",
+        "classes": "text-center",
+        "styleAttr": "max-width:720px;margin:0 auto 20px auto;text-align:center;",
+        "snippet": "<div class=\"text-center\" style=\"max-width:720px;margin:0 auto 20px auto;text-align:center;\">\n<span class=\"culture-badge\">Featured Story</span>\n<h2 cla"
+      },
+      {
+        "page": "Home Page",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
+        "tag": "h2",
+        "classes": "wp-block-heading section-heading text-center",
+        "styleAttr": "margin-top:10px;",
+        "snippet": "<h2 class=\"wp-block-heading section-heading text-center\" style=\"margin-top:10px;\">The History of Indigenous Tourism Manitoba</h2>"
+      },
+      {
+        "page": "Home Page",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
+        "tag": "div",
+        "classes": "video-popup-card",
+        "styleAttr": "background-image: url('https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/11/Screenshot-2023-10-27-at-1.17.24-PM-e1730767492127.png');",
+        "snippet": "<div class=\"video-popup-card\" style=\"background-image: url('https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/11/Screens"
       },
       {
         "page": "Home Page",
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
         "tag": "div",
         "classes": "video-popup-overlay",
-        "styleAttr": "background-color: #000000; opacity: 0.25;",
-        "snippet": "<div class=\"video-popup-overlay\" style=\"background-color: #000000; opacity: 0.25;\"></div>"
+        "styleAttr": "background-color: #000000; opacity: 0.3;",
+        "snippet": "<div class=\"video-popup-overlay\" style=\"background-color: #000000; opacity: 0.3;\"></div>"
       },
       {
         "page": "Home Page",
@@ -14159,7 +13896,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-53ekryd0s4ke\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-uuwppg574gka\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "About Indigenous Tourism Manitoba",
@@ -14189,6 +13926,14 @@
         "page": "About Indigenous Tourism Manitoba",
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/about-itm/",
         "tag": "div",
+        "classes": "video-popup-card",
+        "styleAttr": "background-image: url('https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/11/placeholderAboutVideo.png');",
+        "snippet": "<div class=\"video-popup-card\" style=\"background-image: url('https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/11/placeho"
+      },
+      {
+        "page": "About Indigenous Tourism Manitoba",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/about-itm/",
+        "tag": "div",
         "classes": "video-popup-overlay",
         "styleAttr": "background-color: #000000; opacity: 0.25;",
         "snippet": "<div class=\"video-popup-overlay\" style=\"background-color: #000000; opacity: 0.25;\"></div>"
@@ -14239,7 +13984,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-yamw9g4klj15\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-z233cp37744p\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Operators Directory",
@@ -14783,7 +14528,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-jayb6p8qw59m\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-mo3t92corgnh\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Single Operator (Prairie Berry)",
@@ -14839,7 +14584,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-jph9nml50ny9\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-gckpj066z8m7\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Experience Map",
@@ -14848,6 +14593,518 @@
         "classes": "",
         "styleAttr": "--site-header-height: 91px;",
         "snippet": "<html lang=\"en-US\" style=\"--site-header-height: 91px;\"><head><meta http-equiv=\"origin-trial\" content=\"A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "div",
+        "classes": "wp-block-spacer",
+        "styleAttr": "height:100px",
+        "snippet": "<div style=\"height:100px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "div",
+        "classes": "leaflet-map WPLeafletMap leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom",
+        "styleAttr": "height: 70vh; width: 100%; position: relative;",
+        "snippet": "<div class=\"leaflet-map WPLeafletMap leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom\" style=\"heig"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(80px, 1px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://a.basemaps.cartocdn.com/rastertiles/voyager/5/6/9.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: "
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(336px, 1px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://b.basemaps.cartocdn.com/rastertiles/voyager/5/7/9.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: "
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(80px, 257px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://b.basemaps.cartocdn.com/rastertiles/voyager/5/6/10.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height:"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(336px, 257px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://c.basemaps.cartocdn.com/rastertiles/voyager/5/7/10.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height:"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(80px, -255px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://c.basemaps.cartocdn.com/rastertiles/voyager/5/6/8.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: "
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(336px, -255px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://a.basemaps.cartocdn.com/rastertiles/voyager/5/7/8.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: "
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(-176px, 1px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://c.basemaps.cartocdn.com/rastertiles/voyager/5/5/9.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: "
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(592px, 1px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://c.basemaps.cartocdn.com/rastertiles/voyager/5/8/9.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: "
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(-176px, 257px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://a.basemaps.cartocdn.com/rastertiles/voyager/5/5/10.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height:"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(592px, 257px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://a.basemaps.cartocdn.com/rastertiles/voyager/5/8/10.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height:"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(80px, 513px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://c.basemaps.cartocdn.com/rastertiles/voyager/5/6/11.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height:"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(336px, 513px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://a.basemaps.cartocdn.com/rastertiles/voyager/5/7/11.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height:"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(-176px, -255px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://b.basemaps.cartocdn.com/rastertiles/voyager/5/5/8.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: "
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(592px, -255px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://b.basemaps.cartocdn.com/rastertiles/voyager/5/8/8.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: "
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(-176px, 513px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://b.basemaps.cartocdn.com/rastertiles/voyager/5/5/11.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height:"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-tile leaflet-tile-loaded",
+        "styleAttr": "width: 256px; height: 256px; transform: translate3d(592px, 513px, 0px); opacity: 1;",
+        "snippet": "<img alt=\"\" src=\"https://b.basemaps.cartocdn.com/rastertiles/voyager/5/8/11.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height:"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 479px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 480px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(429px, 479px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(442px, 485px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(429px, 480px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(336px, 334px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 479px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(428px, 479px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 479px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(457px, 478px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(403px, 477px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(434px, 499px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(429px, 488px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(429px, 480px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 478px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 477px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(497px, 131px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 479px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(365px, 452px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(497px, 131px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(464px, 471px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-shadow leaflet-zoom-animated",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(428px, 479px, 0px);",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png\" class=\"le"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 479px, 0px); z-index: 479;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 480px, 0px); z-index: 480;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(429px, 479px, 0px); z-index: 479;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(442px, 485px, 0px); z-index: 485;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(429px, 480px, 0px); z-index: 480;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(336px, 334px, 0px); z-index: 334;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 479px, 0px); z-index: 479;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(428px, 479px, 0px); z-index: 479;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 479px, 0px); z-index: 479;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(457px, 478px, 0px); z-index: 478;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(403px, 477px, 0px); z-index: 477;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(434px, 499px, 0px); z-index: 499;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(429px, 488px, 0px); z-index: 488;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(429px, 480px, 0px); z-index: 480;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 478px, 0px); z-index: 478;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 477px, 0px); z-index: 477;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(497px, 131px, 0px); z-index: 131;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(430px, 479px, 0px); z-index: 479;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(365px, 452px, 0px); z-index: 452;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(497px, 131px, 0px); z-index: 131;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(464px, 471px, 0px); z-index: 471;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "img",
+        "classes": "leaflet-marker-icon leaflet-zoom-animated leaflet-interactive",
+        "styleAttr": "margin-left: -40px; margin-top: -80px; width: 80px; height: 80px; transform: translate3d(428px, 479px, 0px); z-index: 479;",
+        "snippet": "<img src=\"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker.png\" class=\"leaflet-m"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "div",
+        "classes": "leaflet-control-scale-line",
+        "styleAttr": "width: 70px;",
+        "snippet": "<div class=\"leaflet-control-scale-line\" style=\"width: 70px;\">200 km</div>"
+      },
+      {
+        "page": "Experience Map",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "tag": "div",
+        "classes": "leaflet-control-scale-line",
+        "styleAttr": "width: 56px;",
+        "snippet": "<div class=\"leaflet-control-scale-line\" style=\"width: 56px;\">100 mi</div>"
       },
       {
         "page": "Experience Map",
@@ -14895,7 +15152,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-mj3ey4wgdw3l\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-b5dy7rq0ytxc\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Reconciliation",
@@ -14967,7 +15224,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-uoykgvq4kiah\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-yt4mvqakpwtt\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Things To Do",
@@ -15039,7 +15296,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-9uu2bkmqvz2o\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-vr26e5u61jwi\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Our Team",
@@ -15119,7 +15376,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-gzk8uu63lcd9\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-745sfk4f1oq\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow"
       },
       {
         "page": "Become a Member",
@@ -15199,7 +15456,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-pwdkiigftygi\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ct34pbb25eu1\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Member Benefits",
@@ -15279,7 +15536,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-9cgyifwdkz61\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-6npia6zbwel3\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Contact Us",
@@ -15359,7 +15616,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-a0njf0v95bdv\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-s9s7k5oddqoa\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Privacy Policy",
@@ -15415,7 +15672,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-mwznamccppys\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-tyjrk7abqrgj\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "New Account Request",
@@ -15495,7 +15752,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ymybb0ob0crg\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-vanp3e7vm7v3\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Inquiry Form",
@@ -15575,7 +15832,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-3dko1vyokt1b\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-patjbd8hqvql\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Program (Hub)",
@@ -15655,7 +15912,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-dacor29ostll\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-62r2vxnfr89g\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 1",
@@ -15735,7 +15992,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-uw98422caqw4\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-c92cfxth3wry\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 2",
@@ -15815,7 +16072,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-q6ec2vewx8wt\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-mfu5ni2prxeu\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 3",
@@ -15895,7 +16152,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-hgnrwhv6as68\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-hr2gi3rseevs\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training More Opportunities",
@@ -15975,7 +16232,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-i6c4f2xlwtkv\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-evuh5x9e48mo\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "404 Error Page",
@@ -16031,7 +16288,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ipafmfcj32i3\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-jd3hyf48yiee\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       }
     ],
     "orphanPluginClasses": [
@@ -16213,7 +16470,7 @@
         "page": "Experience Map",
         "tag": "div",
         "classes": "kt-inside-inner-col",
-        "snippet": "<div class=\"kt-inside-inner-col\"></div>"
+        "snippet": "<div class=\"kt-inside-inner-col\">\n<section class=\"content-operators-map\">\n\t<div class=\"leaflet-map WPLeafletMap leaflet-"
       }
     ],
     "contrastIssues": [],
@@ -16229,15 +16486,55 @@
       },
       {
         "hex": "#242b35",
-        "count": 80
+        "count": 82
       },
       {
         "hex": "#eef0f2",
         "count": 4
       },
       {
-        "hex": "#f3f4f6",
+        "hex": "#2d3748",
         "count": 2
+      },
+      {
+        "hex": "#4b5563",
+        "count": 24
+      },
+      {
+        "hex": "#f3f4f6",
+        "count": 3
+      },
+      {
+        "hex": "#9a6700",
+        "count": 2
+      },
+      {
+        "hex": "#faf8f5",
+        "count": 1
+      },
+      {
+        "hex": "#121820",
+        "count": 1
+      },
+      {
+        "hex": "#e5e7eb",
+        "count": 61
+      },
+      {
+        "hex": "#d1d5db",
+        "count": 780
+      },
+      {
+        "hex": "#0c1017",
+        "count": 20
+      },
+      {
+        "hex": "#9ca3af",
+        "count": 180
+      },
+      {
+        "hex": "#06090e",
+        "count": 20
       },
       {
         "hex": "#f9fafb",
@@ -16252,27 +16549,23 @@
         "count": 1
       },
       {
+        "hex": "#dddddd",
+        "count": 1
+      },
+      {
+        "hex": "#333333",
+        "count": 3
+      },
+      {
+        "hex": "#0078a8",
+        "count": 2
+      },
+      {
         "hex": "#666666",
         "count": 1
       }
     ],
     "inaccessibleImages": [
-      {
-        "page": "Home Page",
-        "src": "/wp-content/uploads/2024/12/Group-4.png",
-        "alt": "(MISSING ALT ATTRIBUTE)",
-        "isMissingAlt": true,
-        "isLikelyTextBanner": false,
-        "dimensions": "558x516"
-      },
-      {
-        "page": "Home Page",
-        "src": "/wp-content/uploads/2024/12/Group-5.png",
-        "alt": "(MISSING ALT ATTRIBUTE)",
-        "isMissingAlt": true,
-        "isLikelyTextBanner": false,
-        "dimensions": "558x516"
-      },
       {
         "page": "Home Page",
         "src": "https://static.ctctcdn.com/contacts/images/signup-tools/ctct-close-x.svg",
@@ -16312,6 +16605,310 @@
         "isMissingAlt": true,
         "isLikelyTextBanner": false,
         "dimensions": "28x28"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://a.basemaps.cartocdn.com/rastertiles/voyager/5/6/9.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://b.basemaps.cartocdn.com/rastertiles/voyager/5/7/9.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://b.basemaps.cartocdn.com/rastertiles/voyager/5/6/10.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://c.basemaps.cartocdn.com/rastertiles/voyager/5/7/10.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://c.basemaps.cartocdn.com/rastertiles/voyager/5/6/8.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://a.basemaps.cartocdn.com/rastertiles/voyager/5/7/8.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://c.basemaps.cartocdn.com/rastertiles/voyager/5/5/9.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://c.basemaps.cartocdn.com/rastertiles/voyager/5/8/9.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://a.basemaps.cartocdn.com/rastertiles/voyager/5/5/10.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://a.basemaps.cartocdn.com/rastertiles/voyager/5/8/10.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://c.basemaps.cartocdn.com/rastertiles/voyager/5/6/11.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://a.basemaps.cartocdn.com/rastertiles/voyager/5/7/11.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://b.basemaps.cartocdn.com/rastertiles/voyager/5/5/8.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://b.basemaps.cartocdn.com/rastertiles/voyager/5/8/8.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://b.basemaps.cartocdn.com/rastertiles/voyager/5/5/11.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://b.basemaps.cartocdn.com/rastertiles/voyager/5/8/11.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "256x256"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
+      },
+      {
+        "page": "Experience Map",
+        "src": "https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/themes/kiwatinook/blocks/operator_block/hoop-marker-shadow.png",
+        "alt": "(MISSING ALT ATTRIBUTE)",
+        "isMissingAlt": true,
+        "isLikelyTextBanner": false,
+        "dimensions": "300x300"
       },
       {
         "page": "Experience Map",
@@ -16445,102 +17042,22 @@
     "consoleErrors": [
       {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
         "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/about-itm/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operators/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/prairie-berry/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
-        "text": "WPLeafletMapPlugin is not available."
       },
       {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
         "text": "Failed to load resource: the server responded with a status of 404 ()"
       },
       {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/things-to-do/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/become-a-member/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/member-benefits/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/contact-us/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/privacy-policy/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/new-account-request/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/itm-indigenous-guide-training-program-inquiry-form/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/guide-training-program/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/indigenous-guide-training-program-step-1/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/indigenous-guide-training-program-step-2/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/indigenous-guide-training-program-step-3/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/indigenous-guide-training-program-more-learning-opportunities/",
-        "text": "WPLeafletMapPlugin is not available."
-      },
-      {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/non-existent-page-404",
         "text": "Failed to load resource: the server responded with a status of 404 ()"
-      },
-      {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/non-existent-page-404",
-        "text": "WPLeafletMapPlugin is not available."
       }
     ]
   },
   "summaryScores": {
     "canonicalAlignmentScore": 20,
-    "totalDegradationFlags": 309,
-    "inlineOverridesCount": 247,
+    "totalDegradationFlags": 428,
+    "inlineOverridesCount": 317,
     "contrastViolationsCount": 0
   }
 }
