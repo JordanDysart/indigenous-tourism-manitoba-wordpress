@@ -91,13 +91,14 @@ a:active {opacity: .9;}
 .wrap {
 	position: relative;
 	margin: 0 auto;
-	max-width: 1150px;
-	padding-top: 110px;
+	max-width: 100%;
+	padding-top: 0;
 }
 
 .single #page,
-.archive #page {
-	padding: 110px 20px 0;
+.archive #page,
+.error404 #page {
+	padding: var(--site-header-height, 84px) 20px 0;
 }
 
 .clear {

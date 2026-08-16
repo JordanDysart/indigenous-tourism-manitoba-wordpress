@@ -222,6 +222,11 @@ require get_template_directory() . '/inc/plugin-updates.php';
  */
 require get_template_directory() . '/inc/m2-pages-migration.php';
 
+/**
+ * Mega Menu Multi-Column Structure Migration.
+ */
+require get_template_directory() . '/inc/menu-structure-migration.php';
+
 function mytheme_setup()
 {
 	add_theme_support('align-wide');

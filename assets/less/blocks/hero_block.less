@@ -13,7 +13,8 @@
     margin-right: calc(50% - 50vw);
     position: relative;
     background-size: cover;
-    background-position: center center;
+    // Offset image focal point vertically by navigation header height to preserve framing of subjects
+    background-position: center calc(50% + (var(--site-header-height, 84px) / 2));
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -48,7 +49,7 @@
             background-repeat: no-repeat;
             background-position: center;
             opacity: 0.92;
-            transform: scale(1.05);
+            transform: translateY(calc(var(--site-header-height, 84px) / 2)) scale(1.05);
             transition: transform 0.4s ease;
 
             .breakpoint(@breakpoint-md, {
@@ -64,15 +65,15 @@
         z-index: 2;
         width: 100%;
         max-width: @content-width;
-        padding: 80px 24px;
+        padding: calc(var(--site-header-height, 84px) + 50px) 24px 80px;
         box-sizing: border-box;
 
         .breakpoint(@breakpoint-md, {
-            padding: 120px 40px;
+            padding: calc(var(--site-header-height, 84px) + 70px) 40px 100px;
         });
 
         .breakpoint(@breakpoint-xl, {
-            padding: 140px 60px;
+            padding: calc(var(--site-header-height, 84px) + 80px) 60px 120px;
         });
 
         // Heading styles inside hero

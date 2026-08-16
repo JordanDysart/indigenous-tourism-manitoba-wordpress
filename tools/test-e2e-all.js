@@ -167,7 +167,7 @@ async function runMasterE2ETestSuite() {
   // ---------------------------------------------------------------------------
   // STAGE 6: Featured Operators Block E2E Suite (Tier 4.5)
   // ---------------------------------------------------------------------------
-  console.log(`\n🌲 [Stage 6/7] Executing Featured Operators Block E2E Suite...`);
+  console.log(`\n🌲 [Stage 6/8] Executing Featured Operators Block E2E Suite...`);
   console.log(`   Command: node tools/test-featured-operators.js\n`);
   const stageFeatured = await runProcess('node', ['tools/test-featured-operators.js']);
   const stageFeaturedSuccess = stageFeatured.exitCode === 0;
@@ -180,9 +180,24 @@ async function runMasterE2ETestSuite() {
   });
 
   // ---------------------------------------------------------------------------
-  // STAGE 7: Visual Regression Baselines & Forensic Integrity (Tier 5)
+  // STAGE 7: Button Styling, Header Sizing & Mega Menu Alignment Suite (Tier 4.6)
   // ---------------------------------------------------------------------------
-  console.log(`\n📸 [Stage 7/7] Verifying Visual Baselines & Forensic Integrity...`);
+  console.log(`\n🔘 [Stage 7/8] Executing Button Styling, Header Sizing & Mega Menu Alignment Suite...`);
+  console.log(`   Command: node tools/test-header-buttons.js\n`);
+  const stageHeaderButtons = await runProcess('node', ['tools/test-header-buttons.js']);
+  const stageHeaderButtonsSuccess = stageHeaderButtons.exitCode === 0;
+
+  results.push({
+    stage: 'Tier 4.6: Button Styling & Header Alignment Suite',
+    success: stageHeaderButtonsSuccess,
+    durationMs: stageHeaderButtons.durationMs,
+    details: stageHeaderButtonsSuccess ? 'Buttons rendered without outer container box, header height dynamically tracked, mega menu aligned flush' : `Header and buttons suite failed with code ${stageHeaderButtons.exitCode}`,
+  });
+
+  // ---------------------------------------------------------------------------
+  // STAGE 8: Visual Regression Baselines & Forensic Integrity (Tier 5)
+  // ---------------------------------------------------------------------------
+  console.log(`\n📸 [Stage 8/8] Verifying Visual Baselines & Forensic Integrity...`);
   const manifestPath = path.join(screenshotsDir, 'manifest.json');
   const hasManifest = fs.existsSync(manifestPath);
 

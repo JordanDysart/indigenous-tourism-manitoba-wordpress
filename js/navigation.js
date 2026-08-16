@@ -12,13 +12,30 @@
   const menuContainer = navContainer.querySelector('.menu-primary-menu-container') || navContainer.querySelector('ul.nav-menu');
   const menuParents = navContainer.querySelectorAll('.mega-menu-parent, .menu-item-has-children');
 
-  // 1. Scroll-aware fixed header
+  // 1. Dynamic Header Height & Scroll-aware Fixed Header
   if (header) {
+    const updateHeaderHeight = () => {
+      const height = header.offsetHeight;
+      if (height > 0) {
+        document.documentElement.style.setProperty('--site-header-height', height + 'px');
+      }
+    };
+
+    updateHeaderHeight();
+    window.addEventListener('resize', updateHeaderHeight, { passive: true });
+    window.addEventListener('load', updateHeaderHeight);
+
+    let isFixed = false;
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 30) {
-        header.classList.add('fixed');
-      } else {
-        header.classList.remove('fixed');
+      const shouldBeFixed = window.scrollY > 20;
+      if (shouldBeFixed !== isFixed) {
+        isFixed = shouldBeFixed;
+        if (isFixed) {
+          header.classList.add('fixed');
+        } else {
+          header.classList.remove('fixed');
+        }
+        requestAnimationFrame(updateHeaderHeight);
       }
     }, { passive: true });
   }
@@ -74,32 +91,47 @@
     }
   });
 
-  // 5. Update aria-expanded on focus/hover
+  // 5. Desktop Mega Menu Hover Intent & Debounced Dismissal (300ms buffer)
+  let activeLeaveTimer = null;
+
   menuParents.forEach((parent) => {
     const link = parent.querySelector('> a');
     if (!link) return;
 
-    parent.addEventListener('mouseenter', () => {
-      if (window.innerWidth >= 1200) {
-        link.setAttribute('aria-expanded', 'true');
+    const showMenu = () => {
+      if (window.innerWidth < 1200) return;
+      if (activeLeaveTimer) {
+        clearTimeout(activeLeaveTimer);
+        activeLeaveTimer = null;
       }
-    });
+      // Close sibling menus immediately
+      menuParents.forEach((p) => {
+        if (p !== parent) {
+          p.classList.remove('is-active');
+          const siblingLink = p.querySelector('> a');
+          if (siblingLink) siblingLink.setAttribute('aria-expanded', 'false');
+        }
+      });
+      parent.classList.add('is-active');
+      link.setAttribute('aria-expanded', 'true');
+    };
 
-    parent.addEventListener('mouseleave', () => {
-      if (window.innerWidth >= 1200) {
+    const hideMenuWithDelay = () => {
+      if (window.innerWidth < 1200) return;
+      if (activeLeaveTimer) clearTimeout(activeLeaveTimer);
+      activeLeaveTimer = setTimeout(() => {
+        parent.classList.remove('is-active');
         link.setAttribute('aria-expanded', 'false');
-      }
-    });
+      }, 300); // 300ms buffer allows user to travel from root nav item into dropdown
+    };
 
-    parent.addEventListener('focusin', () => {
-      if (window.innerWidth >= 1200) {
-        link.setAttribute('aria-expanded', 'true');
-      }
-    });
+    parent.addEventListener('mouseenter', showMenu);
+    parent.addEventListener('mouseleave', hideMenuWithDelay);
 
+    parent.addEventListener('focusin', showMenu);
     parent.addEventListener('focusout', (e) => {
       if (window.innerWidth >= 1200 && !parent.contains(e.relatedTarget)) {
-        link.setAttribute('aria-expanded', 'false');
+        hideMenuWithDelay();
       }
     });
   });

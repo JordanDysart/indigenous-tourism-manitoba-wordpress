@@ -6,9 +6,24 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  // When used as top banner on page
+  .entry-content > &:first-child,
+  .site-main > &:first-child,
+  &:first-child {
+    margin-top: 0;
+    padding-top: var(--site-header-height, 84px);
+    background-position: center calc(50% + (var(--site-header-height, 84px) / 2));
+  }
+
   .breakpoint(@breakpoint-xl, {
     border-radius: 40px;
     margin: 40px 0;
+
+    .entry-content > &:first-child,
+    .site-main > &:first-child,
+    &:first-child {
+      margin-top: 0;
+    }
   });
 
   &-title,
