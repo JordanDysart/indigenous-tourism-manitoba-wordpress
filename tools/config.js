@@ -1,6 +1,7 @@
 /**
  * Shared configuration for ITM Theme (kiwatinook) Agentic Tooling
  */
+import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { chromium } from 'playwright';
@@ -23,10 +24,20 @@ export const PAGES = [
   { id: 'operators', name: 'Operators Directory', path: '/operators/', priority: 'high' },
   { id: 'operator-single', name: 'Single Operator (Prairie Berry)', path: '/operator/prairie-berry/', priority: 'high' },
   { id: 'experience-map', name: 'Experience Map', path: '/experience-map/', priority: 'high' },
-  { id: 'guide-training', name: 'Guide Training Program', path: '/guide-training-program/', priority: 'medium' },
-  { id: 'contact', name: 'Contact Us', path: '/contact-us/', priority: 'medium' },
-  { id: 'reconciliation', name: 'Reconciliation', path: '/reconciliation/', priority: 'medium' },
-  { id: 'member-benefits', name: 'Member Benefits', path: '/member-benefits/', priority: 'medium' },
+  { id: 'reconciliation', name: 'Reconciliation', path: '/reconciliation/', priority: 'high' },
+  { id: 'things-to-do', name: 'Things To Do', path: '/things-to-do/', priority: 'high' },
+  { id: 'our-team', name: 'Our Team', path: '/our-team/', priority: 'high' },
+  { id: 'become-a-member', name: 'Become a Member', path: '/become-a-member/', priority: 'high' },
+  { id: 'member-benefits', name: 'Member Benefits', path: '/member-benefits/', priority: 'high' },
+  { id: 'contact', name: 'Contact Us', path: '/contact-us/', priority: 'high' },
+  { id: 'privacy-policy', name: 'Privacy Policy', path: '/privacy-policy/', priority: 'medium' },
+  { id: 'new-account-request', name: 'New Account Request', path: '/new-account-request/', priority: 'medium' },
+  { id: 'guide-training-inquiry', name: 'Guide Training Inquiry Form', path: '/itm-indigenous-guide-training-program-inquiry-form/', priority: 'medium' },
+  { id: 'guide-training', name: 'Guide Training Program (Hub)', path: '/guide-training-program/', priority: 'high' },
+  { id: 'guide-training-step-1', name: 'Guide Training Step 1', path: '/indigenous-guide-training-program-step-1/', priority: 'medium' },
+  { id: 'guide-training-step-2', name: 'Guide Training Step 2', path: '/indigenous-guide-training-program-step-2/', priority: 'medium' },
+  { id: 'guide-training-step-3', name: 'Guide Training Step 3', path: '/indigenous-guide-training-program-step-3/', priority: 'medium' },
+  { id: 'guide-training-more-ops', name: 'Guide Training More Opportunities', path: '/indigenous-guide-training-program-more-learning-opportunities/', priority: 'medium' },
   { id: 'not-found', name: '404 Error Page', path: '/non-existent-page-404', priority: 'low' },
 ];
 
@@ -91,6 +102,18 @@ export const CANONICAL_TOKENS = {
  * Launch Playwright browser with Chrome fallback and ignore TLS certificate errors for local Lando HTTPS
  */
 export async function createBrowser() {
+  const chromePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+  if (fs.existsSync(chromePath)) {
+    try {
+      return await chromium.launch({
+        headless: true,
+        executablePath: chromePath,
+      });
+    } catch (err) {
+      // Continue to other fallbacks
+    }
+  }
+
   const launchOptions = {
     headless: true,
     channel: 'chrome',

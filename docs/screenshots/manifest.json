@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T22:55:02.268Z",
+  "generatedAt": "2026-08-15T21:40:21.785Z",
   "baseUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site",
   "breakpoints": [
     "desktop",
@@ -63,28 +63,6 @@
       "mobileViewport": "screenshots/mobile/experience-map-mobile-viewport.png"
     },
     {
-      "id": "guide-training",
-      "name": "Guide Training Program",
-      "path": "/guide-training-program/",
-      "desktopFull": "screenshots/desktop/guide-training-desktop-full.png",
-      "desktopViewport": "screenshots/desktop/guide-training-desktop-viewport.png",
-      "tabletFull": "screenshots/tablet/guide-training-tablet-full.png",
-      "tabletViewport": "screenshots/tablet/guide-training-tablet-viewport.png",
-      "mobileFull": "screenshots/mobile/guide-training-mobile-full.png",
-      "mobileViewport": "screenshots/mobile/guide-training-mobile-viewport.png"
-    },
-    {
-      "id": "contact",
-      "name": "Contact Us",
-      "path": "/contact-us/",
-      "desktopFull": "screenshots/desktop/contact-desktop-full.png",
-      "desktopViewport": "screenshots/desktop/contact-desktop-viewport.png",
-      "tabletFull": "screenshots/tablet/contact-tablet-full.png",
-      "tabletViewport": "screenshots/tablet/contact-tablet-viewport.png",
-      "mobileFull": "screenshots/mobile/contact-mobile-full.png",
-      "mobileViewport": "screenshots/mobile/contact-mobile-viewport.png"
-    },
-    {
       "id": "reconciliation",
       "name": "Reconciliation",
       "path": "/reconciliation/",
@@ -105,6 +83,28 @@
       "tabletViewport": "screenshots/tablet/member-benefits-tablet-viewport.png",
       "mobileFull": "screenshots/mobile/member-benefits-mobile-full.png",
       "mobileViewport": "screenshots/mobile/member-benefits-mobile-viewport.png"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "path": "/contact-us/",
+      "desktopFull": "screenshots/desktop/contact-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/contact-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/contact-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/contact-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/contact-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/contact-mobile-viewport.png"
+    },
+    {
+      "id": "guide-training",
+      "name": "Guide Training Program (Hub)",
+      "path": "/guide-training-program/",
+      "desktopFull": "screenshots/desktop/guide-training-desktop-full.png",
+      "desktopViewport": "screenshots/desktop/guide-training-desktop-viewport.png",
+      "tabletFull": "screenshots/tablet/guide-training-tablet-full.png",
+      "tabletViewport": "screenshots/tablet/guide-training-tablet-viewport.png",
+      "mobileFull": "screenshots/mobile/guide-training-mobile-full.png",
+      "mobileViewport": "screenshots/mobile/guide-training-mobile-viewport.png"
     },
     {
       "id": "not-found",

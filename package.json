@@ -15,6 +15,10 @@
     "build:styleguide": "node tools/generate-styleguide.js",
     "styleguide":       "node tools/audit-styles.js && node tools/generate-styleguide.js",
     "feedback:test":    "node tools/feedback-loop.js",
+    "test":             "node tools/test-e2e-all.js",
+    "test:video":       "node tools/test-video-popup.js",
+    "test:m2":          "node tools/test-m2-pages.js",
+    "test:e2e":         "node tools/test-e2e-all.js",
     "compare:prod":     "node tools/compare-production.js",
     "sync:media":       "node tools/sync-media-from-prod.js",
     "package:release":  "node tools/package-release.js"

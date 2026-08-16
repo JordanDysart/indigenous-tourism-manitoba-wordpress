@@ -217,6 +217,11 @@ if (defined('JETPACK__VERSION')) {
  */
 require get_template_directory() . '/inc/plugin-updates.php';
 
+/**
+ * Milestone 2 — 15 Pages Modernization Migration.
+ */
+require get_template_directory() . '/inc/m2-pages-migration.php';
+
 function mytheme_setup()
 {
 	add_theme_support('align-wide');

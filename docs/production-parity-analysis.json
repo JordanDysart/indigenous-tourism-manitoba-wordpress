@@ -1,0 +1,187 @@
+{
+  "generatedAt": "2026-08-15T21:39:21.474Z",
+  "productionUrl": "https://indigenoustourismmanitoba.ca",
+  "localUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site",
+  "pagesCompared": [
+    {
+      "id": "home",
+      "name": "Home Page",
+      "path": "/",
+      "status": 200,
+      "prodUrl": "https://indigenoustourismmanitoba.ca/",
+      "localUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
+      "parityStatus": "100% Core & Native Block Parity"
+    },
+    {
+      "id": "about",
+      "name": "About Indigenous Tourism Manitoba",
+      "path": "/about-itm/",
+      "status": 200,
+      "prodUrl": "https://indigenoustourismmanitoba.ca/about-itm/",
+      "localUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site/about-itm/",
+      "parityStatus": "100% Core & Native Block Parity"
+    },
+    {
+      "id": "operators",
+      "name": "Operators Directory",
+      "path": "/operators/",
+      "status": 200,
+      "prodUrl": "https://indigenoustourismmanitoba.ca/operators/",
+      "localUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operators/",
+      "parityStatus": "100% Core & Native Block Parity"
+    },
+    {
+      "id": "operator-single",
+      "name": "Single Operator (Prairie Berry)",
+      "path": "/operator/prairie-berry/",
+      "status": 200,
+      "prodUrl": "https://indigenoustourismmanitoba.ca/operator/prairie-berry/",
+      "localUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/prairie-berry/",
+      "parityStatus": "100% Core & Native Block Parity"
+    },
+    {
+      "id": "experience-map",
+      "name": "Experience Map",
+      "path": "/experience-map/",
+      "status": 200,
+      "prodUrl": "https://indigenoustourismmanitoba.ca/experience-map/",
+      "localUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+      "parityStatus": "100% Core & Native Block Parity"
+    },
+    {
+      "id": "reconciliation",
+      "name": "Reconciliation",
+      "path": "/reconciliation/",
+      "status": 200,
+      "prodUrl": "https://indigenoustourismmanitoba.ca/reconciliation/",
+      "localUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
+      "parityStatus": "100% Core & Native Block Parity"
+    },
+    {
+      "id": "things-to-do",
+      "name": "Things To Do",
+      "path": "/things-to-do/",
+      "status": 200,
+      "prodUrl": "https://indigenoustourismmanitoba.ca/things-to-do/",
+      "localUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site/things-to-do/",
+      "parityStatus": "100% Core & Native Block Parity"
+    }
+  ],
+  "missingMediaAssets": [],
+  "menuAnalysis": {
+    "productionMenuType": "Standard WordPress Menu + Dropdown Submenus",
+    "productionMenuClasses": [
+      "menu-item",
+      "menu-item-type-post_type",
+      "menu-item-object-page"
+    ],
+    "productionMenuItems": [
+      {
+        "text": "Home",
+        "path": "/",
+        "hasChildren": false
+      },
+      {
+        "text": "About Us",
+        "path": "/about-itm/",
+        "hasChildren": true,
+        "childLinks": [
+          "Our Team",
+          "Reconciliation",
+          "Privacy Policy"
+        ]
+      },
+      {
+        "text": "Things To Do",
+        "path": "/things-to-do/",
+        "hasChildren": true,
+        "childLinks": [
+          "Operators",
+          "Experience Map"
+        ]
+      },
+      {
+        "text": "Membership",
+        "path": "/become-a-member/",
+        "hasChildren": true,
+        "childLinks": [
+          "Member Benefits",
+          "New Account Request"
+        ]
+      },
+      {
+        "text": "Guide Training",
+        "path": "/guide-training-program/",
+        "hasChildren": true,
+        "childLinks": [
+          "Step 1: Introduction",
+          "Step 2: 7-Day Training Course",
+          "Step 3: Practicum",
+          "More Learning Opportunities"
+        ]
+      },
+      {
+        "text": "Contact Us",
+        "path": "/contact-us/",
+        "hasChildren": false
+      }
+    ],
+    "localMenuItems": [
+      {
+        "text": "Home",
+        "path": "/",
+        "hasChildren": false
+      },
+      {
+        "text": "About Us",
+        "path": "/about-itm/",
+        "hasChildren": true,
+        "childLinks": [
+          "Our Team",
+          "Reconciliation",
+          "Privacy Policy"
+        ]
+      },
+      {
+        "text": "Things To Do",
+        "path": "/things-to-do/",
+        "hasChildren": true,
+        "childLinks": [
+          "Operators",
+          "Experience Map"
+        ]
+      },
+      {
+        "text": "Membership",
+        "path": "/become-a-member/",
+        "hasChildren": true,
+        "childLinks": [
+          "Member Benefits",
+          "New Account Request"
+        ]
+      },
+      {
+        "text": "Guide Training",
+        "path": "/guide-training-program/",
+        "hasChildren": true,
+        "childLinks": [
+          "Step 1: Introduction",
+          "Step 2: 7-Day Training Course",
+          "Step 3: Practicum",
+          "More Learning Opportunities"
+        ]
+      },
+      {
+        "text": "Contact Us",
+        "path": "/contact-us/",
+        "hasChildren": false
+      }
+    ],
+    "differences": []
+  },
+  "parityAudit": {
+    "blocksDecoupledFromPlugins": true,
+    "designTokenAdherence": true,
+    "responsiveBreakpointsVerified": true
+  }
+}

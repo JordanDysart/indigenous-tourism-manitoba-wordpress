@@ -1,0 +1,76 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "relish/featured-operators-block",
+    "title": "Featured Operators Grid",
+    "description": "Showcase featured operator cards with dynamic taxonomy filtering, manual curation, customizable header, and quick link.",
+    "category": "widgets",
+    "icon": "grid-view",
+    "keywords": ["operators", "featured", "grid", "cards", "directory", "tourism"],
+    "supports": {
+        "align": ["full", "wide"],
+        "anchor": true,
+        "customClassName": true,
+        "html": false
+    },
+    "render": "file:./featured_operators_block.php",
+    "editorScript": "file:./index.js",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Discover Authentic Experiences"
+        },
+        "subtitle": {
+            "type": "string",
+            "default": ""
+        },
+        "showViewAll": {
+            "type": "boolean",
+            "default": true
+        },
+        "viewAllText": {
+            "type": "string",
+            "default": "View All"
+        },
+        "viewAllUrl": {
+            "type": "string",
+            "default": "/operators/"
+        },
+        "selectionMode": {
+            "type": "string",
+            "default": "taxonomy"
+        },
+        "selectedTaxonomy": {
+            "type": "string",
+            "default": "all"
+        },
+        "selectedTermSlug": {
+            "type": "string",
+            "default": ""
+        },
+        "manualOperatorIds": {
+            "type": "array",
+            "default": []
+        },
+        "numberOfPosts": {
+            "type": "number",
+            "default": 4
+        },
+        "orderBy": {
+            "type": "string",
+            "default": "rand"
+        },
+        "order": {
+            "type": "string",
+            "default": "ASC"
+        },
+        "columns": {
+            "type": "number",
+            "default": 4
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "off-white"
+        }
+    }
+}

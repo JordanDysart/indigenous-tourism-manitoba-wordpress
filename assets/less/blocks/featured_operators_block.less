@@ -1,0 +1,238 @@
+@import (reference) '../global/_variables.less';
+@import (reference) '../global/_mixins.less';
+
+// =============================================================================
+// Featured Operators Block (relish/featured-operators-block)
+// =============================================================================
+
+.featured-operators-block {
+    // Full-bleed width
+    &.alignfull {
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+    }
+
+    // Generous section padding to separate from adjacent hero / content sections
+    padding: 60px 0;
+    box-sizing: border-box;
+
+    .breakpoint(@breakpoint-md, {
+        padding: 80px 0;
+    });
+
+    // Background color variations
+    &.bg-off-white {
+        background-color: @color-off-white;
+    }
+
+    &.bg-white {
+        background-color: #ffffff;
+    }
+
+    .featured-operators-container {
+        max-width: @content-width;
+        margin: 0 auto;
+        padding: 0 24px;
+        box-sizing: border-box;
+
+        .breakpoint(@breakpoint-xl, {
+            padding: 0 40px;
+        });
+    }
+
+    // Section Header (Title + View All link)
+    .featured-operators-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 36px;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .featured-operators-header-text {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .featured-operators-title {
+            font-family: @font-secondary;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: @color-dark;
+            margin: 0 0 6px 0;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+
+            .breakpoint(@breakpoint-md, {
+                font-size: 2.6rem;
+            });
+        }
+
+        .featured-operators-subtitle {
+            font-family: @font-primary;
+            font-size: 1.15rem;
+            color: @color-mid-gray;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .featured-operators-view-all {
+            margin-top: 4px;
+
+            .view-all-link {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                color: @color-maroon;
+                font-family: @font-primary;
+                font-size: 1.15rem;
+                font-weight: 700;
+                text-decoration: none;
+                transition: color 0.2s ease, transform 0.2s ease;
+
+                .view-all-chevron {
+                    width: 16px;
+                    height: 16px;
+                    transition: transform 0.2s ease;
+                }
+
+                &:hover {
+                    color: @color-blue;
+                    transform: translateX(3px);
+
+                    .view-all-chevron {
+                        transform: translateX(2px);
+                    }
+                }
+            }
+        }
+    }
+
+    // Operator Cards Grid
+    .featured-operators-grid {
+        display: grid;
+        gap: 24px;
+        box-sizing: border-box;
+
+        &.grid-cols-4 {
+            grid-template-columns: 1fr;
+
+            .breakpoint(@breakpoint-sm, {
+                grid-template-columns: repeat(2, 1fr);
+            });
+
+            .breakpoint(@breakpoint-lg, {
+                grid-template-columns: repeat(4, 1fr);
+            });
+        }
+
+        &.grid-cols-3 {
+            grid-template-columns: 1fr;
+
+            .breakpoint(@breakpoint-sm, {
+                grid-template-columns: repeat(2, 1fr);
+            });
+
+            .breakpoint(@breakpoint-lg, {
+                grid-template-columns: repeat(3, 1fr);
+            });
+        }
+
+        &.grid-cols-2 {
+            grid-template-columns: 1fr;
+
+            .breakpoint(@breakpoint-sm, {
+                grid-template-columns: repeat(2, 1fr);
+            });
+        }
+    }
+
+    // Individual Operator Card
+    .featured-operator-card {
+        background: #ffffff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .featured-operator-card-link {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .featured-operator-card-image-wrap {
+            position: relative;
+            width: 100%;
+            padding-top: 68%; // ~16:11 aspect ratio
+            overflow: hidden;
+            background-color: #eef0f2;
+
+            .featured-operator-card-image {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.4s ease;
+            }
+        }
+
+        &:hover .featured-operator-card-image {
+            transform: scale(1.04);
+        }
+
+        .featured-operator-card-body {
+            padding: 20px 22px 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            .featured-operator-card-badge {
+                display: inline-block;
+                color: @color-orange;
+                font-family: @font-primary;
+                font-weight: 700;
+                font-size: 0.95rem;
+                line-height: 1.2;
+                margin-bottom: 8px;
+            }
+
+            .featured-operator-card-title {
+                font-family: @font-secondary;
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: @color-dark;
+                margin: 0;
+                line-height: 1.3;
+                transition: color 0.2s ease;
+            }
+        }
+
+        &:hover .featured-operator-card-title {
+            color: @color-maroon;
+        }
+    }
+
+    // Empty state
+    .featured-operators-empty {
+        text-align: center;
+        padding: 40px 20px;
+        color: @color-mid-gray;
+        font-family: @font-primary;
+        font-size: 1.1rem;
+    }
+}

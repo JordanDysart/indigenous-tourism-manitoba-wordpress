@@ -1,7 +1,7 @@
 # Indigenous Tourism Manitoba (ITM) — Style Guide & Design System
 
 **Theme:** `kiwatinook` (`itm_indigpro`)  
-**Date:** 2026-08-14  
+**Date:** 2026-08-15  
 **Audited Base URL:** https://indigenous-tourism-manitoba-wordpress.lndo.site
 
 ---

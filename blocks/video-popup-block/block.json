@@ -1,0 +1,92 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "relish/video-popup-block",
+	"version": "1.0.0",
+	"title": "Video Modal Popup",
+	"category": "widgets",
+	"icon": "format-video",
+	"description": "Video cover thumbnail with animated pulse play button that opens a responsive, accessible lightbox modal.",
+	"keywords": [
+		"video",
+		"popup",
+		"modal",
+		"lightbox",
+		"youtube",
+		"vimeo",
+		"play"
+	],
+	"textdomain": "itm_indigpro",
+	"supports": {
+		"align": [ "wide", "full" ],
+		"anchor": true,
+		"customClassName": true
+	},
+	"render": "file:./video_popup_block.php",
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js",
+	"attributes": {
+		"videoUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"posterImage": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "number"
+				},
+				"url": {
+					"type": "string"
+				},
+				"alt": {
+					"type": "string"
+				}
+			}
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"caption": {
+			"type": "string",
+			"default": ""
+		},
+		"overlayColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"overlayOpacity": {
+			"type": "number",
+			"default": 25
+		},
+		"playButtonColor": {
+			"type": "string",
+			"default": "#e0ac0f"
+		},
+		"playButtonIconColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"playButtonSize": {
+			"type": "string",
+			"default": "medium"
+		},
+		"enablePulse": {
+			"type": "boolean",
+			"default": true
+		},
+		"aspectRatio": {
+			"type": "string",
+			"default": "16-9"
+		},
+		"modalAriaLabel": {
+			"type": "string",
+			"default": "Video player modal"
+		},
+		"autoplay": {
+			"type": "boolean",
+			"default": true
+		}
+	}
+}

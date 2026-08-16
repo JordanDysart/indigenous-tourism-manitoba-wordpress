@@ -1,0 +1,255 @@
+@import (reference) '../global/_variables.less';
+@import (reference) '../global/_mixins.less';
+
+// Modernized Page Layout Containers
+.page-section {
+  padding: 50px 0;
+  
+  .breakpoint(@breakpoint-md, {
+    padding: 70px 0;
+  });
+
+  &.has-off-white-background-color {
+    background-color: @color-off-white;
+  }
+}
+
+.constrained-content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.constrained-content-narrow {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// Circular Hoop Images for Team Members & Highlights
+.img-circular-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/wp-content/themes/kiwatinook/blocks/banner_block/ITM_Hoop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .img-circular, img {
+    position: relative;
+    z-index: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+
+    .breakpoint(@breakpoint-lg, {
+      width: 230px;
+      height: 230px;
+    });
+  }
+}
+
+// Team Member Cards
+.team-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+
+  .team-member-col {
+    flex: 1 1 300px;
+  }
+}
+
+.team-member-card {
+  background: #ffffff;
+  border-radius: @radius-md;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 30px 24px;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .team-member-role {
+    color: @color-orange;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+  }
+}
+
+// Benefit Cards & Grids
+.benefit-card-container,
+.membership-tiers-grid,
+.experiences-card-grid,
+.about-pillars-grid,
+.reconciliation-pillars-grid,
+.learning-opportunities-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .wp-block-column {
+    flex: 1 1 280px;
+  }
+}
+
+.benefit-card,
+.experience-card {
+  background: #ffffff;
+  border-radius: @radius-md;
+  border-top: 4px solid @color-orange;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  padding: 32px 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  p {
+    flex-grow: 1;
+  }
+}
+
+// Guide Training Program Step Pathways
+.program-pathway-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .wp-block-column {
+    flex: 1 1 300px;
+  }
+}
+
+.program-step-card {
+  background: #ffffff;
+  border-radius: @radius-md;
+  border-top: 4px solid @color-gold;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 35px 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  }
+
+  .step-badge {
+    display: inline-block;
+    background-color: @color-orange;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 14px;
+    border-radius: @radius-xl;
+    margin-bottom: 18px;
+    align-self: flex-start;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  p {
+    flex-grow: 1;
+  }
+}
+
+.step-details-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  .wp-block-column {
+    flex: 1 1 400px;
+  }
+}
+
+.step-nav-bar {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid fade(@color-mid-gray, 20%);
+}
+
+// Contact & Inquiry Containers
+.contact-section-grid,
+.inquiry-info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+
+  .wp-block-column {
+    flex: 1 1 400px;
+  }
+}
+
+.contact-form-card,
+.inquiry-contact-card,
+.account-request-box,
+.reconciliation-cta-box {
+  background: #ffffff;
+  border-radius: @radius-md;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 35px 30px;
+  border-left: 4px solid @color-orange;
+}
+
+.contact-details-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 14px;
+    font-size: 1.05rem;
+  }
+}
