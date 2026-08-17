@@ -1,5 +1,5 @@
 {
-  "auditedAt": "2026-08-16T19:24:24.981Z",
+  "auditedAt": "2026-08-16T20:01:51.440Z",
   "baseUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site",
   "canonicalTokens": {
     "colors": {
@@ -297,10 +297,10 @@
           "text": "Prairie Berry",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "40px",
+          "fontSize": "32px",
           "fontWeight": "700",
-          "lineHeight": "50px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "40px",
+          "color": "rgb(97, 0, 0)",
           "hasInlineStyle": null,
           "classes": "operator-title"
         },
@@ -1988,7 +1988,7 @@
         {
           "page": "Home Page",
           "tag": "h3",
-          "text": "Agowiidiwinan Centre",
+          "text": "Wyndham Garden Winnipeg Airport",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "20px",
@@ -2001,7 +2001,7 @@
         {
           "page": "Home Page",
           "tag": "h3",
-          "text": "Spence Custom Carving",
+          "text": "Manito Ahbee Festival",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "20px",
@@ -2014,7 +2014,7 @@
         {
           "page": "Home Page",
           "tag": "h3",
-          "text": "Teekca’s Boutique",
+          "text": "Bistro on Notre Dame",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "20px",
@@ -2027,7 +2027,7 @@
         {
           "page": "Home Page",
           "tag": "h3",
-          "text": "Prairie Berry",
+          "text": "Shelly’s Bistro",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "20px",
@@ -2329,10 +2329,10 @@
           "text": "Discover Culinary",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "25px",
+          "color": "rgb(97, 0, 0)",
           "hasInlineStyle": null,
           "classes": ""
         },
@@ -8935,7 +8935,7 @@
   "colorInventory": {
     "#404040": {
       "hex": "#404040",
-      "count": 2914,
+      "count": 2896,
       "types": [
         "color"
       ],
@@ -8943,7 +8943,7 @@
     },
     "#610000": {
       "hex": "#610000",
-      "count": 172,
+      "count": 174,
       "types": [
         "color"
       ],
@@ -8959,7 +8959,7 @@
     },
     "#212b36": {
       "hex": "#212b36",
-      "count": 1472,
+      "count": 1477,
       "types": [
         "color",
         "backgroundColor"
@@ -8984,7 +8984,7 @@
     },
     "#ffffff": {
       "hex": "#ffffff",
-      "count": 842,
+      "count": 844,
       "types": [
         "color",
         "backgroundColor"
@@ -9027,7 +9027,7 @@
     },
     "#da5225": {
       "hex": "#da5225",
-      "count": 106,
+      "count": 108,
       "types": [
         "color",
         "backgroundColor"
@@ -9148,6 +9148,14 @@
       ],
       "isCanonical": true
     },
+    "#374151": {
+      "hex": "#374151",
+      "count": 1,
+      "types": [
+        "color"
+      ],
+      "isCanonical": false
+    },
     "#808080": {
       "hex": "#808080",
       "count": 1,
@@ -9161,6 +9169,22 @@
       "count": 1,
       "types": [
         "backgroundColor"
+      ],
+      "isCanonical": false
+    },
+    "#6b7280": {
+      "hex": "#6b7280",
+      "count": 5,
+      "types": [
+        "color"
+      ],
+      "isCanonical": false
+    },
+    "#111827": {
+      "hex": "#111827",
+      "count": 3,
+      "types": [
+        "color"
       ],
       "isCanonical": false
     },
@@ -13896,7 +13920,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-uuwppg574gka\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-w0imns5an3oh\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "About Indigenous Tourism Manitoba",
@@ -13984,7 +14008,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-z233cp37744p\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-35r389f3802o\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Operators Directory",
@@ -14528,7 +14552,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-mo3t92corgnh\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-e0fvbwi67cpf\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Single Operator (Prairie Berry)",
@@ -14584,7 +14608,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-gckpj066z8m7\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-38r477zg2a0w\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Experience Map",
@@ -15152,7 +15176,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-b5dy7rq0ytxc\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ahvaw02p0stx\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Reconciliation",
@@ -15224,7 +15248,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-yt4mvqakpwtt\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-8fn7ohatw3i9\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Things To Do",
@@ -15296,7 +15320,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-vr26e5u61jwi\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-dclralkd5rb7\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Our Team",
@@ -15376,7 +15400,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-745sfk4f1oq\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-jm1ible6mkmp\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Become a Member",
@@ -15456,7 +15480,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ct34pbb25eu1\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-p7ndkmuohd80\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Member Benefits",
@@ -15536,7 +15560,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-6npia6zbwel3\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ario805de8rb\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Contact Us",
@@ -15616,7 +15640,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-s9s7k5oddqoa\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-d6funm5kskvv\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Privacy Policy",
@@ -15672,7 +15696,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-tyjrk7abqrgj\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-hc9wylh0mn9n\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "New Account Request",
@@ -15752,7 +15776,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-vanp3e7vm7v3\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ead2c72ym6m\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow"
       },
       {
         "page": "Guide Training Inquiry Form",
@@ -15832,7 +15856,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-patjbd8hqvql\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ayntfdv58cx2\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Program (Hub)",
@@ -15912,7 +15936,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-62r2vxnfr89g\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-776oczmp6alq\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 1",
@@ -15992,7 +16016,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-c92cfxth3wry\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-wpvnh1q6d0k8\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 2",
@@ -16072,7 +16096,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-mfu5ni2prxeu\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-afguu07b3cac\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 3",
@@ -16152,7 +16176,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-hr2gi3rseevs\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-9162u83nnx7z\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training More Opportunities",
@@ -16232,7 +16256,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-evuh5x9e48mo\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-kp7lbeg511b5\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "404 Error Page",
@@ -16288,7 +16312,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-jd3hyf48yiee\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-idxc98hpzws1\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       }
     ],
     "orphanPluginClasses": [
@@ -16541,12 +16565,24 @@
         "count": 1
       },
       {
+        "hex": "#374151",
+        "count": 1
+      },
+      {
         "hex": "#808080",
         "count": 1
       },
       {
         "hex": "#cccccc",
         "count": 1
+      },
+      {
+        "hex": "#6b7280",
+        "count": 5
+      },
+      {
+        "hex": "#111827",
+        "count": 3
       },
       {
         "hex": "#dddddd",
@@ -17051,12 +17087,16 @@
       {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/non-existent-page-404",
         "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/non-existent-page-404",
+        "text": "Framing 'https://www.google.com/' violates the following report-only Content Security Policy directive: \"frame-ancestors 'self'\". The violation has been logged, but no further action has been taken.\n"
       }
     ]
   },
   "summaryScores": {
     "canonicalAlignmentScore": 20,
-    "totalDegradationFlags": 428,
+    "totalDegradationFlags": 431,
     "inlineOverridesCount": 317,
     "contrastViolationsCount": 0
   }
