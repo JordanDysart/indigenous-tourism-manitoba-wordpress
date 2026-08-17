@@ -4,7 +4,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ Kiwatinook is a modern, high-performance WordPress theme created specifically fo
 4. For automated updates from private GitHub Releases, define `ITM_MIDFLIGHT_UPDATE_TOKEN` in your `wp-config.php`.
 
 == Changelog ==
+
+= 1.1.2 - August 2026 =
+* **Updating media for mega menu**: Mega menu is currently in quick development and will be updated with new controls for adjusting media and text used for display.
 
 = 1.1.1 - August 2026 =
 * **Agency & Brand Modernization**: Rebranded all theme references, text domains, and packages from legacy agencies (Indigpro / Relish / Underscores) to Kiwatinook by Midflight.
