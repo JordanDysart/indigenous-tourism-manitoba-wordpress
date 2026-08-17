@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class ITM_M2_Pages_Migration {
 
-	const MIGRATION_VERSION = '2.8.0';
+	const MIGRATION_VERSION = '2.10.0';
 
 	public static function init() {
 		add_action( 'init', [ __CLASS__, 'maybe_run_migration' ], 20 );
@@ -228,88 +228,36 @@ class ITM_M2_Pages_Migration {
 			283 => [
 				'title' => 'Reconciliation',
 				'slug'  => 'reconciliation',
-				'content' => '<!-- wp:midflight/hero-block {"backgroundImage":{"id":287,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/IMG_7169-scaled.jpg"},"showHoopOverlay":true,"overlayOpacity":30,"minHeight":60,"contentAlignment":"center"} -->
+				'content' => '<!-- wp:midflight/hero-block {"backgroundImage":{"id":283,"url":"/wp-content/uploads/2024/10/IMG_7169-scaled.jpg"},"showHoopOverlay":true,"overlayOpacity":30,"minHeight":50,"contentAlignment":"center"} -->
 <!-- wp:heading {"textAlign":"center","level":1,"textColor":"white"} -->
-<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">Reconciliation &amp; Cultural Safety</h1>
+<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">Reconciliation</h1>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center","textColor":"white"} -->
-<p class="has-text-align-center has-white-color has-text-color">Commitment to Truth, Healing, and Meaningful Economic Partnership.</p>
-<!-- /wp:paragraph -->
 <!-- /wp:midflight/hero-block -->
 
-<!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1140px"}} -->
-<div class="wp-block-group page-section constrained-content">
-<!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Our Commitment to Truth &amp; Reconciliation</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Indigenous Tourism Manitoba is committed to advancing the Truth and Reconciliation Commission of Canada’s Calls to Action, particularly Call to Action 92 for the corporate sector. We believe that authentic tourism provides a powerful vehicle for cultural preservation, education, and sustainable economic self-determination for Indigenous communities.</p>
-<!-- /wp:paragraph -->
+<!-- wp:html -->
+<section class="page-section constrained-content reconciliation-lead-section">
+<p class="reconciliation-lead-text">As the country continues to mourn the children lost to residential schools, and struggles to find ways to support reconciliation, Indigenous tourism plays a vital role in education and sharing Indigenous culture. Experiencing Indigenous tourism firsthand is an important way for non-Indigenous Canadians to gain a new perspective. It helps them to connect to the lands, traditions, and Indigenous Peoples way of life and to better understand the history of Canada, while also having a positive impact on Indigenous economic growth. Investing in Indigenous tourism demonstrates reconciliation in action by creating and expanding tourism economic development projects with Indigenous nations, while supporting self-determination for Indigenous businesses.</p>
+</section>
+<!-- /wp:html -->
 
-<!-- wp:columns {"className":"reconciliation-pillars-grid"} -->
-<div class="wp-block-columns reconciliation-pillars-grid">
-<!-- wp:column -->
-<div class="wp-block-column">
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Guiding Principles</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>We center Indigenous voices, cultural sovereignty, and authentic community partnerships in all our tourism initiatives:</p>
-<!-- /wp:paragraph -->
-<!-- wp:list -->
-<ul class="wp-block-list">
-<li>Respect for Indigenous sovereignty and intellectual property</li>
-<li>Authentic representation of diverse First Nations, Inuit, and Métis cultures</li>
-<li>Community-led and community-approved tourism development</li>
-<li>Environmental stewardship and respect for traditional lands</li>
-</ul>
-<!-- /wp:list -->
-</div>
-<!-- /wp:column -->
+<!-- wp:midflight/banner-block {"title":"Join us as we honour those who came before us as we secure our future.","image":{"url":"/wp-content/uploads/2024/10/Cranberry-Portage-22_Credit-Travel-Manitoba-edited-scaled.jpg","alt":"Cranberry Portage"},"overlayColor":"#000000","overlayOpacity":20,"fontSize":2.4} /-->
 
-<!-- wp:column -->
-<div class="wp-block-column">
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Action &amp; Advocacy</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Through education, marketing, and business support, we bridge understanding between visitors and Indigenous hosts:</p>
-<!-- /wp:paragraph -->
-<!-- wp:list -->
-<ul class="wp-block-list">
-<li>Cultural awareness and cultural safety training for tourism operators</li>
-<li>Equitable economic development and entrepreneurship support</li>
-<li>Direct funding assistance and capacity-building workshops</li>
-<li>Partnerships with provincial and national tourism organizations</li>
-</ul>
-<!-- /wp:list -->
-</div>
-<!-- /wp:column -->
-</div>
-<!-- /wp:columns -->
+<!-- wp:midflight/featured-operators-block {"title":"Discover Authentic Experiences","showViewAll":true,"viewAllText":"View All","viewAllUrl":"/operators/","numberOfPosts":4,"orderBy":"rand","backgroundColor":"off-white"} /-->
 
-<!-- wp:group {"className":"reconciliation-cta-box","layout":{"type":"constrained"}} -->
-<div class="wp-block-group reconciliation-cta-box">
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Learn More &amp; Connect</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Discover how our member operators and partners are leading authentic cultural tourism across Manitoba.</p>
-<!-- /wp:paragraph -->
-<!-- wp:buttons -->
-<div class="wp-block-buttons">
-<!-- wp:button {"className":"btn btn--primary"} -->
-<div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="/operators/">Explore Operators</a></div>
-<!-- /wp:button -->
-<!-- wp:button {"className":"btn btn--gold"} -->
-<div class="wp-block-button btn btn--gold"><a class="wp-block-button__link wp-element-button" href="/contact-us/">Contact Us</a></div>
-<!-- /wp:button -->
+<!-- wp:html -->
+<section class="page-section constrained-content reconciliation-authenticity-section">
+<div class="text-center" style="max-width:860px;margin:0 auto 28px auto;text-align:center;">
+<span class="culture-badge" style="background:rgba(224,172,15,0.15);color:#9a6700;">Living Heritage</span>
+<h2 class="wp-block-heading" style="font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;">Grounded in Cultural Authenticity</h2>
 </div>
-<!-- /wp:buttons -->
+
+<div class="reconciliation-body-text" style="max-width:860px;margin:0 auto;">
+<p>Our offerings are not just a window into Indigenous life, culture, and history &ndash; they are a direct connection to the people who have lived these traditions for generations. We believe in the power of firsthand experience, and that’s why our operators are the keepers of the culture, those who’ve embraced this way of life… the nation and its people.</p>
+<p>We are part of a vast network of businesses, communities, organizations, corporations, governments, and groups, all with a common goal: to preserve and celebrate Indigenous heritage. We are committed to keeping these rich traditions alive and sharing them with the world.</p>
+<p>Join us on this journey of cultural authenticity, where every moment is a celebration of the past, a vibrant expression of the present, and a promise to safeguard the future.</p>
 </div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:group -->',
+</section>
+<!-- /wp:html -->',
 			],
 
 			// 3. Things To Do (Page ID 463)
@@ -429,67 +377,187 @@ class ITM_M2_Pages_Migration {
 			435 => [
 				'title' => 'Our Team',
 				'slug'  => 'our-team',
-				'content' => '<!-- wp:midflight/banner-block {"title":"Our Team","description":"Meet the dedicated leaders and advocates behind Indigenous Tourism Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/hero-block {"backgroundImage":{"id":435,"url":"/wp-content/uploads/2024/10/wood-itm-scaled.jpg"},"showHoopOverlay":true,"overlayOpacity":35,"minHeight":55,"contentAlignment":"center"} -->
+<!-- wp:heading {"textAlign":"center","level":1,"textColor":"white"} -->
+<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">Our Team</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","textColor":"white"} -->
+<p class="has-text-align-center has-white-color has-text-color">Meet the dedicated leaders, staff, and advocates behind Indigenous Tourism Manitoba.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:midflight/hero-block -->
 
 <!-- wp:html -->
-<div class="page-section constrained-content section-team-members">
-<h2 class="wp-block-heading text-center">Leadership &amp; Staff</h2>
-<p class="text-center">Our team brings together passionate leaders in tourism development, cultural education, marketing, and community advocacy.</p>
-
-<div class="team-grid-container wp-block-columns">
-<div class="wp-block-column team-member-col">
-<div class="team-member-card text-center">
-<div class="img-circular-wrap">
-<img src="/wp-content/themes/kiwatinook/screenshot.png" alt="Executive Director" class="img-circular team-photo" />
-</div>
-<h3 class="wp-block-heading">Executive Leadership</h3>
-<p class="team-member-role">Executive Director</p>
-<p>Guiding ITM’s strategic vision, partnerships, and advocacy for Indigenous tourism operators throughout Manitoba.</p>
-</div>
+<section class="page-section constrained-content section-team-leadership">
+<div class="text-center" style="max-width:760px;margin:0 auto 30px auto;text-align:center;">
+<span class="culture-badge" style="background:rgba(224,172,15,0.15);color:#9a6700;">Leadership &amp; Operations</span>
+<h2 class="wp-block-heading" style="font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;margin-bottom:12px;">Staff &amp; Executive Leadership</h2>
+<p style="font-size:1.05rem;color:#4b5563;line-height:1.6;">Our team brings together passionate leaders in tourism development, cultural education, financial governance, marketing, and community advocacy across Manitoba.</p>
 </div>
 
-<div class="wp-block-column team-member-col">
-<div class="team-member-card text-center">
+<div class="team-grid-container">
+<div class="team-member-card">
 <div class="img-circular-wrap">
-<img src="/wp-content/themes/kiwatinook/screenshot.png" alt="Marketing Manager" class="img-circular team-photo" />
+<img src="/wp-content/uploads/2024/10/Holly-Spence-headshot-2025-300x206.jpg" alt="Holly Spence - CEO" class="img-circular team-photo" />
 </div>
-<h3 class="wp-block-heading">Marketing &amp; Communications</h3>
-<p class="team-member-role">Marketing Manager</p>
-<p>Promoting Manitoba’s authentic Indigenous experiences to provincial, national, and international travelers.</p>
+<h3 class="team-member-name">Holly Spence</h3>
+<div class="team-member-role">CEO</div>
+<div class="team-member-bio">
+<p>Tasked with leading the growth and development of the Indigenous tourism industry in Manitoba and in collaboration with Travel Manitoba and Indigenous Tourism Association of Canada, Holly will lead efforts for implementation of the Manitoba Indigenous Tourism Strategy, which focuses on the development of sustainable market-ready and export-ready Indigenous tourism products, as well as increasing the demand for Manitoba’s Indigenous tourism experiences. Holly was born and raised in Peguis First Nation where she owned and operated multiple successful businesses. She understands the barriers and complexities of owning a business both on and off the reserve and brings that first-hand knowledge to tourism operators in Manitoba.</p>
+<p>Through her previous work as the Manitoba Regional Coordinator at ITAC from 2019 to 2022, Holly guided many Indigenous entrepreneurs and community-owned tourism enterprises to strengthen their offerings into market and export-ready products. Holly’s connections and leadership within the region are proven and she is a true advocate for Indigenous tourism in Manitoba.</p>
 </div>
 </div>
 
-<div class="wp-block-column team-member-col">
-<div class="team-member-card text-center">
+<div class="team-member-card">
 <div class="img-circular-wrap">
-<img src="/wp-content/themes/kiwatinook/screenshot.png" alt="Program Coordinator" class="img-circular team-photo" />
+<img src="/wp-content/uploads/2024/11/Doreen-Booth-HS1-300x200.jpg" alt="Doreen Booth - ITM Project Manager" class="img-circular team-photo" />
 </div>
-<h3 class="wp-block-heading">Training &amp; Development</h3>
-<p class="team-member-role">Program Coordinator</p>
-<p>Delivering operator capacity training, guide certification, and cultural safety workshops across communities.</p>
+<h3 class="team-member-name">Doreen Booth</h3>
+<div class="team-member-role">ITM Project Manager</div>
+<div class="team-member-bio">
+<p>Doreen Booth joined ITM as a Project Manager. Having worked in the tourism industry for the past 16 years, she brings extensive knowledge and experience in program development, project management, and relationship building. As a passionate traveler and outdoor enthusiast who has experienced destinations all across Canada and abroad, Doreen believes that the connection to place, story, and people is what creates lasting memories. She is dedicated to supporting Manitoba operators and expanding authentic Indigenous cultural experiences throughout the province.</p>
+</div>
+</div>
+
+<div class="team-member-card">
+<div class="img-circular-wrap">
+<img src="/wp-content/uploads/2026/03/Renee-Simcoe-headshot-2025-225x300.jpg" alt="Renée Simcoe - Marketing Manager" class="img-circular team-photo" />
+</div>
+<h3 class="team-member-name">Renée Simcoe</h3>
+<div class="team-member-role">Marketing Manager</div>
+<div class="team-member-bio">
+<p>Renée’s professional background is eclectic, including 10 years in the agriculture industry across various levels of government, not-for-profit, and academic sectors with a focus in communications, event planning, and education. She brings a fresh perspective and enthusiasm to the ITM team and looks forward to supporting members with marketing and outreach initiatives.</p>
+<p>Outside work— in the warmer months Renée enjoys foraging wild mushrooms, cycling, and hiking. In the winter, she spends her time reading, baking sourdough, and cross-country skiing.</p>
+</div>
+</div>
+
+<div class="team-member-card">
+<div class="img-circular-wrap">
+<img src="/wp-content/uploads/2026/03/Cecilia-Point-headshot-2026-300x300.jpg" alt="Cecelia Point - Director of Finance" class="img-circular team-photo" />
+</div>
+<h3 class="team-member-name">Cecelia Point</h3>
+<div class="team-member-role">Director of Finance</div>
+<div class="team-member-bio">
+<p>As the Director of Finance, Cecilia contributes to the overall success of Indigenous Tourism Manitoba by effectively managing the organization’s financial operations and providing strategic advice.</p>
+<p>A member of the Musqueam Indian Band, Cecilia has worked in the travel and tourism industry in excess of 25 years. She holds a Bachelor of Arts in Political Science from the University of British Columbia, bringing deep financial stewardship, governance experience, and operational expertise.</p>
+</div>
+</div>
+
+<div class="team-member-card">
+<div class="img-circular-wrap">
+<img src="/wp-content/uploads/2026/03/Taytum-Assinaboine-headshot-2025-264x300.jpg" alt="Taytum Assinaboine - Explore Indigenous Manager" class="img-circular team-photo" />
+</div>
+<h3 class="team-member-name">Taytum Assinaboine</h3>
+<div class="team-member-role">Explore Indigenous Manager</div>
+<div class="team-member-bio">
+<p>Taytum Assiniboine is a proud Indigenous leader in Manitoba’s Tourism and Economic Development sector.</p>
+<p>Through her work as Store Manager at Indigenous Tourism Manitoba and Board Director at SEED Winnipeg, she is passionate about creating spaces that uplift Indigenous artists, makers, and tourism operators, promoting economic reconciliation through authentic retail and cultural exchange.</p>
+</div>
+</div>
+
+<div class="team-member-card">
+<div class="img-circular-wrap">
+<img src="/wp-content/uploads/2024/11/Outlook-0dql1hgw-225x300.jpg" alt="Darcie Guarderas - Director & Client Strategist" class="img-circular team-photo" />
+</div>
+<h3 class="team-member-name">Darcie Guarderas</h3>
+<div class="team-member-role">Director & Client Strategist</div>
+<div class="team-member-bio">
+<p>A Manitoban at heart, Darcie graduated with honours in tourism and then travelled the world for 25 years as an award-winning tour director. With deep expertise across experiential travel, community partnerships, and destination marketing, Darcie works closely with ITM operators to strengthen business capacity, market readiness, and visitor engagement.</p>
 </div>
 </div>
 </div>
-</div>
+</section>
 <!-- /wp:html -->
 
-<!-- wp:group {"className":"page-section board-section text-center","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"900px"}} -->
-<div class="wp-block-group page-section board-section text-center has-off-white-background-color has-background">
-<!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Board of Directors</h2>
+<!-- wp:html -->
+<section class="page-section constrained-content section-team-board has-off-white-background-color has-background" style="background-color:#faf9f6;padding:60px 20px;">
+<div class="text-center" style="max-width:760px;margin:0 auto 30px auto;text-align:center;">
+<span class="culture-badge" style="background:rgba(189,43,30,0.12);color:#9b1b10;">Governance &amp; Advocacy</span>
+<h2 class="wp-block-heading" style="font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;margin-bottom:12px;">Board of Directors</h2>
+<p style="font-size:1.05rem;color:#4b5563;line-height:1.6;">Guided by Indigenous leaders representing First Nations, Métis, and Inuit communities, entrepreneurs, and operators from every region of Manitoba.</p>
+</div>
+
+<div class="team-grid-container">
+<div class="team-member-card">
+<div class="img-circular-wrap">
+<img src="/wp-content/uploads/2024/10/david-daley-652x652@2x-320x320-1-300x300.jpg" alt="Dave Daley - President" class="img-circular team-photo" />
+</div>
+<h3 class="team-member-name">Dave Daley</h3>
+<div class="team-member-role">President</div>
+<div class="team-member-bio">
+<p>David Daley is a Métis man, and long-time resident of Churchill, Manitoba. David and his wife Valerie have worked hard to become a part of Churchill’s tourism industry including owning and operating the Wapusk General Store (hand-built by Dave) and Wapusk Adventures, an award winning Indigenous Tourism experience.</p>
+<p>Dave served his community as the Chairman of the Churchill Métis Local, a previous President of the Churchill Chamber of Commerce, and Founder of the Hudson Bay Quest dog sled race. Dave also chaired the Manitoba Indigenous Tourism Advisory Committee and is now the Chair of Indigenous Tourism Manitoba and is a board member for the Indigenous Tourism Association of Canada as the Manitoba representative.</p>
+</div>
+</div>
+
+<div class="team-member-card">
+<div class="img-circular-wrap">
+<img src="/wp-content/uploads/2026/03/Melanie-Gamache-headshot-2026-240x300.jpg" alt="Melanie Gamache - Vice President" class="img-circular team-photo" />
+</div>
+<h3 class="team-member-name">Melanie Gamache</h3>
+<div class="team-member-role">Vice President</div>
+<div class="team-member-bio">
+<p>Melanie Gamache is the one woman show that created Borealis Beading. She is a francophone Red River Métis with a passion for sharing Métis history and culture through the art of beadwork. Her hands-on workshops immerse guests in the historic Métis floral beading traditions that earned the Métis the name \'The Flower Beadwork People\'.</p>
+<p>As a board member, Melanie is committed to representing Indigenous tourism operators—especially small and rural businesses—and helping cultivate authentic, high-quality cultural experiences that respect and honour Indigenous traditions.</p>
+<p>Melanie brings strong relationship-building skills and a broad network of partners, artists, and tourism stakeholders to her role as Vice President of ITM.</p>
+</div>
+</div>
+
+<div class="team-member-card">
+<div class="img-circular-wrap">
+<img src="/wp-content/uploads/2024/11/lee_sinclair-300x271.jpg" alt="Lee Sinclair - Secretary / Treasurer" class="img-circular team-photo" />
+</div>
+<h3 class="team-member-name">Lee Sinclair</h3>
+<div class="team-member-role">Secretary / Treasurer</div>
+<div class="team-member-bio">
+<p>Lee Sinclair is the Director of Operations for PBDC and oversees its portfolio of current businesses including Otineka Mall, Kikiwak Inn, and other commercial enterprises. A proud member of Opaskwayak Cree Nation, Lee has extensive experience in corporate governance, financial management, and economic development in northern Manitoba.</p>
+</div>
+</div>
+
+<div class="team-member-card">
+<div class="img-circular-wrap">
+<img src="/wp-content/uploads/2024/11/ITM_4CP_DANCER-298x300.png" alt="Melanie Ferris - Director At Large" class="img-circular team-photo" />
+</div>
+<h3 class="team-member-name">Melanie Ferris</h3>
+<div class="team-member-role">Director At Large</div>
+<div class="team-member-bio">
+<p>Melanie Ferris is a writer based in Winnipeg, Manitoba. She is a proud member of the Long Plain First Nation in Treaty One Territory.</p>
+<p>As an intergenerational Survivor of the residential schools, Sixties Scoop, and foster care systems, Melanie has been working with First Nations across Manitoba for more than five years. She has travelled to more than 20 of the 63 First Nations across the province, including many remote, fly-in communities.</p>
+<p>Melanie loves stories and has written numerous books, including \'Honouring our Ancestors: Remembering the Legacy of the Residential School System in Northern Manitoba.\' She is the Director of Communications for the Southern Chiefs’ Organization and brings strong advocacy and storytelling expertise to ITM.</p>
+</div>
+</div>
+
+<div class="team-member-card">
+<div class="img-circular-wrap">
+<img src="/wp-content/uploads/2024/11/edna-300x288.jpg" alt="Edna Nabess - Director At Large" class="img-circular team-photo" />
+</div>
+<h3 class="team-member-name">Edna Nabess</h3>
+<div class="team-member-role">Director At Large</div>
+<div class="team-member-bio">
+<p>Edna Nabess was born and raised in Cormorant, Manitoba and is a proud member of the Mathias Colomb Cree Nation. Edna was taught to sew and bead by her mother at a very young age. She is an award-winning artisan, entrepreneur, and the founder of Cree-Ations. Edna is deeply committed to community development, Indigenous artisan empowerment, and sharing traditional cultural arts with visitors from around the world.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- /wp:html -->
+
+<!-- wp:group {"className":"page-section text-center","layout":{"type":"constrained","contentSize":"800px"}} -->
+<div class="wp-block-group page-section text-center" style="padding:60px 20px;">
+<!-- wp:heading {"textAlign":"center","level":2} -->
+<h2 class="wp-block-heading has-text-align-center">Connect With Our Team</h2>
 <!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Guided by Indigenous leaders representing First Nations, Métis, and Inuit communities from every region of Manitoba.</p>
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Whether you are an Indigenous operator, artisan, or tourism partner, we are here to support you.</p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons">
 <!-- wp:button {"className":"btn btn--primary"} -->
-<div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="/contact-us/">Contact Our Team</a></div>
+<div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="/contact-us/">Contact Us</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"btn btn--outline"} -->
+<div class="wp-block-button btn btn--outline"><a class="wp-block-button__link wp-element-button" href="/become-a-member/">Become a Member</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
-</div>
-<!-- /wp:group -->
 </div>
 <!-- /wp:group -->',
 			],
@@ -1304,7 +1372,183 @@ class ITM_M2_Pages_Migration {
 </div>
 <!-- /wp:group -->',
 			],
-		];
+					// 16. The Forks Location / Explore Indigenous (Page ID 3026)
+			3026 => [
+				'title' => 'Explore Indigenous at The Forks Market',
+				'slug'  => 'the-forks',
+				'content' => '<!-- wp:midflight/hero-block {"backgroundImage":{"id":2838,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/10/Anne_Mulaire_Boutique_2025-2-scaled.jpg"},"showHoopOverlay":true,"overlayOpacity":35,"minHeight":65,"contentAlignment":"center"} -->
+<span class="hero-badge" style="display:inline-block;padding:6px 16px;background:rgba(224,172,15,0.2);border:1px solid #e0ac0f;color:#e0ac0f;border-radius:9999px;font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:16px;">📍 Inside The Forks Market, Winnipeg</span>
+<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">Explore Indigenous at The Forks</h1>
+<p class="has-text-align-center has-white-color has-text-color" style="font-size:1.2rem;max-width:720px;margin:0 auto 24px;line-height:1.5;">A retail and showcase space created and managed by Indigenous Tourism Manitoba, located inside The Forks Market.</p>
+<div class="wp-block-buttons is-content-justification-center">
+<div class="wp-block-button btn btn--gold"><a class="wp-block-button__link wp-element-button" href="#about-space">Discover the Space</a></div>
+<div class="wp-block-button btn btn--outline"><a class="wp-block-button__link wp-element-button" href="#hours-location">Hours &amp; Location</a></div>
+</div>
+<!-- /wp:midflight/hero-block -->
+
+<!-- wp:html -->
+<section id="about-space" class="page-section forks-vision-section constrained-content">
+<div class="forks-vision-grid">
+  <div class="vision-text-col">
+    <span class="vision-badge">Retail &amp; Showcase Hub</span>
+    <h2 class="vision-title">Culture, Community &amp; Commerce</h2>
+    <p class="vision-lead">To create a place where visitors can shop handcrafted goods and discover Indigenous tourism experiences across Manitoba.</p>
+    <p class="vision-body">Explore Indigenous is a retail and showcase space created and managed by Indigenous Tourism Manitoba, located inside The Forks Market. The space sells locally made Indigenous products from artisans across Manitoba, and also serves as a place where Indigenous tourism businesses can host events and workshops.</p>
+    <div class="vision-feature-cards">
+      <div class="vision-card">
+        <div class="vision-card-icon"><i class="bi bi-bag-heart"></i></div>
+        <h3 class="vision-card-title">Authentic Retail Store</h3>
+        <p class="vision-card-desc">Featuring authentic, Indigenous-made handcrafted products, apparel, artwork, and gifts from artisans across Manitoba.</p>
+      </div>
+      <div class="vision-card">
+        <div class="vision-card-icon"><i class="bi bi-compass"></i></div>
+        <h3 class="vision-card-title">Tourism Information Hub</h3>
+        <p class="vision-card-desc">Where visitors can learn about Indigenous tourism experiences, regional itineraries, and operators throughout Manitoba.</p>
+      </div>
+    </div>
+    <p class="vision-body" style="margin-bottom:0;">The space supports ITM members by increasing visibility, creating retail opportunities, and connecting operators and artisans directly with visitors from Manitoba and around the world.</p>
+  </div>
+  <div class="vision-image-col">
+    <div class="vision-img-wrap">
+      <img src="https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2025/05/4-1.png" alt="Indigenous Artisan Crafting at The Forks Market" loading="lazy" />
+    </div>
+    <div class="vision-image-caption-card">
+      <span class="caption-label">Authentic Craftsmanship</span>
+      <p class="caption-text">Connecting visitors directly with Manitoba artisans &amp; living culture.</p>
+    </div>
+  </div>
+</div>
+</section>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<section class="page-section artisan-spotlight-section constrained-content">
+<div class="artisan-spotlight-card">
+  <div class="artisan-header-group">
+    <div class="artisan-title-wrap">
+      <span class="artisan-badge">Featured Artisan Profile</span>
+      <h2 class="artisan-name">Jordan Stranger</h2>
+      <p class="artisan-subhead">Totem Doodem &bull; Peguis First Nation</p>
+    </div>
+    <a class="artisan-link-btn" href="https://totemdoodem.ca/about" target="_blank" rel="noopener noreferrer">Visit Totem Doodem &rarr;</a>
+  </div>
+  <div class="artisan-content-grid">
+    <div class="artisan-bio-col">
+      <p class="artisan-bio-text">Jordan Stranger is an Anishinaabe artist and graphic designer from Peguis First Nation known for his colourful style represented through murals, illustrations, and graphic design. Stranger’s work is deeply rooted in the traditions within contemporary Indigenous culture, and he uses his life experiences and spiritual practice learned through Ojibwe teachings to drive his artistic passions.</p>
+      <p class="artisan-bio-text">His murals and artwork using cultural influences and symbolism can be found throughout the city of Winnipeg, and he is the designer and artist behind the Winnipeg 150 logo.</p>
+      <div class="artisan-client-showcase">
+        <span class="client-label">Recognized Collaborations &amp; Work:</span>
+        <div class="client-tag-list">
+          <span class="client-tag">APTN</span>
+          <span class="client-tag">Apple</span>
+          <span class="client-tag">Shopify</span>
+          <span class="client-tag">Audible</span>
+          <span class="client-tag">Festival du Voyageur</span>
+          <span class="client-tag">Winnipeg 150</span>
+        </div>
+      </div>
+    </div>
+    <div class="artisan-blessing-col">
+      <div class="blessing-card">
+        <div class="blessing-icon"><i class="bi bi-feather"></i></div>
+        <h3 class="blessing-title">Special Blessing Artwork</h3>
+        <p class="blessing-text">Jordan created a special piece of artwork for the space itself &mdash; a work intended to bless the store and carry a message of inclusion, welcome, and shared understanding. The piece reflects the spirit of Explore Indigenous: a place for culture, community, and connection.</p>
+        <div class="blessing-print-banner">
+          <div class="print-icon"><i class="bi bi-brush"></i></div>
+          <p class="print-text"><strong>Artwork Prints Available:</strong> Prints of Jordan’s artwork are available for purchase in-store, allowing visitors to take home a meaningful piece representing artistry and intention.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<section class="page-section forks-opportunities-section constrained-content">
+<div class="section-header">
+  <span class="section-badge">Community &amp; Operator Benefits</span>
+  <h2 class="section-title">How the Space Is Used &amp; Opportunities for Members</h2>
+  <p class="section-subtitle">Explore Indigenous provides multiple benefits and physical connection points for ITM members across Manitoba.</p>
+</div>
+<div class="forks-opportunities-grid">
+  <div class="opportunity-card opportunity-card--featured">
+    <div class="opportunity-icon-wrap opportunity-icon-wrap--gold"><i class="bi bi-shop"></i></div>
+    <h3 class="opportunity-title">Retail Opportunities</h3>
+    <p class="opportunity-desc">Artisans can showcase and sell authentic, handmade goods in a high-traffic location at The Forks &mdash; one of Manitoba’s most visited destinations.</p>
+  </div>
+  <div class="opportunity-card">
+    <div class="opportunity-icon-wrap"><i class="bi bi-signpost-2"></i></div>
+    <h3 class="opportunity-title">Tourism Promotion</h3>
+    <p class="opportunity-desc">Tour operators can share brochures, information, and stories about their experiences, helping visitors discover tourism opportunities throughout the province.</p>
+  </div>
+  <div class="opportunity-card">
+    <div class="opportunity-icon-wrap"><i class="bi bi-calendar-event"></i></div>
+    <h3 class="opportunity-title">Workshop &amp; Event Space</h3>
+    <p class="opportunity-desc">Open to members who wish to host workshops, demonstrations, small gatherings, or cultural programming to engage directly with visitors and share knowledge.</p>
+  </div>
+  <div class="opportunity-card">
+    <div class="opportunity-icon-wrap"><i class="bi bi-globe2"></i></div>
+    <h3 class="opportunity-title">Increased Visibility</h3>
+    <p class="opportunity-desc">Members gain valuable exposure to diverse audiences visiting The Forks every week:</p>
+    <ul class="opportunity-audience-list">
+      <li>Local Winnipeg &amp; regional shoppers</li>
+      <li>Canadian domestic travellers</li>
+      <li>International visitors from around the world</li>
+      <li>Event attendees and conference guests</li>
+    </ul>
+  </div>
+  <div class="opportunity-card">
+    <div class="opportunity-icon-wrap"><i class="bi bi-people"></i></div>
+    <h3 class="opportunity-title">Collaborative Space</h3>
+    <p class="opportunity-desc">A connection point &mdash; a physical representation of Manitoba’s Indigenous tourism community working together to elevate, empower, and support one another.</p>
+  </div>
+</div>
+</section>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<section id="hours-location" class="page-section forks-visit-cta-section constrained-content">
+<div class="forks-visit-split">
+  <div class="hours-info-card">
+    <span class="card-badge">Plan Your Visit</span>
+    <h3 class="card-title">Operating Hours &amp; Location</h3>
+    <div class="hours-schedule-box">
+      <p class="schedule-days">Thursday &ndash; Sunday</p>
+      <p class="schedule-time">10:00 AM &ndash; 6:00 PM</p>
+      <p class="schedule-note">*Extended hours may apply during peak tourism seasons or special events.</p>
+    </div>
+    <p class="location-details"><strong>Location:</strong> Inside The Forks Market, 1 Forks Market Rd, Winnipeg, MB R3C 4L9</p>
+    <div class="wp-block-buttons" style="margin-top:auto;">
+      <div class="wp-block-button btn btn--gold"><a class="wp-block-button__link wp-element-button" href="https://maps.google.com/?q=The+Forks+Market+Winnipeg" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a></div>
+    </div>
+  </div>
+  <div class="ambassador-contact-card">
+    <span class="card-badge">Member Booking Pathway</span>
+    <h3 class="card-title">Host an Event or Sell Your Products</h3>
+    <p class="card-body">Members interested in using the space for workshops, events, demonstrations, or to sell their authentic products are encouraged to reach out to our space manager to discuss availability and booking opportunities.</p>
+    <div class="contact-profile-box">
+      <p class="contact-name">Taytum</p>
+      <p class="contact-role">Ambassador &amp; Space Manager, Indigenous Tourism Manitoba</p>
+      <div class="wp-block-buttons">
+        <div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="mailto:ambassadormgr@indigenoustourismmanitoba.ca?subject=Explore%20Indigenous%20Space%20Inquiry">Email ambassadormgr@indigenoustourismmanitoba.ca</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="invite-closing-box">
+  <h2 class="invite-title">We Invite You to Experience It Firsthand</h2>
+  <p class="invite-lead">Whether you are an ITM member looking to participate, an artisan interested in retail opportunities, a tourism operator wanting to increase visibility, or a visitor looking to shop with intention &mdash; we invite you to stop by.</p>
+  <p class="invite-body">Explore Indigenous is more than a store &mdash; it is a living expression of Indigenous creativity, entrepreneurship, and tourism excellence in Manitoba. Come visit us at The Forks and see what’s possible when community, culture, and commerce come together.</p>
+  <div class="invite-actions">
+    <div class="wp-block-button btn btn--gold"><a class="wp-block-button__link wp-element-button" href="/operators/">Discover Manitoba Operators</a></div>
+    <div class="wp-block-button btn btn--outline"><a class="wp-block-button__link wp-element-button" href="/become-a-member/">Become an ITM Member</a></div>
+  </div>
+</div>
+</section>
+<!-- /wp:html -->',
+			],
+];
 	}
 
 	public static function run_migration() {

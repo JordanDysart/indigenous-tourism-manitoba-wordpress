@@ -60,7 +60,7 @@ if ( ! $footer_logo ) {
 							<li><a href="<?php echo esc_url( home_url( '/things-to-do/' ) ); ?>">Things To Do</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/experience-map/' ) ); ?>">Experience Map</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/operators/' ) ); ?>">Operator Directory</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/the-forks/' ) ); ?>">The Forks Experience</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/the-forks/' ) ); ?>">Explore Indigenous (The Forks)</a></li>
 						</ul>
 					</div>
 

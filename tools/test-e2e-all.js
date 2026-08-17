@@ -197,7 +197,7 @@ async function runMasterE2ETestSuite() {
   // ---------------------------------------------------------------------------
   // STAGE 8: Breadcrumbs, Redesigned Footer & Sitemap Suite (Tier 4.7)
   // ---------------------------------------------------------------------------
-  console.log(`\n🍞 [Stage 8/9] Executing Breadcrumbs, Redesigned Footer & Sitemap Suite...`);
+  console.log(`\n🍞 [Stage 8/10] Executing Breadcrumbs, Redesigned Footer & Sitemap Suite...`);
   console.log(`   Command: node tools/test-breadcrumbs-footer.js\n`);
   const stageBreadcrumbsFooter = await runProcess('node', ['tools/test-breadcrumbs-footer.js']);
   const stageBreadcrumbsFooterSuccess = stageBreadcrumbsFooter.exitCode === 0;
@@ -210,9 +210,24 @@ async function runMasterE2ETestSuite() {
   });
 
   // ---------------------------------------------------------------------------
-  // STAGE 9: Visual Regression Baselines & Forensic Integrity (Tier 5)
+  // STAGE 9: Explore Indigenous at The Forks Page Suite (Tier 4.8)
   // ---------------------------------------------------------------------------
-  console.log(`\n📸 [Stage 9/9] Verifying Visual Baselines & Forensic Integrity...`);
+  console.log(`\n📍 [Stage 9/10] Executing Explore Indigenous at The Forks Page Suite...`);
+  console.log(`   Command: node tools/test-forks-page.js\n`);
+  const stageForks = await runProcess('node', ['tools/test-forks-page.js']);
+  const stageForksSuccess = stageForks.exitCode === 0;
+
+  results.push({
+    stage: 'Tier 4.8: Explore Indigenous at The Forks Page Suite',
+    success: stageForksSuccess,
+    durationMs: stageForks.durationMs,
+    details: stageForksSuccess ? 'Explore Indigenous page verified with Hero, Vision hub, Jordan Stranger spotlight, 5-card member opportunities, and hours/booking CTA' : `The Forks page suite failed with code ${stageForks.exitCode}`,
+  });
+
+  // ---------------------------------------------------------------------------
+  // STAGE 10: Visual Regression Baselines & Forensic Integrity (Tier 5)
+  // ---------------------------------------------------------------------------
+  console.log(`\n📸 [Stage 10/10] Verifying Visual Baselines & Forensic Integrity...`);
   const manifestPath = path.join(screenshotsDir, 'manifest.json');
   const hasManifest = fs.existsSync(manifestPath);
 

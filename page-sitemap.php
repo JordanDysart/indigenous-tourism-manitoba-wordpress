@@ -31,7 +31,7 @@ get_header();
 				<li><a href="<?php echo esc_url( home_url( '/things-to-do/' ) ); ?>">Things To Do in Manitoba</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/experience-map/' ) ); ?>">Interactive Experience Map</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/operators/' ) ); ?>">All Operators Directory</a></li>
-				<li><a href="<?php echo esc_url( home_url( '/the-forks/' ) ); ?>">The Forks Experience &amp; Heritage</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/the-forks/' ) ); ?>">Explore Indigenous at The Forks</a></li>
 			</ul>
 		</div>
 

@@ -136,7 +136,7 @@ async function runM2Verification() {
 
       case 283: // Reconciliation
         assert(/(?:midflight|relish)\/(?:hero|banner)-block/.test(rawContent), 'Hero/Banner in /reconciliation/');
-        assert(doc.querySelectorAll('.reconciliation-pillars-grid, .wp-block-columns').length > 0, 'Reconciliation pillars grid present');
+        assert(doc.querySelectorAll('.reconciliation-authenticity-section, .reconciliation-lead-section, .reconciliation-pillars-grid, .wp-block-columns').length > 0, 'Reconciliation authentic content sections present');
         break;
 
       case 463: // Things To Do

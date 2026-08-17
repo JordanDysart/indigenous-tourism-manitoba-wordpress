@@ -2,7 +2,7 @@
 @import (reference) '../global/_mixins.less';
 
 // =============================================================================
-// The Forks Location Page Template
+// Explore Indigenous at The Forks Page Layout
 // =============================================================================
 
 .forks-container {
@@ -11,150 +11,409 @@
   padding: 0 @gap;
 }
 
-// 1. Hero Section
-.forks-hero {
-  position: relative;
-  min-height: 480px;
-  background-color: @color-dark;
-  background-image: url('../../../screenshot.png');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  padding: 120px 20px 80px;
-  color: #ffffff;
+// -----------------------------------------------------------------------------
+// 1. Vision & Dual-Purpose Hub Section
+// -----------------------------------------------------------------------------
+.forks-vision-section {
+  padding: 70px 0 50px;
+  background-color: #ffffff;
 
-  &-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(33, 43, 54, 0.92) 0%, rgba(97, 0, 0, 0.85) 60%, rgba(218, 82, 37, 0.75) 100%);
-    z-index: 1;
+  .forks-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+
+    .breakpoint(@breakpoint-lg, {
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+    });
   }
 
-  &-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  &-badge {
+  .vision-badge {
     display: inline-block;
-    padding: 6px 16px;
-    background: rgba(224, 172, 15, 0.2);
-    border: 1px solid @color-gold;
-    color: @color-gold;
+    padding: 6px 14px;
+    background: rgba(218, 82, 37, 0.1);
+    border: 1px solid rgba(218, 82, 37, 0.25);
+    color: @color-orange;
     border-radius: @radius-full;
     font-family: @font-secondary;
     font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
-  &-title {
+  .vision-title {
     font-family: @font-secondary;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    color: #ffffff;
+    color: @color-dark;
+    line-height: 1.25;
+    margin-bottom: 18px;
 
     .breakpoint(@breakpoint-md, {
-      font-size: 3.2rem;
+      font-size: 2.6rem;
     });
   }
 
-  &-subtitle {
+  .vision-lead {
     font-family: @font-primary;
     font-size: 1.15rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 32px;
+    font-weight: 600;
+    color: @color-primary;
+    line-height: 1.55;
+    margin-bottom: 20px;
   }
 
-  &-actions {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
+  .vision-body {
+    font-size: 1rem;
+    color: @color-body-text;
+    line-height: 1.65;
+    margin-bottom: 30px;
   }
-}
 
-// 2. Visitor Info Bar
-.forks-visitor-bar {
-  background: #ffffff;
-  padding: 40px 0;
-  border-bottom: 1px solid rgba(145, 158, 171, 0.2);
-
-  .visitor-info-grid {
+  .vision-feature-cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
+    margin-bottom: 30px;
 
-    .breakpoint(@breakpoint-md, {
-      grid-template-columns: repeat(3, 1fr);
+    .breakpoint(@breakpoint-sm, {
+      grid-template-columns: 1fr 1fr;
     });
   }
 
-  .visitor-info-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 20px;
+  .vision-card {
     background: @color-off-white;
+    border: 1px solid rgba(145, 158, 171, 0.2);
     border-radius: @radius-md;
-    border: 1px solid rgba(145, 158, 171, 0.16);
+    padding: 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 
-    .info-icon {
-      color: @color-orange;
-      background: rgba(218, 82, 37, 0.1);
-      padding: 10px;
-      border-radius: @radius-sm;
-      display: flex;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      border-color: @color-gold;
+    }
+
+    .vision-card-icon {
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: @radius-full;
+      background: rgba(224, 172, 15, 0.15);
+      color: @color-gold-dark;
+      font-size: 1.3rem;
+      margin-bottom: 14px;
     }
 
-    .info-title {
+    .vision-card-title {
       font-family: @font-secondary;
-      font-size: 1.05rem;
+      font-size: 1.15rem;
       font-weight: 700;
       color: @color-dark;
-      margin: 0 0 6px;
+      margin-bottom: 8px;
     }
 
-    .info-detail {
-      font-family: @font-primary;
-      font-size: 0.9rem;
+    .vision-card-desc {
+      font-size: 0.92rem;
       color: @color-body-text;
-      line-height: 1.45;
+      line-height: 1.5;
       margin: 0;
     }
   }
+
+  .vision-image-col {
+    position: relative;
+
+    .vision-img-wrap {
+      position: relative;
+      border-radius: @radius-xl;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+      aspect-ratio: 4 / 3;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.03);
+      }
+    }
+
+    .vision-image-caption-card {
+      position: absolute;
+      bottom: -20px;
+      right: 20px;
+      background: #ffffff;
+      padding: 16px 20px;
+      border-radius: @radius-md;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+      border-left: 4px solid @color-orange;
+      max-width: 280px;
+      z-index: 2;
+
+      .caption-label {
+        font-family: @font-secondary;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @color-orange;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .caption-text {
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: @color-dark;
+        margin: 0;
+        line-height: 1.35;
+      }
+    }
+  }
 }
 
-// 3. Experience Highlights & Pillars
-.forks-highlights-section {
-  padding: 70px 0;
+// -----------------------------------------------------------------------------
+// 2. Featured Artisan Spotlight: Jordan Stranger (Totem Doodem)
+// -----------------------------------------------------------------------------
+.artisan-spotlight-section {
+  padding: 60px 0;
+  background: @color-off-white;
+
+  .artisan-spotlight-card {
+    background: #ffffff;
+    border-radius: @radius-xl;
+    border: 1px solid rgba(224, 172, 15, 0.4);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+    padding: 36px 28px;
+    position: relative;
+    overflow: hidden;
+
+    .breakpoint(@breakpoint-md, {
+      padding: 48px 40px;
+    });
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, @color-gold 0%, @color-orange 50%, @color-primary 100%);
+    }
+  }
+
+  .artisan-header-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid rgba(145, 158, 171, 0.2);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+
+    .artisan-title-wrap {
+      .artisan-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        background: rgba(224, 172, 15, 0.2);
+        color: @color-gold-dark;
+        font-family: @font-secondary;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: @radius-full;
+        letter-spacing: 0.04em;
+        margin-bottom: 8px;
+      }
+
+      .artisan-name {
+        font-family: @font-secondary;
+        font-size: 2rem;
+        font-weight: 700;
+        color: @color-dark;
+        margin: 0 0 6px;
+
+        .breakpoint(@breakpoint-md, {
+          font-size: 2.4rem;
+        });
+      }
+
+      .artisan-subhead {
+        font-size: 1rem;
+        color: @color-mid-gray;
+        margin: 0;
+        font-weight: 500;
+      }
+    }
+
+    .artisan-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: @color-off-white;
+      border: 1px solid rgba(145, 158, 171, 0.3);
+      color: @color-dark;
+      border-radius: @radius-full;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: @color-dark;
+        color: #ffffff;
+        border-color: @color-dark;
+      }
+    }
+  }
+
+  .artisan-content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 36px;
+
+    .breakpoint(@breakpoint-lg, {
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+    });
+  }
+
+  .artisan-bio-col {
+    .artisan-bio-text {
+      font-size: 1.02rem;
+      color: @color-body-text;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .artisan-client-showcase {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px dashed rgba(145, 158, 171, 0.3);
+
+      .client-label {
+        font-family: @font-secondary;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @color-mid-gray;
+        letter-spacing: 0.05em;
+        display: block;
+        margin-bottom: 12px;
+      }
+
+      .client-tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .client-tag {
+        display: inline-block;
+        padding: 5px 14px;
+        background: @color-off-white;
+        border: 1px solid rgba(145, 158, 171, 0.2);
+        border-radius: @radius-full;
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: @color-dark;
+      }
+    }
+  }
+
+  .artisan-blessing-col {
+    .blessing-card {
+      background: linear-gradient(135deg, rgba(224, 172, 15, 0.08) 0%, rgba(218, 82, 37, 0.06) 100%);
+      border: 1px solid rgba(224, 172, 15, 0.3);
+      border-radius: @radius-lg;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      .blessing-icon {
+        font-size: 1.8rem;
+        color: @color-orange;
+        margin-bottom: 14px;
+      }
+
+      .blessing-title {
+        font-family: @font-secondary;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: @color-dark;
+        margin-bottom: 12px;
+      }
+
+      .blessing-text {
+        font-size: 0.95rem;
+        color: @color-body-text;
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      .blessing-print-banner {
+        margin-top: auto;
+        background: #ffffff;
+        border-radius: @radius-md;
+        padding: 16px 20px;
+        border: 1px solid rgba(224, 172, 15, 0.35);
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        .print-icon {
+          font-size: 1.4rem;
+          color: @color-gold-dark;
+          flex-shrink: 0;
+        }
+
+        .print-text {
+          font-size: 0.88rem;
+          font-weight: 600;
+          color: @color-dark;
+          line-height: 1.4;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 3. Member Opportunities Section (5-Card Grid)
+// -----------------------------------------------------------------------------
+.forks-opportunities-section {
+  padding: 80px 0;
   background: #ffffff;
 
   .section-header {
-    max-width: 680px;
+    max-width: 720px;
     margin: 0 auto 50px;
     text-align: center;
 
     .section-badge {
+      display: inline-block;
       color: @color-orange;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 0.85rem;
       letter-spacing: 0.05em;
-      display: block;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .section-title {
@@ -162,40 +421,50 @@
       font-size: 2.2rem;
       font-weight: 700;
       color: @color-dark;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
+
+      .breakpoint(@breakpoint-md, {
+        font-size: 2.6rem;
+      });
     }
 
     .section-subtitle {
       color: @color-mid-gray;
       font-size: 1.05rem;
-      line-height: 1.5;
+      line-height: 1.55;
+      margin: 0;
     }
   }
 
-  .forks-pillars-grid {
+  .forks-opportunities-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 28px;
 
-    .breakpoint(@breakpoint-md, {
+    .breakpoint(@breakpoint-sm, {
+      grid-template-columns: repeat(2, 1fr);
+    });
+
+    .breakpoint(@breakpoint-lg, {
       grid-template-columns: repeat(3, 1fr);
     });
   }
 
-  .pillar-card {
+  .opportunity-card {
     background: #ffffff;
     border-radius: @radius-lg;
     border: 1px solid rgba(145, 158, 171, 0.2);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
-    padding: 36px 28px;
+    padding: 32px 24px;
     display: flex;
     flex-direction: column;
     position: relative;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 
     &:hover {
       transform: translateY(-6px);
       box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+      border-color: @color-orange;
     }
 
     &--featured {
@@ -203,18 +472,17 @@
       background: linear-gradient(to bottom, rgba(224, 172, 15, 0.03), #ffffff);
     }
 
-    .pillar-tag {
-      display: inline-block;
-      align-self: flex-start;
-      padding: 4px 12px;
+    .opportunity-icon-wrap {
+      width: 52px;
+      height: 52px;
+      border-radius: @radius-full;
       background: rgba(218, 82, 37, 0.1);
       color: @color-orange;
-      font-weight: 700;
-      font-size: 0.8rem;
-      border-radius: @radius-full;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
 
       &--gold {
         background: rgba(224, 172, 15, 0.2);
@@ -222,41 +490,39 @@
       }
     }
 
-    .pillar-title {
+    .opportunity-title {
       font-family: @font-secondary;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-weight: 700;
       color: @color-dark;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
-    .pillar-text {
-      font-family: @font-primary;
-      font-size: 0.95rem;
+    .opportunity-desc {
+      font-size: 0.94rem;
       color: @color-body-text;
       line-height: 1.55;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
-    .pillar-features {
+    .opportunity-audience-list {
       list-style: none;
       margin: auto 0 0;
-      padding: 0;
+      padding: 16px 0 0;
       border-top: 1px solid rgba(145, 158, 171, 0.16);
-      padding-top: 16px;
 
       li {
         font-size: 0.88rem;
         color: @color-dark;
         font-weight: 600;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
         position: relative;
         padding-left: 18px;
 
         &::before {
-          content: "✓";
+          content: "•";
           position: absolute;
-          left: 0;
+          left: 4px;
           color: @color-orange;
           font-weight: bold;
         }
@@ -265,46 +531,211 @@
   }
 }
 
-// 4. Content Area
-.forks-content-wrapper {
-  padding: 40px 0;
-}
+// -----------------------------------------------------------------------------
+// 4. Operating Hours, Location & Ambassador Booking Section
+// -----------------------------------------------------------------------------
+.forks-visit-cta-section {
+  padding: 70px 0 90px;
+  background: @color-off-white;
 
-// 5. CTA Box
-.forks-cta-section {
-  padding: 0 0 80px;
-
-  .forks-cta-box {
-    background: @color-dark;
-    border-radius: @radius-xl;
-    padding: 50px 40px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 28px;
-    text-align: center;
+  .forks-visit-split {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
 
     .breakpoint(@breakpoint-md, {
-      flex-direction: row;
-      text-align: left;
+      grid-template-columns: 1fr 1fr;
     });
+  }
 
-    .cta-title {
-      font-family: @font-secondary;
-      font-size: 1.8rem;
+  .hours-info-card {
+    background: @color-dark;
+    color: #ffffff;
+    border-radius: @radius-xl;
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 32px rgba(33, 43, 54, 0.15);
+
+    .card-badge {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 4px 12px;
+      background: rgba(224, 172, 15, 0.2);
+      border: 1px solid @color-gold;
+      color: @color-gold;
+      border-radius: @radius-full;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
     }
 
-    .cta-text {
-      color: rgba(255, 255, 255, 0.85);
-      font-size: 1rem;
-      max-width: 600px;
-      margin: 0;
+    .card-title {
+      font-family: @font-secondary;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .hours-schedule-box {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: @radius-md;
+      padding: 20px;
+      margin-bottom: 18px;
+
+      .schedule-days {
+        font-family: @font-secondary;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: @color-gold;
+        margin: 0 0 4px;
+      }
+
+      .schedule-time {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #ffffff;
+        margin: 0 0 8px;
+      }
+
+      .schedule-note {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0;
+        font-style: italic;
+      }
+    }
+
+    .location-details {
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.9);
       line-height: 1.5;
+      margin: 0 0 16px;
+    }
+  }
+
+  .ambassador-contact-card {
+    background: #ffffff;
+    border-radius: @radius-xl;
+    border: 1px solid rgba(145, 158, 171, 0.25);
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+
+    .card-badge {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 4px 12px;
+      background: rgba(218, 82, 37, 0.1);
+      color: @color-orange;
+      border-radius: @radius-full;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+
+    .card-title {
+      font-family: @font-secondary;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: @color-dark;
+      margin-bottom: 12px;
+    }
+
+    .card-body {
+      font-size: 0.95rem;
+      color: @color-body-text;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .contact-profile-box {
+      margin-top: auto;
+      background: @color-off-white;
+      border-radius: @radius-md;
+      padding: 20px;
+      border: 1px solid rgba(145, 158, 171, 0.2);
+
+      .contact-name {
+        font-family: @font-secondary;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: @color-dark;
+        margin: 0 0 4px;
+      }
+
+      .contact-role {
+        font-size: 0.88rem;
+        color: @color-mid-gray;
+        margin: 0 0 14px;
+      }
+    }
+  }
+
+  // 5. "We Invite You" Closing Banner
+  .invite-closing-box {
+    background: linear-gradient(135deg, @color-dark 0%, #1a222a 100%);
+    border-radius: @radius-xl;
+    padding: 48px 36px;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(224, 172, 15, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .invite-title {
+      font-family: @font-secondary;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+
+      .breakpoint(@breakpoint-md, {
+        font-size: 2.4rem;
+      });
+    }
+
+    .invite-lead {
+      font-family: @font-primary;
+      font-size: 1.15rem;
+      color: @color-gold;
+      font-weight: 600;
+      max-width: 800px;
+      margin: 0 auto 16px;
+      line-height: 1.55;
+    }
+
+    .invite-body {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.88);
+      max-width: 740px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+
+    .invite-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
     }
   }
 }

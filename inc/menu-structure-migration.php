@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class ITM_Menu_Structure_Migration {
 
-	const MENU_VERSION = '1.0.0';
+	const MENU_VERSION = '1.1.0';
 
 	public static function init() {
 		add_action( 'init', [ __CLASS__, 'maybe_run_migration' ], 30 );
@@ -170,6 +170,7 @@ class ITM_Menu_Structure_Migration {
 
 		$highlights = [
 			[ 'title' => __( 'Things To Do', 'kiwatinook' ), 'url' => '/things-to-do/' ],
+			[ 'title' => __( 'Explore Indigenous (The Forks)', 'kiwatinook' ), 'url' => '/the-forks/' ],
 			[ 'title' => __( 'Experience Map', 'kiwatinook' ), 'url' => '/experience-map/' ],
 			[ 'title' => __( 'All Operators Directory', 'kiwatinook' ), 'url' => '/operators/' ],
 		];

@@ -1,5 +1,5 @@
 {
-  "auditedAt": "2026-08-17T03:14:24.681Z",
+  "auditedAt": "2026-08-17T04:06:50.335Z",
   "baseUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site",
   "canonicalTokens": {
     "colors": {
@@ -1988,7 +1988,7 @@
         {
           "page": "Home Page",
           "tag": "h3",
-          "text": "Feast Cafe Bistro",
+          "text": "Shelly’s Bistro",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "20px",
@@ -2001,7 +2001,7 @@
         {
           "page": "Home Page",
           "tag": "h3",
-          "text": "Kikiwak Inn",
+          "text": "Manitoba Indigenous Cultural Education Centre Inc.",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "20px",
@@ -2014,7 +2014,7 @@
         {
           "page": "Home Page",
           "tag": "h3",
-          "text": "La Brasserie Nonsuch Brewing Co.",
+          "text": "Moon Gate Guest House",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "20px",
@@ -2027,7 +2027,7 @@
         {
           "page": "Home Page",
           "tag": "h3",
-          "text": "Teekca’s Boutique",
+          "text": "Bistro on Notre Dame",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "20px",
@@ -8935,7 +8935,7 @@
   "colorInventory": {
     "#404040": {
       "hex": "#404040",
-      "count": 2896,
+      "count": 2916,
       "types": [
         "color"
       ],
@@ -8959,7 +8959,7 @@
     },
     "#212b36": {
       "hex": "#212b36",
-      "count": 1477,
+      "count": 1517,
       "types": [
         "color",
         "backgroundColor"
@@ -13920,7 +13920,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-r3f5gc3r9ojh\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-60zfltat4s84\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "About Indigenous Tourism Manitoba",
@@ -14008,7 +14008,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-i6mitegrzr4g\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ilgvlfw8qcrw\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Operators Directory",
@@ -14552,7 +14552,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-i0p04ykp8elq\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-m3zpscuioh18\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Single Operator (Prairie Berry)",
@@ -14608,7 +14608,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ygsmid9a3905\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-1vmcdusjqj9g\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Experience Map",
@@ -15176,7 +15176,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-is7ecynn232y\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-msprlyig0ewf\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Reconciliation",
@@ -15248,7 +15248,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-eemrbjbp5l8v\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ok72pez2zi00\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Things To Do",
@@ -15320,7 +15320,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-3gyspyl02s5i\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-xkgb3oj2gipb\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Our Team",
@@ -15400,7 +15400,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-r39pincs7l56\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-wz23t188v0y8\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Become a Member",
@@ -15480,7 +15480,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-gnf8x1ox49nr\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-2j80p9yvwwpt\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Member Benefits",
@@ -15560,7 +15560,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-xiinfg3pv0to\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-midi712nice\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow"
       },
       {
         "page": "Contact Us",
@@ -15640,7 +15640,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-4nrm8ht2tmon\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-bekmpvbmkhrh\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Privacy Policy",
@@ -15696,7 +15696,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-9rw2743gy378\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-xtxoxcul5t41\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "New Account Request",
@@ -15776,7 +15776,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-7rpf8lio4nvl\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-2dv2gugmty3r\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Inquiry Form",
@@ -15856,7 +15856,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-9xj8a62ek2l4\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ur2f7ggj6k6f\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Program (Hub)",
@@ -15936,7 +15936,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-s1uszvecf2av\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-oyocsj13kgxa\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 1",
@@ -16016,7 +16016,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-se1d478gp5ht\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-t1h7r8lxe3e8\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 2",
@@ -16096,7 +16096,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-1a1cfzrutxhc\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-fj3vaetxjd97\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 3",
@@ -16176,7 +16176,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-qdu4wzokxdck\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-mzb8i0ra8x47\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training More Opportunities",
@@ -16256,7 +16256,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-i6iztnz1jgda\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-hkdn3t3ei61u\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "404 Error Page",
@@ -16312,7 +16312,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-dlnqw2micmo2\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-w8nnvq7gdwa8\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       }
     ],
     "orphanPluginClasses": [
@@ -17081,7 +17081,91 @@
         "text": "Failed to load resource: the server responded with a status of 404 ()"
       },
       {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
+        "text": "Framing 'https://www.google.com/' violates the following report-only Content Security Policy directive: \"frame-ancestors 'self'\". The violation has been logged, but no further action has been taken.\n"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/about-itm/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operators/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/operator/prairie-berry/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/things-to-do/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/become-a-member/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/member-benefits/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/contact-us/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/privacy-policy/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/new-account-request/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/itm-indigenous-guide-training-program-inquiry-form/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/guide-training-program/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/indigenous-guide-training-program-step-1/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/indigenous-guide-training-program-step-2/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/indigenous-guide-training-program-step-3/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/indigenous-guide-training-program-more-learning-opportunities/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/non-existent-page-404",
         "text": "Failed to load resource: the server responded with a status of 404 ()"
       },
       {
