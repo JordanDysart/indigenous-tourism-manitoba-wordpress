@@ -4,7 +4,7 @@
  * Exhaustively validates:
  *  1. Complete removal of 100% legacy third-party blocks (kadence/*, acf/*, getwid/*) across all 15 pages
  *  2. 0 orphan classes (kt-*, wp-block-getwid-*) in DOM
- *  3. Conformance with WordPress Core & theme relish/* blocks
+ *  3. Conformance with WordPress Core & theme (?:midflight|relish)/* blocks
  *  4. Design system token conformance and layout structures
  *  5. Specific feature checks for all 15 target pages
  */
@@ -129,34 +129,34 @@ async function runM2Verification() {
     // 7. Page-Specific Behavioral Assertions
     switch (p.id) {
       case 22: // About ITM
-        const hasVideoPopupBlock = rawContent.includes('wp:relish/video-popup-block');
-        assert(hasVideoPopupBlock, 'relish/video-popup-block embedded in /about-itm/ post_content');
+        const hasVideoPopupBlock = /(?:midflight|relish)\/video-popup-block/.test(rawContent);
+        assert(hasVideoPopupBlock, 'video-popup-block embedded in /about-itm/ post_content');
         assert(rawContent.includes('Building the Brand'), 'Building the Brand section present in /about-itm/');
         break;
 
       case 283: // Reconciliation
-        assert(rawContent.includes('relish/hero-block') || rawContent.includes('relish/banner-block'), 'relish/hero-block or relish/banner-block Hero in /reconciliation/');
+        assert(/(?:midflight|relish)\/(?:hero|banner)-block/.test(rawContent), 'Hero/Banner in /reconciliation/');
         assert(doc.querySelectorAll('.reconciliation-pillars-grid, .wp-block-columns').length > 0, 'Reconciliation pillars grid present');
         break;
 
       case 463: // Things To Do
-        assert(rawContent.includes('relish/hero-block') || rawContent.includes('relish/banner-block'), 'relish/hero-block or relish/banner-block Hero in /things-to-do/');
+        assert(/(?:midflight|relish)\/(?:hero|banner)-block/.test(rawContent), 'Hero/Banner in /things-to-do/');
         assert(doc.querySelectorAll('.experiences-card-grid, .experience-card').length >= 3, 'Experience category cards in /things-to-do/');
         break;
 
       case 435: // Our Team
-        assert(rawContent.includes('relish/hero-block') || rawContent.includes('relish/banner-block'), 'relish/hero-block or relish/banner-block Hero in /our-team/');
+        assert(/(?:midflight|relish)\/(?:hero|banner)-block/.test(rawContent), 'Hero/Banner in /our-team/');
         assert(doc.querySelectorAll('.team-member-card').length >= 3, '3+ Team member cards in /our-team/');
         assert(doc.querySelectorAll('.img-circular, .img-circular-wrap').length >= 3, 'Circular hoop photo wrappers in /our-team/');
         break;
 
       case 2367: // Become a Member
-        assert(rawContent.includes('relish/hero-block') || rawContent.includes('relish/banner-block'), 'relish/hero-block or relish/banner-block Hero in /become-a-member/');
+        assert(/(?:midflight|relish)\/(?:hero|banner)-block/.test(rawContent), 'Hero/Banner in /become-a-member/');
         assert(doc.querySelectorAll('.benefit-card').length >= 2, 'Membership category cards in /become-a-member/');
         break;
 
       case 2373: // Member Benefits
-        assert(rawContent.includes('relish/hero-block') || rawContent.includes('relish/banner-block'), 'relish/hero-block or relish/banner-block Hero in /member-benefits/');
+        assert(/(?:midflight|relish)\/(?:hero|banner)-block/.test(rawContent), 'Hero/Banner in /member-benefits/');
         assert(doc.querySelectorAll('.benefit-card').length >= 4, '4+ Member benefit cards in /member-benefits/');
         break;
 
@@ -171,38 +171,38 @@ async function runM2Verification() {
         break;
 
       case 1518: // New Account Request
-        assert(rawContent.includes('relish/banner-block'), 'relish/banner-block Hero in /new-account-request/');
+        assert(/(?:midflight|relish)\/banner-block/.test(rawContent), 'Banner block Hero in /new-account-request/');
         assert(doc.querySelectorAll('.account-request-box').length > 0, 'Account request box in /new-account-request/');
         break;
 
       case 2572: // Inquiry Form
-        assert(rawContent.includes('relish/banner-block'), 'relish/banner-block Hero in /itm-indigenous-guide-training-program-inquiry-form/');
+        assert(/(?:midflight|relish)\/banner-block/.test(rawContent), 'Banner block Hero in /itm-indigenous-guide-training-program-inquiry-form/');
         assert(doc.querySelectorAll('.inquiry-info-grid, .inquiry-contact-card').length > 0, 'Inquiry pathway grid in Inquiry Form');
         break;
 
       case 2734: // Guide Training Hub
-        assert(rawContent.includes('relish/banner-block'), 'relish/banner-block Hero in Guide Training Hub');
+        assert(/(?:midflight|relish)\/banner-block/.test(rawContent), 'Banner block Hero in Guide Training Hub');
         assert(doc.querySelectorAll('.program-pathway-grid, .program-step-card').length >= 3, '3 Pathway step cards in Guide Training Hub');
         assert(doc.querySelectorAll('.step-badge').length === 3, '3 Step badges in Guide Training Hub');
         break;
 
       case 2534: // Step 1
-        assert(rawContent.includes('relish/banner-block'), 'relish/banner-block Hero in Step 1');
+        assert(/(?:midflight|relish)\/banner-block/.test(rawContent), 'Banner block Hero in Step 1');
         assert(doc.querySelectorAll('.step-details-grid, .step-nav-bar').length > 0, 'Curriculum vs Prerequisites grid in Step 1');
         break;
 
       case 2537: // Step 2
-        assert(rawContent.includes('relish/banner-block'), 'relish/banner-block Hero in Step 2');
+        assert(/(?:midflight|relish)\/banner-block/.test(rawContent), 'Banner block Hero in Step 2');
         assert(doc.querySelectorAll('.step-details-grid, .step-nav-bar').length > 0, 'Field modules vs Certifications grid in Step 2');
         break;
 
       case 2542: // Step 3
-        assert(rawContent.includes('relish/banner-block'), 'relish/banner-block Hero in Step 3');
+        assert(/(?:midflight|relish)\/banner-block/.test(rawContent), 'Banner block Hero in Step 3');
         assert(doc.querySelectorAll('.step-details-grid, .step-nav-bar').length > 0, 'Practicum placement vs Career outcomes in Step 3');
         break;
 
       case 2676: // More Opportunities
-        assert(rawContent.includes('relish/banner-block'), 'relish/banner-block Hero in More Learning Opportunities');
+        assert(/(?:midflight|relish)\/banner-block/.test(rawContent), 'Banner block Hero in More Learning Opportunities');
         assert(doc.querySelectorAll('.learning-opportunities-grid, .benefit-card').length >= 3, '3 Opportunity cards in More Learning Opportunities');
         break;
     }

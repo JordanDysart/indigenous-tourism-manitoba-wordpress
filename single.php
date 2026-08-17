@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package itm_indigpro
+ * @package kiwatinook
  */
 
 get_header();

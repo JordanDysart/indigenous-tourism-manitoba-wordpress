@@ -134,7 +134,7 @@ foreach ( $expected_slugs as $id => $slug ) {
 echo "\n--- [2] Video Popup Block PHP Server-side Render Simulation for /about-itm/ ---\n";
 $about_content = $pages[22]['content'];
 preg_match( '/<!--\s*wp:relish\/video-popup-block\s+(\{[\s\S]*?\})\s*\/-->/', $about_content, $video_match );
-assert_test( ! empty( $video_match ), 'relish/video-popup-block tag found in /about-itm/' );
+assert_test( ! empty( $video_match ), '(?:midflight|relish)/video-popup-block tag found in /about-itm/' );
 
 if ( ! empty( $video_match ) ) {
 	$attributes = json_decode( $video_match[1], true );

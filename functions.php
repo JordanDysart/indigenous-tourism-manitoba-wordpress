@@ -1,15 +1,17 @@
 <?php
 /**
- * itm_indigpro functions and definitions
+ * Kiwatinook functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package itm_indigpro
+ * @package kiwatinook
  */
 
-if (!function_exists('itm_indigpro_setup')):
-	function itm_indigpro_setup()
+if (!function_exists('kiwatinook_setup')):
+	function kiwatinook_setup()
 	{
+		// Primary text domain with backward-compatible alias
+		load_theme_textdomain('kiwatinook', get_template_directory() . '/languages');
 		load_theme_textdomain('itm_indigpro', get_template_directory() . '/languages');
 
 		add_theme_support('automatic-feed-links');
@@ -17,8 +19,8 @@ if (!function_exists('itm_indigpro_setup')):
 		add_theme_support('post-thumbnails');
 
 		register_nav_menus(array(
-			'primary-menu' => esc_html__('Primary Menu', 'itm_indigpro'),
-			'footer-menu' => esc_html__('Footer Menu', 'itm_indigpro'),
+			'primary-menu' => esc_html__('Primary Menu', 'kiwatinook'),
+			'footer-menu'  => esc_html__('Footer Menu', 'kiwatinook'),
 		));
 
 		add_theme_support('html5', array(
@@ -29,7 +31,7 @@ if (!function_exists('itm_indigpro_setup')):
 			'caption',
 		));
 
-		add_theme_support('custom-background', apply_filters('itm_indigpro_custom_background_args', array(
+		add_theme_support('custom-background', apply_filters('kiwatinook_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		)));
@@ -37,39 +39,46 @@ if (!function_exists('itm_indigpro_setup')):
 		add_theme_support('customize-selective-refresh-widgets');
 
 		add_theme_support('custom-logo', array(
-			'height' => 250,
-			'width' => 250,
-			'flex-width' => true,
+			'height'      => 250,
+			'width'       => 250,
+			'flex-width'  => true,
 			'flex-height' => true,
 		));
 	}
 endif;
-add_action('after_setup_theme', 'itm_indigpro_setup');
+add_action('after_setup_theme', 'kiwatinook_setup');
 
-function itm_indigpro_content_width()
-{
-	$GLOBALS['content_width'] = apply_filters('itm_indigpro_content_width', 640);
+// Backwards compatibility alias
+if (!function_exists('itm_indigpro_setup')) {
+	function itm_indigpro_setup() {
+		kiwatinook_setup();
+	}
 }
-add_action('after_setup_theme', 'itm_indigpro_content_width', 0);
 
-function itm_indigpro_widgets_init()
+function kiwatinook_content_width()
+{
+	$GLOBALS['content_width'] = apply_filters('kiwatinook_content_width', 640);
+}
+add_action('after_setup_theme', 'kiwatinook_content_width', 0);
+
+function kiwatinook_widgets_init()
 {
 	register_sidebar(array(
-		'name' => esc_html__('Sidebar', 'itm_indigpro'),
-		'id' => 'sidebar-1',
-		'description' => esc_html__('Add widgets here.', 'itm_indigpro'),
+		'name'          => esc_html__('Sidebar', 'kiwatinook'),
+		'id'            => 'sidebar-1',
+		'description'   => esc_html__('Add widgets here.', 'kiwatinook'),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget' => '</section>',
-		'before_title' => '<h2 class="widget-title">',
-		'after_title' => '</h2>',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
 	));
 }
 
-// add_action( 'widgets_init', 'itm_indigpro_widgets_init' );
+// add_action( 'widgets_init', 'kiwatinook_widgets_init' );
 
-function itm_indigpro_scripts()
+function kiwatinook_scripts()
 {
-	wp_enqueue_style('itm_indigpro-style', get_stylesheet_uri());
+	wp_enqueue_style('kiwatinook-style', get_stylesheet_uri());
 	wp_enqueue_style('animated-menu-style', get_template_directory_uri() . '/assets/css/styles.css');
 
 	$vars = array(
@@ -83,12 +92,12 @@ function itm_indigpro_scripts()
 	wp_enqueue_style('fancybox-css', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css');
 	wp_enqueue_script('fancybox-js', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js', array('jquery'), null, true);
 
-	wp_register_script('itm_indigpro-theme', get_template_directory_uri() . '/js/theme.js', array('jquery'), '20150524', true);
-	wp_localize_script('itm_indigpro-theme', 'itm_indigpro', $vars);
-	wp_enqueue_script('itm_indigpro-theme');
+	wp_register_script('kiwatinook-theme', get_template_directory_uri() . '/js/theme.js', array('jquery'), '20150524', true);
+	wp_localize_script('kiwatinook-theme', 'kiwatinook', $vars);
+	wp_enqueue_script('kiwatinook-theme');
 
-	wp_enqueue_script('itm_indigpro-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true);
-	wp_enqueue_script('itm_indigpro-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array('jquery'), '20151215', true);
+	wp_enqueue_script('kiwatinook-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true);
+	wp_enqueue_script('kiwatinook-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array('jquery'), '20151215', true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
@@ -106,7 +115,7 @@ function itm_indigpro_scripts()
 	);
 }
 
-add_action('wp_enqueue_scripts', 'itm_indigpro_scripts', 99);
+add_action('wp_enqueue_scripts', 'kiwatinook_scripts', 99);
 
 
 /**
@@ -120,13 +129,13 @@ function add_constant_contact_to_head() {
 }
 add_action('wp_head', 'add_constant_contact_to_head');
 
-function relish_blocks_scripts()
+function kiwatinook_blocks_scripts()
 {
 	$block_js = '/blocks/blocks.js';
 	$block_css = '/blocks/blocks.css';
 
 	wp_enqueue_script(
-		'relish-blocks-js',
+		'kiwatinook-blocks-js',
 		get_template_directory_uri() . $block_js,
 		['jquery'],
 		filemtime(get_template_directory() . $block_js),
@@ -134,22 +143,22 @@ function relish_blocks_scripts()
 	);
 
 	wp_enqueue_style(
-		'relish-blocks-css',
+		'kiwatinook-blocks-css',
 		get_template_directory_uri() . $block_css,
 		[],
 		filemtime(get_template_directory() . $block_css)
 	);
 }
 
-add_action('enqueue_block_assets', 'relish_blocks_scripts');
+add_action('enqueue_block_assets', 'kiwatinook_blocks_scripts');
 
-function relish_blocks_editor_scripts()
+function kiwatinook_blocks_editor_scripts()
 {
 	$editor_js = '/blocks/blocks.js';
 	$editor_css = '/blocks/blocks.css';
 
 	wp_enqueue_script(
-		'relish-blocks-editor-js',
+		'kiwatinook-blocks-editor-js',
 		get_template_directory_uri() . $editor_js,
 		['wp-blocks', 'wp-element'],
 		filemtime(get_template_directory() . $editor_js),
@@ -157,14 +166,14 @@ function relish_blocks_editor_scripts()
 	);
 
 	wp_enqueue_style(
-		'relish-blocks-editor-css',
+		'kiwatinook-blocks-editor-css',
 		get_template_directory_uri() . $editor_css,
 		['wp-edit-blocks'],
 		filemtime(get_template_directory() . $editor_css)
 	);
 }
 
-add_action('enqueue_block_editor_assets', 'relish_blocks_editor_scripts');
+add_action('enqueue_block_editor_assets', 'kiwatinook_blocks_editor_scripts');
 
 add_action('after_setup_theme', 'woocommerce_support');
 function woocommerce_support()
@@ -191,14 +200,14 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
-function itm_indigpro_load_walker_classes()
+function kiwatinook_load_walker_classes()
 {
 	require_once get_template_directory() . '/inc/mega-menu-meta.php';
 	require_once get_template_directory() . '/inc/class-header-menu-walker.php';
 	require_once get_template_directory() . '/inc/class-footer-menu-walker.php';
 }
 
-add_action('after_setup_theme', 'itm_indigpro_load_walker_classes');
+add_action('after_setup_theme', 'kiwatinook_load_walker_classes');
 
 /**
  * Customizer additions.
@@ -227,7 +236,7 @@ require get_template_directory() . '/inc/m2-pages-migration.php';
  */
 require get_template_directory() . '/inc/menu-structure-migration.php';
 
-function mytheme_setup()
+function kiwatinook_theme_setup()
 {
 	add_theme_support('align-wide');
 	add_theme_support('editor-styles');
@@ -235,52 +244,52 @@ function mytheme_setup()
 	add_theme_support('dark-editor-style');
 	add_theme_support('responsive-embeds');
 }
-add_action('after_setup_theme', 'mytheme_setup');
+add_action('after_setup_theme', 'kiwatinook_theme_setup');
 
 /**
  * Register block pattern categories.
  */
-function relish_register_pattern_categories() {
+function kiwatinook_register_pattern_categories() {
 	if ( function_exists( 'register_block_pattern_category' ) ) {
 		register_block_pattern_category(
 			'itm-patterns',
-			array( 'label' => __( 'ITM Patterns', 'itm_indigpro' ) )
+			array( 'label' => __( 'ITM Patterns', 'kiwatinook' ) )
 		);
 	}
 }
-add_action( 'init', 'relish_register_pattern_categories' );
+add_action( 'init', 'kiwatinook_register_pattern_categories' );
 
 add_theme_support('editor-color-palette', array(
 	array(
-		'name' => __('Black', 'custom'),
-		'slug' => 'black',
+		'name'  => __('Black', 'kiwatinook'),
+		'slug'  => 'black',
 		'color' => '#000000',
 	),
 	array(
-		'name' => __('White', 'custom'),
-		'slug' => 'white',
+		'name'  => __('White', 'kiwatinook'),
+		'slug'  => 'white',
 		'color' => '#ffffff',
 	),
 ));
 
 add_theme_support('editor-font-sizes', array(
 	array(
-		'name' => __('Medium', 'custom'),
-		'shortName' => __('M', 'custom'),
-		'size' => 22,
-		'slug' => 'medium'
+		'name'      => __('Medium', 'kiwatinook'),
+		'shortName' => __('M', 'kiwatinook'),
+		'size'      => 22,
+		'slug'      => 'medium'
 	),
 	array(
-		'name' => __('Large', 'custom'),
-		'shortName' => __('L', 'custom'),
-		'size' => 36,
-		'slug' => 'large'
+		'name'      => __('Large', 'kiwatinook'),
+		'shortName' => __('L', 'kiwatinook'),
+		'size'      => 36,
+		'slug'      => 'large'
 	),
 	array(
-		'name' => __('Huge', 'custom'),
-		'shortName' => __('XL', 'custom'),
-		'size' => 48,
-		'slug' => 'huge'
+		'name'      => __('Huge', 'kiwatinook'),
+		'shortName' => __('XL', 'kiwatinook'),
+		'size'      => 48,
+		'slug'      => 'huge'
 	)
 ));
 
@@ -363,9 +372,9 @@ function ajax_filter_operators()
 		echo '</ul>';
 	} else {
 		echo '<div class="operator-empty-state">';
-		echo '<h3>' . esc_html__('No operators found', 'itm_indigpro') . '</h3>';
-		echo '<p>' . esc_html__('No experiences match the selected filters. Please try selecting a different region or category.', 'itm_indigpro') . '</p>';
-		echo '<button type="button" class="btn btn--outline btn--sm operator-reset-btn">' . esc_html__('Reset Filters', 'itm_indigpro') . '</button>';
+		echo '<h3>' . esc_html__('No operators found', 'kiwatinook') . '</h3>';
+		echo '<p>' . esc_html__('No experiences match the selected filters. Please try selecting a different region or category.', 'kiwatinook') . '</p>';
+		echo '<button type="button" class="btn btn--outline btn--sm operator-reset-btn">' . esc_html__('Reset Filters', 'kiwatinook') . '</button>';
 		echo '</div>';
 	}
 	wp_die();
@@ -381,14 +390,14 @@ function register_operator_post_type()
 {
 	$args = array(
 		'labels' => array(
-			'name' => 'Operators',
+			'name'          => 'Operators',
 			'singular_name' => 'Operator',
 		),
-		'public' => true,
-		'has_archive' => true,
+		'public'       => true,
+		'has_archive'  => true,
 		'show_in_rest' => true,
-		'supports' => array('title', 'editor', 'thumbnail'),
-		'rewrite' => array('slug' => 'operator'),
+		'supports'     => array('title', 'editor', 'thumbnail'),
+		'rewrite'      => array('slug' => 'operator'),
 	);
 	register_post_type('operator', $args);
 }
@@ -404,22 +413,22 @@ function register_operator_taxonomies()
 		'operator',
 		array(
 			'labels' => array(
-				'name' => 'Operator Categories',
-				'singular_name' => 'Operator Category',
-				'search_items' => 'Search Categories',
-				'all_items' => 'All Categories',
-				'parent_item' => 'Parent Category',
+				'name'              => 'Operator Categories',
+				'singular_name'     => 'Operator Category',
+				'search_items'      => 'Search Categories',
+				'all_items'         => 'All Categories',
+				'parent_item'       => 'Parent Category',
 				'parent_item_colon' => 'Parent Category:',
-				'edit_item' => 'Edit Category',
-				'update_item' => 'Update Category',
-				'add_new_item' => 'Add New Category',
-				'new_item_name' => 'New Category Name',
-				'menu_name' => 'Categories',
+				'edit_item'         => 'Edit Category',
+				'update_item'       => 'Update Category',
+				'add_new_item'      => 'Add New Category',
+				'new_item_name'     => 'New Category Name',
+				'menu_name'         => 'Categories',
 			),
 			'hierarchical' => true,
 			'show_in_rest' => true,
-			'rewrite' => array('slug' => 'operator-category'),
-			'show_ui' => true,
+			'rewrite'      => array('slug' => 'operator-category'),
+			'show_ui'      => true,
 		)
 	);
 
@@ -428,30 +437,30 @@ function register_operator_taxonomies()
 		'operator',
 		array(
 			'labels' => array(
-				'name' => 'Operator Regions',
-				'singular_name' => 'Operator Region',
-				'search_items' => 'Search Regions',
-				'all_items' => 'All Regions',
-				'parent_item' => 'Parent Region',
+				'name'              => 'Operator Regions',
+				'singular_name'     => 'Operator Region',
+				'search_items'      => 'Search Regions',
+				'all_items'         => 'All Regions',
+				'parent_item'       => 'Parent Region',
 				'parent_item_colon' => 'Parent Region:',
-				'edit_item' => 'Edit Region',
-				'update_item' => 'Update Region',
-				'add_new_item' => 'Add New Region',
-				'new_item_name' => 'New Region Name',
-				'menu_name' => 'Regions',
+				'edit_item'         => 'Edit Region',
+				'update_item'       => 'Update Region',
+				'add_new_item'      => 'Add New Region',
+				'new_item_name'     => 'New Region Name',
+				'menu_name'         => 'Regions',
 			),
 			'hierarchical' => true,
 			'show_in_rest' => true,
-			'rewrite' => array('slug' => 'operator-region'),
-			'show_ui' => true,
+			'rewrite'      => array('slug' => 'operator-region'),
+			'show_ui'      => true,
 		)
 	);
 }
 add_action('init', 'register_operator_taxonomies');
 
 // extend page preview plugin length
-add_filter( 'ppp_nonce_life', 'my_nonce_life' );
-function my_nonce_life() {
+add_filter( 'ppp_nonce_life', 'kiwatinook_nonce_life' );
+function kiwatinook_nonce_life() {
     return 60 * 60 * 24 * 5; // 5 days
 }
 
@@ -462,10 +471,6 @@ function my_nonce_life() {
  * it delegates to get_field() exactly as before. When ACF is not installed it
  * falls back to get_post_meta() for post-based fields (covers all operator
  * fields, since ACF stores them as standard post meta under the same key).
- *
- * Calls without a $post_id are block-context reads (banner block, operator
- * block attribute selectors) — those return null without ACF because there is
- * no post-meta equivalent for block-instance data.
  *
  * @param string           $field   ACF field name / post meta key.
  * @param int|string|false $post_id Post ID, or ACF object identifier (e.g. 'menu_42').
@@ -484,15 +489,6 @@ function itm_get_field( $field, $post_id = false ) {
 
 /**
  * Normalise an image field value to an ACF-compatible array.
- *
- * ACF image fields return ['url'=>…, 'alt'=>…, 'width'=>…, 'height'=>…].
- * When ACF is absent, itm_get_field() returns the raw attachment ID stored
- * by get_post_meta(). This helper accepts either format and always returns
- * the same array shape, or null if the value is empty/invalid.
- *
- * Usage:
- *   $img = itm_normalize_image( itm_get_field( 'operator_feature_image', $id ) );
- *   if ( $img ) { echo $img['url']; }
  *
  * @param mixed $image  ACF image array OR attachment ID.
  * @return array|null   Normalised ['url', 'alt', 'width', 'height'] or null.
@@ -517,10 +513,6 @@ function itm_normalize_image( $image ) {
 
 /**
  * Normalise a gallery field value to an array of ACF-compatible image arrays.
- *
- * ACF gallery fields return an array of image arrays. Without ACF,
- * get_post_meta() returns a serialised array of attachment IDs which
- * WordPress auto-unserialises on read.
  *
  * @param mixed $gallery  ACF gallery array OR array of attachment IDs.
  * @return array          Array of normalised image arrays (may be empty).
@@ -556,7 +548,7 @@ function itm_render_breadcrumbs( $args = [] ) {
 	// 1. Single Operator Post Type: Operators > [Operator Title]
 	if ( is_singular( 'operator' ) ) {
 		$items[] = [
-			'title' => __( 'Operators', 'itm_indigpro' ),
+			'title' => __( 'Operators', 'kiwatinook' ),
 			'url'   => home_url( '/operators/' ),
 		];
 		$items[] = [
@@ -568,7 +560,7 @@ function itm_render_breadcrumbs( $args = [] ) {
 	elseif ( is_tax( 'operator_region' ) || is_tax( 'operator_category' ) ) {
 		$term = get_queried_object();
 		$items[] = [
-			'title' => __( 'Operators', 'itm_indigpro' ),
+			'title' => __( 'Operators', 'kiwatinook' ),
 			'url'   => home_url( '/operators/' ),
 		];
 		if ( $term && ! is_wp_error( $term ) ) {
@@ -581,7 +573,7 @@ function itm_render_breadcrumbs( $args = [] ) {
 	// 3. Standard Single Post (News / Articles)
 	elseif ( is_singular( 'post' ) ) {
 		$items[] = [
-			'title' => __( 'Home', 'itm_indigpro' ),
+			'title' => __( 'Home', 'kiwatinook' ),
 			'url'   => $home_url,
 		];
 		$categories = get_the_category();
@@ -599,7 +591,7 @@ function itm_render_breadcrumbs( $args = [] ) {
 	// 4. Hierarchical Page
 	elseif ( is_page() ) {
 		$items[] = [
-			'title' => __( 'Home', 'itm_indigpro' ),
+			'title' => __( 'Home', 'kiwatinook' ),
 			'url'   => $home_url,
 		];
 		$ancestors = get_post_ancestors( get_the_ID() );
@@ -620,7 +612,7 @@ function itm_render_breadcrumbs( $args = [] ) {
 	// 5. General Archive / Taxonomy
 	elseif ( is_archive() ) {
 		$items[] = [
-			'title' => __( 'Home', 'itm_indigpro' ),
+			'title' => __( 'Home', 'kiwatinook' ),
 			'url'   => $home_url,
 		];
 		$items[] = [
@@ -631,22 +623,22 @@ function itm_render_breadcrumbs( $args = [] ) {
 	// 6. Search Results
 	elseif ( is_search() ) {
 		$items[] = [
-			'title' => __( 'Home', 'itm_indigpro' ),
+			'title' => __( 'Home', 'kiwatinook' ),
 			'url'   => $home_url,
 		];
 		$items[] = [
-			'title' => sprintf( __( 'Search: %s', 'itm_indigpro' ), get_search_query() ),
+			'title' => sprintf( __( 'Search: %s', 'kiwatinook' ), get_search_query() ),
 			'url'   => '',
 		];
 	}
 	// 7. 404
 	elseif ( is_404() ) {
 		$items[] = [
-			'title' => __( 'Home', 'itm_indigpro' ),
+			'title' => __( 'Home', 'kiwatinook' ),
 			'url'   => $home_url,
 		];
 		$items[] = [
-			'title' => __( 'Page Not Found', 'itm_indigpro' ),
+			'title' => __( 'Page Not Found', 'kiwatinook' ),
 			'url'   => '',
 		];
 	}
@@ -685,4 +677,3 @@ function itm_breadcrumb_shortcode( $atts ) {
 	return itm_render_breadcrumbs( $atts );
 }
 add_shortcode( 'breadcrumb', 'itm_breadcrumb_shortcode' );
-

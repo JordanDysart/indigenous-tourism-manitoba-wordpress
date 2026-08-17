@@ -214,13 +214,13 @@ async function runChallengerM3() {
           assert(typeof parsed === 'object' && parsed !== null, `[ID ${page.id}] Valid JSON attribute for block <${tok.name}>`);
 
           // Schema sanity checks
-          if (tok.name === 'relish/video-popup-block') {
+          if (tok.name === '(?:midflight|relish)/video-popup-block') {
             assert(typeof parsed.videoUrl === 'string' && parsed.videoUrl.length > 0, `[ID ${page.id}] video-popup-block has valid videoUrl`);
             assert(typeof parsed.title === 'string' && parsed.title.length > 0, `[ID ${page.id}] video-popup-block has valid title`);
             assert(typeof parsed.overlayOpacity === 'number' && parsed.overlayOpacity >= 0 && parsed.overlayOpacity <= 100, `[ID ${page.id}] video-popup-block overlayOpacity is 0-100`);
             assert(typeof parsed.aspectRatio === 'string', `[ID ${page.id}] video-popup-block aspectRatio is valid string`);
           }
-          if (tok.name === 'relish/banner-block') {
+          if (tok.name === '(?:midflight|relish)/banner-block') {
             assert(typeof parsed.title === 'string' && parsed.title.length > 0, `[ID ${page.id}] banner-block has valid title`);
           }
           if (tok.name === 'core/heading') {
@@ -377,7 +377,7 @@ async function runChallengerM3() {
 
   const aboutPage = pages[22];
   assert(!!aboutPage, 'About ITM page (ID 22) found');
-  assert(aboutPage.content.includes('<!-- wp:relish/video-popup-block'), '/about-itm/ contains relish/video-popup-block comment');
+  assert(aboutPage.content.includes('<!-- wp:(?:midflight|relish)/video-popup-block'), '/about-itm/ contains (?:midflight|relish)/video-popup-block comment');
   assert(!aboutPage.content.includes('kadence'), '/about-itm/ contains 0 kadence references');
   assert(!aboutPage.content.includes('getwid'), '/about-itm/ contains 0 getwid references');
 

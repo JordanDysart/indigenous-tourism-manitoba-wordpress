@@ -4,7 +4,7 @@
  *
  * Displays an organized hierarchical sitemap of all site pages, operator categories, regions, and resources.
  *
- * @package itm_indigpro
+ * @package kiwatinook
  */
 
 get_header();

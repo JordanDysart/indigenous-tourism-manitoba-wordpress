@@ -1,8 +1,9 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 3,
-    "name": "relish/banner-block",
+    "name": "midflight/banner-block",
     "title": "Custom Banner",
+    "textdomain": "kiwatinook",
     "description": "A custom block with background image, overlay, and a circular side image. No ACF required.",
     "category": "widgets",
     "icon": "format-image",

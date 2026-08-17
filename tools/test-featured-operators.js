@@ -1,7 +1,7 @@
 /**
  * Featured Operators Block Test Suite
  *
- * Tests the relish/featured-operators-block on the Home page and in isolation:
+ * Tests the (?:midflight|relish)/featured-operators-block on the Home page and in isolation:
  * - Block rendering, section padding & background
  * - Header title & View All quick link
  * - 4-column responsive operator card grid
@@ -39,7 +39,7 @@ async function runTests() {
 
     // 1. Block Container & Layout Checks
     const block = await page.$('.featured-operators-block');
-    assert(!!block, 'relish/featured-operators-block rendered on Home page');
+    assert(!!block, '(?:midflight|relish)/featured-operators-block rendered on Home page');
 
     const blockStyles = await page.evaluate(() => {
       const el = document.querySelector('.featured-operators-block');

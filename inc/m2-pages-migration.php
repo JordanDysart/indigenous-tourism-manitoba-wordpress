@@ -5,7 +5,7 @@
  * Replaces legacy third-party plugin blocks (kadence/*, acf/*, getwid/*)
  * with native WordPress Core blocks and theme relish/* blocks.
  *
- * @package itm_indigpro
+ * @package kiwatinook
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class ITM_M2_Pages_Migration {
 
-	const MIGRATION_VERSION = '2.7.0';
+	const MIGRATION_VERSION = '2.8.0';
 
 	public static function init() {
 		add_action( 'init', [ __CLASS__, 'maybe_run_migration' ], 20 );
@@ -36,13 +36,13 @@ class ITM_M2_Pages_Migration {
 			2 => [
 				'title' => 'Home',
 				'slug'  => 'home',
-				'content' => '<!-- wp:relish/hero-block {"backgroundImage":{"id":3016,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2026/06/whiteshell-petroforms-resized.jpg"},"showHoopOverlay":true,"overlayOpacity":25,"minHeight":70,"contentAlignment":"center"} -->
+				'content' => '<!-- wp:midflight/hero-block {"backgroundImage":{"id":3016,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2026/06/whiteshell-petroforms-resized.jpg"},"showHoopOverlay":true,"overlayOpacity":25,"minHeight":70,"contentAlignment":"center"} -->
 <!-- wp:heading {"textAlign":"center","level":1,"textColor":"white"} -->
 <h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">Welcome to Indigenous Tourism Manitoba</h1>
 <!-- /wp:heading -->
-<!-- /wp:relish/hero-block -->
+<!-- /wp:midflight/hero-block -->
 
-<!-- wp:relish/featured-operators-block {"title":"Discover Authentic Experiences","showViewAll":true,"viewAllText":"View All","viewAllUrl":"/operators/","numberOfPosts":4,"orderBy":"rand","backgroundColor":"off-white"} /-->
+<!-- wp:midflight/featured-operators-block {"title":"Discover Authentic Experiences","showViewAll":true,"viewAllText":"View All","viewAllUrl":"/operators/","numberOfPosts":4,"orderBy":"rand","backgroundColor":"off-white"} /-->
 
 <!-- wp:html -->
 <div class="page-section culture-feature-section constrained-content">
@@ -118,7 +118,7 @@ class ITM_M2_Pages_Migration {
 </div>
 <!-- /wp:html -->
 
-<!-- wp:relish/video-popup-block {"videoUrl":"https://youtu.be/fIRzNja1yPo?si=TIcVr_vqTm-9nLvH","posterImage":{"id":1099,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/11/Screenshot-2023-10-27-at-1.17.24-PM.png","alt":"The History of Indigenous Tourism Manitoba"},"title":"The History of Indigenous Tourism Manitoba","caption":"A journey through Indigenous cultural heritage, community leadership, and tourism growth.","overlayColor":"#000000","overlayOpacity":30,"playButtonColor":"#e0ac0f","aspectRatio":"16-9"} /-->
+<!-- wp:midflight/video-popup-block {"videoUrl":"https://youtu.be/fIRzNja1yPo?si=TIcVr_vqTm-9nLvH","posterImage":{"id":1099,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/11/Screenshot-2023-10-27-at-1.17.24-PM.png","alt":"The History of Indigenous Tourism Manitoba"},"title":"The History of Indigenous Tourism Manitoba","caption":"A journey through Indigenous cultural heritage, community leadership, and tourism growth.","overlayColor":"#000000","overlayOpacity":30,"playButtonColor":"#e0ac0f","aspectRatio":"16-9"} /-->
 
 <!-- wp:html -->
 <section class="membership-cta-section alignfull">
@@ -145,14 +145,14 @@ class ITM_M2_Pages_Migration {
 			22 => [
 				'title' => 'About Indigenous Tourism Manitoba',
 				'slug'  => 'about-itm',
-				'content' => '<!-- wp:relish/hero-block {"backgroundImage":{"id":422,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/about-itm.jpg"},"showHoopOverlay":true,"overlayOpacity":25,"minHeight":60,"contentAlignment":"center"} -->
+				'content' => '<!-- wp:midflight/hero-block {"backgroundImage":{"id":422,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/about-itm.jpg"},"showHoopOverlay":true,"overlayOpacity":25,"minHeight":60,"contentAlignment":"center"} -->
 <!-- wp:heading {"textAlign":"center","level":1,"textColor":"white"} -->
 <h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">About Indigenous Tourism Manitoba</h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","textColor":"white"} -->
 <p class="has-text-align-center has-white-color has-text-color">Growing, supporting, and promoting authentic Indigenous tourism in Manitoba.</p>
 <!-- /wp:paragraph -->
-<!-- /wp:relish/hero-block -->
+<!-- /wp:midflight/hero-block -->
 
 <!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1200px"}} -->
 <div class="wp-block-group page-section constrained-content">
@@ -198,7 +198,7 @@ class ITM_M2_Pages_Migration {
 <p class="section-subheading text-center">Discover how Indigenous Tourism Manitoba is expanding economic opportunities and celebrating cultural storytelling across our province.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:relish/video-popup-block {"videoUrl":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","posterImage":{"id":1227,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/11/placeholderAboutVideo.png","alt":"Building the Brand"},"title":"Building the Brand","caption":"Discover how Indigenous Tourism Manitoba is expanding opportunities.","overlayColor":"#000000","overlayOpacity":25,"playButtonColor":"#e0ac0f","aspectRatio":"16-9"} /-->
+<!-- wp:midflight/video-popup-block {"videoUrl":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","posterImage":{"id":1227,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/11/placeholderAboutVideo.png","alt":"Building the Brand"},"title":"Building the Brand","caption":"Discover how Indigenous Tourism Manitoba is expanding opportunities.","overlayColor":"#000000","overlayOpacity":25,"playButtonColor":"#e0ac0f","aspectRatio":"16-9"} /-->
 </div>
 <!-- /wp:group -->
 
@@ -228,14 +228,14 @@ class ITM_M2_Pages_Migration {
 			283 => [
 				'title' => 'Reconciliation',
 				'slug'  => 'reconciliation',
-				'content' => '<!-- wp:relish/hero-block {"backgroundImage":{"id":287,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/IMG_7169-scaled.jpg"},"showHoopOverlay":true,"overlayOpacity":30,"minHeight":60,"contentAlignment":"center"} -->
+				'content' => '<!-- wp:midflight/hero-block {"backgroundImage":{"id":287,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/IMG_7169-scaled.jpg"},"showHoopOverlay":true,"overlayOpacity":30,"minHeight":60,"contentAlignment":"center"} -->
 <!-- wp:heading {"textAlign":"center","level":1,"textColor":"white"} -->
 <h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">Reconciliation &amp; Cultural Safety</h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","textColor":"white"} -->
 <p class="has-text-align-center has-white-color has-text-color">Commitment to Truth, Healing, and Meaningful Economic Partnership.</p>
 <!-- /wp:paragraph -->
-<!-- /wp:relish/hero-block -->
+<!-- /wp:midflight/hero-block -->
 
 <!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1140px"}} -->
 <div class="wp-block-group page-section constrained-content">
@@ -316,14 +316,14 @@ class ITM_M2_Pages_Migration {
 			463 => [
 				'title' => 'Things To Do',
 				'slug'  => 'things-to-do',
-				'content' => '<!-- wp:relish/hero-block {"backgroundImage":{"id":467,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/LP-Powwow-221.jpg"},"showHoopOverlay":true,"overlayOpacity":25,"overlayColor":"#000000","minHeight":60,"contentAlignment":"center"} -->
+				'content' => '<!-- wp:midflight/hero-block {"backgroundImage":{"id":467,"url":"https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/LP-Powwow-221.jpg"},"showHoopOverlay":true,"overlayOpacity":25,"overlayColor":"#000000","minHeight":60,"contentAlignment":"center"} -->
 <!-- wp:heading {"textAlign":"center","level":1,"textColor":"white"} -->
 <h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">Things To Do</h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","textColor":"white"} -->
 <p class="has-text-align-center has-white-color has-text-color">Immerse yourself in authentic Indigenous experiences across Manitoba.</p>
 <!-- /wp:paragraph -->
-<!-- /wp:relish/hero-block -->
+<!-- /wp:midflight/hero-block -->
 
 <!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1200px"}} -->
 <div class="wp-block-group page-section constrained-content">
@@ -429,7 +429,7 @@ class ITM_M2_Pages_Migration {
 			435 => [
 				'title' => 'Our Team',
 				'slug'  => 'our-team',
-				'content' => '<!-- wp:relish/banner-block {"title":"Our Team","description":"Meet the dedicated leaders and advocates behind Indigenous Tourism Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/banner-block {"title":"Our Team","description":"Meet the dedicated leaders and advocates behind Indigenous Tourism Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
 <!-- wp:html -->
 <div class="page-section constrained-content section-team-members">
@@ -498,7 +498,7 @@ class ITM_M2_Pages_Migration {
 			2367 => [
 				'title' => 'Become a Member',
 				'slug'  => 'become-a-member',
-				'content' => '<!-- wp:relish/banner-block {"title":"Become a Member","description":"Join Indigenous Tourism Manitoba to grow your business, access training, and connect with a thriving network.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/banner-block {"title":"Become a Member","description":"Join Indigenous Tourism Manitoba to grow your business, access training, and connect with a thriving network.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
 <!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1140px"}} -->
 <div class="wp-block-group page-section constrained-content">
@@ -596,7 +596,7 @@ class ITM_M2_Pages_Migration {
 			2373 => [
 				'title' => 'Member Benefits',
 				'slug'  => 'member-benefits',
-				'content' => '<!-- wp:relish/banner-block {"title":"Member Benefits","description":"Explore the advantages of partnering with Indigenous Tourism Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/banner-block {"title":"Member Benefits","description":"Explore the advantages of partnering with Indigenous Tourism Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
 <!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1200px"}} -->
 <div class="wp-block-group page-section constrained-content">
@@ -703,7 +703,7 @@ class ITM_M2_Pages_Migration {
 			605 => [
 				'title' => 'Contact Us',
 				'slug'  => 'contact-us',
-				'content' => '<!-- wp:relish/banner-block {"title":"Contact Us","description":"Connect with the Indigenous Tourism Manitoba team.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/banner-block {"title":"Contact Us","description":"Connect with the Indigenous Tourism Manitoba team.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
 <!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1200px"}} -->
 <div class="wp-block-group page-section constrained-content">
@@ -834,7 +834,7 @@ class ITM_M2_Pages_Migration {
 			1518 => [
 				'title' => 'New Account Request',
 				'slug'  => 'new-account-request',
-				'content' => '<!-- wp:relish/banner-block {"title":"New Account Request","description":"Submit your operator or member account application.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/banner-block {"title":"New Account Request","description":"Submit your operator or member account application.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
 <!-- wp:group {"className":"page-section constrained-content-narrow","layout":{"type":"constrained","contentSize":"1140px"}} -->
 <div class="wp-block-group page-section constrained-content-narrow">
@@ -876,7 +876,7 @@ class ITM_M2_Pages_Migration {
 			2572 => [
 				'title' => 'ITM Indigenous Guide Training Program Inquiry Form',
 				'slug'  => 'itm-indigenous-guide-training-program-inquiry-form',
-				'content' => '<!-- wp:relish/banner-block {"title":"Guide Training Program Inquiry","description":"Take the first step towards becoming a certified Indigenous guide.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/banner-block {"title":"Guide Training Program Inquiry","description":"Take the first step towards becoming a certified Indigenous guide.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
 <!-- wp:group {"className":"page-section constrained-content-narrow","layout":{"type":"constrained","contentSize":"1140px"}} -->
 <div class="wp-block-group page-section constrained-content-narrow">
@@ -941,7 +941,7 @@ class ITM_M2_Pages_Migration {
 			2734 => [
 				'title' => 'Indigenous Guide Training Program',
 				'slug'  => 'guide-training-program',
-				'content' => '<!-- wp:relish/banner-block {"title":"Indigenous Guide Training Program","description":"Empowering Indigenous storytellers, cultural ambassadors, and wilderness guides across Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/banner-block {"title":"Indigenous Guide Training Program","description":"Empowering Indigenous storytellers, cultural ambassadors, and wilderness guides across Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
 <!-- wp:html -->
 <div class="page-section constrained-content">
@@ -1007,7 +1007,7 @@ class ITM_M2_Pages_Migration {
 			2534 => [
 				'title' => 'Indigenous Guide Training Program - Introduction',
 				'slug'  => 'indigenous-guide-training-program-step-1',
-				'content' => '<!-- wp:relish/banner-block {"title":"Step 1: Introduction","description":"Foundational orientation for prospective Indigenous guides in Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/banner-block {"title":"Step 1: Introduction","description":"Foundational orientation for prospective Indigenous guides in Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
 <!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1140px"}} -->
 <div class="wp-block-group page-section constrained-content">
@@ -1074,7 +1074,7 @@ class ITM_M2_Pages_Migration {
 			2537 => [
 				'title' => 'Indigenous Guide Training Program - 7-Day Training Course',
 				'slug'  => 'indigenous-guide-training-program-step-2',
-				'content' => '<!-- wp:relish/banner-block {"title":"Step 2: 7-Day Training Course","description":"Intensive hands-on field training, wilderness safety, and cultural storytelling.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/banner-block {"title":"Step 2: 7-Day Training Course","description":"Intensive hands-on field training, wilderness safety, and cultural storytelling.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
 <!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1140px"}} -->
 <div class="wp-block-group page-section constrained-content">
@@ -1142,7 +1142,7 @@ class ITM_M2_Pages_Migration {
 			2542 => [
 				'title' => 'Indigenous Guide Training Program - Practicum',
 				'slug'  => 'indigenous-guide-training-program-step-3',
-				'content' => '<!-- wp:relish/banner-block {"title":"Step 3: Practicum","description":"Mentored field placement with licensed Indigenous tourism operators in Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/banner-block {"title":"Step 3: Practicum","description":"Mentored field placement with licensed Indigenous tourism operators in Manitoba.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
 <!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1140px"}} -->
 <div class="wp-block-group page-section constrained-content">
@@ -1209,7 +1209,7 @@ class ITM_M2_Pages_Migration {
 			2676 => [
 				'title' => 'Indigenous Guide Training Program - More Learning Opportunities',
 				'slug'  => 'indigenous-guide-training-program-more-learning-opportunities',
-				'content' => '<!-- wp:relish/banner-block {"title":"More Learning Opportunities","description":"Additional certifications, workshops, and advanced hospitality training.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
+				'content' => '<!-- wp:midflight/banner-block {"title":"More Learning Opportunities","description":"Additional certifications, workshops, and advanced hospitality training.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
 
 <!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1200px"}} -->
 <div class="wp-block-group page-section constrained-content">

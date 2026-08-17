@@ -7,10 +7,10 @@
  * Stress-tests:
  *  1. Complete elimination of legacy blocks (kadence/*, acf/*, getwid/*) across 15 pages
  *  2. Complete elimination of orphan legacy CSS classes (kt-*, getwid-*, wp-block-getwid-*)
- *  3. Gutenberg block grammar, AST parser, tag balance, and JSON attribute validity (Core & relish/* blocks)
+ *  3. Gutenberg block grammar, AST parser, tag balance, and JSON attribute validity (Core & (?:midflight|relish)/* blocks)
  *  4. HTML markup integrity, unclosed tags, void element correctness, and accessibility (img alt)
  *  5. Theme design tokens and LESS/CSS class resolution in styles.css and blocks.css
- *  6. /about-itm/ relish/video-popup-block integration, attributes, and PHP render simulation
+ *  6. /about-itm/ (?:midflight|relish)/video-popup-block integration, attributes, and PHP render simulation
  *  7. PHP migration engine hooks, idempotency, versioning, and slug fallbacks
  *  8. Codebase-wide static analysis for legacy leaks in active theme templates
  *  9. Internal URL & link target integrity across all 15 pages
@@ -91,7 +91,7 @@ function loadMigrationPages() {
 
 /**
  * Robust Gutenberg Block Parser / Tokenizer
- * Supports both namespaced (relish/banner-block, core/group) and un-namespaced (group, heading) blocks
+ * Supports both namespaced ((?:midflight|relish)/banner-block, core/group) and un-namespaced (group, heading) blocks
  */
 function parseGutenbergBlocks(rawContent) {
   const blockRegex = /<!--\s+(\/)?wp:([a-z0-9_-]+(?:\/[a-z0-9_-]+)?)(?:\s+(\{[\s\S]*?\}))?\s*(\/)?-->/g;
@@ -135,7 +135,7 @@ function validateBlockGrammar(pageName, rawContent) {
 
     // 2. Self-closing vs Open/Close Stack
     if (token.isSelfClosing) {
-      // Self-closing block like <!-- wp:relish/banner-block {...} /-->
+      // Self-closing block like <!-- wp:(?:midflight|relish)/banner-block {...} /-->
       continue;
     }
 
@@ -259,12 +259,12 @@ async function runChallengerSuite() {
     validateHtmlIntegrity(p.slug, p.content);
   }
 
-  console.log(`\n--- [SECTION 5] /about-itm/ relish/video-popup-block Stress-Test ---`);
+  console.log(`\n--- [SECTION 5] /about-itm/ (?:midflight|relish)/video-popup-block Stress-Test ---`);
   const aboutPage = pages[22];
   check(!!aboutPage, `About ITM page (ID 22) available for video popup audit`);
   if (aboutPage) {
     const hasVideoPopupBlock = /<!--\s*wp:relish\/video-popup-block/i.test(aboutPage.content);
-    check(hasVideoPopupBlock, `/about-itm/ contains relish/video-popup-block`);
+    check(hasVideoPopupBlock, `/about-itm/ contains (?:midflight|relish)/video-popup-block`);
 
     // Parse the video popup block attributes
     const match = aboutPage.content.match(/<!--\s*wp:relish\/video-popup-block\s+(\{[\s\S]*?\})\s*\/-->/);

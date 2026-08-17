@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package itm_indigpro
+ * @package kiwatinook
  */
 
 get_header();
@@ -32,7 +32,6 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				var_dump(get_queried_object()->slug);
 				get_template_part( 'template-parts/content', get_post_type() );
 
 			endwhile;

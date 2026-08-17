@@ -5,7 +5,7 @@
  * Emits semantic HTML with multi-column category/region layouts and a prominent
  * Sanity CMS-style right-side featured showcase card.
  *
- * @package itm_indigpro
+ * @package kiwatinook
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -178,7 +178,7 @@ class GAC_Menu_Walker extends Walker_Nav_Menu {
 
 			// Submenu chevron toggle for mobile drawer
 			if ( 0 === $depth && in_array( 'menu-item-has-children', $classes, true ) ) {
-				$item_output .= '<button class="submenu-toggle-btn" aria-label="' . esc_attr__( 'Toggle Submenu', 'itm_indigpro' ) . '"><i class="bi bi-chevron-down"></i></button>';
+				$item_output .= '<button class="submenu-toggle-btn" aria-label="' . esc_attr__( 'Toggle Submenu', 'kiwatinook' ) . '"><i class="bi bi-chevron-down"></i></button>';
 			}
 
 			if ( $has_valid_url ) {
@@ -225,11 +225,11 @@ class GAC_Menu_Walker extends Walker_Nav_Menu {
 					$image_url = '/wp-content/uploads/2026/06/whiteshell-petroforms-resized.jpg';
 				}
 				$featured = [
-					'badge'       => __( 'Featured Destination', 'itm_indigpro' ),
-					'title'       => __( 'Discover Authentic Experiences', 'itm_indigpro' ),
-					'description' => __( 'Connect with Indigenous culture, guided wilderness tours, authentic cuisine, and traditional arts across Manitoba.', 'itm_indigpro' ),
+					'badge'       => __( 'Featured Destination', 'kiwatinook' ),
+					'title'       => __( 'Discover Authentic Experiences', 'kiwatinook' ),
+					'description' => __( 'Connect with Indigenous culture, guided wilderness tours, authentic cuisine, and traditional arts across Manitoba.', 'kiwatinook' ),
 					'image_url'   => $image_url,
-					'button_text' => __( 'Explore All Operators', 'itm_indigpro' ),
+					'button_text' => __( 'Explore All Operators', 'kiwatinook' ),
 					'button_url'  => '/operators/',
 				];
 				break;
@@ -241,11 +241,11 @@ class GAC_Menu_Walker extends Walker_Nav_Menu {
 					$image_url = '/wp-content/uploads/2024/10/about-itm.jpg';
 				}
 				$featured = [
-					'badge'       => __( 'About ITM', 'itm_indigpro' ),
-					'title'       => __( 'Empowering Indigenous Voices', 'itm_indigpro' ),
-					'description' => __( 'Growing and supporting authentic Indigenous tourism entrepreneurs and communities across Manitoba.', 'itm_indigpro' ),
+					'badge'       => __( 'About ITM', 'kiwatinook' ),
+					'title'       => __( 'Empowering Indigenous Voices', 'kiwatinook' ),
+					'description' => __( 'Growing and supporting authentic Indigenous tourism entrepreneurs and communities across Manitoba.', 'kiwatinook' ),
 					'image_url'   => $image_url,
-					'button_text' => __( 'Our Vision & Purpose', 'itm_indigpro' ),
+					'button_text' => __( 'Our Vision & Purpose', 'kiwatinook' ),
 					'button_url'  => '/about-itm/',
 				];
 				break;
@@ -257,11 +257,11 @@ class GAC_Menu_Walker extends Walker_Nav_Menu {
 					$image_url = '/wp-content/uploads/2026/03/20250704-ReannaKhan540.jpg';
 				}
 				$featured = [
-					'badge'       => __( 'Training Pathway', 'itm_indigpro' ),
-					'title'       => __( 'Become a Certified Guide', 'itm_indigpro' ),
-					'description' => __( 'Tuition-free, culturally-grounded training program with hands-on wilderness modules and paid placements.', 'itm_indigpro' ),
+					'badge'       => __( 'Training Pathway', 'kiwatinook' ),
+					'title'       => __( 'Become a Certified Guide', 'kiwatinook' ),
+					'description' => __( 'Tuition-free, culturally-grounded training program with hands-on wilderness modules and paid placements.', 'kiwatinook' ),
 					'image_url'   => $image_url,
-					'button_text' => __( 'Inquire & Apply', 'itm_indigpro' ),
+					'button_text' => __( 'Inquire & Apply', 'kiwatinook' ),
 					'button_url'  => '/itm-indigenous-guide-training-program-inquiry-form/',
 				];
 				break;
@@ -272,11 +272,11 @@ class GAC_Menu_Walker extends Walker_Nav_Menu {
 					$image_url = '/wp-content/uploads/2025/05/4-1.png';
 				}
 				$featured = [
-					'badge'       => __( 'Partner With Us', 'itm_indigpro' ),
-					'title'       => __( 'Grow Your Tourism Business', 'itm_indigpro' ),
-					'description' => __( 'Join Manitoba\'s premier Indigenous tourism network with dedicated marketing programs and grant support.', 'itm_indigpro' ),
+					'badge'       => __( 'Partner With Us', 'kiwatinook' ),
+					'title'       => __( 'Grow Your Tourism Business', 'kiwatinook' ),
+					'description' => __( 'Join Manitoba\'s premier Indigenous tourism network with dedicated marketing programs and grant support.', 'kiwatinook' ),
 					'image_url'   => $image_url,
-					'button_text' => __( 'Become a Member', 'itm_indigpro' ),
+					'button_text' => __( 'Become a Member', 'kiwatinook' ),
 					'button_url'  => '/become-a-member/',
 				];
 				break;

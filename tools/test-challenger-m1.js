@@ -114,7 +114,7 @@ function generateMultiInstanceHarnessHtml(instances) {
 
 async function runChallengerTestSuite() {
   console.log(`\n================================================================`);
-  console.log(`⚔️  CHALLENGER STRESS SUITE: relish/video-popup-block`);
+  console.log(`⚔️  CHALLENGER STRESS SUITE: (?:midflight|relish)/video-popup-block`);
   console.log(`================================================================\n`);
 
   // =========================================================================
@@ -127,7 +127,7 @@ async function runChallengerTestSuite() {
   let blockJson;
   try {
     blockJson = JSON.parse(blockJsonRaw);
-    assert(blockJson.name === 'relish/video-popup-block', 'block.json has valid name relish/video-popup-block');
+    assert(blockJson.name === '(?:midflight|relish)/video-popup-block', 'block.json has valid name (?:midflight|relish)/video-popup-block');
     assert(blockJson.apiVersion === 3, 'block.json specifies apiVersion 3');
     assert(blockJson.render === 'file:./video_popup_block.php', 'block.json links to server render template');
     assert(blockJson.viewScript === 'file:./view.js', 'block.json links to viewScript');

@@ -1,8 +1,9 @@
 {
   "name": "kiwatinook",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
-  "description": "ITM Indigenous Tourism Manitoba WordPress theme",
+  "description": "Kiwatinook WordPress Theme for Indigenous Tourism Manitoba",
+  "author": "Midflight <dev@midflight.ca>",
   "scripts": {
     "build":     "npm run build:js && npm run build:css",
     "dev":       "concurrently --names \"JS,CSS\" --prefix-colors \"cyan,magenta\" \"npm run dev:js\" \"npm run dev:css\"",

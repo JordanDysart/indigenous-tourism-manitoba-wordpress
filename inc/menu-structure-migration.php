@@ -5,7 +5,7 @@
  * Configures the Primary Menu with multi-column hierarchy for Explore,
  * About ITM, Guide Training Program, and Membership.
  *
- * @package itm_indigpro
+ * @package kiwatinook
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -51,7 +51,7 @@ class ITM_Menu_Structure_Migration {
 		// 1. About ITM (Top-Level)
 		// ---------------------------------------------------------------------
 		$about_parent_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'About ITM', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'About ITM', 'kiwatinook' ),
 			'menu-item-url'     => '/about-itm/',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',
@@ -59,7 +59,7 @@ class ITM_Menu_Structure_Migration {
 		] );
 
 		$about_col_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'About ITM', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'About ITM', 'kiwatinook' ),
 			'menu-item-url'     => '#',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',
@@ -68,11 +68,11 @@ class ITM_Menu_Structure_Migration {
 		] );
 
 		$about_links = [
-			[ 'title' => __( 'Who We Are', 'itm_indigpro' ), 'url' => '/about-itm/' ],
-			[ 'title' => __( 'Meet Our Team', 'itm_indigpro' ), 'url' => '/our-team/' ],
-			[ 'title' => __( 'Reconciliation', 'itm_indigpro' ), 'url' => '/reconciliation/' ],
-			[ 'title' => __( 'Our Operators', 'itm_indigpro' ), 'url' => '/operators/' ],
-			[ 'title' => __( 'ITM Events', 'itm_indigpro' ), 'url' => '/events/' ],
+			[ 'title' => __( 'Who We Are', 'kiwatinook' ), 'url' => '/about-itm/' ],
+			[ 'title' => __( 'Meet Our Team', 'kiwatinook' ), 'url' => '/our-team/' ],
+			[ 'title' => __( 'Reconciliation', 'kiwatinook' ), 'url' => '/reconciliation/' ],
+			[ 'title' => __( 'Our Operators', 'kiwatinook' ), 'url' => '/operators/' ],
+			[ 'title' => __( 'ITM Events', 'kiwatinook' ), 'url' => '/events/' ],
 		];
 
 		foreach ( $about_links as $link ) {
@@ -90,7 +90,7 @@ class ITM_Menu_Structure_Migration {
 		// 2. Explore (Top-Level with Columns: By Region, By Category, Highlights)
 		// ---------------------------------------------------------------------
 		$explore_parent_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Explore', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'Explore', 'kiwatinook' ),
 			'menu-item-url'     => '/things-to-do/',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',
@@ -99,7 +99,7 @@ class ITM_Menu_Structure_Migration {
 
 		// Column 1: By Region
 		$region_col_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'By Region', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'By Region', 'kiwatinook' ),
 			'menu-item-url'     => '#',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',
@@ -108,11 +108,11 @@ class ITM_Menu_Structure_Migration {
 		] );
 
 		$regions = [
-			[ 'title' => __( 'Central', 'itm_indigpro' ), 'url' => '/operator-region/central/' ],
-			[ 'title' => __( 'East', 'itm_indigpro' ), 'url' => '/operator-region/east/' ],
-			[ 'title' => __( 'North', 'itm_indigpro' ), 'url' => '/operator-region/north/' ],
-			[ 'title' => __( 'South', 'itm_indigpro' ), 'url' => '/operator-region/south/' ],
-			[ 'title' => __( 'West', 'itm_indigpro' ), 'url' => '/operator-region/west/' ],
+			[ 'title' => __( 'Central', 'kiwatinook' ), 'url' => '/operator-region/central/' ],
+			[ 'title' => __( 'East', 'kiwatinook' ), 'url' => '/operator-region/east/' ],
+			[ 'title' => __( 'North', 'kiwatinook' ), 'url' => '/operator-region/north/' ],
+			[ 'title' => __( 'South', 'kiwatinook' ), 'url' => '/operator-region/south/' ],
+			[ 'title' => __( 'West', 'kiwatinook' ), 'url' => '/operator-region/west/' ],
 		];
 
 		foreach ( $regions as $reg ) {
@@ -128,7 +128,7 @@ class ITM_Menu_Structure_Migration {
 
 		// Column 2: By Category
 		$category_col_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'By Category', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'By Category', 'kiwatinook' ),
 			'menu-item-url'     => '#',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',
@@ -137,14 +137,14 @@ class ITM_Menu_Structure_Migration {
 		] );
 
 		$categories = [
-			[ 'title' => __( 'Accommodation', 'itm_indigpro' ), 'url' => '/operator-category/accommodation/' ],
-			[ 'title' => __( 'Culinary', 'itm_indigpro' ), 'url' => '/operator-category/culinary/' ],
-			[ 'title' => __( 'Outdoors & Adventure', 'itm_indigpro' ), 'url' => '/operator-category/outdoors-and-adventures/' ],
-			[ 'title' => __( 'Tours & Guiding', 'itm_indigpro' ), 'url' => '/operator-category/tour-and-related-services/' ],
-			[ 'title' => __( 'Workshops, Art & Culture', 'itm_indigpro' ), 'url' => '/operator-category/workshops-art-culture/' ],
-			[ 'title' => __( 'Attractions & Museums', 'itm_indigpro' ), 'url' => '/operator-category/attractions/' ],
-			[ 'title' => __( 'Events & Gatherings', 'itm_indigpro' ), 'url' => '/operator-category/events/' ],
-			[ 'title' => __( 'Retail & Authentic Crafts', 'itm_indigpro' ), 'url' => '/operator-category/retail-and-other/' ],
+			[ 'title' => __( 'Accommodation', 'kiwatinook' ), 'url' => '/operator-category/accommodation/' ],
+			[ 'title' => __( 'Culinary', 'kiwatinook' ), 'url' => '/operator-category/culinary/' ],
+			[ 'title' => __( 'Outdoors & Adventure', 'kiwatinook' ), 'url' => '/operator-category/outdoors-and-adventures/' ],
+			[ 'title' => __( 'Tours & Guiding', 'kiwatinook' ), 'url' => '/operator-category/tour-and-related-services/' ],
+			[ 'title' => __( 'Workshops, Art & Culture', 'kiwatinook' ), 'url' => '/operator-category/workshops-art-culture/' ],
+			[ 'title' => __( 'Attractions & Museums', 'kiwatinook' ), 'url' => '/operator-category/attractions/' ],
+			[ 'title' => __( 'Events & Gatherings', 'kiwatinook' ), 'url' => '/operator-category/events/' ],
+			[ 'title' => __( 'Retail & Authentic Crafts', 'kiwatinook' ), 'url' => '/operator-category/retail-and-other/' ],
 		];
 
 		foreach ( $categories as $cat ) {
@@ -160,7 +160,7 @@ class ITM_Menu_Structure_Migration {
 
 		// Column 3: Highlights
 		$highlights_col_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Highlights', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'Highlights', 'kiwatinook' ),
 			'menu-item-url'     => '#',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',
@@ -169,9 +169,9 @@ class ITM_Menu_Structure_Migration {
 		] );
 
 		$highlights = [
-			[ 'title' => __( 'Things To Do', 'itm_indigpro' ), 'url' => '/things-to-do/' ],
-			[ 'title' => __( 'Experience Map', 'itm_indigpro' ), 'url' => '/experience-map/' ],
-			[ 'title' => __( 'All Operators Directory', 'itm_indigpro' ), 'url' => '/operators/' ],
+			[ 'title' => __( 'Things To Do', 'kiwatinook' ), 'url' => '/things-to-do/' ],
+			[ 'title' => __( 'Experience Map', 'kiwatinook' ), 'url' => '/experience-map/' ],
+			[ 'title' => __( 'All Operators Directory', 'kiwatinook' ), 'url' => '/operators/' ],
 		];
 
 		foreach ( $highlights as $hl ) {
@@ -189,7 +189,7 @@ class ITM_Menu_Structure_Migration {
 		// 3. Guide Training Program (Top-Level)
 		// ---------------------------------------------------------------------
 		$guide_parent_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Guide Training Program', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'Guide Training Program', 'kiwatinook' ),
 			'menu-item-url'     => '/guide-training-program/',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',
@@ -198,7 +198,7 @@ class ITM_Menu_Structure_Migration {
 
 		// Pathway Column
 		$guide_pathway_col_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Training Pathway', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'Training Pathway', 'kiwatinook' ),
 			'menu-item-url'     => '#',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',
@@ -207,9 +207,9 @@ class ITM_Menu_Structure_Migration {
 		] );
 
 		$guide_steps = [
-			[ 'title' => __( 'Step 1: Foundational Training', 'itm_indigpro' ), 'url' => '/indigenous-guide-training-program-step-1/' ],
-			[ 'title' => __( 'Step 2: Practical Skills', 'itm_indigpro' ), 'url' => '/indigenous-guide-training-program-step-2/' ],
-			[ 'title' => __( 'Step 3: Certification & Placement', 'itm_indigpro' ), 'url' => '/indigenous-guide-training-program-step-3/' ],
+			[ 'title' => __( 'Step 1: Foundational Training', 'kiwatinook' ), 'url' => '/indigenous-guide-training-program-step-1/' ],
+			[ 'title' => __( 'Step 2: Practical Skills', 'kiwatinook' ), 'url' => '/indigenous-guide-training-program-step-2/' ],
+			[ 'title' => __( 'Step 3: Certification & Placement', 'kiwatinook' ), 'url' => '/indigenous-guide-training-program-step-3/' ],
 		];
 
 		foreach ( $guide_steps as $step ) {
@@ -225,7 +225,7 @@ class ITM_Menu_Structure_Migration {
 
 		// Opportunities Column
 		$guide_opp_col_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Opportunities & Inquiry', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'Opportunities & Inquiry', 'kiwatinook' ),
 			'menu-item-url'     => '#',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',
@@ -234,9 +234,9 @@ class ITM_Menu_Structure_Migration {
 		] );
 
 		$guide_opps = [
-			[ 'title' => __( 'Program Overview', 'itm_indigpro' ), 'url' => '/guide-training-program/' ],
-			[ 'title' => __( 'More Learning Opportunities', 'itm_indigpro' ), 'url' => '/indigenous-guide-training-program-more-learning-opportunities/' ],
-			[ 'title' => __( 'Inquire & Register', 'itm_indigpro' ), 'url' => '/itm-indigenous-guide-training-program-inquiry-form/' ],
+			[ 'title' => __( 'Program Overview', 'kiwatinook' ), 'url' => '/guide-training-program/' ],
+			[ 'title' => __( 'More Learning Opportunities', 'kiwatinook' ), 'url' => '/indigenous-guide-training-program-more-learning-opportunities/' ],
+			[ 'title' => __( 'Inquire & Register', 'kiwatinook' ), 'url' => '/itm-indigenous-guide-training-program-inquiry-form/' ],
 		];
 
 		foreach ( $guide_opps as $opp ) {
@@ -254,7 +254,7 @@ class ITM_Menu_Structure_Migration {
 		// 4. Membership (Top-Level)
 		// ---------------------------------------------------------------------
 		$member_parent_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Membership', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'Membership', 'kiwatinook' ),
 			'menu-item-url'     => '/become-a-member/',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',
@@ -262,7 +262,7 @@ class ITM_Menu_Structure_Migration {
 		] );
 
 		$member_col_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Membership', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'Membership', 'kiwatinook' ),
 			'menu-item-url'     => '#',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',
@@ -271,9 +271,9 @@ class ITM_Menu_Structure_Migration {
 		] );
 
 		$member_links = [
-			[ 'title' => __( 'Become a Member', 'itm_indigpro' ), 'url' => '/become-a-member/' ],
-			[ 'title' => __( 'Member Benefits', 'itm_indigpro' ), 'url' => '/member-benefits/' ],
-			[ 'title' => __( 'New Account Request', 'itm_indigpro' ), 'url' => '/new-account-request/' ],
+			[ 'title' => __( 'Become a Member', 'kiwatinook' ), 'url' => '/become-a-member/' ],
+			[ 'title' => __( 'Member Benefits', 'kiwatinook' ), 'url' => '/member-benefits/' ],
+			[ 'title' => __( 'New Account Request', 'kiwatinook' ), 'url' => '/new-account-request/' ],
 		];
 
 		foreach ( $member_links as $mlink ) {
@@ -291,7 +291,7 @@ class ITM_Menu_Structure_Migration {
 		// 5. Contact Us (Direct Top-Level Link)
 		// ---------------------------------------------------------------------
 		wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Contact Us', 'itm_indigpro' ),
+			'menu-item-title'   => __( 'Contact Us', 'kiwatinook' ),
 			'menu-item-url'     => '/contact-us/',
 			'menu-item-type'    => 'custom',
 			'menu-item-status'  => 'publish',

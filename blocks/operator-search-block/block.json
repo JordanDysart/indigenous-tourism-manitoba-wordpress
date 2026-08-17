@@ -1,13 +1,13 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "relish/operator-search-block",
-  "version": "1.0.0",
+  "name": "midflight/operator-search-block",
+  "version": "1.1.1",
   "title": "Operator Filter & Search",
   "category": "widgets",
   "icon": "filter",
   "description": "Dynamic Region and Category filter bar for Operator directory.",
   "keywords": ["operator", "filter", "category", "region", "search"],
-  "textdomain": "itm_indigpro",
+  "textdomain": "kiwatinook",
   "render": "file:./operator_search_block.php"
 }

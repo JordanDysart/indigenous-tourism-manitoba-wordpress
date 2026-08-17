@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package itm_indigpro
+ * @package kiwatinook
  */
 
 ?>
@@ -26,8 +26,7 @@
 		
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link
-		rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
 	</head>
@@ -60,6 +59,6 @@
 			</div>
 		</header>
 		<div id="page" class="site">
-			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'itm_indigpro'); ?></a>
+			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'kiwatinook'); ?></a>
 
 			<div id="content" class="site-content">

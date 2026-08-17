@@ -30,21 +30,21 @@ const blocksCss = fs.readFileSync(blocksCssPath, 'utf8');
 const modernizedLess = fs.existsSync(modernizedLessPath) ? fs.readFileSync(modernizedLessPath, 'utf8') : '';
 
 const TARGET_PAGES = [
-  { id: 22, name: 'About Indigenous Tourism Manitoba', slug: 'about-itm', bannerTitle: 'About Indigenous Tourism Manitoba', requiredBlocks: ['relish/banner-block', 'relish/video-popup-block'] },
-  { id: 283, name: 'Reconciliation', slug: 'reconciliation', bannerTitle: 'Reconciliation', requiredBlocks: ['relish/banner-block'] },
-  { id: 463, name: 'Things To Do', slug: 'things-to-do', bannerTitle: 'Things To Do', requiredBlocks: ['relish/banner-block'] },
-  { id: 435, name: 'Our Team', slug: 'our-team', bannerTitle: 'Our Team', requiredBlocks: ['relish/banner-block'] },
-  { id: 2367, name: 'Become a Member', slug: 'become-a-member', bannerTitle: 'Become a Member', requiredBlocks: ['relish/banner-block'] },
-  { id: 2373, name: 'Member Benefits', slug: 'member-benefits', bannerTitle: 'Member Benefits', requiredBlocks: ['relish/banner-block'] },
+  { id: 22, name: 'About Indigenous Tourism Manitoba', slug: 'about-itm', bannerTitle: 'About Indigenous Tourism Manitoba', requiredBlocks: ['(?:midflight|relish)/banner-block', '(?:midflight|relish)/video-popup-block'] },
+  { id: 283, name: 'Reconciliation', slug: 'reconciliation', bannerTitle: 'Reconciliation', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
+  { id: 463, name: 'Things To Do', slug: 'things-to-do', bannerTitle: 'Things To Do', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
+  { id: 435, name: 'Our Team', slug: 'our-team', bannerTitle: 'Our Team', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
+  { id: 2367, name: 'Become a Member', slug: 'become-a-member', bannerTitle: 'Become a Member', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
+  { id: 2373, name: 'Member Benefits', slug: 'member-benefits', bannerTitle: 'Member Benefits', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
   { id: 605, name: 'Contact Us', slug: 'contact-us', bannerTitle: 'Contact Us', requiredBlocks: [] },
   { id: 1769, name: 'Privacy Policy', slug: 'privacy-policy', bannerTitle: '', requiredBlocks: [] },
-  { id: 1518, name: 'New Account Request', slug: 'new-account-request', bannerTitle: 'New Account Request', requiredBlocks: ['relish/banner-block'] },
-  { id: 2572, name: 'Guide Training Inquiry Form', slug: 'itm-indigenous-guide-training-program-inquiry-form', bannerTitle: 'ITM Indigenous Guide Training Program Inquiry Form', requiredBlocks: ['relish/banner-block'] },
-  { id: 2734, name: 'Guide Training Program (Hub)', slug: 'guide-training-program', bannerTitle: 'Indigenous Guide Training Program', requiredBlocks: ['relish/banner-block'] },
-  { id: 2534, name: 'Guide Training Step 1', slug: 'indigenous-guide-training-program-step-1', bannerTitle: 'Indigenous Guide Training Program - Introduction', requiredBlocks: ['relish/banner-block'] },
-  { id: 2537, name: 'Guide Training Step 2', slug: 'indigenous-guide-training-program-step-2', bannerTitle: 'Indigenous Guide Training Program - 7-Day Training Course', requiredBlocks: ['relish/banner-block'] },
-  { id: 2542, name: 'Guide Training Step 3', slug: 'indigenous-guide-training-program-step-3', bannerTitle: 'Indigenous Guide Training Program - Practicum', requiredBlocks: ['relish/banner-block'] },
-  { id: 2676, name: 'Guide Training More Opportunities', slug: 'indigenous-guide-training-program-more-learning-opportunities', bannerTitle: 'Indigenous Guide Training Program - More Learning Opportunities', requiredBlocks: ['relish/banner-block'] },
+  { id: 1518, name: 'New Account Request', slug: 'new-account-request', bannerTitle: 'New Account Request', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
+  { id: 2572, name: 'Guide Training Inquiry Form', slug: 'itm-indigenous-guide-training-program-inquiry-form', bannerTitle: 'ITM Indigenous Guide Training Program Inquiry Form', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
+  { id: 2734, name: 'Guide Training Program (Hub)', slug: 'guide-training-program', bannerTitle: 'Indigenous Guide Training Program', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
+  { id: 2534, name: 'Guide Training Step 1', slug: 'indigenous-guide-training-program-step-1', bannerTitle: 'Indigenous Guide Training Program - Introduction', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
+  { id: 2537, name: 'Guide Training Step 2', slug: 'indigenous-guide-training-program-step-2', bannerTitle: 'Indigenous Guide Training Program - 7-Day Training Course', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
+  { id: 2542, name: 'Guide Training Step 3', slug: 'indigenous-guide-training-program-step-3', bannerTitle: 'Indigenous Guide Training Program - Practicum', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
+  { id: 2676, name: 'Guide Training More Opportunities', slug: 'indigenous-guide-training-program-more-learning-opportunities', bannerTitle: 'Indigenous Guide Training Program - More Learning Opportunities', requiredBlocks: ['(?:midflight|relish)/banner-block'] },
 ];
 
 let totalTests = 0;
@@ -193,13 +193,13 @@ async function runEmpiricalVerification() {
 
     // Page-specific behavioral assertions
     if (p.id === 22) { // About ITM
-      assert(content.includes('wp:relish/video-popup-block'), 'relish/video-popup-block configured on /about-itm/');
+      assert(content.includes('wp:(?:midflight|relish)/video-popup-block'), '(?:midflight|relish)/video-popup-block configured on /about-itm/');
       assert(content.includes('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), 'Video URL configured in video popup block');
       assert(content.includes('Building the Brand'), 'Building the Brand section present');
       assert(doc.querySelectorAll('.about-pillars-grid').length > 0, 'Vision & Mission columns present');
       assert(doc.querySelectorAll('a[href*="/become-a-member/"]').length > 0, 'Link to /become-a-member/ in CTA');
     } else if (p.id === 283) { // Reconciliation
-      assert(content.includes('relish/banner-block'), 'Banner block hero in Reconciliation');
+      assert(content.includes('(?:midflight|relish)/banner-block'), 'Banner block hero in Reconciliation');
       assert(doc.querySelectorAll('.reconciliation-pillars-grid, .wp-block-columns').length > 0, 'Pillars grid in Reconciliation');
       assert(content.includes('Call to Action 92'), 'Call to Action 92 mentioned in Reconciliation');
     } else if (p.id === 463) { // Things To Do

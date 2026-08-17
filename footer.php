@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer
  *
- * @package itm_indigpro
+ * @package kiwatinook
  */
 
 $footer_logo = get_theme_mod( 'footer_logo' );

@@ -1,8 +1,9 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 3,
-    "name": "relish/operator-block",
+    "name": "midflight/operator-block",
     "title": "Operator Information",
+    "textdomain": "kiwatinook",
     "description": "An interactive Leaflet map showcasing Indigenous tourism operators with tabbed cards and custom markers.",
     "category": "widgets",
     "icon": "location-alt",

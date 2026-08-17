@@ -5,7 +5,7 @@
  * Adds an image selector to WordPress Navigation Menu items in Appearance > Menus.
  * Saves attachment ID into wp_postmeta as `_itm_menu_image_id`.
  *
- * @package itm_indigpro
+ * @package kiwatinook
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -33,7 +33,7 @@ function itm_add_menu_item_image_fields( $item_id, $item, $depth, $args ) {
 	?>
 	<p class="field-itm-menu-image description description-wide" style="margin-top: 10px;">
 		<label for="edit-menu-item-image-<?php echo esc_attr( $item_id ); ?>">
-			<strong><?php esc_html_e( 'Mega Menu Image Preview', 'itm_indigpro' ); ?></strong><br />
+			<strong><?php esc_html_e( 'Mega Menu Image Preview', 'kiwatinook' ); ?></strong><br />
 			<input type="hidden" id="edit-menu-item-image-<?php echo esc_attr( $item_id ); ?>" 
 				   name="menu-item-itm-image[<?php echo esc_attr( $item_id ); ?>]" 
 				   value="<?php echo esc_attr( $image_id ); ?>" 
@@ -47,10 +47,10 @@ function itm_add_menu_item_image_fields( $item_id, $item, $depth, $args ) {
 			</div>
 
 			<button type="button" class="button button-secondary itm-upload-menu-image-btn">
-				<?php echo ! empty( $image_url ) ? esc_html__( 'Change Image', 'itm_indigpro' ) : esc_html__( 'Select Mega Menu Image', 'itm_indigpro' ); ?>
+				<?php echo ! empty( $image_url ) ? esc_html__( 'Change Image', 'kiwatinook' ) : esc_html__( 'Select Mega Menu Image', 'kiwatinook' ); ?>
 			</button>
 			<button type="button" class="button-link itm-remove-menu-image-btn" style="color: #b32d2e; margin-left: 8px; display: <?php echo ! empty( $image_url ) ? 'inline-block' : 'none'; ?>;">
-				<?php esc_html_e( 'Remove Image', 'itm_indigpro' ); ?>
+				<?php esc_html_e( 'Remove Image', 'kiwatinook' ); ?>
 			</button>
 		</label>
 	</p>

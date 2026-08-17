@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package itm_indigpro
+ * @package kiwatinook
  */
 ?>
 
@@ -14,7 +14,7 @@
 		the_content();
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'itm_indigpro' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'kiwatinook' ),
 			'after'  => '</div>',
 		) );
 		?>
@@ -27,7 +27,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'itm_indigpro' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'kiwatinook' ),
 						array(
 							'span' => array(
 								'class' => array(),
