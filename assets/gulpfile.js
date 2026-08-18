@@ -6,12 +6,12 @@ import concat       from 'gulp-concat';
 import cleanCSS     from 'gulp-clean-css';
 
 const paths = {
-  less:       './less/style.less',
-  lessWatch:  './less/**/*.less',
-  blocksLess: './less/blocks/*.less',
+  less:        './less/style.less',
+  lessWatch:   './less/**/*.less',
+  blocksLess:  './less/blocks/*.less',
   blocksWatch: './less/blocks/**/*.less',
-  css:        './css/',
-  blocksCss:  '../blocks/',
+  css:         './css/',
+  blocksCss:   '../blocks/',
 };
 
 export const compileLess = () =>
@@ -20,7 +20,16 @@ export const compileLess = () =>
     .pipe( less() )
     .pipe( autoprefixer({ overrideBrowserslist: [ 'last 2 versions' ], cascade: false }) )
     .pipe( concat( 'styles.css' ) )
-    .pipe( cleanCSS() )
+    .pipe( cleanCSS({
+      level: {
+        1: {
+          specialComments: 0
+        },
+        2: {
+          mergeMedia: true
+        }
+      }
+    }) )
     .pipe( sourcemaps.write( '.' ) )
     .pipe( gulp.dest( paths.css ) );
 
@@ -30,12 +39,21 @@ export const compileBlocksLess = () =>
     .pipe( less() )
     .pipe( autoprefixer({ overrideBrowserslist: [ 'last 2 versions' ], cascade: false }) )
     .pipe( concat( 'blocks.css' ) )
-    .pipe( cleanCSS() )
+    .pipe( cleanCSS({
+      level: {
+        1: {
+          specialComments: 0
+        },
+        2: {
+          mergeMedia: true
+        }
+      }
+    }) )
     .pipe( sourcemaps.write( '.' ) )
     .pipe( gulp.dest( paths.blocksCss ) );
 
 const watchFiles = () => {
-  gulp.watch( paths.less,       compileLess );
+  gulp.watch( paths.lessWatch,   compileLess );
   gulp.watch( paths.blocksWatch, compileBlocksLess );
 };
 

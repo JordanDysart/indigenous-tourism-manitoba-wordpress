@@ -169,6 +169,122 @@
   }
 }
 
+// -----------------------------------------------------------------------------
+// Become a Member Page Styling
+// -----------------------------------------------------------------------------
+.membership-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+
+  .breakpoint(@breakpoint-lg, {
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 60px;
+  });
+
+  .membership-lead-heading {
+    font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+    font-weight: 700;
+    color: @color-secondary;
+    line-height: 1.35;
+    margin-bottom: 20px;
+  }
+
+  .membership-lead-p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #4b5563;
+    margin-bottom: 16px;
+  }
+
+  .membership-resource-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    li {
+      font-weight: 700;
+      color: @color-secondary;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+
+      a {
+        color: @color-maroon;
+        text-decoration: underline;
+        transition: color 0.15s ease;
+
+        &:hover {
+          color: @color-primary;
+        }
+      }
+    }
+  }
+
+  .membership-logo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: @radius-md;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+    img {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.membership-app-details {
+  background: #ffffff;
+  border-radius: @radius-md;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  padding: 24px 32px;
+  border-left: 4px solid @color-orange;
+  box-sizing: border-box;
+
+  .membership-app-summary {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: @color-secondary;
+    cursor: pointer;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    .membership-accordion-icon {
+      font-size: 1.25rem;
+      color: @color-orange;
+      transition: transform 0.25s ease;
+    }
+  }
+
+  &[open] .membership-accordion-icon {
+    transform: rotate(180deg);
+  }
+
+  .membership-form-wrapper {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+  }
+}
+
 // Benefit Cards & Grids
 .benefit-card-container,
 .membership-tiers-grid,

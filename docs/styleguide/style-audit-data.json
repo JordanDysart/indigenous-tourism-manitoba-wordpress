@@ -1,5 +1,5 @@
 {
-  "auditedAt": "2026-08-17T04:06:50.335Z",
+  "auditedAt": "2026-08-17T13:33:03.388Z",
   "baseUrl": "https://indigenous-tourism-manitoba-wordpress.lndo.site",
   "canonicalTokens": {
     "colors": {
@@ -307,7 +307,7 @@
         {
           "page": "Reconciliation",
           "tag": "h1",
-          "text": "Reconciliation & Cultural Safety",
+          "text": "Reconciliation",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "60.8px",
@@ -321,6 +321,32 @@
           "page": "Things To Do",
           "tag": "h1",
           "text": "Things To Do",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "60.8px",
+          "fontWeight": "700",
+          "lineHeight": "69.92px",
+          "color": "rgb(255, 255, 255)",
+          "hasInlineStyle": null,
+          "classes": "wp-block-heading has-text-align-center has-white-color has-text-color"
+        },
+        {
+          "page": "Our Team",
+          "tag": "h1",
+          "text": "Our Team",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "60.8px",
+          "fontWeight": "700",
+          "lineHeight": "69.92px",
+          "color": "rgb(255, 255, 255)",
+          "hasInlineStyle": null,
+          "classes": "wp-block-heading has-text-align-center has-white-color has-text-color"
+        },
+        {
+          "page": "Become a Member",
+          "tag": "h1",
+          "text": "Become A Member",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "60.8px",
@@ -1037,14 +1063,40 @@
         {
           "page": "Reconciliation",
           "tag": "h2",
-          "text": "Our Commitment to Truth & Reconciliation",
+          "text": "Join us as we honour those who came before us as we secure our future.",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "32px",
+          "fontSize": "38.4px",
           "fontWeight": "700",
-          "lineHeight": "40px",
+          "lineHeight": "57.6px",
+          "color": "rgb(255, 255, 255)",
+          "hasInlineStyle": "color:#ffffff;font-size:2.4em;",
+          "classes": "banner-block-title"
+        },
+        {
+          "page": "Reconciliation",
+          "tag": "h2",
+          "text": "Discover Authentic Experiences",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "41.6px",
+          "fontWeight": "700",
+          "lineHeight": "49.92px",
           "color": "rgb(33, 43, 54)",
           "hasInlineStyle": null,
+          "classes": "featured-operators-title"
+        },
+        {
+          "page": "Reconciliation",
+          "tag": "h2",
+          "text": "Grounded in Cultural Authenticity",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "38.4px",
+          "fontWeight": "700",
+          "lineHeight": "48px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": "font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;",
           "classes": "wp-block-heading"
         },
         {
@@ -1128,28 +1180,15 @@
         {
           "page": "Our Team",
           "tag": "h2",
-          "text": "Our Team",
+          "text": "Staff & Executive Leadership",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "40px",
+          "fontSize": "38.4px",
           "fontWeight": "700",
-          "lineHeight": "60px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": "color:#ffffff;font-size:2.5em;",
-          "classes": "banner-block-title"
-        },
-        {
-          "page": "Our Team",
-          "tag": "h2",
-          "text": "Leadership & Staff",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "32px",
-          "fontWeight": "700",
-          "lineHeight": "40px",
+          "lineHeight": "48px",
           "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "wp-block-heading text-center"
+          "hasInlineStyle": "font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;margin-bottom:12px;",
+          "classes": "wp-block-heading"
         },
         {
           "page": "Our Team",
@@ -1157,12 +1196,25 @@
           "text": "Board of Directors",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "38.4px",
+          "fontWeight": "700",
+          "lineHeight": "48px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": "font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;margin-bottom:12px;",
+          "classes": "wp-block-heading"
+        },
+        {
+          "page": "Our Team",
+          "tag": "h2",
+          "text": "Connect With Our Team",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "32px",
           "fontWeight": "700",
           "lineHeight": "40px",
           "color": "rgb(33, 43, 54)",
           "hasInlineStyle": null,
-          "classes": "wp-block-heading"
+          "classes": "wp-block-heading has-text-align-center"
         },
         {
           "page": "Our Team",
@@ -1193,41 +1245,15 @@
         {
           "page": "Become a Member",
           "tag": "h2",
-          "text": "Become a Member",
+          "text": "ITM membership is a wonderful first step towards a brighter future for all.",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "40px",
+          "fontSize": "29.6px",
           "fontWeight": "700",
-          "lineHeight": "60px",
-          "color": "rgb(255, 255, 255)",
-          "hasInlineStyle": "color:#ffffff;font-size:2.5em;",
-          "classes": "banner-block-title"
-        },
-        {
-          "page": "Become a Member",
-          "tag": "h2",
-          "text": "Why Join Indigenous Tourism Manitoba?",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "32px",
-          "fontWeight": "700",
-          "lineHeight": "40px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "39.96px",
+          "color": "rgb(97, 0, 0)",
           "hasInlineStyle": null,
-          "classes": "wp-block-heading"
-        },
-        {
-          "page": "Become a Member",
-          "tag": "h2",
-          "text": "Explore All Membership Advantages",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "32px",
-          "fontWeight": "700",
-          "lineHeight": "40px",
-          "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "wp-block-heading"
+          "classes": "membership-lead-heading"
         },
         {
           "page": "Become a Member",
@@ -1988,46 +2014,46 @@
         {
           "page": "Home Page",
           "tag": "h3",
-          "text": "Shelly’s Bistro",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "26px",
-          "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "featured-operator-card-title"
-        },
-        {
-          "page": "Home Page",
-          "tag": "h3",
-          "text": "Manitoba Indigenous Cultural Education Centre Inc.",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "26px",
-          "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "featured-operator-card-title"
-        },
-        {
-          "page": "Home Page",
-          "tag": "h3",
-          "text": "Moon Gate Guest House",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "20px",
-          "fontWeight": "700",
-          "lineHeight": "26px",
-          "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "featured-operator-card-title"
-        },
-        {
-          "page": "Home Page",
-          "tag": "h3",
           "text": "Bistro on Notre Dame",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "26px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "featured-operator-card-title"
+        },
+        {
+          "page": "Home Page",
+          "tag": "h3",
+          "text": "Prairie Berry",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "26px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "featured-operator-card-title"
+        },
+        {
+          "page": "Home Page",
+          "tag": "h3",
+          "text": "Spence Custom Carving",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "26px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "featured-operator-card-title"
+        },
+        {
+          "page": "Home Page",
+          "tag": "h3",
+          "text": "Wyndham Garden Winnipeg Airport",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
           "fontSize": "20px",
@@ -2482,41 +2508,54 @@
         {
           "page": "Reconciliation",
           "tag": "h3",
-          "text": "Guiding Principles",
+          "text": "Teekca’s Boutique",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
+          "lineHeight": "26px",
           "color": "rgb(33, 43, 54)",
           "hasInlineStyle": null,
-          "classes": "wp-block-heading"
+          "classes": "featured-operator-card-title"
         },
         {
           "page": "Reconciliation",
           "tag": "h3",
-          "text": "Action & Advocacy",
+          "text": "Manitoba Indigenous Cultural Education Centre Inc.",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
+          "lineHeight": "26px",
           "color": "rgb(33, 43, 54)",
           "hasInlineStyle": null,
-          "classes": "wp-block-heading"
+          "classes": "featured-operator-card-title"
         },
         {
           "page": "Reconciliation",
           "tag": "h3",
-          "text": "Learn More & Connect",
+          "text": "Moon Gate Guest House",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "20px",
           "fontWeight": "700",
-          "lineHeight": "30px",
+          "lineHeight": "26px",
           "color": "rgb(33, 43, 54)",
           "hasInlineStyle": null,
-          "classes": "wp-block-heading"
+          "classes": "featured-operator-card-title"
+        },
+        {
+          "page": "Reconciliation",
+          "tag": "h3",
+          "text": "Nature’s Edge Tourism",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "lineHeight": "26px",
+          "color": "rgb(33, 43, 54)",
+          "hasInlineStyle": null,
+          "classes": "featured-operator-card-title"
         },
         {
           "page": "Reconciliation",
@@ -2690,41 +2729,145 @@
         {
           "page": "Our Team",
           "tag": "h3",
-          "text": "Executive Leadership",
+          "text": "Holly Spence",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "22.4px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "28px",
+          "color": "rgb(97, 0, 0)",
           "hasInlineStyle": null,
-          "classes": "wp-block-heading"
+          "classes": "team-member-name"
         },
         {
           "page": "Our Team",
           "tag": "h3",
-          "text": "Marketing & Communications",
+          "text": "Doreen Booth",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "22.4px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "28px",
+          "color": "rgb(97, 0, 0)",
           "hasInlineStyle": null,
-          "classes": "wp-block-heading"
+          "classes": "team-member-name"
         },
         {
           "page": "Our Team",
           "tag": "h3",
-          "text": "Training & Development",
+          "text": "Renée Simcoe",
           "fontFamily": "Ubuntu",
           "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
+          "fontSize": "22.4px",
           "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
+          "lineHeight": "28px",
+          "color": "rgb(97, 0, 0)",
           "hasInlineStyle": null,
-          "classes": "wp-block-heading"
+          "classes": "team-member-name"
+        },
+        {
+          "page": "Our Team",
+          "tag": "h3",
+          "text": "Cecelia Point",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "22.4px",
+          "fontWeight": "700",
+          "lineHeight": "28px",
+          "color": "rgb(97, 0, 0)",
+          "hasInlineStyle": null,
+          "classes": "team-member-name"
+        },
+        {
+          "page": "Our Team",
+          "tag": "h3",
+          "text": "Taytum Assinaboine",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "22.4px",
+          "fontWeight": "700",
+          "lineHeight": "28px",
+          "color": "rgb(97, 0, 0)",
+          "hasInlineStyle": null,
+          "classes": "team-member-name"
+        },
+        {
+          "page": "Our Team",
+          "tag": "h3",
+          "text": "Darcie Guarderas",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "22.4px",
+          "fontWeight": "700",
+          "lineHeight": "28px",
+          "color": "rgb(97, 0, 0)",
+          "hasInlineStyle": null,
+          "classes": "team-member-name"
+        },
+        {
+          "page": "Our Team",
+          "tag": "h3",
+          "text": "Dave Daley",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "22.4px",
+          "fontWeight": "700",
+          "lineHeight": "28px",
+          "color": "rgb(97, 0, 0)",
+          "hasInlineStyle": null,
+          "classes": "team-member-name"
+        },
+        {
+          "page": "Our Team",
+          "tag": "h3",
+          "text": "Melanie Gamache",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "22.4px",
+          "fontWeight": "700",
+          "lineHeight": "28px",
+          "color": "rgb(97, 0, 0)",
+          "hasInlineStyle": null,
+          "classes": "team-member-name"
+        },
+        {
+          "page": "Our Team",
+          "tag": "h3",
+          "text": "Lee Sinclair",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "22.4px",
+          "fontWeight": "700",
+          "lineHeight": "28px",
+          "color": "rgb(97, 0, 0)",
+          "hasInlineStyle": null,
+          "classes": "team-member-name"
+        },
+        {
+          "page": "Our Team",
+          "tag": "h3",
+          "text": "Melanie Ferris",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "22.4px",
+          "fontWeight": "700",
+          "lineHeight": "28px",
+          "color": "rgb(97, 0, 0)",
+          "hasInlineStyle": null,
+          "classes": "team-member-name"
+        },
+        {
+          "page": "Our Team",
+          "tag": "h3",
+          "text": "Edna Nabess",
+          "fontFamily": "Ubuntu",
+          "rawFontFamily": "Ubuntu, sans-serif",
+          "fontSize": "22.4px",
+          "fontWeight": "700",
+          "lineHeight": "28px",
+          "color": "rgb(97, 0, 0)",
+          "hasInlineStyle": null,
+          "classes": "team-member-name"
         },
         {
           "page": "Our Team",
@@ -2790,32 +2933,6 @@
           "color": "rgb(33, 43, 54)",
           "hasInlineStyle": null,
           "classes": "mega-menu-featured-title"
-        },
-        {
-          "page": "Become a Member",
-          "tag": "h3",
-          "text": "Indigenous Tourism Operator",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
-          "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "wp-block-heading"
-        },
-        {
-          "page": "Become a Member",
-          "tag": "h3",
-          "text": "Associate Member",
-          "fontFamily": "Ubuntu",
-          "rawFontFamily": "Ubuntu, sans-serif",
-          "fontSize": "24px",
-          "fontWeight": "700",
-          "lineHeight": "30px",
-          "color": "rgb(33, 43, 54)",
-          "hasInlineStyle": null,
-          "classes": "wp-block-heading"
         },
         {
           "page": "Become a Member",
@@ -8927,7 +9044,7 @@
       }
     ],
     "fontFamiliesFound": {
-      "Ubuntu": 287,
+      "Ubuntu": 296,
       "Helvetica Neue": 40,
       "Nunito Sans": 400
     }
@@ -8935,7 +9052,7 @@
   "colorInventory": {
     "#404040": {
       "hex": "#404040",
-      "count": 2916,
+      "count": 2933,
       "types": [
         "color"
       ],
@@ -8943,7 +9060,7 @@
     },
     "#610000": {
       "hex": "#610000",
-      "count": 174,
+      "count": 198,
       "types": [
         "color"
       ],
@@ -8959,7 +9076,7 @@
     },
     "#212b36": {
       "hex": "#212b36",
-      "count": 1517,
+      "count": 1511,
       "types": [
         "color",
         "backgroundColor"
@@ -8984,7 +9101,7 @@
     },
     "#ffffff": {
       "hex": "#ffffff",
-      "count": 844,
+      "count": 852,
       "types": [
         "color",
         "backgroundColor"
@@ -9002,7 +9119,7 @@
     },
     "#000000": {
       "hex": "#000000",
-      "count": 52,
+      "count": 53,
       "types": [
         "backgroundColor",
         "color"
@@ -9011,7 +9128,7 @@
     },
     "#f9f9f9": {
       "hex": "#f9f9f9",
-      "count": 8,
+      "count": 7,
       "types": [
         "backgroundColor"
       ],
@@ -9019,7 +9136,7 @@
     },
     "#eef0f2": {
       "hex": "#eef0f2",
-      "count": 4,
+      "count": 8,
       "types": [
         "backgroundColor"
       ],
@@ -9027,7 +9144,7 @@
     },
     "#da5225": {
       "hex": "#da5225",
-      "count": 108,
+      "count": 120,
       "types": [
         "color",
         "backgroundColor"
@@ -9044,7 +9161,7 @@
     },
     "#4b5563": {
       "hex": "#4b5563",
-      "count": 24,
+      "count": 62,
       "types": [
         "color"
       ],
@@ -9061,7 +9178,7 @@
     },
     "#9a6700": {
       "hex": "#9a6700",
-      "count": 2,
+      "count": 4,
       "types": [
         "color"
       ],
@@ -9150,7 +9267,7 @@
     },
     "#374151": {
       "hex": "#374151",
-      "count": 1,
+      "count": 2,
       "types": [
         "color"
       ],
@@ -9158,7 +9275,7 @@
     },
     "#808080": {
       "hex": "#808080",
-      "count": 1,
+      "count": 2,
       "types": [
         "color"
       ],
@@ -9166,7 +9283,7 @@
     },
     "#cccccc": {
       "hex": "#cccccc",
-      "count": 1,
+      "count": 2,
       "types": [
         "backgroundColor"
       ],
@@ -9219,6 +9336,31 @@
         "backgroundColor"
       ],
       "isCanonical": true
+    },
+    "#faf9f6": {
+      "hex": "#faf9f6",
+      "count": 1,
+      "types": [
+        "backgroundColor"
+      ],
+      "isCanonical": false
+    },
+    "#9b1b10": {
+      "hex": "#9b1b10",
+      "count": 1,
+      "types": [
+        "color"
+      ],
+      "isCanonical": false
+    },
+    "#bd2b1e": {
+      "hex": "#bd2b1e",
+      "count": 3,
+      "types": [
+        "backgroundColor",
+        "color"
+      ],
+      "isCanonical": false
     },
     "#666666": {
       "hex": "#666666",
@@ -10462,66 +10604,6 @@
     },
     {
       "page": "Reconciliation",
-      "text": "Explore Operators",
-      "classes": "wp-block-button btn btn--primary",
-      "tagName": "div",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
-      "color": "rgb(64, 64, 64)",
-      "fontFamily": "Nunito Sans",
-      "fontSize": "16px",
-      "fontWeight": "400",
-      "padding": "0px",
-      "borderRadius": "0px",
-      "height": "44px",
-      "hasInlineStyle": null
-    },
-    {
-      "page": "Reconciliation",
-      "text": "Explore Operators",
-      "classes": "wp-block-button__link wp-element-button",
-      "tagName": "a",
-      "backgroundColor": "rgb(218, 82, 37)",
-      "color": "rgb(255, 255, 255)",
-      "fontFamily": "Nunito Sans",
-      "fontSize": "16px",
-      "fontWeight": "700",
-      "padding": "10px 24px",
-      "borderRadius": "8px",
-      "height": "44px",
-      "hasInlineStyle": null
-    },
-    {
-      "page": "Reconciliation",
-      "text": "Contact Us",
-      "classes": "wp-block-button btn btn--gold",
-      "tagName": "div",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
-      "color": "rgb(64, 64, 64)",
-      "fontFamily": "Nunito Sans",
-      "fontSize": "16px",
-      "fontWeight": "400",
-      "padding": "0px",
-      "borderRadius": "0px",
-      "height": "44px",
-      "hasInlineStyle": null
-    },
-    {
-      "page": "Reconciliation",
-      "text": "Contact Us",
-      "classes": "wp-block-button__link wp-element-button",
-      "tagName": "a",
-      "backgroundColor": "rgb(224, 172, 15)",
-      "color": "rgb(33, 43, 54)",
-      "fontFamily": "Nunito Sans",
-      "fontSize": "16px",
-      "fontWeight": "700",
-      "padding": "10px 24px",
-      "borderRadius": "8px",
-      "height": "44px",
-      "hasInlineStyle": null
-    },
-    {
-      "page": "Reconciliation",
       "text": "Icon/Empty",
       "classes": "ctct-popup-close js-popup-close",
       "tagName": "button",
@@ -10972,7 +11054,7 @@
     },
     {
       "page": "Our Team",
-      "text": "Contact Our Team",
+      "text": "Contact Us",
       "classes": "wp-block-button btn btn--primary",
       "tagName": "div",
       "backgroundColor": "rgba(0, 0, 0, 0)",
@@ -10987,11 +11069,41 @@
     },
     {
       "page": "Our Team",
-      "text": "Contact Our Team",
+      "text": "Contact Us",
       "classes": "wp-block-button__link wp-element-button",
       "tagName": "a",
       "backgroundColor": "rgb(218, 82, 37)",
       "color": "rgb(255, 255, 255)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "padding": "10px 24px",
+      "borderRadius": "8px",
+      "height": "44px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Our Team",
+      "text": "Become a Member",
+      "classes": "wp-block-button btn btn--outline",
+      "tagName": "div",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(64, 64, 64)",
+      "fontFamily": "Nunito Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "height": "44px",
+      "hasInlineStyle": null
+    },
+    {
+      "page": "Our Team",
+      "text": "Become a Member",
+      "classes": "wp-block-button__link wp-element-button",
+      "tagName": "a",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(218, 82, 37)",
       "fontFamily": "Nunito Sans",
       "fontSize": "16px",
       "fontWeight": "700",
@@ -11167,7 +11279,7 @@
     },
     {
       "page": "Become a Member",
-      "text": "Apply as Operator",
+      "text": "Discover Member Benefits",
       "classes": "wp-block-button btn btn--primary",
       "tagName": "div",
       "backgroundColor": "rgba(0, 0, 0, 0)",
@@ -11182,67 +11294,7 @@
     },
     {
       "page": "Become a Member",
-      "text": "Apply as Operator",
-      "classes": "wp-block-button__link wp-element-button",
-      "tagName": "a",
-      "backgroundColor": "rgb(218, 82, 37)",
-      "color": "rgb(255, 255, 255)",
-      "fontFamily": "Nunito Sans",
-      "fontSize": "16px",
-      "fontWeight": "700",
-      "padding": "10px 24px",
-      "borderRadius": "8px",
-      "height": "44px",
-      "hasInlineStyle": null
-    },
-    {
-      "page": "Become a Member",
-      "text": "Apply as Associate",
-      "classes": "wp-block-button btn btn--gold",
-      "tagName": "div",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
-      "color": "rgb(64, 64, 64)",
-      "fontFamily": "Nunito Sans",
-      "fontSize": "16px",
-      "fontWeight": "400",
-      "padding": "0px",
-      "borderRadius": "0px",
-      "height": "44px",
-      "hasInlineStyle": null
-    },
-    {
-      "page": "Become a Member",
-      "text": "Apply as Associate",
-      "classes": "wp-block-button__link wp-element-button",
-      "tagName": "a",
-      "backgroundColor": "rgb(224, 172, 15)",
-      "color": "rgb(33, 43, 54)",
-      "fontFamily": "Nunito Sans",
-      "fontSize": "16px",
-      "fontWeight": "700",
-      "padding": "10px 24px",
-      "borderRadius": "8px",
-      "height": "44px",
-      "hasInlineStyle": null
-    },
-    {
-      "page": "Become a Member",
-      "text": "View Member Benefits",
-      "classes": "wp-block-button btn btn--primary",
-      "tagName": "div",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
-      "color": "rgb(64, 64, 64)",
-      "fontFamily": "Nunito Sans",
-      "fontSize": "16px",
-      "fontWeight": "400",
-      "padding": "0px",
-      "borderRadius": "0px",
-      "height": "44px",
-      "hasInlineStyle": null
-    },
-    {
-      "page": "Become a Member",
-      "text": "View Member Benefits",
+      "text": "Discover Member Benefits",
       "classes": "wp-block-button__link wp-element-button",
       "tagName": "a",
       "backgroundColor": "rgb(218, 82, 37)",
@@ -13920,7 +13972,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-60zfltat4s84\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-81au32w55yh0\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "About Indigenous Tourism Manitoba",
@@ -14008,7 +14060,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ilgvlfw8qcrw\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-c4kq0q1creqk\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Operators Directory",
@@ -14552,7 +14604,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-m3zpscuioh18\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-6c9ktgibfvtq\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Single Operator (Prairie Berry)",
@@ -14608,7 +14660,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-1vmcdusjqj9g\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-atv3r7x7mjjm\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Experience Map",
@@ -15176,7 +15228,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-msprlyig0ewf\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-3ksq6pe8qfrm\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Reconciliation",
@@ -15191,8 +15243,8 @@
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
         "tag": "section",
         "classes": "hero-block alignfull text-align-center valign-middle has-hoop-overlay",
-        "styleAttr": "background-image:url('https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/IMG_7169-scaled.jpg'); min-height:60vh;",
-        "snippet": "<section class=\"hero-block alignfull text-align-center valign-middle has-hoop-overlay\" style=\"background-image:url('https://indigenous-tourism-manitob"
+        "styleAttr": "background-image:url('/wp-content/uploads/2024/10/IMG_7169-scaled.jpg'); min-height:50vh;",
+        "snippet": "<section class=\"hero-block alignfull text-align-center valign-middle has-hoop-overlay\" style=\"background-image:url('/wp-content/uploads/2024/10/IMG_71"
       },
       {
         "page": "Reconciliation",
@@ -15201,6 +15253,54 @@
         "classes": "hero-block-overlay",
         "styleAttr": "background-color:#000000;opacity:0.3;",
         "snippet": "<div class=\"hero-block-overlay\" style=\"background-color:#000000;opacity:0.3;\" aria-hidden=\"true\"></div>"
+      },
+      {
+        "page": "Reconciliation",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
+        "tag": "div",
+        "classes": "banner-block-overlay",
+        "styleAttr": "background-color:#000000;opacity:0.2;",
+        "snippet": "<div class=\"banner-block-overlay\" style=\"background-color:#000000;opacity:0.2;\"></div>"
+      },
+      {
+        "page": "Reconciliation",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
+        "tag": "h2",
+        "classes": "banner-block-title",
+        "styleAttr": "color:#ffffff;font-size:2.4em;",
+        "snippet": "<h2 class=\"banner-block-title\" style=\"color:#ffffff;font-size:2.4em;\">\n\t\t\t\t\tJoin us as we honour those who came before us as we secure our future.\t\t\t\t"
+      },
+      {
+        "page": "Reconciliation",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
+        "tag": "div",
+        "classes": "text-center",
+        "styleAttr": "max-width:860px;margin:0 auto 28px auto;text-align:center;",
+        "snippet": "<div class=\"text-center\" style=\"max-width:860px;margin:0 auto 28px auto;text-align:center;\">\n<span class=\"culture-badge\" style=\"background:rgba(224,17"
+      },
+      {
+        "page": "Reconciliation",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
+        "tag": "span",
+        "classes": "culture-badge",
+        "styleAttr": "background:rgba(224,172,15,0.15);color:#9a6700;",
+        "snippet": "<span class=\"culture-badge\" style=\"background:rgba(224,172,15,0.15);color:#9a6700;\">Living Heritage</span>"
+      },
+      {
+        "page": "Reconciliation",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
+        "tag": "h2",
+        "classes": "wp-block-heading",
+        "styleAttr": "font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;",
+        "snippet": "<h2 class=\"wp-block-heading\" style=\"font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;\">Grounded in Cultural Authenticity</h2>"
+      },
+      {
+        "page": "Reconciliation",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
+        "tag": "div",
+        "classes": "reconciliation-body-text",
+        "styleAttr": "max-width:860px;margin:0 auto;",
+        "snippet": "<div class=\"reconciliation-body-text\" style=\"max-width:860px;margin:0 auto;\">\n<p>Our offerings are not just a window into Indigenous life, culture, an"
       },
       {
         "page": "Reconciliation",
@@ -15248,7 +15348,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ok72pez2zi00\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-gxmjoqthghih\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Things To Do",
@@ -15320,7 +15420,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-xkgb3oj2gipb\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-wji8swmxwtey\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Our Team",
@@ -15333,26 +15433,98 @@
       {
         "page": "Our Team",
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
+        "tag": "section",
+        "classes": "hero-block alignfull text-align-center valign-middle has-hoop-overlay",
+        "styleAttr": "background-image:url('/wp-content/uploads/2024/10/wood-itm-scaled.jpg'); min-height:55vh;",
+        "snippet": "<section class=\"hero-block alignfull text-align-center valign-middle has-hoop-overlay\" style=\"background-image:url('/wp-content/uploads/2024/10/wood-i"
+      },
+      {
+        "page": "Our Team",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
         "tag": "div",
-        "classes": "banner-block-overlay",
-        "styleAttr": "background-color:#000000;opacity:0.3;",
-        "snippet": "<div class=\"banner-block-overlay\" style=\"background-color:#000000;opacity:0.3;\"></div>"
+        "classes": "hero-block-overlay",
+        "styleAttr": "background-color:#000000;opacity:0.35;",
+        "snippet": "<div class=\"hero-block-overlay\" style=\"background-color:#000000;opacity:0.35;\" aria-hidden=\"true\"></div>"
+      },
+      {
+        "page": "Our Team",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
+        "tag": "div",
+        "classes": "text-center",
+        "styleAttr": "max-width:760px;margin:0 auto 30px auto;text-align:center;",
+        "snippet": "<div class=\"text-center\" style=\"max-width:760px;margin:0 auto 30px auto;text-align:center;\">\n<span class=\"culture-badge\" style=\"background:rgba(224,17"
+      },
+      {
+        "page": "Our Team",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
+        "tag": "span",
+        "classes": "culture-badge",
+        "styleAttr": "background:rgba(224,172,15,0.15);color:#9a6700;",
+        "snippet": "<span class=\"culture-badge\" style=\"background:rgba(224,172,15,0.15);color:#9a6700;\">Leadership &amp; Operations</span>"
       },
       {
         "page": "Our Team",
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
         "tag": "h2",
-        "classes": "banner-block-title",
-        "styleAttr": "color:#ffffff;font-size:2.5em;",
-        "snippet": "<h2 class=\"banner-block-title\" style=\"color:#ffffff;font-size:2.5em;\">\n\t\t\t\t\tOur Team\t\t\t\t</h2>"
+        "classes": "wp-block-heading",
+        "styleAttr": "font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;margin-bottom:12px;",
+        "snippet": "<h2 class=\"wp-block-heading\" style=\"font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;margin-bottom:12px;\">Staff &amp; Executive Leadership</h2>"
       },
       {
         "page": "Our Team",
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
         "tag": "p",
-        "classes": "banner-block-description",
-        "styleAttr": "color:#ffffff;font-size:1.2em;font-weight:normal;",
-        "snippet": "<p class=\"banner-block-description\" style=\"color:#ffffff;font-size:1.2em;font-weight:normal;\">\n\t\t\t\t\tMeet the dedicated leaders and advocates behind In"
+        "classes": "",
+        "styleAttr": "font-size:1.05rem;color:#4b5563;line-height:1.6;",
+        "snippet": "<p style=\"font-size:1.05rem;color:#4b5563;line-height:1.6;\">Our team brings together passionate leaders in tourism development, cultural education, fi"
+      },
+      {
+        "page": "Our Team",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
+        "tag": "section",
+        "classes": "page-section constrained-content section-team-board has-off-white-background-color has-background",
+        "styleAttr": "background-color:#faf9f6;padding:60px 20px;",
+        "snippet": "<section class=\"page-section constrained-content section-team-board has-off-white-background-color has-background\" style=\"background-color:#faf9f6;pad"
+      },
+      {
+        "page": "Our Team",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
+        "tag": "div",
+        "classes": "text-center",
+        "styleAttr": "max-width:760px;margin:0 auto 30px auto;text-align:center;",
+        "snippet": "<div class=\"text-center\" style=\"max-width:760px;margin:0 auto 30px auto;text-align:center;\">\n<span class=\"culture-badge\" style=\"background:rgba(189,43"
+      },
+      {
+        "page": "Our Team",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
+        "tag": "span",
+        "classes": "culture-badge",
+        "styleAttr": "background:rgba(189,43,30,0.12);color:#9b1b10;",
+        "snippet": "<span class=\"culture-badge\" style=\"background:rgba(189,43,30,0.12);color:#9b1b10;\">Governance &amp; Advocacy</span>"
+      },
+      {
+        "page": "Our Team",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
+        "tag": "h2",
+        "classes": "wp-block-heading",
+        "styleAttr": "font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;margin-bottom:12px;",
+        "snippet": "<h2 class=\"wp-block-heading\" style=\"font-size:clamp(1.9rem,3vw,2.4rem);margin-top:10px;margin-bottom:12px;\">Board of Directors</h2>"
+      },
+      {
+        "page": "Our Team",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
+        "tag": "p",
+        "classes": "",
+        "styleAttr": "font-size:1.05rem;color:#4b5563;line-height:1.6;",
+        "snippet": "<p style=\"font-size:1.05rem;color:#4b5563;line-height:1.6;\">Guided by Indigenous leaders representing First Nations, Métis, and Inuit communities, ent"
+      },
+      {
+        "page": "Our Team",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/our-team/",
+        "tag": "div",
+        "classes": "wp-block-group page-section text-center",
+        "styleAttr": "padding:60px 20px;",
+        "snippet": "<div class=\"wp-block-group page-section text-center\" style=\"padding:60px 20px;\"><div class=\"wp-block-group__inner-container is-layout-constrained wp-c"
       },
       {
         "page": "Our Team",
@@ -15400,7 +15572,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-wz23t188v0y8\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-6pinx5et9d0a\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Become a Member",
@@ -15413,26 +15585,66 @@
       {
         "page": "Become a Member",
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/become-a-member/",
+        "tag": "section",
+        "classes": "hero-block alignfull text-align-center valign-middle has-hoop-overlay",
+        "styleAttr": "background-image:url('https://indigenous-tourism-manitoba-wordpress.lndo.site/wp-content/uploads/2024/10/CedarLakeRanch_ITACManitoba_PhotoByTaylorBurk_Print-2-scaled.jpg'); min-height:50vh;",
+        "snippet": "<section class=\"hero-block alignfull text-align-center valign-middle has-hoop-overlay\" style=\"background-image:url('https://indigenous-tourism-manitob"
+      },
+      {
+        "page": "Become a Member",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/become-a-member/",
         "tag": "div",
-        "classes": "banner-block-overlay",
-        "styleAttr": "background-color:#000000;opacity:0.3;",
-        "snippet": "<div class=\"banner-block-overlay\" style=\"background-color:#000000;opacity:0.3;\"></div>"
+        "classes": "hero-block-overlay",
+        "styleAttr": "background-color:#000000;opacity:0.35;",
+        "snippet": "<div class=\"hero-block-overlay\" style=\"background-color:#000000;opacity:0.35;\" aria-hidden=\"true\"></div>"
       },
       {
         "page": "Become a Member",
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/become-a-member/",
-        "tag": "h2",
-        "classes": "banner-block-title",
-        "styleAttr": "color:#ffffff;font-size:2.5em;",
-        "snippet": "<h2 class=\"banner-block-title\" style=\"color:#ffffff;font-size:2.5em;\">\n\t\t\t\t\tBecome a Member\t\t\t\t</h2>"
+        "tag": "section",
+        "classes": "page-section constrained-content membership-intro-section",
+        "styleAttr": "padding-top:60px;padding-bottom:40px;",
+        "snippet": "<section class=\"page-section constrained-content membership-intro-section\" style=\"padding-top:60px;padding-bottom:40px;\">\n<div class=\"membership-intro"
       },
       {
         "page": "Become a Member",
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/become-a-member/",
-        "tag": "p",
-        "classes": "banner-block-description",
-        "styleAttr": "color:#ffffff;font-size:1.2em;font-weight:normal;",
-        "snippet": "<p class=\"banner-block-description\" style=\"color:#ffffff;font-size:1.2em;font-weight:normal;\">\n\t\t\t\t\tJoin Indigenous Tourism Manitoba to grow your busi"
+        "tag": "div",
+        "classes": "wp-block-buttons",
+        "styleAttr": "margin-top:24px;margin-bottom:28px;",
+        "snippet": "<div class=\"wp-block-buttons\" style=\"margin-top:24px;margin-bottom:28px;\">\n<div class=\"wp-block-button btn btn--primary\"><a class=\"wp-block-button__li"
+      },
+      {
+        "page": "Become a Member",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/become-a-member/",
+        "tag": "hr",
+        "classes": "membership-divider",
+        "styleAttr": "margin:24px 0;border:0;border-top:1px solid #e5e7eb;",
+        "snippet": "<hr class=\"membership-divider\" style=\"margin:24px 0;border:0;border-top:1px solid #e5e7eb;\">"
+      },
+      {
+        "page": "Become a Member",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/become-a-member/",
+        "tag": "i",
+        "classes": "bi bi-file-earmark-pdf",
+        "styleAttr": "color:#bd2b1e;font-size:1.2rem;",
+        "snippet": "<i class=\"bi bi-file-earmark-pdf\" style=\"color:#bd2b1e;font-size:1.2rem;\"></i>"
+      },
+      {
+        "page": "Become a Member",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/become-a-member/",
+        "tag": "i",
+        "classes": "bi bi-file-earmark-pdf",
+        "styleAttr": "color:#bd2b1e;font-size:1.2rem;",
+        "snippet": "<i class=\"bi bi-file-earmark-pdf\" style=\"color:#bd2b1e;font-size:1.2rem;\"></i>"
+      },
+      {
+        "page": "Become a Member",
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/become-a-member/",
+        "tag": "section",
+        "classes": "page-section constrained-content membership-app-section",
+        "styleAttr": "padding-top:20px;padding-bottom:60px;",
+        "snippet": "<section class=\"page-section constrained-content membership-app-section\" style=\"padding-top:20px;padding-bottom:60px;\">\n<details class=\"membership-app"
       },
       {
         "page": "Become a Member",
@@ -15480,7 +15692,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-2j80p9yvwwpt\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ozlav8vqeif4\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Member Benefits",
@@ -15560,7 +15772,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-midi712nice\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-cyjqz9q09a3c\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Contact Us",
@@ -15640,7 +15852,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-bekmpvbmkhrh\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ai0st3pdvg2y\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Privacy Policy",
@@ -15696,7 +15908,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-xtxoxcul5t41\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-wigogwxu6hog\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "New Account Request",
@@ -15776,7 +15988,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-2dv2gugmty3r\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-cha5l5ycigm5\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Inquiry Form",
@@ -15856,7 +16068,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ur2f7ggj6k6f\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-w2i5udnsdblr\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Program (Hub)",
@@ -15936,7 +16148,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-oyocsj13kgxa\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-brvej6rpf78g\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 1",
@@ -16016,7 +16228,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-t1h7r8lxe3e8\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-n6upotraugni\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 2",
@@ -16096,7 +16308,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-fj3vaetxjd97\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-934bgp4ffdg4\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training Step 3",
@@ -16176,7 +16388,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-mzb8i0ra8x47\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-l8wcl7f7t5nv\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "Guide Training More Opportunities",
@@ -16256,7 +16468,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-hkdn3t3ei61u\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-ux5q8l4dgxva\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       },
       {
         "page": "404 Error Page",
@@ -16312,7 +16524,7 @@
         "tag": "iframe",
         "classes": "",
         "styleAttr": "width: 100%; height: 100%;",
-        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-w8nnvq7gdwa8\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
+        "snippet": "<iframe title=\"recaptcha challenge expires in two minutes\" name=\"c-abklrtmoco2k\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allo"
       }
     ],
     "orphanPluginClasses": [
@@ -16514,7 +16726,7 @@
       },
       {
         "hex": "#eef0f2",
-        "count": 4
+        "count": 8
       },
       {
         "hex": "#2d3748",
@@ -16522,7 +16734,7 @@
       },
       {
         "hex": "#4b5563",
-        "count": 24
+        "count": 62
       },
       {
         "hex": "#f3f4f6",
@@ -16530,7 +16742,7 @@
       },
       {
         "hex": "#9a6700",
-        "count": 2
+        "count": 4
       },
       {
         "hex": "#faf8f5",
@@ -16566,15 +16778,15 @@
       },
       {
         "hex": "#374151",
-        "count": 1
+        "count": 2
       },
       {
         "hex": "#808080",
-        "count": 1
+        "count": 2
       },
       {
         "hex": "#cccccc",
-        "count": 1
+        "count": 2
       },
       {
         "hex": "#6b7280",
@@ -16595,6 +16807,18 @@
       {
         "hex": "#0078a8",
         "count": 2
+      },
+      {
+        "hex": "#faf9f6",
+        "count": 1
+      },
+      {
+        "hex": "#9b1b10",
+        "count": 1
+      },
+      {
+        "hex": "#bd2b1e",
+        "count": 3
       },
       {
         "hex": "#666666",
@@ -17085,10 +17309,6 @@
         "text": "Failed to load resource: the server responded with a status of 404 ()"
       },
       {
-        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/",
-        "text": "Framing 'https://www.google.com/' violates the following report-only Content Security Policy directive: \"frame-ancestors 'self'\". The violation has been logged, but no further action has been taken.\n"
-      },
-      {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/about-itm/",
         "text": "Failed to load resource: the server responded with a status of 404 ()"
       },
@@ -17102,6 +17322,10 @@
       },
       {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/experience-map/",
+        "text": "Failed to load resource: the server responded with a status of 404 ()"
+      },
+      {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/reconciliation/",
         "text": "Failed to load resource: the server responded with a status of 404 ()"
       },
       {
@@ -17157,6 +17381,10 @@
         "text": "Failed to load resource: the server responded with a status of 404 ()"
       },
       {
+        "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/indigenous-guide-training-program-step-2/",
+        "text": "Framing 'https://www.google.com/' violates the following report-only Content Security Policy directive: \"frame-ancestors 'self'\". The violation has been logged, but no further action has been taken.\n"
+      },
+      {
         "url": "https://indigenous-tourism-manitoba-wordpress.lndo.site/indigenous-guide-training-program-step-3/",
         "text": "Failed to load resource: the server responded with a status of 404 ()"
       },
@@ -17176,8 +17404,8 @@
   },
   "summaryScores": {
     "canonicalAlignmentScore": 20,
-    "totalDegradationFlags": 431,
-    "inlineOverridesCount": 317,
+    "totalDegradationFlags": 454,
+    "inlineOverridesCount": 337,
     "contrastViolationsCount": 0
   }
 }

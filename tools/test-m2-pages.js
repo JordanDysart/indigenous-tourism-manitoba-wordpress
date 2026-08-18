@@ -152,7 +152,7 @@ async function runM2Verification() {
 
       case 2367: // Become a Member
         assert(/(?:midflight|relish)\/(?:hero|banner)-block/.test(rawContent), 'Hero/Banner in /become-a-member/');
-        assert(doc.querySelectorAll('.benefit-card').length >= 2, 'Membership category cards in /become-a-member/');
+        assert(doc.querySelectorAll('.membership-intro-grid, .membership-resource-list, .membership-app-details, .benefit-card').length > 0, 'Authentic membership application layout in /become-a-member/');
         break;
 
       case 2373: // Member Benefits

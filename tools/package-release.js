@@ -87,7 +87,7 @@ for (const file of rootFiles) {
   const stats = fs.statSync(fullPath);
 
   if (!stats.isDirectory()) {
-    if (file.endsWith('.php') || file === 'style.css' || file === 'screenshot.png' || file === 'readme.txt' || file === 'README.md') {
+    if (file.endsWith('.php') || file.endsWith('.css') || file === 'screenshot.png' || file === 'readme.txt' || file === 'README.md') {
       fs.copyFileSync(fullPath, path.join(stageDir, file));
     }
   }

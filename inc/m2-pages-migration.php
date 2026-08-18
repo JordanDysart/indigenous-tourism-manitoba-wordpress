@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class ITM_M2_Pages_Migration {
 
-	const MIGRATION_VERSION = '2.10.0';
+	const MIGRATION_VERSION = '2.11.0';
 
 	public static function init() {
 		add_action( 'init', [ __CLASS__, 'maybe_run_migration' ], 20 );
@@ -566,98 +566,50 @@ class ITM_M2_Pages_Migration {
 			2367 => [
 				'title' => 'Become a Member',
 				'slug'  => 'become-a-member',
-				'content' => '<!-- wp:midflight/banner-block {"title":"Become a Member","description":"Join Indigenous Tourism Manitoba to grow your business, access training, and connect with a thriving network.","overlayColor":"#000000","overlayOpacity":30,"fontSize":2.5,"descriptionFontSize":1.2} /-->
-
-<!-- wp:group {"className":"page-section constrained-content","layout":{"type":"constrained","contentSize":"1140px"}} -->
-<div class="wp-block-group page-section constrained-content">
-<!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Why Join Indigenous Tourism Manitoba?</h2>
+				'content' => '<!-- wp:midflight/hero-block {"backgroundImage":{"id":2367,"url":"/wp-content/uploads/2024/10/wood-itm-scaled.jpg"},"showHoopOverlay":true,"overlayOpacity":35,"minHeight":50,"contentAlignment":"center"} -->
+<!-- wp:heading {"textAlign":"center","level":1,"textColor":"white"} -->
+<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">Become A Member</h1>
 <!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Whether you are an established operator, an emerging cultural business, or a supporting partner organization, ITM membership offers dedicated advocacy, marketing reach, and business development support.</p>
-<!-- /wp:paragraph -->
+<!-- /wp:midflight/hero-block -->
 
-<!-- wp:columns {"className":"membership-tiers-grid"} -->
-<div class="wp-block-columns membership-tiers-grid">
-<!-- wp:column -->
-<div class="wp-block-column">
-<!-- wp:group {"className":"benefit-card"} -->
-<div class="wp-block-group benefit-card">
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Indigenous Tourism Operator</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>For majority-owned Indigenous tourism businesses operating in Manitoba offering experiences, accommodation, arts, or food services.</p>
-<!-- /wp:paragraph -->
-<!-- wp:list -->
-<ul class="wp-block-list">
-<li>Featured listing on the official ITM directory and map</li>
-<li>Priority access to marketing campaigns and trade shows</li>
-<li>Direct grant and financial assistance support</li>
+<!-- wp:html -->
+<section class="page-section constrained-content membership-intro-section" style="padding-top:60px;padding-bottom:40px;">
+<div class="membership-intro-grid">
+<div class="membership-intro-content">
+<h2 class="membership-lead-heading">ITM membership is a wonderful first step towards a brighter future for all.</h2>
+<p class="membership-lead-p">Indigenous Tourism Manitoba is committed to rebuilding and preserving Indigenous Tourism in Manitoba. We support the growth of this industry by promoting cultural storytelling, economic empowerment, and leadership. Any Indigenous individual or organization can join us.</p>
+<p class="membership-lead-p">As an ITM member, you’ll gain resources to boost your business. We offer help with experience development, training, networking, and marketing programs to set you on a path to success. Our goal is to provide valuable resources for entrepreneurs and communities, helping create genuine Indigenous experiences and stable jobs for Indigenous communities.</p>
+<div class="wp-block-buttons" style="margin-top:24px;margin-bottom:28px;">
+<div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="/member-benefits/">Discover Member Benefits</a></div>
+</div>
+<hr class="membership-divider" style="margin:24px 0;border:0;border-top:1px solid #e5e7eb;" />
+<ul class="membership-resource-list">
+<li><i class="bi bi-file-earmark-pdf" style="color:#bd2b1e;font-size:1.2rem;"></i> <span>Indigenous Tourism Manitoba (ITM) <a href="/wp-content/uploads/2026/01/2026-Membership-Guide.pdf" target="_blank" rel="noopener">Membership Guide</a></span></li>
+<li><i class="bi bi-file-earmark-pdf" style="color:#bd2b1e;font-size:1.2rem;"></i> <span>Market Readiness <a href="/wp-content/uploads/2025/01/ITM_Market-Readiness-Checklist.pdf" target="_blank" rel="noopener">Checklist</a></span></li>
 </ul>
-<!-- /wp:list -->
-<!-- wp:buttons -->
-<div class="wp-block-buttons">
-<!-- wp:button {"className":"btn btn--primary"} -->
-<div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="/new-account-request/">Apply as Operator</a></div>
-<!-- /wp:button -->
 </div>
-<!-- /wp:buttons -->
+<div class="membership-intro-image">
+<div class="membership-logo-card">
+<img src="/wp-content/uploads/2024/10/ITM-Logo-Portrait.png" alt="Indigenous Tourism Manitoba - Adventure to Understanding" />
 </div>
-<!-- /wp:group -->
 </div>
-<!-- /wp:column -->
+</div>
+</section>
+<!-- /wp:html -->
 
-<!-- wp:column -->
-<div class="wp-block-column">
-<!-- wp:group {"className":"benefit-card"} -->
-<div class="wp-block-group benefit-card">
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Associate Member</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>For non-Indigenous tourism businesses, regional tourism associations, and industry allies committed to supporting Indigenous tourism.</p>
-<!-- /wp:paragraph -->
-<!-- wp:list -->
-<ul class="wp-block-list">
-<li>Networking and reconciliation partnership opportunities</li>
-<li>Access to cultural awareness workshops</li>
-<li>Industry updates and collaborative campaign participation</li>
-</ul>
-<!-- /wp:list -->
-<!-- wp:buttons -->
-<div class="wp-block-buttons">
-<!-- wp:button {"className":"btn btn--gold"} -->
-<div class="wp-block-button btn btn--gold"><a class="wp-block-button__link wp-element-button" href="/new-account-request/">Apply as Associate</a></div>
-<!-- /wp:button -->
+<!-- wp:html -->
+<section class="page-section constrained-content membership-app-section" style="padding-top:20px;padding-bottom:60px;">
+<details class="membership-app-details" open>
+<summary class="membership-app-summary">
+<span>ITM Membership Application</span>
+<i class="bi bi-chevron-down membership-accordion-icon"></i>
+</summary>
+<div class="membership-form-wrapper">
+[gravityform id="4" title="true" description="false" ajax="true"]
 </div>
-<!-- /wp:buttons -->
-</div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:column -->
-</div>
-<!-- /wp:columns -->
-
-<!-- wp:group {"className":"page-section cta-section text-center","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"900px"}} -->
-<div class="wp-block-group page-section cta-section text-center has-off-white-background-color has-background">
-<!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Explore All Membership Advantages</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Discover marketing exposure, training programs, and grant assistance available to our members.</p>
-<!-- /wp:paragraph -->
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons">
-<!-- wp:button {"className":"btn btn--primary"} -->
-<div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="/member-benefits/">View Member Benefits</a></div>
-<!-- /wp:button -->
-</div>
-<!-- /wp:buttons -->
-</div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:group -->',
+</details>
+</section>
+<!-- /wp:html -->',
 			],
 
 			// 6. Member Benefits (Page ID 2373)

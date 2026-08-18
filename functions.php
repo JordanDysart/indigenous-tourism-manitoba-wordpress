@@ -78,8 +78,25 @@ function kiwatinook_widgets_init()
 
 function kiwatinook_scripts()
 {
-	wp_enqueue_style('kiwatinook-style', get_stylesheet_uri());
-	wp_enqueue_style('animated-menu-style', get_template_directory_uri() . '/assets/css/styles.css');
+	$style_css  = get_stylesheet_directory() . '/style.css';
+	$styles_css = get_template_directory() . '/assets/css/styles.css';
+	$theme_js   = get_template_directory() . '/js/theme.js';
+	$nav_js     = get_template_directory() . '/js/navigation.js';
+	$skip_js    = get_template_directory() . '/js/skip-link-focus-fix.js';
+	$anim_js    = get_template_directory() . '/js/animated-menu.js';
+
+	wp_enqueue_style(
+		'kiwatinook-style',
+		get_stylesheet_uri(),
+		[],
+		file_exists($style_css) ? filemtime($style_css) : null
+	);
+	wp_enqueue_style(
+		'animated-menu-style',
+		get_template_directory_uri() . '/assets/css/styles.css',
+		['kiwatinook-style'],
+		file_exists($styles_css) ? filemtime($styles_css) : null
+	);
 
 	$vars = array(
 		'ajaxurl' => admin_url('admin-ajax.php'),
@@ -92,18 +109,41 @@ function kiwatinook_scripts()
 	wp_enqueue_style('fancybox-css', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css');
 	wp_enqueue_script('fancybox-js', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js', array('jquery'), null, true);
 
-	wp_register_script('kiwatinook-theme', get_template_directory_uri() . '/js/theme.js', array('jquery'), '20150524', true);
+	wp_register_script(
+		'kiwatinook-theme',
+		get_template_directory_uri() . '/js/theme.js',
+		array('jquery'),
+		file_exists($theme_js) ? filemtime($theme_js) : '20150524',
+		true
+	);
 	wp_localize_script('kiwatinook-theme', 'kiwatinook', $vars);
 	wp_enqueue_script('kiwatinook-theme');
 
-	wp_enqueue_script('kiwatinook-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true);
-	wp_enqueue_script('kiwatinook-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array('jquery'), '20151215', true);
+	wp_enqueue_script(
+		'kiwatinook-navigation',
+		get_template_directory_uri() . '/js/navigation.js',
+		array('jquery'),
+		file_exists($nav_js) ? filemtime($nav_js) : '20151215',
+		true
+	);
+	wp_enqueue_script(
+		'kiwatinook-skip-link-focus-fix',
+		get_template_directory_uri() . '/js/skip-link-focus-fix.js',
+		array('jquery'),
+		file_exists($skip_js) ? filemtime($skip_js) : '20151215',
+		true
+	);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
 
-	wp_register_script('animated-menu', get_template_directory_uri() . '/js/animated-menu.js', array('jquery'));
+	wp_register_script(
+		'animated-menu',
+		get_template_directory_uri() . '/js/animated-menu.js',
+		array('jquery'),
+		file_exists($anim_js) ? filemtime($anim_js) : null
+	);
 	wp_enqueue_script('animated-menu');
 
 	// Bootstrap Icons — required by nav walker toggle chevrons and footer nav headings
@@ -154,8 +194,9 @@ add_action('enqueue_block_assets', 'kiwatinook_blocks_scripts');
 
 function kiwatinook_blocks_editor_scripts()
 {
-	$editor_js = '/blocks/blocks.js';
+	$editor_js  = '/blocks/blocks.js';
 	$editor_css = '/blocks/blocks.css';
+	$styles_css = '/assets/css/styles.css';
 
 	wp_enqueue_script(
 		'kiwatinook-blocks-editor-js',
@@ -164,6 +205,15 @@ function kiwatinook_blocks_editor_scripts()
 		filemtime(get_template_directory() . $editor_js),
 		true
 	);
+
+	if (file_exists(get_template_directory() . $styles_css)) {
+		wp_enqueue_style(
+			'kiwatinook-styles-editor-css',
+			get_template_directory_uri() . $styles_css,
+			[],
+			filemtime(get_template_directory() . $styles_css)
+		);
+	}
 
 	wp_enqueue_style(
 		'kiwatinook-blocks-editor-css',
