@@ -17,14 +17,15 @@ class ITM_Menu_Structure_Migration {
 	const MENU_VERSION = '1.1.0';
 
 	public static function init() {
-		add_action( 'init', [ __CLASS__, 'maybe_run_migration' ], 30 );
+		// Automatic menu rebuilding is disabled for production releases.
+		// Manual rebuild can still be triggered by an administrator via ?force_menu_migration=1.
+		add_action( 'admin_init', [ __CLASS__, 'maybe_run_migration' ], 30 );
 	}
 
 	public static function maybe_run_migration() {
-		$current_ver = get_option( 'itm_menu_structure_version' );
-		$force       = isset( $_GET['force_menu_migration'] ) && '1' === $_GET['force_menu_migration'];
+		$force = isset( $_GET['force_menu_migration'] ) && '1' === $_GET['force_menu_migration'];
 
-		if ( $force || $current_ver !== self::MENU_VERSION ) {
+		if ( $force && ( ! function_exists( 'current_user_can' ) || current_user_can( 'manage_options' ) ) ) {
 			self::run_migration();
 		}
 	}
