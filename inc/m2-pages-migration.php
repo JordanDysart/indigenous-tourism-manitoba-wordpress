@@ -17,17 +17,11 @@ class ITM_M2_Pages_Migration {
 	const MIGRATION_VERSION = '2.11.0';
 
 	public static function init() {
-		// Automatic database page overwrites are disabled for production releases.
-		// Manual migration can still be triggered by an administrator via ?force_m2_migration=1.
-		add_action( 'admin_init', [ __CLASS__, 'maybe_run_migration' ], 20 );
+		// Content migrations are completely disabled for production.
 	}
 
 	public static function maybe_run_migration() {
-		$force = isset( $_GET['force_m2_migration'] ) && '1' === $_GET['force_m2_migration'];
-
-		if ( $force && ( ! function_exists( 'current_user_can' ) || current_user_can( 'manage_options' ) ) ) {
-			self::run_migration();
-		}
+		// Content migrations are completely disabled for production.
 	}
 
 	public static function get_pages_content() {
@@ -1579,4 +1573,4 @@ class ITM_M2_Pages_Migration {
 	}
 }
 
-ITM_M2_Pages_Migration::init();
+// ITM_M2_Pages_Migration::init();
