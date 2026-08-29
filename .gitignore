@@ -22,3 +22,4 @@ docs/screenshots/
 # NOTE: blocks/*/index.js (compiled block editor scripts) ARE committed.
 # The deployment target (Plesk Git pull) has no build step, so compiled
 # files must be in the repo for the theme to work on the live server.
+_agent_tasks/
