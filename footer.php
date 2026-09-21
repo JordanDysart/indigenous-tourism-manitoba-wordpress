@@ -23,6 +23,50 @@ if ( ! $footer_logo ) {
 	</div><!-- #page -->
 
 	<footer class="site-footer" role="contentinfo">
+		<!-- Integrated Newsletter Bar (Spanning Above 4 Columns) -->
+		<section class="site-footer__newsletter-bar" aria-label="<?php esc_attr_e( 'Newsletter Subscription', 'kiwatinook' ); ?>">
+			<div class="site-footer__container">
+				<div class="site-footer__newsletter-inner">
+					<div class="site-footer__newsletter-copy">
+						<span class="site-footer__newsletter-badge"><?php esc_html_e( 'Stay Connected', 'kiwatinook' ); ?></span>
+						<h3 class="site-footer__newsletter-title"><?php esc_html_e( 'Subscribe to our e-Newsletter', 'kiwatinook' ); ?></h3>
+						<p class="site-footer__newsletter-desc">
+							<?php esc_html_e( 'Get authentic Indigenous travel stories, seasonal experiences, and community updates delivered directly to your inbox.', 'kiwatinook' ); ?>
+						</p>
+					</div>
+					<div class="site-footer__newsletter-form-col">
+						<form id="itm-newsletter-form" class="site-footer__newsletter-form" method="post" novalidate>
+							<?php wp_nonce_field( 'itm_newsletter_nonce', 'itm_newsletter_nonce_field' ); ?>
+							<!-- Anti-spam Honeypot -->
+							<div class="site-footer__hp-wrap" aria-hidden="true">
+								<input type="text" name="itm_hp_check" id="itm_hp_check" tabindex="-1" autocomplete="off" />
+							</div>
+							<div class="site-footer__input-group">
+								<label for="itm-newsletter-email" class="screen-reader-text"><?php esc_html_e( 'Email Address', 'kiwatinook' ); ?></label>
+								<input
+									type="email"
+									id="itm-newsletter-email"
+									name="email"
+									class="site-footer__input"
+									placeholder="<?php esc_attr_e( 'Enter your email address', 'kiwatinook' ); ?>"
+									required
+									autocomplete="email"
+								/>
+								<button type="submit" id="itm-newsletter-submit" class="site-footer__submit-btn">
+									<span class="btn-text"><?php esc_html_e( 'Subscribe', 'kiwatinook' ); ?></span>
+									<span class="btn-spinner" aria-hidden="true"></span>
+								</button>
+							</div>
+							<p class="site-footer__consent-text">
+								<?php esc_html_e( 'By subscribing, you agree to receive emails from Indigenous Tourism Manitoba. You can unsubscribe at any time.', 'kiwatinook' ); ?>
+							</p>
+							<div id="itm-newsletter-feedback" class="site-footer__feedback" role="status" aria-live="polite"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<div class="site-footer__main">
 			<div class="site-footer__container">
 				<div class="site-footer__grid">

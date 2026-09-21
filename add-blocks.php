@@ -22,6 +22,7 @@ function kiwatinook_register_native_blocks() {
 	register_block_type( get_template_directory() . '/blocks/operator-search-block/block.json' );
 	register_block_type( get_template_directory() . '/blocks/video-popup-block/block.json' );
 	register_block_type( get_template_directory() . '/blocks/featured-operators-block/block.json' );
+	register_block_type( get_template_directory() . '/blocks/category-filter/block.json' );
 
 	// Backward-compatible aliases for legacy relish/* blocks
 	$relish_aliases = array(

@@ -1,0 +1,357 @@
+# Indigenous Tourism Manitoba — Site Audit Checklist
+
+Target Site: [https://indigenoustourismmanitoba.ca/](https://indigenoustourismmanitoba.ca/)  
+Total Active Pages: **66**
+
+---
+
+## 1. Core & Content Pages (20 Pages)
+
+- [x] [Home](https://indigenoustourismmanitoba.ca/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [About Indigenous Tourism Manitoba](https://indigenoustourismmanitoba.ca/about-itm/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Our Team](https://indigenoustourismmanitoba.ca/our-team/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Reconciliation](https://indigenoustourismmanitoba.ca/reconciliation/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Our Operators](https://indigenoustourismmanitoba.ca/operators/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Things To Do](https://indigenoustourismmanitoba.ca/things-to-do/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Experience Map](https://indigenoustourismmanitoba.ca/experience-map/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Explore Indigenous at The Forks Market](https://indigenoustourismmanitoba.ca/the-forks/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Events](https://indigenoustourismmanitoba.ca/events/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Become a Member](https://indigenoustourismmanitoba.ca/become-a-member/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Member Benefits](https://indigenoustourismmanitoba.ca/member-benefits/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [New Account Request](https://indigenoustourismmanitoba.ca/new-account-request/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Indigenous Guide Training Program](https://indigenoustourismmanitoba.ca/guide-training-program/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Indigenous Guide Training Program – Step 1: Introduction](https://indigenoustourismmanitoba.ca/indigenous-guide-training-program-step-1/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Indigenous Guide Training Program – Step 2: 7-Day Training Course](https://indigenoustourismmanitoba.ca/indigenous-guide-training-program-step-2/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Indigenous Guide Training Program – Step 3: Practicum](https://indigenoustourismmanitoba.ca/indigenous-guide-training-program-step-3/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [ITM Indigenous Guide Training Program Inquiry Form](https://indigenoustourismmanitoba.ca/itm-indigenous-guide-training-program-inquiry-form/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Contact Us](https://indigenoustourismmanitoba.ca/contact-us/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Privacy Policy](https://indigenoustourismmanitoba.ca/privacy-policy/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Sitemap](https://indigenoustourismmanitoba.ca/sitemap/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+
+---
+
+## 2. Operator Profile Pages (22 Pages)
+
+- [x] [Agowiidiwinan Centre](https://indigenoustourismmanitoba.ca/operator/agowiidiwinan-centre/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Anne Mulaire](https://indigenoustourismmanitoba.ca/operator/anne-mulaire/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Bistro on Notre Dame](https://indigenoustourismmanitoba.ca/operator/bistro-on-notre-dame/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Borealis Beading](https://indigenoustourismmanitoba.ca/operator/borealis-beading/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Feast Cafe Bistro](https://indigenoustourismmanitoba.ca/operator/feast-cafe-bistro/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Kikiwak Inn](https://indigenoustourismmanitoba.ca/operator/kikiwak-inn/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [La Brasserie Nonsuch Brewing Co.](https://indigenoustourismmanitoba.ca/operator/la-brasserie-nonsuch-brewing-co/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Manito Ahbee Festival](https://indigenoustourismmanitoba.ca/operator/manito-ahbee-festival/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Manitoba Indigenous Cultural Education Centre Inc.](https://indigenoustourismmanitoba.ca/operator/manitoba-indigenous-cultural-education-centre-inc/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Moon Gate Guest House](https://indigenoustourismmanitoba.ca/operator/moon-gate-guest-house/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [National Indigenous Residential School Museum of Canada](https://indigenoustourismmanitoba.ca/operator/national-indigenous-residential-school-museum-of-canada/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Nature’s Edge Tourism](https://indigenoustourismmanitoba.ca/operator/natures-edge-tourism/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Prairie Berry](https://indigenoustourismmanitoba.ca/operator/prairie-berry/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Sharecuterie](https://indigenoustourismmanitoba.ca/operator/sharecuterie/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Shelly’s Bistro](https://indigenoustourismmanitoba.ca/operator/shellys-bistro/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Spence Custom Carving](https://indigenoustourismmanitoba.ca/operator/spence-custom-carving/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Sub-Arctic Tours](https://indigenoustourismmanitoba.ca/operator/sub-arctic-tours/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Teekca’s Boutique](https://indigenoustourismmanitoba.ca/operator/teekcas-boutique/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Turtle Village](https://indigenoustourismmanitoba.ca/operator/turtle-village/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Wapusk Adventures](https://indigenoustourismmanitoba.ca/operator/wapusk-adventures/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Whiteshell Petroforms Authentic Indigenous Tours](https://indigenoustourismmanitoba.ca/operator/whiteshell-petroforms-authentic-indigenous-tours/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Wyndham Garden Winnipeg Airport](https://indigenoustourismmanitoba.ca/operator/wyndham-garden-winnipeg-airport/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+
+---
+
+## 3. Operator Category & Region Archive Pages (13 Pages)
+
+### Operator Categories
+- [x] [Accommodation](https://indigenoustourismmanitoba.ca/operator-category/accommodation/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Attractions](https://indigenoustourismmanitoba.ca/operator-category/attractions/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Culinary](https://indigenoustourismmanitoba.ca/operator-category/culinary/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Events](https://indigenoustourismmanitoba.ca/operator-category/events/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Outdoors and Adventures](https://indigenoustourismmanitoba.ca/operator-category/outdoors-and-adventures/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Retail and Other](https://indigenoustourismmanitoba.ca/operator-category/retail-and-other/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Tour and Related Services](https://indigenoustourismmanitoba.ca/operator-category/tour-and-related-services/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Workshops, Art & Culture](https://indigenoustourismmanitoba.ca/operator-category/workshops-art-culture/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+
+### Operator Regions
+- [x] [Central](https://indigenoustourismmanitoba.ca/operator-region/central/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [East](https://indigenoustourismmanitoba.ca/operator-region/east/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [North](https://indigenoustourismmanitoba.ca/operator-region/north/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [South](https://indigenoustourismmanitoba.ca/operator-region/south/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [West](https://indigenoustourismmanitoba.ca/operator-region/west/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+
+---
+
+## 4. Team Member Profile Pages (11 Pages)
+
+- [x] [Melanie Gamache](https://indigenoustourismmanitoba.ca/team-member/melanie-gamache/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Taytum Assinaboine](https://indigenoustourismmanitoba.ca/team-member/taytum-assinaboine/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Cecelia Point](https://indigenoustourismmanitoba.ca/team-member/cecelia-point/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Renée Simcoe](https://indigenoustourismmanitoba.ca/team-member/renee-simcoe/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Doreen Booth](https://indigenoustourismmanitoba.ca/team-member/doreen-booth/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Darcie Guarderas](https://indigenoustourismmanitoba.ca/team-member/darcie-guarderas/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Lee Sinclair](https://indigenoustourismmanitoba.ca/team-member/lee-sinclair/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Edna Nabess](https://indigenoustourismmanitoba.ca/team-member/edna-nabess/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Melanie Ferris](https://indigenoustourismmanitoba.ca/team-member/melanie-ferris/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Dave Daley](https://indigenoustourismmanitoba.ca/team-member/dave-daley/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance
+- [x] [Holly Courchene](https://indigenoustourismmanitoba.ca/team-member/holly-courchene/)
+  - [x] accessibility
+  - [x] content
+  - [x] marketing
+  - [x] performance

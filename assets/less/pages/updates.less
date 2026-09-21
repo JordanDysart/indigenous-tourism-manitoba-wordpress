@@ -1,0 +1,386 @@
+@import (reference) '../global/_variables.less';
+@import (reference) '../global/_mixins.less';
+
+// =============================================================================
+// Updates Listing Page & Category Archive Styles
+// =============================================================================
+
+.updates-hero {
+	background: linear-gradient(135deg, @color-dark 0%, darken(@color-maroon, 5%) 100%);
+	color: #ffffff;
+	padding: 5rem 1.5rem 3.5rem;
+	text-align: center;
+
+	&__container {
+		max-width: @content-width-narrow;
+		margin: 0 auto;
+	}
+
+	&__badge {
+		display: inline-block;
+		font-family: @font-primary;
+		font-size: 0.8125rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: @color-gold;
+		margin-bottom: 0.75rem;
+	}
+
+	&__title {
+		font-family: @font-secondary;
+		font-size: 2.75rem;
+		font-weight: 700;
+		color: #ffffff;
+		margin: 0 0 1rem;
+		line-height: 1.2;
+
+		@media (max-width: @breakpoint-md) {
+			font-size: 2rem;
+		}
+	}
+
+	&__desc {
+		font-family: @font-primary;
+		font-size: 1.1875rem;
+		line-height: 1.6;
+		color: rgba(255, 255, 255, 0.88);
+		max-width: 680px;
+		margin: 0 auto;
+	}
+}
+
+.updates-main {
+	max-width: @content-width;
+	margin: 0 auto;
+	padding: 2rem 1.5rem 5rem;
+}
+
+// Query Loop Card Grid
+.itm-updates-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 32px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	@media (min-width: @breakpoint-md) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (min-width: @breakpoint-lg) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+// Card Component
+.itm-post-card {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	border-radius: @radius-lg;
+	border: 1px solid #eef0f2;
+	overflow: hidden;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+	height: 100%;
+
+	&:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
+		border-color: @color-gold;
+	}
+
+	&__media {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		overflow: hidden;
+		background-color: #f1f3f5;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.3s ease;
+		}
+
+		&:hover img {
+			transform: scale(1.03);
+		}
+	}
+
+	&__placeholder-media {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+		color: @color-light-gray;
+
+		svg {
+			width: 48px;
+			height: 48px;
+			opacity: 0.5;
+		}
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		padding: 1.5rem;
+	}
+
+	&__meta {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+		margin-bottom: 0.875rem;
+	}
+
+	&__category,
+	.wp-block-post-terms a {
+		display: inline-block;
+		padding: 4px 12px;
+		border-radius: 12px;
+		background-color: rgba(218, 82, 37, 0.1);
+		color: @color-orange;
+		font-family: @font-primary;
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		text-decoration: none;
+		transition: background-color 0.2s ease, color 0.2s ease;
+
+		&:hover {
+			background-color: @color-orange;
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		&:focus-visible {
+			outline: 2px solid @color-gold;
+			outline-offset: 2px;
+		}
+	}
+
+	&__date,
+	.wp-block-post-date {
+		font-family: @font-primary;
+		font-size: 0.875rem;
+		color: @color-mid-gray;
+		font-weight: 500;
+	}
+
+	&__title,
+	.wp-block-post-title {
+		font-family: @font-secondary;
+		font-size: 1.3125rem;
+		font-weight: 700;
+		line-height: 1.35;
+		color: @color-dark;
+		margin: 0 0 0.75rem;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+			transition: color 0.2s ease;
+
+			&:hover {
+				color: @color-orange;
+			}
+
+			&:focus-visible {
+				outline: 2px solid @color-gold;
+				outline-offset: 2px;
+			}
+		}
+	}
+
+	&__excerpt,
+	.wp-block-post-excerpt {
+		font-family: @font-primary;
+		font-size: 0.9375rem;
+		line-height: 1.6;
+		color: @color-body-text;
+		margin: 0 0 1.25rem;
+		flex-grow: 1;
+
+		p {
+			margin: 0 0 0.75rem;
+		}
+
+		.wp-block-post-excerpt__more-link {
+			display:      inline-flex;
+			align-items:  center;
+			gap:          4px;
+			color:        @color-orange;
+			font-weight:  700;
+			font-size:    0.875rem;
+			white-space:  nowrap;
+			text-decoration: none;
+
+			&::after {
+				content:     '\203A';
+				font-size:   1.1em;
+				line-height: 1;
+			}
+
+			&:hover {
+				color:   darken(@color-orange, 10%);
+				opacity: 1;
+			}
+
+			&:focus-visible {
+				outline: 2px solid @color-gold;
+				outline-offset: 2px;
+			}
+		}
+	}
+
+	&__footer {
+		margin-top: auto;
+		padding-top: 1rem;
+		border-top: 1px solid #f1f3f5;
+	}
+}
+
+// Pagination
+.itm-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	margin: 3.5rem 0 1rem;
+
+	.page-numbers {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 44px; // WCAG target size
+		min-height: 44px;
+		padding: 8px 16px;
+		border-radius: @radius-md;
+		font-family: @font-primary;
+		font-size: 0.9375rem;
+		font-weight: 700;
+		color: @color-dark;
+		background-color: #ffffff;
+		border: 1px solid #dee2e6;
+		text-decoration: none;
+		transition: all 0.2s ease;
+
+		&:hover {
+			background-color: @color-blue;
+			color: #ffffff;
+			border-color: @color-blue;
+			text-decoration: none;
+		}
+
+		&.current {
+			background-color: @color-orange;
+			color: #ffffff;
+			border-color: @color-orange;
+			cursor: default;
+		}
+
+		&:focus-visible {
+			outline: 2px solid @color-gold;
+			outline-offset: 3px;
+		}
+	}
+}
+
+// No results state
+.itm-no-results {
+	text-align: center;
+	padding: 4rem 2rem;
+	background-color: #f8f9fa;
+	border-radius: @radius-lg;
+	border: 1px dashed #ced4da;
+	margin: 2rem 0;
+
+	h3 {
+		font-family: @font-secondary;
+		font-size: 1.5rem;
+		color: @color-dark;
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		font-family: @font-primary;
+		font-size: 1rem;
+		color: @color-mid-gray;
+		margin: 0;
+	}
+}
+
+// Single Post Updates Modernization
+.single-post-hero {
+	background-color: #f8f9fa;
+	border-bottom: 1px solid #e9ecef;
+	padding: 3rem 1.5rem 2rem;
+
+	&__inner {
+		max-width: 860px;
+		margin: 0 auto;
+	}
+
+	&__meta {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		margin-bottom: 1rem;
+	}
+
+	&__title {
+		font-family: @font-secondary;
+		font-size: 2.5rem;
+		font-weight: 700;
+		line-height: 1.25;
+		color: @color-dark;
+		margin: 0;
+
+		@media (max-width: @breakpoint-md) {
+			font-size: 1.875rem;
+		}
+	}
+}
+
+.single-post-article {
+	max-width: 860px;
+	margin: 0 auto;
+	padding: 2.5rem 1.5rem 5rem;
+
+	.entry-content {
+		font-family: @font-primary;
+		font-size: 1.125rem;
+		line-height: 1.7;
+		color: @color-body-text;
+
+		h2, h3, h4 {
+			font-family: @font-secondary;
+			color: @color-dark;
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	&__footer {
+		margin-top: 3.5rem;
+		padding-top: 2rem;
+		border-top: 1px solid #e9ecef;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

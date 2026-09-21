@@ -84,6 +84,7 @@ function kiwatinook_scripts()
 	$nav_js     = get_template_directory() . '/js/navigation.js';
 	$skip_js    = get_template_directory() . '/js/skip-link-focus-fix.js';
 	$anim_js    = get_template_directory() . '/js/animated-menu.js';
+	$news_js    = get_template_directory() . '/js/newsletter.js';
 
 	wp_enqueue_style(
 		'kiwatinook-style',
@@ -99,7 +100,8 @@ function kiwatinook_scripts()
 	);
 
 	$vars = array(
-		'ajaxurl' => admin_url('admin-ajax.php'),
+		'ajaxurl'          => admin_url('admin-ajax.php'),
+		'newsletter_nonce' => wp_create_nonce('itm_newsletter_nonce'),
 	);
 
 	wp_deregister_script('jquery');
@@ -118,6 +120,14 @@ function kiwatinook_scripts()
 	);
 	wp_localize_script('kiwatinook-theme', 'kiwatinook', $vars);
 	wp_enqueue_script('kiwatinook-theme');
+
+	wp_enqueue_script(
+		'kiwatinook-newsletter',
+		get_template_directory_uri() . '/js/newsletter.js',
+		[],
+		file_exists($news_js) ? filemtime($news_js) : '1.0.0',
+		true
+	);
 
 	wp_enqueue_script(
 		'kiwatinook-navigation',
@@ -286,6 +296,11 @@ require get_template_directory() . '/inc/m2-pages-migration.php';
  */
 require get_template_directory() . '/inc/menu-structure-migration.php';
 
+/**
+ * Integrated Footer Newsletter & Constant Contact v3 API Handler.
+ */
+require get_template_directory() . '/inc/newsletter.php';
+
 function kiwatinook_theme_setup()
 {
 	add_theme_support('align-wide');
@@ -304,6 +319,10 @@ function kiwatinook_register_pattern_categories() {
 		register_block_pattern_category(
 			'itm-patterns',
 			array( 'label' => __( 'ITM Patterns', 'kiwatinook' ) )
+		);
+		register_block_pattern_category(
+			'itm-updates',
+			array( 'label' => __( 'Updates & Stories', 'kiwatinook' ) )
 		);
 	}
 }
@@ -727,3 +746,14 @@ function itm_breadcrumb_shortcode( $atts ) {
 	return itm_render_breadcrumbs( $atts );
 }
 add_shortcode( 'breadcrumb', 'itm_breadcrumb_shortcode' );
+
+/**
+ * Set posts per page for Updates listing and category archives to 9 (3x3 grid).
+ */
+function kiwatinook_updates_posts_per_page( $query ) {
+	if ( ! is_admin() && $query->is_main_query() && ( $query->is_home() || $query->is_category() ) ) {
+		$query->set( 'posts_per_page', 9 );
+	}
+}
+add_action( 'pre_get_posts', 'kiwatinook_updates_posts_per_page' );
+

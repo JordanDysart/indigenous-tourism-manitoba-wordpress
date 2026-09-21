@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "midflight/category-filter",
+	"version": "1.0.0",
+	"title": "Updates Category Filter",
+	"category": "widgets",
+	"icon": "filter",
+	"description": "Accessible category filter navigation displaying All and non-empty categories with active state indicators.",
+	"keywords": [
+		"filter",
+		"category",
+		"news",
+		"newsletter",
+		"updates"
+	],
+	"textdomain": "kiwatinook",
+	"supports": {
+		"align": [ "wide", "full" ],
+		"anchor": true,
+		"customClassName": true
+	},
+	"render": "file:./category_filter.php",
+	"editorScript": "file:./index.js"
+}

@@ -75,3 +75,26 @@ a:focus:not(:focus-visible) {
         opacity: 1;
     }
 }
+
+// External Link Indicator & Accessible Icons
+.is-external-link,
+a.is-external-link,
+.wp-block-button.is-external-link .wp-block-button__link {
+    display:         inline-flex;
+    align-items:     center;
+    gap:             8px;
+
+    .external-link-icon {
+        display:        inline-block;
+        flex-shrink:    0;
+        vertical-align: middle;
+        width:          1em;
+        height:         1em;
+        transition:     transform 0.2s ease;
+    }
+
+    &:hover .external-link-icon,
+    &:focus .external-link-icon {
+        transform: translate(2px, -2px);
+    }
+}
