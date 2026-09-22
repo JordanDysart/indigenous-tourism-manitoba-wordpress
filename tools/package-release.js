@@ -94,7 +94,7 @@ for (const file of rootFiles) {
 }
 
 // Copy essential folders
-const includeDirs = ['inc', 'blocks', 'template-parts', 'js', 'languages', 'assets'];
+const includeDirs = ['inc', 'blocks', 'template-parts', 'patterns', 'js', 'languages', 'assets'];
 for (const dir of includeDirs) {
   const src = path.join(themeRoot, dir);
   const dest = path.join(stageDir, dir);
