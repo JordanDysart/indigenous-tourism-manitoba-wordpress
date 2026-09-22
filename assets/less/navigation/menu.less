@@ -500,29 +500,53 @@
         width: 100%;
         border-bottom: 1px solid rgba(145, 158, 171, 0.16);
         padding: 12px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
 
         > a {
-          width: 100%;
-          justify-content: space-between;
+          flex: 1;
+          display: flex;
+          align-items: center;
           font-size: 1.05rem;
           color: @color-dark;
+          text-decoration: none;
+          cursor: pointer;
         }
 
         .submenu-toggle-btn {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          width: 32px;
-          height: 32px;
+          width: 44px;
+          height: 44px;
           background: none;
           border: none;
           color: @color-mid-gray;
           cursor: pointer;
-          transition: transform 0.3s ease;
+          font-size: 1rem;
+          padding: 0;
+          transition: transform 0.3s ease, color 0.2s ease;
+
+          &:focus {
+            outline: 2px solid @color-gold;
+            outline-offset: 2px;
+            border-radius: @radius-sm;
+          }
         }
 
-        &.open .submenu-toggle-btn {
-          transform: rotate(180deg);
+        &.open {
+          .submenu-toggle-btn {
+            transform: rotate(180deg);
+            color: @color-orange;
+          }
+
+          > .mega-menu-panel {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+          }
         }
       }
     }
@@ -531,23 +555,20 @@
     .mega-menu-panel {
       position: static;
       width: 100%;
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
+      flex-basis: 100%;
+      opacity: 0;
+      visibility: hidden;
+      display: none;
       transform: none;
       box-shadow: none;
       border-top: none;
       background: #fafbfc;
       border-radius: @radius-md;
       margin-top: 8px;
-      display: none;
+      transition: opacity 0.25s ease;
 
       &::before {
         display: none;
-      }
-
-      .main-navigation ul.nav-menu > li.open & {
-        display: block;
       }
 
       .mega-menu-container {

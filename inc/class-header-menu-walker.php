@@ -181,15 +181,15 @@ class GAC_Menu_Walker extends Walker_Nav_Menu
 
             $item_output .= '<span class="submenu-item">' . esc_html($title) . '</span>';
 
-            // Submenu chevron toggle for mobile drawer
-            if (0 === $depth && in_array('menu-item-has-children', $classes, true)) {
-                $item_output .= '<button class="submenu-toggle-btn" aria-label="' . esc_attr__('Toggle Submenu', 'kiwatinook') . '"><i class="bi bi-chevron-down"></i></button>';
-            }
-
             if ($has_valid_url) {
                 $item_output .= '</a>';
             } else {
                 $item_output .= '</div>';
+            }
+
+            // Submenu chevron toggle for mobile drawer (as sibling to link)
+            if (0 === $depth && in_array('menu-item-has-children', $classes, true)) {
+                $item_output .= '<button type="button" class="submenu-toggle-btn" aria-expanded="false" aria-label="' . esc_attr__('Toggle Submenu', 'kiwatinook') . '"><i class="bi bi-chevron-down" aria-hidden="true"></i></button>';
             }
         }
 
