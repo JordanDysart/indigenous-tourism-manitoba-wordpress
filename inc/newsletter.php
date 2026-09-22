@@ -237,3 +237,19 @@ function itm_queue_pending_newsletter_signup( $email, $list_id, $reason = '' ) {
 
 	update_option( 'itm_pending_newsletter_signups', $pending, false );
 }
+
+/**
+ * Shortcode to render THE TEA Newsletter Archive component
+ *
+ * Usage: [the_tea_archive] or [newsletter_archive]
+ *
+ * @param array $atts Shortcode attributes.
+ * @return string Rendered HTML markup.
+ */
+function itm_the_tea_archive_shortcode( $atts ) {
+	ob_start();
+	get_template_part( 'template-parts/content', 'newsletter-archive' );
+	return ob_get_clean();
+}
+add_shortcode( 'the_tea_archive', 'itm_the_tea_archive_shortcode' );
+add_shortcode( 'newsletter_archive', 'itm_the_tea_archive_shortcode' );
