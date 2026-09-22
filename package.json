@@ -25,7 +25,8 @@
     "test:e2e": "node tools/test-e2e-all.js",
     "compare:prod": "node tools/compare-production.js",
     "sync:media": "node tools/sync-media-from-prod.js",
-    "package:release": "node tools/package-release.js"
+    "package:release": "node tools/package-release.js",
+    "create:news": "node tools/create-news-post.js"
   },
   "devDependencies": {
     "@wordpress/scripts": "^30.0.0",

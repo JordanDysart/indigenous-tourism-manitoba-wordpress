@@ -2,11 +2,12 @@
 /**
  * Title: Newsletter
  * Slug: kiwatinook/newsletter
- * Categories: itm-updates, itm-patterns
- * Post Types: post
+ * Categories: itm-updates, itm-patterns, featured, posts
+ * Post Types: post, page
  * Block Types: core/post-content
  * Description: Newsletter issue layout featuring an introduction, community stories, and subscription callout.
  * Keywords: newsletter, update, bulletin, email, digest
+ * Inserter: true
  *
  * @package kiwatinook
  */

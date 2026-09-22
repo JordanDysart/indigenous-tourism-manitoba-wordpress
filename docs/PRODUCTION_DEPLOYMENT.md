@@ -1,6 +1,6 @@
 # Production Deployment Checklist: Updates & Newsletters Architecture
 
-Follow these steps to deploy theme version 1.1.5 (News Mentions, Newsletters, and Category Filter) to the live site at `https://indigenoustourismmanitoba.ca`.
+Follow these steps to deploy theme version 1.1.6 (News Mentions, Newsletters, Category Filter, and Patterns Inserter) to the live site at `https://indigenoustourismmanitoba.ca`.
 
 ---
 

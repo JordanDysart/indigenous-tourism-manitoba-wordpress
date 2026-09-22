@@ -2,9 +2,11 @@
 /**
  * Title: Newsletter Highlight Section
  * Slug: kiwatinook/newsletter-highlight
- * Categories: itm-updates, itm-patterns
+ * Categories: itm-updates, itm-patterns, featured, call-to-action
  * Description: Homepage split-narrative section highlighting the latest published newsletter with an archive link.
  * Keywords: newsletter, highlight, home, featured, stories, updates
+ * Post Types: page, post
+ * Inserter: true
  *
  * @package kiwatinook
  */

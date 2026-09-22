@@ -308,6 +308,40 @@ function kiwatinook_theme_setup()
 	add_theme_support('wp-block-styles');
 	add_theme_support('dark-editor-style');
 	add_theme_support('responsive-embeds');
+
+	add_theme_support('editor-color-palette', array(
+		array(
+			'name'  => __('Black', 'kiwatinook'),
+			'slug'  => 'black',
+			'color' => '#000000',
+		),
+		array(
+			'name'  => __('White', 'kiwatinook'),
+			'slug'  => 'white',
+			'color' => '#ffffff',
+		),
+	));
+
+	add_theme_support('editor-font-sizes', array(
+		array(
+			'name'      => __('Medium', 'kiwatinook'),
+			'shortName' => __('M', 'kiwatinook'),
+			'size'      => 22,
+			'slug'      => 'medium'
+		),
+		array(
+			'name'      => __('Large', 'kiwatinook'),
+			'shortName' => __('L', 'kiwatinook'),
+			'size'      => 36,
+			'slug'      => 'large'
+		),
+		array(
+			'name'      => __('Huge', 'kiwatinook'),
+			'shortName' => __('XL', 'kiwatinook'),
+			'size'      => 48,
+			'slug'      => 'huge'
+		)
+	));
 }
 add_action('after_setup_theme', 'kiwatinook_theme_setup');
 
@@ -326,41 +360,74 @@ function kiwatinook_register_pattern_categories() {
 		);
 	}
 }
-add_action( 'init', 'kiwatinook_register_pattern_categories' );
+add_action( 'init', 'kiwatinook_register_pattern_categories', 9 );
 
-add_theme_support('editor-color-palette', array(
-	array(
-		'name'  => __('Black', 'kiwatinook'),
-		'slug'  => 'black',
-		'color' => '#000000',
-	),
-	array(
-		'name'  => __('White', 'kiwatinook'),
-		'slug'  => 'white',
-		'color' => '#ffffff',
-	),
-));
+/**
+ * Ensure all theme block patterns are explicitly registered in WP_Block_Patterns_Registry,
+ * protecting against stale WordPress transients or classic theme auto-discovery skips.
+ */
+function kiwatinook_ensure_theme_patterns() {
+	$registry = WP_Block_Patterns_Registry::get_instance();
+	$patterns_dir = get_template_directory() . '/patterns/';
+	if ( ! is_dir( $patterns_dir ) ) {
+		return;
+	}
 
-add_theme_support('editor-font-sizes', array(
-	array(
-		'name'      => __('Medium', 'kiwatinook'),
-		'shortName' => __('M', 'kiwatinook'),
-		'size'      => 22,
-		'slug'      => 'medium'
-	),
-	array(
-		'name'      => __('Large', 'kiwatinook'),
-		'shortName' => __('L', 'kiwatinook'),
-		'size'      => 36,
-		'slug'      => 'large'
-	),
-	array(
-		'name'      => __('Huge', 'kiwatinook'),
-		'shortName' => __('XL', 'kiwatinook'),
-		'size'      => 48,
-		'slug'      => 'huge'
-	)
-));
+	$pattern_files = array(
+		'newsletter-highlight.php' => 'kiwatinook/newsletter-highlight',
+		'updates-listing.php'      => 'kiwatinook/updates-listing',
+		'news-mention.php'         => 'kiwatinook/news-mention',
+		'newsletter.php'           => 'kiwatinook/newsletter',
+		'operator-map.php'         => 'relish/operator-map',
+	);
+
+	foreach ( $pattern_files as $file => $slug ) {
+		if ( ! $registry->is_registered( $slug ) && file_exists( $patterns_dir . $file ) ) {
+			$pattern_data = get_file_data(
+				$patterns_dir . $file,
+				array(
+					'title'       => 'Title',
+					'slug'        => 'Slug',
+					'categories'  => 'Categories',
+					'description' => 'Description',
+					'keywords'    => 'Keywords',
+					'post_types'  => 'Post Types',
+					'block_types' => 'Block Types',
+				)
+			);
+
+			if ( ! empty( $pattern_data['title'] ) ) {
+				$categories = ! empty( $pattern_data['categories'] ) ? array_map( 'trim', explode( ',', $pattern_data['categories'] ) ) : array();
+				$keywords   = ! empty( $pattern_data['keywords'] ) ? array_map( 'trim', explode( ',', $pattern_data['keywords'] ) ) : array();
+				$post_types = ! empty( $pattern_data['post_types'] ) ? array_map( 'trim', explode( ',', $pattern_data['post_types'] ) ) : array();
+				$block_types = ! empty( $pattern_data['block_types'] ) ? array_map( 'trim', explode( ',', $pattern_data['block_types'] ) ) : array();
+
+				ob_start();
+				include $patterns_dir . $file;
+				$content = ob_get_clean();
+
+				$args = array(
+					'title'       => $pattern_data['title'],
+					'description' => $pattern_data['description'],
+					'categories'  => array_filter( $categories ),
+					'keywords'    => array_filter( $keywords ),
+					'content'     => $content,
+					'inserter'    => true,
+				);
+
+				if ( ! empty( $post_types ) ) {
+					$args['postTypes'] = $post_types;
+				}
+				if ( ! empty( $block_types ) ) {
+					$args['blockTypes'] = $block_types;
+				}
+
+				register_block_pattern( $slug, $args );
+			}
+		}
+	}
+}
+add_action( 'init', 'kiwatinook_ensure_theme_patterns', 15 );
 
 /**
  * Handle AJAX filtering for operators based on category and region.

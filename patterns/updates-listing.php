@@ -2,8 +2,10 @@
 /**
  * Title: Updates Listing
  * Slug: kiwatinook/updates-listing
- * Categories: itm-updates, itm-patterns
+ * Categories: itm-updates, itm-patterns, featured, query
  * Description: Updates listing grid with Category Filter, Query Loop, Post Cards, Pagination, and No Results state.
+ * Post Types: page, post
+ * Inserter: true
  *
  * @package kiwatinook
  */
