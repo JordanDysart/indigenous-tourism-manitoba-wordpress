@@ -141,7 +141,7 @@ if ( ! $footer_logo ) {
 					<p>&copy; <?php echo date( 'Y' ); ?> Indigenous Tourism Manitoba. All rights reserved.</p>
 				</div>
 				<div class="site-footer__territory">
-					<p>Proudly Built in Treaty One Territory</p>
+					<p><a href="https://midflight.ca/" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'Website Proudly Built in Treaty One Territory', 'kiwatinook' ); ?></a></p>
 				</div>
 				<div class="site-footer__legal">
 					<a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">Privacy Policy</a>

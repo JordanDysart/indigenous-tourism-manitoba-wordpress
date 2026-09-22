@@ -426,9 +426,18 @@
     line-height: 1.5;
   }
 
-  &__territory p {
-    color: #e5e7eb;
-    font-weight: 500;
+  &__territory {
+    p,
+    a {
+      color: #9ca3af;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: @color-gold;
+    }
   }
 
   &__legal {
