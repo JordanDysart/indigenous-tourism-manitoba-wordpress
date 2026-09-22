@@ -182,8 +182,8 @@ class ITM_M2_Pages_Migration {
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"page-section video-feature-section","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"1200px"}} -->
-<div class="wp-block-group page-section video-feature-section has-off-white-background-color has-background">
+<!-- wp:group {"className":"page-section constrained-content video-feature-section","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"1200px"}} -->
+<div class="wp-block-group page-section constrained-content video-feature-section has-off-white-background-color has-background">
 <!-- wp:heading {"level":2,"className":"section-heading text-center"} -->
 <h2 class="wp-block-heading section-heading text-center">Building the Brand</h2>
 <!-- /wp:heading -->
@@ -196,8 +196,8 @@ class ITM_M2_Pages_Migration {
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"page-section cta-section text-center","layout":{"type":"constrained","contentSize":"900px"}} -->
-<div class="wp-block-group page-section cta-section text-center">
+<!-- wp:group {"className":"page-section constrained-content cta-section text-center","layout":{"type":"constrained","contentSize":"900px"}} -->
+<div class="wp-block-group page-section constrained-content cta-section text-center">
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Join the Indigenous Tourism Movement</h2>
 <!-- /wp:heading -->
@@ -346,8 +346,8 @@ class ITM_M2_Pages_Migration {
 </div>
 <!-- /wp:columns -->
 
-<!-- wp:group {"className":"page-section map-cta-section text-center","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"900px"}} -->
-<div class="wp-block-group page-section map-cta-section text-center has-off-white-background-color has-background">
+<!-- wp:group {"className":"page-section constrained-content map-cta-section text-center","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"900px"}} -->
+<div class="wp-block-group page-section constrained-content map-cta-section text-center has-off-white-background-color has-background">
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Interactive Experience Map</h2>
 <!-- /wp:heading -->
@@ -534,8 +534,8 @@ class ITM_M2_Pages_Migration {
 </section>
 <!-- /wp:html -->
 
-<!-- wp:group {"className":"page-section text-center","layout":{"type":"constrained","contentSize":"800px"}} -->
-<div class="wp-block-group page-section text-center" style="padding:60px 20px;">
+<!-- wp:group {"className":"page-section constrained-content text-center","layout":{"type":"constrained","contentSize":"800px"}} -->
+<div class="wp-block-group page-section constrained-content text-center" style="padding:60px 20px;">
 <!-- wp:heading {"textAlign":"center","level":2} -->
 <h2 class="wp-block-heading has-text-align-center">Connect With Our Team</h2>
 <!-- /wp:heading -->
@@ -689,8 +689,8 @@ class ITM_M2_Pages_Migration {
 </div>
 <!-- /wp:columns -->
 
-<!-- wp:group {"className":"page-section cta-section text-center","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"900px"}} -->
-<div class="wp-block-group page-section cta-section text-center has-off-white-background-color has-background">
+<!-- wp:group {"className":"page-section constrained-content cta-section text-center","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"900px"}} -->
+<div class="wp-block-group page-section constrained-content cta-section text-center has-off-white-background-color has-background">
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Ready to Join Our Community?</h2>
 <!-- /wp:heading -->
@@ -993,8 +993,8 @@ class ITM_M2_Pages_Migration {
 </div>
 <!-- /wp:html -->
 
-<!-- wp:group {"className":"page-section cta-section text-center","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"900px"}} -->
-<div class="wp-block-group page-section cta-section text-center has-off-white-background-color has-background">
+<!-- wp:group {"className":"page-section constrained-content cta-section text-center","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"900px"}} -->
+<div class="wp-block-group page-section constrained-content cta-section text-center has-off-white-background-color has-background">
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Additional Learning Opportunities</h2>
 <!-- /wp:heading -->
@@ -1304,8 +1304,8 @@ class ITM_M2_Pages_Migration {
 </div>
 <!-- /wp:columns -->
 
-<!-- wp:group {"className":"page-section cta-section text-center","layout":{"type":"constrained"}} -->
-<div class="wp-block-group page-section cta-section text-center">
+<!-- wp:group {"className":"page-section constrained-content cta-section text-center","layout":{"type":"constrained"}} -->
+<div class="wp-block-group page-section constrained-content cta-section text-center">
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons">
 <!-- wp:button {"className":"btn btn--gold"} -->

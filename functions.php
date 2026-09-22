@@ -374,11 +374,13 @@ function kiwatinook_ensure_theme_patterns() {
 	}
 
 	$pattern_files = array(
-		'newsletter-highlight.php' => 'kiwatinook/newsletter-highlight',
-		'updates-listing.php'      => 'kiwatinook/updates-listing',
-		'news-mention.php'         => 'kiwatinook/news-mention',
-		'newsletter.php'           => 'kiwatinook/newsletter',
-		'operator-map.php'         => 'relish/operator-map',
+		'newsletter-highlight.php'     => 'kiwatinook/newsletter-highlight',
+		'updates-listing.php'          => 'kiwatinook/updates-listing',
+		'news-mention.php'             => 'kiwatinook/news-mention',
+		'newsletter.php'               => 'kiwatinook/newsletter',
+		'operator-map.php'             => 'relish/operator-map',
+		'newsletter-archive.php'       => 'kiwatinook/newsletter-archive',
+		'page-section-constrained.php' => 'kiwatinook/page-section-constrained',
 	);
 
 	foreach ( $pattern_files as $file => $slug ) {
