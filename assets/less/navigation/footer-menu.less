@@ -121,10 +121,10 @@
     flex: 1;
     height: 48px;
     padding: 0 16px;
-    background-color: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
     border-radius: @radius-md;
-    color: #ffffff;
+    color: #ffffff !important;
     font-family: @font-primary;
     font-size: 0.95rem;
     box-sizing: border-box;
@@ -132,14 +132,17 @@
     transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 
     &::placeholder {
-      color: #9ca3af;
+      color: #e2e8f0 !important;
       opacity: 1;
     }
 
-    &:focus {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-color: @color-gold;
-      box-shadow: 0 0 0 3px rgba(224, 172, 15, 0.25);
+    &:focus,
+    &:focus-visible {
+      background-color: rgba(255, 255, 255, 0.18) !important;
+      border-color: @color-gold !important;
+      box-shadow: 0 0 0 3px rgba(224, 172, 15, 0.35) !important;
+      color: #ffffff !important;
+      outline: none !important;
     }
 
     .breakpoint(@breakpoint-sm, {
