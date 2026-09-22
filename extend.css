@@ -97,8 +97,14 @@ a:active {opacity: .9;}
 
 .single #page,
 .archive #page,
-.error404 #page {
-	padding: var(--site-header-height, 84px) 20px 0;
+.search #page,
+.error404 #page,
+body.no-hero-banner #page {
+	padding: calc(var(--site-header-height, 84px) + 20px) 20px 0;
+}
+
+body.has-hero-banner #page {
+	padding-top: 0;
 }
 
 .clear {

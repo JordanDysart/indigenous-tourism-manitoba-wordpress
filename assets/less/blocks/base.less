@@ -68,3 +68,25 @@
   }
 }
 
+// -----------------------------------------------------------------------------
+// Top Headroom Clearance for Non-Hero Standard Pages (TASK-2026-010)
+// Ensures pages without hero/banner blocks clear the floating fixed header
+// -----------------------------------------------------------------------------
+body.no-hero-banner #page,
+body:not(:has(.hero-block)):not(:has(.banner-block)) #page,
+.archive #page,
+.search #page,
+.error404 #page {
+  padding-top: calc(var(--site-header-height, 84px) + 20px);
+  box-sizing: border-box;
+
+  @media (max-width: @breakpoint-md) {
+    padding-top: calc(var(--site-header-height, 84px) + 16px);
+  }
+}
+
+body.has-hero-banner #page {
+  padding-top: 0;
+}
+
+

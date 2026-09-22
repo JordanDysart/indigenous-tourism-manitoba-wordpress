@@ -22,6 +22,30 @@ function kiwatinook_body_classes( $classes ) {
 		$classes[] = 'no-sidebar';
 	}
 
+	// Headroom offset detection: flag whether current page has a top hero or banner
+	if ( is_singular() ) {
+		global $post;
+		$has_hero = false;
+		if ( $post && ! empty( $post->post_content ) ) {
+			if (
+				has_block( 'relish/hero-block', $post ) ||
+				has_block( 'relish/banner-block', $post ) ||
+				has_block( 'lazyblock/hero-block', $post ) ||
+				strpos( $post->post_content, 'hero-block' ) !== false ||
+				strpos( $post->post_content, 'banner-block' ) !== false
+			) {
+				$has_hero = true;
+			}
+		}
+		if ( $has_hero ) {
+			$classes[] = 'has-hero-banner';
+		} else {
+			$classes[] = 'no-hero-banner';
+		}
+	} else {
+		$classes[] = 'no-hero-banner';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'kiwatinook_body_classes' );
