@@ -18,8 +18,22 @@
   // Helper: check if currently in mobile viewport (< 1200px)
   const isMobileViewport = () => window.innerWidth < 1200;
 
-  // Helper: safely get direct anchor element
-  const getDirectAnchor = (el) => (el ? (el.querySelector(':scope > a') || el.querySelector('a')) : null);
+  // Helper: safely get direct anchor element using DOM traversal without invalid selector combinators
+  const getDirectAnchor = (el) => {
+    if (!el) return null;
+    if (el.children) {
+      for (let i = 0; i < el.children.length; i++) {
+        if (el.children[i].tagName && el.children[i].tagName.toLowerCase() === 'a') {
+          return el.children[i];
+        }
+      }
+    }
+    try {
+      return el.querySelector(':scope > a') || el.querySelector('a');
+    } catch (err) {
+      return el.querySelector('a');
+    }
+  };
 
   // 1. Dynamic Header Height & Scroll-aware Fixed Header
   if (header) {

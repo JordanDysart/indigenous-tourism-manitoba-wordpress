@@ -46,8 +46,26 @@ async function runMobileNavTests() {
     });
     const page = await context.newPage();
 
+    const pageErrors = [];
+    page.on('pageerror', err => {
+      pageErrors.push(err.message);
+      console.error(`  [Browser PageError] ${err.message}`);
+    });
+    page.on('console', msg => {
+      if (msg.type() === 'error') {
+        const text = msg.text();
+        if (text.includes('SyntaxError') || text.includes('querySelector') || text.includes('navigation.js')) {
+          pageErrors.push(text);
+          console.error(`  [Browser Console Error] ${text}`);
+        }
+      }
+    });
+
     try {
       await page.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
+
+      // Check for zero SyntaxError or navigation runtime errors
+      assert(pageErrors.length === 0, `Zero SyntaxErrors or navigation errors during page load at ${width}px`, pageErrors.join('; '));
 
       // 1. Hamburger button presence and state
       const hamburger = await page.$('#bar_menu');
@@ -134,6 +152,61 @@ async function runMobileNavTests() {
     } finally {
       await context.close();
     }
+  }
+
+  // Desktop Viewport Test
+  console.log(`\n--- Testing Desktop Viewport: 1280px x 800px ---`);
+  const desktopContext = await browser.newContext({
+    viewport: { width: 1280, height: 800 },
+  });
+  const desktopPage = await desktopContext.newPage();
+  const desktopErrors = [];
+  desktopPage.on('pageerror', err => {
+    desktopErrors.push(err.message);
+    console.error(`  [Desktop PageError] ${err.message}`);
+  });
+  desktopPage.on('console', msg => {
+    if (msg.type() === 'error') {
+      const text = msg.text();
+      if (text.includes('SyntaxError') || text.includes('querySelector') || text.includes('navigation.js')) {
+        desktopErrors.push(text);
+        console.error(`  [Desktop Console Error] ${text}`);
+      }
+    }
+  });
+
+  try {
+    await desktopPage.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    assert(desktopErrors.length === 0, 'Zero SyntaxErrors or navigation errors during desktop page load at 1280px', desktopErrors.join('; '));
+
+    const firstMenuParent = await desktopPage.$('.mega-menu-parent, .menu-item-has-children');
+    if (firstMenuParent) {
+      const parentLink = await firstMenuParent.$('a');
+      assert(parentLink !== null, 'Desktop menu item direct link found');
+
+      // Test hover / mouseenter
+      await firstMenuParent.hover();
+      await desktopPage.waitForTimeout(200);
+
+      const isHoverActive = await desktopPage.evaluate(el => el.classList.contains('is-active'), firstMenuParent);
+      const hoverAria = await desktopPage.evaluate(el => el.getAttribute('aria-expanded'), parentLink);
+      assert(isHoverActive, 'Desktop menu parent has .is-active class on hover');
+      assert(hoverAria === 'true', 'Desktop menu item has aria-expanded="true" on hover');
+
+      // Test escape key closes menu
+      await desktopPage.keyboard.press('Escape');
+      await desktopPage.waitForTimeout(200);
+
+      const isClosedAfterEscape = await desktopPage.evaluate(el => !el.classList.contains('is-active'), firstMenuParent);
+      const escapeAria = await desktopPage.evaluate(el => el.getAttribute('aria-expanded'), parentLink);
+      assert(isClosedAfterEscape, 'Desktop menu parent closed after pressing Escape');
+      assert(escapeAria === 'false', 'Desktop menu item has aria-expanded="false" after Escape');
+    }
+  } catch (err) {
+    console.error('Error during desktop navigation test:', err.message);
+    failedTests++;
+  } finally {
+    await desktopContext.close();
   }
 
   await browser.close();
