@@ -434,8 +434,8 @@ add_action( 'init', 'kiwatinook_ensure_theme_patterns', 15 );
  */
 function ajax_filter_operators()
 {
-	$category = isset($_POST['operator_cat']) ? intval($_POST['operator_cat']) : 0;
-	$region   = isset($_POST['operator_region']) ? intval($_POST['operator_region']) : 0;
+	$raw_category = isset($_POST['operator_cat']) ? sanitize_text_field(wp_unslash($_POST['operator_cat'])) : '';
+	$raw_region   = isset($_POST['operator_region']) ? sanitize_text_field(wp_unslash($_POST['operator_region'])) : '';
 
 	$args = array(
 		'post_type'      => 'operator',
@@ -446,21 +446,25 @@ function ajax_filter_operators()
 
 	$tax_query = array('relation' => 'AND');
 
-	if ($category > 0) {
+	if (!empty($raw_category)) {
+		$cat_field = is_numeric($raw_category) ? 'term_id' : 'slug';
+		$cat_term  = is_numeric($raw_category) ? intval($raw_category) : $raw_category;
 		$tax_query[] = array(
 			'taxonomy'         => 'operator_category',
-			'field'            => 'term_id',
-			'terms'            => $category,
-			'include_children' => false,
+			'field'            => $cat_field,
+			'terms'            => $cat_term,
+			'include_children' => true,
 		);
 	}
 
-	if ($region > 0) {
+	if (!empty($raw_region)) {
+		$reg_field = is_numeric($raw_region) ? 'term_id' : 'slug';
+		$reg_term  = is_numeric($raw_region) ? intval($raw_region) : $raw_region;
 		$tax_query[] = array(
 			'taxonomy'         => 'operator_region',
-			'field'            => 'term_id',
-			'terms'            => $region,
-			'include_children' => false,
+			'field'            => $reg_field,
+			'terms'            => $reg_term,
+			'include_children' => true,
 		);
 	}
 
