@@ -7,6 +7,36 @@
 (function () {
   'use strict';
 
+  function triggerConstantContactInlineWidget(form, email) {
+    try {
+      var formId = form.getAttribute('data-form-id') || (form.parentElement && form.parentElement.getAttribute('data-form-id')) || '70fe8bd0-6c4f-40f5-97e3-77d16148f50a';
+      var wrapper = form.parentElement ? form.parentElement.querySelector('.ctct-inline-form') : null;
+      if (!wrapper && formId) {
+        wrapper = document.querySelector('.ctct-inline-form[data-form-id="' + formId + '"]');
+      }
+      if (!wrapper) {
+        wrapper = document.querySelector('.ctct-inline-form');
+      }
+      if (!wrapper) {
+        return;
+      }
+
+      var ctctEmail = wrapper.querySelector('input[name="email_address"], input[type="email"]');
+      var ctctSubmit = wrapper.querySelector('.ctct-form-button, button[type="submit"]');
+      if (!ctctEmail || !ctctSubmit) {
+        return;
+      }
+
+      ctctEmail.value = email;
+      ctctEmail.dispatchEvent(new Event('input', { bubbles: true }));
+      ctctEmail.dispatchEvent(new Event('change', { bubbles: true }));
+      ctctSubmit.removeAttribute('disabled');
+      ctctSubmit.click();
+    } catch (err) {
+      // Ignore widget errors so native fallback always completes
+    }
+  }
+
   function initNewsletterForm() {
     var forms = document.querySelectorAll('#itm-newsletter-form, .itm-newsletter-form');
     if (!forms || forms.length === 0) {
@@ -51,6 +81,9 @@
         submitBtn.classList.add('is-loading');
         submitBtn.disabled = true;
         emailInput.disabled = true;
+
+        // Forward submission to Constant Contact Inline Form widget if mounted
+        triggerConstantContactInlineWidget(form, email);
 
         // Determine endpoint and nonce
         var ajaxUrl = (window.kiwatinook && window.kiwatinook.ajaxurl) ? window.kiwatinook.ajaxurl : '/wp-admin/admin-ajax.php';

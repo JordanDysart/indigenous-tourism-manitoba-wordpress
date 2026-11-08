@@ -34,8 +34,11 @@ if ( ! $footer_logo ) {
 							<?php esc_html_e( 'Get authentic Indigenous travel stories, seasonal experiences, and community updates delivered directly to your inbox.', 'kiwatinook' ); ?>
 						</p>
 					</div>
-					<div class="site-footer__newsletter-form-col">
-						<form id="itm-newsletter-form" class="site-footer__newsletter-form" method="post" novalidate>
+					<div class="site-footer__newsletter-form-col" data-form-id="70fe8bd0-6c4f-40f5-97e3-77d16148f50a">
+						<!-- Begin Constant Contact Inline Form Code -->
+						<div class="ctct-inline-form site-footer__ctct-inline-mount" data-form-id="70fe8bd0-6c4f-40f5-97e3-77d16148f50a" aria-hidden="true"></div>
+						<!-- End Constant Contact Inline Form Code -->
+						<form id="itm-newsletter-form" class="site-footer__newsletter-form" method="post" data-form-id="70fe8bd0-6c4f-40f5-97e3-77d16148f50a" novalidate>
 							<?php wp_nonce_field( 'itm_newsletter_nonce', 'itm_newsletter_nonce_field' ); ?>
 							<!-- Anti-spam Honeypot -->
 							<div class="site-footer__hp-wrap" aria-hidden="true">

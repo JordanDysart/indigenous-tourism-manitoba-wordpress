@@ -110,12 +110,14 @@ $fallback_issues = array(
 			</div>
 
 			<!-- Constant Contact Universal Embed Container (Utilizing active _ctct_m token) -->
-			<div class="newsletter-archive__ctct-container">
-				<div class="ctct-inline-form" data-form-id="0e1ea91fdfd5a3260d6f165551b021ed"></div>
+			<div class="newsletter-archive__ctct-container" aria-hidden="true">
+				<!-- Begin Constant Contact Inline Form Code -->
+				<div class="ctct-inline-form site-footer__ctct-inline-mount" data-form-id="70fe8bd0-6c4f-40f5-97e3-77d16148f50a"></div>
+				<!-- End Constant Contact Inline Form Code -->
 			</div>
 
 			<!-- Fallback / Native Subscription Form -->
-			<form id="the-tea-newsletter-form" class="newsletter-archive__form itm-newsletter-form" method="post" novalidate>
+			<form id="the-tea-newsletter-form" class="newsletter-archive__form itm-newsletter-form" method="post" data-form-id="70fe8bd0-6c4f-40f5-97e3-77d16148f50a" novalidate>
 				<?php wp_nonce_field( 'itm_newsletter_nonce', 'itm_newsletter_nonce_field' ); ?>
 				<div class="site-footer__hp-wrap" aria-hidden="true" style="display:none;">
 					<input type="text" name="itm_hp_check" id="the_tea_hp_check" tabindex="-1" autocomplete="off" />
