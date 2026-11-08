@@ -129,45 +129,19 @@
 		margin: 0;
 	}
 
-	// Constant Contact Widget Embed Styles
+	// Constant Contact Widget Embed Hook (Visually Hidden Bridge)
 	&__ctct-container {
-		margin-bottom: 16px;
-
-		.ctct-inline-form {
-			max-width: 600px;
-			margin: 0 auto;
-
-			// Ensure CTCT inputs match theme guidelines
-			input[type="email"],
-			input[type="text"] {
-				font-family: @font-primary !important;
-				border-radius: @radius-md !important;
-				background-color: rgba(255, 255, 255, 0.15) !important;
-				color: #ffffff !important;
-				border: 1px solid rgba(255, 255, 255, 0.25) !important;
-				padding: 14px 18px !important;
-
-				&:focus {
-					border-color: @color-gold !important;
-					outline: 2px solid @color-gold !important;
-				}
-			}
-
-			button[type="submit"] {
-				background-color: @color-gold !important;
-				color: @color-dark !important;
-				font-family: @font-primary !important;
-				font-weight: 700 !important;
-				border-radius: @radius-md !important;
-				border: none !important;
-				transition: background-color 0.2s ease, transform 0.2s ease !important;
-
-				&:hover {
-					background-color: lighten(@color-gold, 8%) !important;
-					transform: translateY(-1px);
-				}
-			}
-		}
+		position: absolute !important;
+		width: 1px !important;
+		height: 1px !important;
+		padding: 0 !important;
+		margin: -1px !important;
+		overflow: hidden !important;
+		clip: rect(0, 0, 0, 0) !important;
+		white-space: nowrap !important;
+		border: 0 !important;
+		opacity: 0 !important;
+		pointer-events: none !important;
 	}
 
 	// Native / Fallback Subscription Form
