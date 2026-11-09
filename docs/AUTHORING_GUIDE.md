@@ -53,11 +53,27 @@ On the right-hand sidebar under the **Post** tab:
 
 ---
 
-## 2. How to Post an e-Newsletter
+## 2. How to Post or Sync an e-Newsletter
 
-Use this whenever a new seasonal or monthly edition of our community e-newsletter is released.
+Every time an email newsletter is sent out in Constant Contact to the **e-Newsletter** list, the website can automatically duplicate it into a native WordPress **Draft** post under the **Newsletter** category.
 
-### Step 1: Create the Post
+### Option A: Automatic & One-Click Sync from Constant Contact (Fastest)
+1. **Automatic Background Check**: WordPress automatically checks Constant Contact twice daily for newly sent campaigns on the **e-Newsletter** list and creates a **Draft** post for you.
+2. **Instant One-Click Sync**:
+   - In the left sidebar of WordPress Admin, go to **Posts → Sync Newsletters**.
+   - Click **Sync Sent Newsletters Now** (or paste a Constant Contact share URL like `https://conta.cc/...` into the **Import by Constant Contact Share URL** box).
+3. **Quick Review & Publish**:
+   - Click the **Review & Publish in Editor** link (or go to **Posts → All Posts** and open the new `Draft` newsletter).
+   - Give the converted blocks, featured image, and excerpt a quick review.
+   - Click **Publish**!
+
+---
+
+### Option B: Create a Newsletter Manually in the Editor
+
+Use this if you want to write a newsletter issue from scratch directly in WordPress.
+
+#### Step 1: Create the Post
 1. In the left sidebar, click **Posts → Add New Post**.
 2. In the modal, select the **Newsletter** pattern.
 

@@ -168,7 +168,7 @@ $fallback_issues = array(
 					$issue_date     = get_the_date( 'F Y' );
 					$issue_pdf_url  = get_post_meta( $issue_id, '_newsletter_pdf_url', true );
 					$issue_ext_url  = get_post_meta( $issue_id, '_newsletter_external_url', true );
-					$read_url       = ! empty( $issue_ext_url ) ? $issue_ext_url : get_permalink();
+					$read_url       = get_permalink( $issue_id );
 					$has_pdf        = ! empty( $issue_pdf_url );
 					$issue_sublabel = get_post_meta( $issue_id, '_newsletter_edition_number', true );
 					?>

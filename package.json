@@ -1,6 +1,6 @@
 {
   "name": "kiwatinook",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "private": true,
   "description": "Kiwatinook WordPress Theme for Indigenous Tourism Manitoba",
   "author": "Midflight <dev@midflight.ca>",
@@ -26,7 +26,8 @@
     "compare:prod": "node tools/compare-production.js",
     "sync:media": "node tools/sync-media-from-prod.js",
     "package:release": "node tools/package-release.js",
-    "create:news": "node tools/create-news-post.js"
+    "create:news": "node tools/create-news-post.js",
+    "sync:newsletter": "node tools/sync-newsletter.js"
   },
   "devDependencies": {
     "@wordpress/scripts": "^30.0.0",

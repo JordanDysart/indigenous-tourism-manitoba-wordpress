@@ -301,6 +301,11 @@ require get_template_directory() . '/inc/menu-structure-migration.php';
  */
 require get_template_directory() . '/inc/newsletter.php';
 
+/**
+ * Constant Contact -> WordPress Newsletter Duplication Pipeline.
+ */
+require get_template_directory() . '/inc/newsletter-sync.php';
+
 function kiwatinook_theme_setup()
 {
 	add_theme_support('align-wide');
