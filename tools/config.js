@@ -88,6 +88,7 @@ export const CANONICAL_TOKENS = {
     md: '8px',
     lg: '16px',
     xl: '40px',
+    pill: '9999px',
     full: '100%',
   },
   layout: {

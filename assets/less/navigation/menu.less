@@ -162,6 +162,25 @@
       justify-content: space-between;
       align-items: stretch;
       gap: 48px;
+
+      // Single-column mega menu (desktop only): pull lone column closer to right-side featured card
+      @media (min-width: 1200px) {
+        &.mega-menu-cols-1,
+        &:has(li.mega-menu-column:only-child) {
+          justify-content: flex-end;
+          gap: 72px;
+
+          ul.mega-menu-columns {
+            flex: 0 1 auto;
+
+            > li.mega-menu-column {
+              flex: 0 1 auto;
+              min-width: 240px;
+              max-width: 300px;
+            }
+          }
+        }
+      }
     }
 
     // Left Columns Grid

@@ -1,7 +1,8 @@
 /**
- * Test Suite for Mobile Navigation Drawer and Accordion Submenu Toggles
+ * Test Suite for Mobile Navigation Drawer, Accordion Submenu Toggles, and Desktop Mega Menu Layouts
  */
-import { BASE_URL, createBrowser } from './config.js';
+import path from 'path';
+import { BASE_URL, createBrowser, screenshotsDir } from './config.js';
 
 let totalTests = 0;
 let passedTests = 0;
@@ -117,6 +118,12 @@ async function runMobileNavTests() {
         assert(firstPanelHidden === 'false', 'Mega menu panel aria-hidden is "false"');
         assert(firstPanelDisplay === 'block', `Mega menu panel is display:block (was: ${firstPanelDisplay})`);
 
+        const mobileContentDir = await page.evaluate(el => {
+          const c = el.querySelector('.mega-menu-content');
+          return c ? window.getComputedStyle(c).flexDirection : null;
+        }, firstParent);
+        assert(mobileContentDir === 'column', `Mobile mega-menu-content retains flex-direction: column (was: ${mobileContentDir})`);
+
         // 4. Test Single Active Accordion: Click second parent (if exists)
         if (parentCount > 1) {
           const allParents = await page.$$('.mega-menu-parent, .menu-item-has-children');
@@ -201,6 +208,144 @@ async function runMobileNavTests() {
       const escapeAria = await desktopPage.evaluate(el => el.getAttribute('aria-expanded'), parentLink);
       assert(isClosedAfterEscape, 'Desktop menu parent closed after pressing Escape');
       assert(escapeAria === 'false', 'Desktop menu item has aria-expanded="false" after Escape');
+    }
+
+    // Single-Column Mega Menu Geometry & Alignment Test (e.g., About ITM)
+    const singleColParent = await desktopPage.evaluateHandle(() => {
+      const parents = Array.from(document.querySelectorAll('.nav-menu > li.mega-menu-parent'));
+      return (
+        parents.find(li => {
+          const text = li.querySelector(':scope > a, :scope > .menu-item')?.textContent?.trim() || '';
+          return text === 'About ITM' && li.querySelectorAll('li.mega-menu-column').length === 1;
+        }) ||
+        parents.find(li => li.querySelectorAll('li.mega-menu-column').length === 1) ||
+        null
+      );
+    });
+    const singleColEl = singleColParent.asElement();
+    assert(singleColEl !== null, 'Found a 1-column desktop mega menu parent (e.g., About ITM)');
+
+    if (singleColEl) {
+      await singleColEl.hover();
+      await desktopPage.waitForTimeout(300);
+
+      const singleColMetrics = await desktopPage.evaluate(parentEl => {
+        const title = parentEl.querySelector(':scope > a, :scope > .menu-item')?.textContent?.trim() || '';
+        const content = parentEl.querySelector('.mega-menu-content');
+        const columnsList = parentEl.querySelector('ul.mega-menu-columns');
+        const col = parentEl.querySelector('li.mega-menu-column');
+        const featured = parentEl.querySelector('.mega-menu-featured');
+        const contentStyle = content ? window.getComputedStyle(content) : null;
+        const listStyle = columnsList ? window.getComputedStyle(columnsList) : null;
+        const colRect = col ? col.getBoundingClientRect() : null;
+        const featuredRect = featured ? featured.getBoundingClientRect() : null;
+
+        return {
+          title,
+          hasCols1Class: content ? content.classList.contains('mega-menu-cols-1') : false,
+          justifyContent: contentStyle ? contentStyle.justifyContent : null,
+          gapCss: contentStyle ? contentStyle.columnGap || contentStyle.gap : null,
+          listFlexGrow: listStyle ? listStyle.flexGrow : null,
+          colWidth: colRect ? Math.round(colRect.width) : null,
+          horizontalGapPx:
+            colRect && featuredRect ? Math.round(featuredRect.left - colRect.right) : null,
+          panelBottom: parentEl.querySelector('.mega-menu-panel')
+            ? Math.ceil(parentEl.querySelector('.mega-menu-panel').getBoundingClientRect().bottom)
+            : 520,
+        };
+      }, singleColEl);
+
+      assert(
+        singleColMetrics.hasCols1Class,
+        `1-column mega menu ("${singleColMetrics.title}") has .mega-menu-cols-1 class`
+      );
+      assert(
+        singleColMetrics.justifyContent === 'flex-end',
+        `1-column mega menu ("${singleColMetrics.title}") computed justify-content is "flex-end"`,
+        `got: ${singleColMetrics.justifyContent}`
+      );
+      assert(
+        singleColMetrics.listFlexGrow === '0',
+        `1-column ul.mega-menu-columns does not stretch (flex-grow: 0)`,
+        `got: ${singleColMetrics.listFlexGrow}`
+      );
+      assert(
+        singleColMetrics.colWidth !== null && singleColMetrics.colWidth >= 220 && singleColMetrics.colWidth <= 300,
+        `1-column li.mega-menu-column width is compact (220px-300px)`,
+        `got: ${singleColMetrics.colWidth}px`
+      );
+      assert(
+        singleColMetrics.horizontalGapPx !== null &&
+          singleColMetrics.horizontalGapPx >= 48 &&
+          singleColMetrics.horizontalGapPx <= 120,
+        `1-column horizontal gap to featured card is compact (<= 120px)`,
+        `got: ${singleColMetrics.horizontalGapPx}px`
+      );
+
+      // Capture verification screenshot of open 1-column mega menu dropdown
+      const screenshotPath = path.join(screenshotsDir, 'mega-menu-1col-desktop.png');
+      const clipHeight = Math.min(800, Math.max(480, singleColMetrics.panelBottom + 32));
+      await desktopPage.screenshot({
+        path: screenshotPath,
+        clip: { x: 0, y: 0, width: 1280, height: clipHeight },
+      });
+      console.log(`  📸 Saved 1-column desktop mega menu screenshot: ${screenshotPath}`);
+
+      await desktopPage.keyboard.press('Escape');
+      await desktopPage.waitForTimeout(200);
+    }
+
+    // Multi-Column (3-Column Explore & 2-Column) Mega Menu Regression Test
+    const multiColResults = await desktopPage.evaluate(() => {
+      const parents = Array.from(document.querySelectorAll('.nav-menu > li.mega-menu-parent'));
+      return parents
+        .filter(li => li.querySelectorAll('li.mega-menu-column').length >= 2)
+        .map(li => {
+          const title = li.querySelector(':scope > a, :scope > .menu-item')?.textContent?.trim() || '';
+          const colCount = li.querySelectorAll('li.mega-menu-column').length;
+          const content = li.querySelector('.mega-menu-content');
+          const columnsList = li.querySelector('ul.mega-menu-columns');
+          const contentStyle = content ? window.getComputedStyle(content) : null;
+          const listStyle = columnsList ? window.getComputedStyle(columnsList) : null;
+          return {
+            title,
+            colCount,
+            hasExpectedClass: content ? content.classList.contains(`mega-menu-cols-${colCount}`) : false,
+            justifyContent: contentStyle ? contentStyle.justifyContent : null,
+            listFlexGrow: listStyle ? listStyle.flexGrow : null,
+          };
+        });
+    });
+
+    const exploreMenu = multiColResults.find(m => m.title === 'Explore' || m.colCount === 3);
+    assert(exploreMenu !== undefined, 'Found 3-column Explore mega menu on desktop');
+    if (exploreMenu) {
+      assert(
+        exploreMenu.hasExpectedClass && exploreMenu.colCount === 3,
+        `3-column "${exploreMenu.title}" mega menu has .mega-menu-cols-3 class`
+      );
+      assert(
+        exploreMenu.justifyContent === 'space-between',
+        `3-column "${exploreMenu.title}" mega menu retains justify-content: space-between`,
+        `got: ${exploreMenu.justifyContent}`
+      );
+      assert(
+        exploreMenu.listFlexGrow === '1',
+        `3-column "${exploreMenu.title}" ul.mega-menu-columns retains flex-grow: 1`,
+        `got: ${exploreMenu.listFlexGrow}`
+      );
+    }
+
+    for (const multi of multiColResults.filter(m => m !== exploreMenu)) {
+      assert(
+        multi.hasExpectedClass,
+        `${multi.colCount}-column "${multi.title}" mega menu has .mega-menu-cols-${multi.colCount} class`
+      );
+      assert(
+        multi.justifyContent === 'space-between',
+        `${multi.colCount}-column "${multi.title}" mega menu retains justify-content: space-between`,
+        `got: ${multi.justifyContent}`
+      );
     }
   } catch (err) {
     console.error('Error during desktop navigation test:', err.message);

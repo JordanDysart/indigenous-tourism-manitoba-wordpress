@@ -24,6 +24,13 @@ class GAC_Menu_Walker extends Walker_Nav_Menu
     protected $current_top_item = null;
 
     /**
+     * Tracks the number of depth-1 (.mega-menu-column) items in the active panel.
+     *
+     * @var int
+     */
+    protected $current_column_count = 0;
+
+    /**
      * Starts the list before the elements are added.
      *
      * @param string   $output Used to append additional content (passed by reference).
@@ -35,6 +42,7 @@ class GAC_Menu_Walker extends Walker_Nav_Menu
         $indent = str_repeat("\t", $depth);
 
         if (0 === $depth) {
+            $this->current_column_count = 0;
             $output .= "\n$indent<div class=\"mega-menu-panel\" role=\"region\" aria-label=\"Submenu\">\n";
             $output .= "$indent\t<div class=\"mega-menu-container\">\n";
             $output .= "$indent\t\t<div class=\"mega-menu-content\">\n";
@@ -56,6 +64,19 @@ class GAC_Menu_Walker extends Walker_Nav_Menu
         $indent = str_repeat("\t", $depth);
 
         if (0 === $depth) {
+            if ($this->current_column_count > 0) {
+                $content_open = '<div class="mega-menu-content">';
+                $content_pos  = strrpos($output, $content_open);
+                if (false !== $content_pos) {
+                    $output = substr_replace(
+                        $output,
+                        '<div class="mega-menu-content mega-menu-cols-' . (int) $this->current_column_count . '">',
+                        $content_pos,
+                        strlen($content_open)
+                    );
+                }
+            }
+
             $output .= "$indent\t\t\t</ul>\n"; // Close mega-menu-columns
 
             // Render the Right-Side Featured Showcase Card (Sanity CMS Pattern)
@@ -123,6 +144,7 @@ class GAC_Menu_Walker extends Walker_Nav_Menu
             $classes[] = 'mega-menu-parent';
         } elseif (1 === $depth) {
             $classes[] = 'mega-menu-column';
+            $this->current_column_count++;
         }
 
         $class_names = implode(' ', array_filter($classes));

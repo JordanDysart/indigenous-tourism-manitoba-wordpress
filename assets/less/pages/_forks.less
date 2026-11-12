@@ -36,7 +36,7 @@
     background: rgba(218, 82, 37, 0.1);
     border: 1px solid rgba(218, 82, 37, 0.25);
     color: @color-orange;
-    border-radius: @radius-full;
+    border-radius: @radius-pill;
     font-family: @font-secondary;
     font-size: 0.85rem;
     font-weight: 700;
@@ -195,9 +195,13 @@
     border-radius: @radius-xl;
     border: 1px solid rgba(224, 172, 15, 0.4);
     box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
-    padding: 36px 28px;
+    padding: 28px 20px;
     position: relative;
     overflow: hidden;
+
+    .breakpoint(@breakpoint-sm, {
+      padding: 36px 28px;
+    });
 
     .breakpoint(@breakpoint-md, {
       padding: 48px 40px;
@@ -234,7 +238,7 @@
         font-size: 0.8rem;
         font-weight: 700;
         text-transform: uppercase;
-        border-radius: @radius-full;
+        border-radius: @radius-pill;
         letter-spacing: 0.04em;
         margin-bottom: 8px;
       }
@@ -267,7 +271,7 @@
       background: @color-off-white;
       border: 1px solid rgba(145, 158, 171, 0.3);
       color: @color-dark;
-      border-radius: @radius-full;
+      border-radius: @radius-pill;
       font-size: 0.9rem;
       font-weight: 600;
       text-decoration: none;
@@ -287,21 +291,26 @@
     gap: 36px;
 
     .breakpoint(@breakpoint-lg, {
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 48px;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 44px;
+      align-items: stretch;
     });
   }
 
   .artisan-bio-col {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
     .artisan-bio-text {
       font-size: 1.02rem;
       color: @color-body-text;
       line-height: 1.7;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .artisan-client-showcase {
-      margin-top: 28px;
+      margin-top: 8px;
       padding-top: 20px;
       border-top: 1px dashed rgba(145, 158, 171, 0.3);
 
@@ -327,28 +336,227 @@
         padding: 5px 14px;
         background: @color-off-white;
         border: 1px solid rgba(145, 158, 171, 0.2);
-        border-radius: @radius-full;
+        border-radius: @radius-pill;
         font-size: 0.82rem;
         font-weight: 600;
         color: @color-dark;
       }
     }
+
+    .artisan-studio-showcase {
+      margin-top: 26px;
+      padding-top: 22px;
+      border-top: 1px dashed rgba(145, 158, 171, 0.3);
+
+      .breakpoint(@breakpoint-lg, {
+        margin-top: auto;
+      });
+
+      .studio-showcase-label {
+        font-family: @font-secondary;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @color-mid-gray;
+        letter-spacing: 0.05em;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 14px;
+
+        i {
+          color: @color-orange;
+          font-size: 0.95rem;
+        }
+      }
+
+      .artisan-studio-bento {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+
+        .breakpoint(@breakpoint-sm, {
+          grid-template-columns: 1.18fr 0.82fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 14px;
+        });
+      }
+
+      .studio-photo-item {
+        margin: 0;
+        position: relative;
+        border-radius: @radius-lg;
+        overflow: hidden;
+        overflow: clip;
+        background: @color-dark;
+        border: 1px solid rgba(145, 158, 171, 0.22);
+        box-shadow: 0 8px 22px rgba(33, 43, 54, 0.08);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          transition: transform 0.35s ease;
+        }
+
+        &:hover img {
+          transform: scale(1.03);
+        }
+
+        &--portrait {
+          aspect-ratio: 3 / 2;
+
+          img {
+            object-position: center 22%;
+          }
+
+          .breakpoint(@breakpoint-sm, {
+            grid-column: 1;
+            grid-row: 1;
+          });
+        }
+
+        &--wide {
+          aspect-ratio: 3 / 2;
+
+          img {
+            object-position: center 30%;
+          }
+
+          .breakpoint(@breakpoint-sm, {
+            grid-column: 1;
+            grid-row: 2;
+          });
+        }
+
+        &--vertical {
+          aspect-ratio: 4 / 5;
+
+          img {
+            object-position: center 35%;
+          }
+
+          .breakpoint(@breakpoint-sm, {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+            aspect-ratio: auto;
+            min-height: 100%;
+
+            img {
+              position: absolute;
+              inset: 0;
+            }
+          });
+        }
+      }
+    }
   }
 
   .artisan-blessing-col {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
     .blessing-card {
       background: linear-gradient(135deg, rgba(224, 172, 15, 0.08) 0%, rgba(218, 82, 37, 0.06) 100%);
-      border: 1px solid rgba(224, 172, 15, 0.3);
+      border: 1px solid rgba(224, 172, 15, 0.35);
       border-radius: @radius-lg;
-      padding: 28px;
+      padding: 22px;
       display: flex;
       flex-direction: column;
+      gap: 22px;
       height: 100%;
 
+      @media (min-width: @breakpoint-md) and (max-width: 61.98em) {
+        display: grid;
+        grid-template-columns: 0.88fr 1.12fr;
+        gap: 28px;
+        align-items: center;
+        padding: 28px;
+      }
+
+      .breakpoint(@breakpoint-lg, {
+        padding: 26px;
+        gap: 22px;
+      });
+
+      .blessing-artwork-figure {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .blessing-artwork-frame {
+        border-radius: @radius-lg;
+        overflow: hidden;
+        overflow: clip;
+        aspect-ratio: 977 / 1024;
+        background: @color-dark;
+        border: 1px solid rgba(224, 172, 15, 0.45);
+        box-shadow: 0 12px 30px rgba(33, 43, 54, 0.14);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+          display: block;
+          transition: transform 0.35s ease;
+        }
+
+        &:hover img {
+          transform: scale(1.025);
+        }
+      }
+
+      .blessing-artwork-caption {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+        .artwork-caption-pill {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          padding: 5px 14px;
+          background: #ffffff;
+          border: 1px solid rgba(224, 172, 15, 0.4);
+          border-radius: @radius-pill;
+          font-family: @font-secondary;
+          font-size: 0.76rem;
+          font-weight: 700;
+          color: @color-dark;
+          letter-spacing: 0.02em;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+          i {
+            color: @color-gold-dark;
+          }
+        }
+      }
+
+      .blessing-card-body {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-width: 0;
+      }
+
+      .blessing-heading-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+
       .blessing-icon {
-        font-size: 1.8rem;
+        font-size: 1.55rem;
         color: @color-orange;
-        margin-bottom: 14px;
+        line-height: 1;
+        flex-shrink: 0;
       }
 
       .blessing-title {
@@ -356,21 +564,21 @@
         font-size: 1.25rem;
         font-weight: 700;
         color: @color-dark;
-        margin-bottom: 12px;
+        margin: 0;
       }
 
       .blessing-text {
         font-size: 0.95rem;
         color: @color-body-text;
         line-height: 1.6;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
       }
 
       .blessing-print-banner {
         margin-top: auto;
         background: #ffffff;
         border-radius: @radius-md;
-        padding: 16px 20px;
+        padding: 15px 18px;
         border: 1px solid rgba(224, 172, 15, 0.35);
         display: flex;
         align-items: center;
@@ -556,6 +764,7 @@
     padding: 36px 32px;
     display: flex;
     flex-direction: column;
+    min-width: 0;
     box-shadow: 0 12px 32px rgba(33, 43, 54, 0.15);
 
     .card-badge {
@@ -565,7 +774,7 @@
       background: rgba(224, 172, 15, 0.2);
       border: 1px solid @color-gold;
       color: @color-gold;
-      border-radius: @radius-full;
+      border-radius: @radius-pill;
       font-size: 0.78rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -625,6 +834,7 @@
     padding: 36px 32px;
     display: flex;
     flex-direction: column;
+    min-width: 0;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
 
     .card-badge {
@@ -633,7 +843,7 @@
       padding: 4px 12px;
       background: rgba(218, 82, 37, 0.1);
       color: @color-orange;
-      border-radius: @radius-full;
+      border-radius: @radius-pill;
       font-size: 0.78rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -675,6 +885,17 @@
         font-size: 0.88rem;
         color: @color-mid-gray;
         margin: 0 0 14px;
+      }
+
+      .wp-block-button,
+      .wp-block-button__link {
+        max-width: 100%;
+      }
+
+      .wp-block-button__link {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        text-align: center;
       }
     }
   }

@@ -1393,15 +1393,41 @@ class ITM_M2_Pages_Migration {
           <span class="client-tag">Winnipeg 150</span>
         </div>
       </div>
+      <div class="artisan-studio-showcase">
+        <span class="studio-showcase-label"><i class="bi bi-palette"></i> Behind the Scenes: Live Painting at Explore Indigenous</span>
+        <div class="artisan-studio-bento">
+          <figure class="studio-photo-item studio-photo-item--portrait">
+            <img src="/wp-content/uploads/2026/11/jordan-stranger-portrait-at-easel.jpg" alt="Anishinaabe artist Jordan Stranger smiling beside the blessing artwork canvas inside Explore Indigenous at The Forks Market" width="1024" height="682" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="studio-photo-item studio-photo-item--vertical">
+            <img src="/wp-content/uploads/2026/11/jordan-stranger-painting-seated-vertical.jpg" alt="Close-up of Jordan Stranger seated at an easel painting blue waves onto a bright yellow canvas inside Explore Indigenous" width="682" height="1024" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="studio-photo-item studio-photo-item--wide">
+            <img src="/wp-content/uploads/2026/11/jordan-stranger-painting-wide-banner.jpg" alt="Wide view of Jordan Stranger painting botanical motifs on a yellow canvas beside an Indigenous Tourism Manitoba banner inside Explore Indigenous" width="1024" height="682" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </div>
     </div>
     <div class="artisan-blessing-col">
       <div class="blessing-card">
-        <div class="blessing-icon"><i class="bi bi-feather"></i></div>
-        <h3 class="blessing-title">Special Blessing Artwork</h3>
-        <p class="blessing-text">Jordan created a special piece of artwork for the space itself &mdash; a work intended to bless the store and carry a message of inclusion, welcome, and shared understanding. The piece reflects the spirit of Explore Indigenous: a place for culture, community, and connection.</p>
-        <div class="blessing-print-banner">
-          <div class="print-icon"><i class="bi bi-brush"></i></div>
-          <p class="print-text"><strong>Artwork Prints Available:</strong> Prints of Jordan’s artwork are available for purchase in-store, allowing visitors to take home a meaningful piece representing artistry and intention.</p>
+        <figure class="blessing-artwork-figure">
+          <div class="blessing-artwork-frame">
+            <img src="/wp-content/uploads/2026/11/jordan-stranger-blessing-artwork-window.jpg" alt="Vibrant yellow, orange, blue, and green Ojibwe blessing painting by Jordan Stranger mounted in the window at Explore Indigenous inside The Forks Market" width="977" height="1024" loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="blessing-artwork-caption">
+            <span class="artwork-caption-pill"><i class="bi bi-stars"></i> Window Blessing Piece</span>
+          </figcaption>
+        </figure>
+        <div class="blessing-card-body">
+          <div class="blessing-heading-row">
+            <div class="blessing-icon"><i class="bi bi-feather"></i></div>
+            <h3 class="blessing-title">Special Blessing Artwork</h3>
+          </div>
+          <p class="blessing-text">Jordan created a special piece of artwork for the space itself &mdash; a work intended to bless the store and carry a message of inclusion, welcome, and shared understanding. The piece reflects the spirit of Explore Indigenous: a place for culture, community, and connection.</p>
+          <div class="blessing-print-banner">
+            <div class="print-icon"><i class="bi bi-brush"></i></div>
+            <p class="print-text"><strong>Artwork Prints Available:</strong> Prints of Jordan’s artwork are available for purchase in-store, allowing visitors to take home a meaningful piece representing artistry and intention.</p>
+          </div>
         </div>
       </div>
     </div>

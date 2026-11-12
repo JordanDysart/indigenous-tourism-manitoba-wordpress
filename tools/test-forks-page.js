@@ -9,6 +9,8 @@
  * - 5-card Member Opportunities grid
  * - Operating hours (Thu-Sun 10am-6pm) & Ambassador booking CTA (Taytum)
  * - Navigation links in header mega menu, footer, and sitemap
+ * - Pill-shaped border-radius (9999px, non-elliptical) on all rectangular badges, tags, and buttons
+ * - Circular 1:1 icon containers preserved & zero horizontal overflow across Desktop (1280px), Tablet (768px), and Mobile (375px)
  * - Responsive layout & captures verification screenshots
  */
 
@@ -37,7 +39,7 @@ async function runTests() {
   console.log(`======================================================\n`);
 
   const browser = await createBrowser();
-  const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
+  const page = await browser.newPage({ viewport: { width: 1280, height: 800 }, ignoreHTTPSErrors: true });
 
   try {
     // -------------------------------------------------------------------------
@@ -99,6 +101,73 @@ async function runTests() {
     const printBanner = await page.$('.blessing-print-banner');
     assert(!!printBanner, 'Artwork print availability callout present');
 
+    if (artisanSection) {
+      await artisanSection.scrollIntoViewIfNeeded();
+      await page.evaluate(async () => {
+        const imgs = Array.from(document.querySelectorAll('.artisan-spotlight-section img'));
+        imgs.forEach(img => img.scrollIntoView({ block: 'center' }));
+        await Promise.all(
+          imgs.map(img =>
+            img.complete
+              ? Promise.resolve()
+              : new Promise(resolve => {
+                  img.addEventListener('load', resolve, { once: true });
+                  img.addEventListener('error', resolve, { once: true });
+                  setTimeout(resolve, 5000);
+                })
+          )
+        );
+      });
+    }
+
+    const spotlightImages = await page.$$eval('.artisan-spotlight-section img', imgs =>
+      imgs.map(img => ({
+        rawSrc: img.getAttribute('src') || '',
+        rawSrcset: img.getAttribute('srcset') || '',
+        rawStyle: img.getAttribute('style') || '',
+        alt: (img.getAttribute('alt') || '').trim(),
+        complete: img.complete,
+        naturalWidth: img.naturalWidth,
+        naturalHeight: img.naturalHeight,
+      }))
+    );
+
+    assert(
+      spotlightImages.length >= 3 && spotlightImages.length <= 4,
+      'Curated 3–4 Jordan Stranger photos rendered in .artisan-spotlight-section',
+      `Found: ${spotlightImages.length}`
+    );
+
+    const allSpotlightLoaded = spotlightImages.length > 0 && spotlightImages.every(
+      img => img.complete && img.naturalWidth > 0 && img.naturalHeight > 0
+    );
+    assert(
+      allSpotlightLoaded,
+      'All Jordan Stranger spotlight photos load cleanly (complete && naturalWidth > 0)',
+      spotlightImages.map(i => `${i.rawSrc.split('/').pop()} [${i.naturalWidth}x${i.naturalHeight}]`).join(', ')
+    );
+
+    const allSpotlightAlts = spotlightImages.length > 0 && spotlightImages.every(img => img.alt.length >= 15);
+    assert(
+      allSpotlightAlts,
+      'All Jordan Stranger spotlight photos carry descriptive non-empty alt attributes',
+      `Min alt length: ${spotlightImages.length ? Math.min(...spotlightImages.map(i => i.alt.length)) : 0} chars`
+    );
+
+    const hasBlessingWindowHero = spotlightImages.some(img => img.rawSrc.includes('jordan-stranger-blessing-artwork-window'));
+    assert(hasBlessingWindowHero, 'Completed window blessing artwork featured in spotlight');
+
+    const lndoHardlinksInSpotlight = await page.$$eval('.artisan-spotlight-section, .artisan-spotlight-section *', els =>
+      els
+        .flatMap(el => ['src', 'srcset', 'style'].map(attr => ({ tag: el.tagName, attr, val: el.getAttribute(attr) || '' })))
+        .filter(item => item.val.includes('.lndo.site'))
+    );
+    assert(
+      lndoHardlinksInSpotlight.length === 0,
+      'Zero .lndo.site hardlinks in raw src, srcset, or style attributes inside .artisan-spotlight-section',
+      lndoHardlinksInSpotlight.length ? JSON.stringify(lndoHardlinksInSpotlight) : 'All root-relative /wp-content/uploads/... paths'
+    );
+
     // -------------------------------------------------------------------------
     // 5. Member Opportunities 5-Card Grid
     // -------------------------------------------------------------------------
@@ -140,23 +209,128 @@ async function runTests() {
     assert(!!footerLink, 'Footer contains link to /the-forks/');
 
     // -------------------------------------------------------------------------
-    // 8. Capture Verification Screenshots
+    // 8. Pill Badge, Tag & Button Border Radius + Zero Overflow (1280px, 768px, 375px)
     // -------------------------------------------------------------------------
-    console.log(`\n--- [Section 8] Capturing Verification Screenshots ---`);
-    const screenshotDir = path.resolve('docs/screenshots/desktop');
-    if (!fs.existsSync(screenshotDir)) fs.mkdirSync(screenshotDir, { recursive: true });
+    console.log(`\n--- [Section 8] Pill Border Radius & Responsive Viewport Verification ---`);
 
-    await page.screenshot({ path: path.join(screenshotDir, 'the-forks-desktop-full.png'), fullPage: true });
-    console.log(`  📸 Saved docs/screenshots/desktop/the-forks-desktop-full.png`);
+    const pillSelectors = [
+      { selector: '.vision-badge', label: '.vision-badge', minCount: 1 },
+      { selector: '.artisan-badge', label: '.artisan-badge', minCount: 1 },
+      { selector: '.artisan-link-btn', label: '.artisan-link-btn', minCount: 1 },
+      { selector: '.artwork-caption-pill', label: '.artwork-caption-pill', minCount: 1 },
+      { selector: '.client-tag', label: '.client-tag', minCount: 6 },
+      { selector: '.hours-info-card .card-badge', label: '.hours-info-card .card-badge', minCount: 1 },
+      { selector: '.ambassador-contact-card .card-badge', label: '.ambassador-contact-card .card-badge', minCount: 1 },
+    ];
 
-    // Mobile screenshot
-    await page.setViewportSize({ width: 375, height: 812 });
-    await page.goto(`${BASE_URL}/the-forks/`, { waitUntil: 'networkidle' });
-    const mobileDir = path.resolve('docs/screenshots/mobile');
-    if (!fs.existsSync(mobileDir)) fs.mkdirSync(mobileDir, { recursive: true });
+    const circularIconSelectors = [
+      { selector: '.vision-card-icon', label: '.vision-card-icon', expectedSize: 44 },
+      { selector: '.opportunity-icon-wrap', label: '.opportunity-icon-wrap', expectedSize: 52 },
+    ];
 
-    await page.screenshot({ path: path.join(mobileDir, 'the-forks-mobile-full.png'), fullPage: true });
-    console.log(`  📸 Saved docs/screenshots/mobile/the-forks-mobile-full.png`);
+    const viewports = [
+      { name: 'Desktop', key: 'desktop', width: 1280, height: 800 },
+      { name: 'Tablet', key: 'tablet', width: 768, height: 1024 },
+      { name: 'Mobile', key: 'mobile', width: 375, height: 812 },
+    ];
+
+    for (const vp of viewports) {
+      console.log(`\n  [Viewport: ${vp.name} (${vp.width}x${vp.height})]`);
+      await page.setViewportSize({ width: vp.width, height: vp.height });
+      await page.goto(`${BASE_URL}/the-forks/`, { waitUntil: 'networkidle', timeout: 20000 });
+
+      await page.evaluate(async () => {
+        const imgs = Array.from(document.querySelectorAll('img[loading="lazy"]'));
+        imgs.forEach(img => img.scrollIntoView({ block: 'center' }));
+        await Promise.all(
+          imgs.map(img =>
+            img.complete && img.naturalWidth > 0
+              ? Promise.resolve()
+              : new Promise(resolve => {
+                  img.addEventListener('load', resolve, { once: true });
+                  img.addEventListener('error', resolve, { once: true });
+                  setTimeout(resolve, 5000);
+                })
+          )
+        );
+        window.scrollTo(0, 0);
+      });
+
+      const vpSpotlightLoaded = await page.$$eval('.artisan-spotlight-section img', imgs =>
+        imgs.length >= 3 && imgs.every(img => img.complete && img.naturalWidth > 0)
+      );
+      assert(vpSpotlightLoaded, `${vp.name}: All Jordan Stranger spotlight photos loaded`);
+
+      for (const item of pillSelectors) {
+        const results = await page.$$eval(item.selector, els =>
+          els.map(el => {
+            const cs = window.getComputedStyle(el);
+            const rect = el.getBoundingClientRect();
+            return {
+              borderRadius: cs.borderRadius,
+              borderTopLeftRadius: cs.borderTopLeftRadius,
+              width: Math.round(rect.width),
+              height: Math.round(rect.height),
+              right: Math.round(rect.right),
+            };
+          })
+        );
+
+        assert(
+          results.length >= item.minCount,
+          `${vp.name}: ${item.label} count >= ${item.minCount}`,
+          `Found: ${results.length}`
+        );
+
+        const allPill = results.length > 0 && results.every(
+          r => r.borderRadius === '9999px' && r.borderTopLeftRadius === '9999px' && !r.borderRadius.includes('%')
+        );
+        assert(
+          allPill,
+          `${vp.name}: ${item.label} computes to 9999px pill shape (not elliptical %)`,
+          results.map(r => `${r.borderRadius} [${r.width}x${r.height}]`).join(', ')
+        );
+      }
+
+      for (const icon of circularIconSelectors) {
+        const iconResults = await page.$$eval(icon.selector, els =>
+          els.map(el => {
+            const cs = window.getComputedStyle(el);
+            const rect = el.getBoundingClientRect();
+            return {
+              borderRadius: cs.borderRadius,
+              width: Math.round(rect.width),
+              height: Math.round(rect.height),
+            };
+          })
+        );
+
+        const allCircular = iconResults.length > 0 && iconResults.every(
+          r => r.borderRadius === '100%' && r.width === icon.expectedSize && r.height === icon.expectedSize
+        );
+        assert(
+          allCircular,
+          `${vp.name}: ${icon.label} remains 1:1 circular (${icon.expectedSize}x${icon.expectedSize}, 100%)`,
+          iconResults.map(r => `${r.borderRadius} [${r.width}x${r.height}]`).join(', ')
+        );
+      }
+
+      const overflowInfo = await page.evaluate(() => ({
+        scrollWidth: document.documentElement.scrollWidth,
+        clientWidth: document.documentElement.clientWidth,
+      }));
+      assert(
+        overflowInfo.scrollWidth <= overflowInfo.clientWidth,
+        `${vp.name}: Zero horizontal page overflow`,
+        `scrollWidth: ${overflowInfo.scrollWidth}px, clientWidth: ${overflowInfo.clientWidth}px`
+      );
+
+      const dir = path.resolve(`docs/screenshots/${vp.key}`);
+      if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+      const shotPath = path.join(dir, `the-forks-${vp.key}-full.png`);
+      await page.screenshot({ path: shotPath, fullPage: true });
+      console.log(`  📸 Saved docs/screenshots/${vp.key}/the-forks-${vp.key}-full.png`);
+    }
 
   } catch (err) {
     console.error('Fatal error during test execution:', err);
