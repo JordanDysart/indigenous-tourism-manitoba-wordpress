@@ -163,15 +163,17 @@
       align-items: stretch;
       gap: 48px;
 
-      // Single-column mega menu (desktop only): pull lone column closer to right-side featured card
+      // Single-column mega menu (desktop only): center lone column in the space to the left of the featured card
       @media (min-width: 1200px) {
         &.mega-menu-cols-1,
         &:has(li.mega-menu-column:only-child) {
-          justify-content: flex-end;
-          gap: 72px;
+          gap: 0;
 
           ul.mega-menu-columns {
-            flex: 0 1 auto;
+            flex: 1 1 auto;
+            justify-content: center;
+            padding-inline: 24px;
+            box-sizing: border-box;
 
             > li.mega-menu-column {
               flex: 0 1 auto;

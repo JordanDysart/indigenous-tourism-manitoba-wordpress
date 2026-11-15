@@ -80,14 +80,34 @@ async function runTests() {
 			const headings = Array.from(document.querySelectorAll('.site-footer__nav-heading')).map((h) => h.textContent.trim());
 			const links = Array.from(document.querySelectorAll('.site-footer__nav-list a')).map((a) => ({
 				text: a.textContent.trim(),
-				href: a.getAttribute('href'),
+				href: a.getAttribute('href') || '',
 			}));
-			return { headings, linkCount: links.length, links };
+			const guideLinks = Array.from(document.querySelectorAll('footer.site-footer a'))
+				.map((a) => ({ text: a.textContent.trim(), href: a.getAttribute('href') || '' }))
+				.filter((item) => item.href.toLowerCase().includes('guide-training') || item.text.toLowerCase().includes('guide training'));
+			return { headings, linkCount: links.length, links, guideLinks };
 		});
 
 		assert(footerNavCols.headings.includes('Explore'), 'Footer has "Explore" navigation column');
 		assert(footerNavCols.headings.includes('About ITM'), 'Footer has "About ITM" navigation column');
-		assert(footerNavCols.headings.some((h) => h.includes('Programs')), 'Footer has "Programs & Members" column');
+		assert(
+			footerNavCols.headings[2] === 'Membership' && !footerNavCols.headings.some((h) => h.includes('Programs')),
+			'Footer 4th column heading is "Membership" (replaces "Programs & Members")',
+			footerNavCols.headings.join(' | ')
+		);
+		assert(
+			footerNavCols.links.some((l) => l.href.includes('/explore-indigenous-for-itm-members/')),
+			'Footer Membership column includes /explore-indigenous-for-itm-members/'
+		);
+		assert(
+			footerNavCols.links.some((l) => l.href.includes('/new-account-request/')),
+			'Footer Membership column includes /new-account-request/'
+		);
+		assert(
+			footerNavCols.guideLinks.length === 0,
+			'Zero guide-training links present anywhere in footer.site-footer',
+			footerNavCols.guideLinks.length ? JSON.stringify(footerNavCols.guideLinks) : ''
+		);
 		assert(footerNavCols.linkCount >= 10, `Footer contains structured navigation links (Count: ${footerNavCols.linkCount})`);
 
 		const footerBottom = await page.evaluate(() => {
@@ -109,24 +129,45 @@ async function runTests() {
 		assert(sitemapResponse.status() === 200, `Sitemap page returns HTTP 200 (Status: ${sitemapResponse.status()})`);
 
 		const sitemapData = await page.evaluate(() => {
+			const introLead = document.querySelector('.sitemap-intro .lead')?.textContent?.trim() || '';
 			const cards = Array.from(document.querySelectorAll('.sitemap-card')).map((card) => ({
 				badge: card.querySelector('.sitemap-card__badge')?.textContent?.trim(),
 				title: card.querySelector('.sitemap-card__title')?.textContent?.trim(),
 				linksCount: card.querySelectorAll('.sitemap-list li a').length,
+				links: Array.from(card.querySelectorAll('.sitemap-list li a')).map((a) => ({
+					text: a.textContent.trim(),
+					href: a.getAttribute('href') || '',
+				})),
 			}));
+			const guideLinks = Array.from(document.querySelectorAll('a'))
+				.map((a) => ({ text: a.textContent.trim(), href: a.getAttribute('href') || '' }))
+				.filter((item) => item.href.toLowerCase().includes('guide-training') || item.text.toLowerCase().includes('guide training'));
 			return {
+				introLead,
 				cardsCount: cards.length,
 				cards,
+				guideLinks,
 			};
 		});
 
-		assert(sitemapData.cardsCount >= 6, `Sitemap contains organized category cards (Count: ${sitemapData.cardsCount})`);
+		assert(sitemapData.cardsCount === 5, `Sitemap contains 5 organized category cards (Count: ${sitemapData.cardsCount})`);
+		assert(!sitemapData.introLead.toLowerCase().includes('training programs'), `Sitemap intro lead omits deprecated training programs text (${sitemapData.introLead})`);
 		assert(sitemapData.cards.some((c) => c.badge === 'Explore'), 'Sitemap has Explore card');
 		assert(sitemapData.cards.some((c) => c.badge === 'Regions'), 'Sitemap has Regions card');
 		assert(sitemapData.cards.some((c) => c.badge === 'Categories'), 'Sitemap has Categories card');
-		assert(sitemapData.cards.some((c) => c.badge === 'Training'), 'Sitemap has Guide Training card');
+		assert(!sitemapData.cards.some((c) => c.badge === 'Training'), 'Sitemap has zero Guide Training card');
+		assert(
+			sitemapData.guideLinks.length === 0,
+			'Zero guide-training links anywhere on /sitemap/',
+			sitemapData.guideLinks.length ? JSON.stringify(sitemapData.guideLinks) : ''
+		);
 		assert(sitemapData.cards.some((c) => c.badge === 'About ITM'), 'Sitemap has About ITM card');
-		assert(sitemapData.cards.some((c) => c.badge === 'Industry'), 'Sitemap has Industry / Membership card');
+		const membershipCard = sitemapData.cards.find((c) => c.badge === 'Industry' || c.title === 'Membership & Business');
+		assert(Boolean(membershipCard), 'Sitemap has Industry / Membership & Business card');
+		assert(
+			Boolean(membershipCard && membershipCard.links.some((l) => l.href.includes('/explore-indigenous-for-itm-members/'))),
+			'Sitemap Membership & Business card lists /explore-indigenous-for-itm-members/'
+		);
 
 		// Take screenshots
 		console.log('\n--- Capturing Verification Screenshots ---');

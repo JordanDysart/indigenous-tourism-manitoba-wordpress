@@ -16,7 +16,7 @@ get_header();
 
 <div class="page-section constrained-content sitemap-page-section">
 	<div class="sitemap-intro text-center">
-		<p class="lead">Explore the complete index of Indigenous tourism experiences, regional directories, training programs, and membership resources across Manitoba.</p>
+		<p class="lead">Explore the complete index of Indigenous tourism experiences, regional directories, and membership resources across Manitoba.</p>
 	</div>
 
 	<div class="sitemap-grid">
@@ -68,23 +68,7 @@ get_header();
 			</ul>
 		</div>
 
-		<!-- Section 4: Guide Training Program -->
-		<div class="sitemap-card">
-			<div class="sitemap-card__header">
-				<span class="sitemap-card__badge">Training</span>
-				<h2 class="sitemap-card__title">Indigenous Guide Training</h2>
-			</div>
-			<ul class="sitemap-list">
-				<li><a href="<?php echo esc_url( home_url( '/guide-training-program/' ) ); ?>">Program Overview &amp; Hub</a></li>
-				<li><a href="<?php echo esc_url( home_url( '/indigenous-guide-training-program-step-1/' ) ); ?>">Step 1: Foundational Training</a></li>
-				<li><a href="<?php echo esc_url( home_url( '/indigenous-guide-training-program-step-2/' ) ); ?>">Step 2: Practical Field Skills</a></li>
-				<li><a href="<?php echo esc_url( home_url( '/indigenous-guide-training-program-step-3/' ) ); ?>">Step 3: Certification &amp; Workplace Placement</a></li>
-				<li><a href="<?php echo esc_url( home_url( '/indigenous-guide-training-program-more-learning-opportunities/' ) ); ?>">More Learning Opportunities</a></li>
-				<li><a href="<?php echo esc_url( home_url( '/itm-indigenous-guide-training-program-inquiry-form/' ) ); ?>">Program Inquiry &amp; Application Form</a></li>
-			</ul>
-		</div>
-
-		<!-- Section 5: Organization & Leadership -->
+		<!-- Section 4: Organization & Leadership -->
 		<div class="sitemap-card">
 			<div class="sitemap-card__header">
 				<span class="sitemap-card__badge">About ITM</span>
@@ -99,7 +83,7 @@ get_header();
 			</ul>
 		</div>
 
-		<!-- Section 6: Membership & Industry Support -->
+		<!-- Section 5: Membership & Industry Support -->
 		<div class="sitemap-card">
 			<div class="sitemap-card__header">
 				<span class="sitemap-card__badge">Industry</span>
@@ -108,6 +92,7 @@ get_header();
 			<ul class="sitemap-list">
 				<li><a href="<?php echo esc_url( home_url( '/become-a-member/' ) ); ?>">Become a Member</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/member-benefits/' ) ); ?>">Member Benefits &amp; Resources</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/explore-indigenous-for-itm-members/' ) ); ?>">Explore Indigenous for ITM Members</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/new-account-request/' ) ); ?>">New Account Request</a></li>
 			</ul>
 		</div>

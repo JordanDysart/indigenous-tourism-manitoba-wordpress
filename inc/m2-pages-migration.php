@@ -689,6 +689,30 @@ class ITM_M2_Pages_Migration {
 </div>
 <!-- /wp:columns -->
 
+<!-- wp:group {"className":"benefit-card benefit-card--featured-forks"} -->
+<div class="wp-block-group benefit-card benefit-card--featured-forks">
+<!-- wp:html -->
+<span class="benefit-featured-badge">Featured Member Benefit &bull; The Forks Market</span>
+<!-- /wp:html -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Explore Indigenous Event &amp; Showcase Space at The Forks</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Located inside The Forks Market in Winnipeg, Explore Indigenous is a public-facing retail and showcase space created to highlight the offerings of Indigenous Tourism Manitoba members to local, national, and international visitors. As an ITM member benefit, members can request to book the space to host workshops, cultural demonstrations, product launches, and operator pop-ups.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button {"className":"btn btn--primary"} -->
+<div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="/explore-indigenous-for-itm-members/">Explore Member Space &amp; Booking Form &rarr;</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"btn btn--outline"} -->
+<div class="wp-block-button btn btn--outline"><a class="wp-block-button__link wp-element-button" href="/the-forks/">View Public Store Overview</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+
 <!-- wp:group {"className":"page-section constrained-content cta-section text-center","backgroundColor":"off-white","layout":{"type":"constrained","contentSize":"900px"}} -->
 <div class="wp-block-group page-section constrained-content cta-section text-center has-off-white-background-color has-background">
 <!-- wp:heading {"level":2} -->
@@ -1503,7 +1527,8 @@ class ITM_M2_Pages_Migration {
       <p class="contact-name">Taytum</p>
       <p class="contact-role">Ambassador &amp; Space Manager, Indigenous Tourism Manitoba</p>
       <div class="wp-block-buttons">
-        <div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="mailto:ambassadormgr@indigenoustourismmanitoba.ca?subject=Explore%20Indigenous%20Space%20Inquiry">Email ambassadormgr@indigenoustourismmanitoba.ca</a></div>
+        <div class="wp-block-button btn btn--primary"><a class="wp-block-button__link wp-element-button" href="/explore-indigenous-for-itm-members/">Member Event Space &amp; Booking Form &rarr;</a></div>
+        <div class="wp-block-button btn btn--outline"><a class="wp-block-button__link wp-element-button" href="mailto:ambassadormgr@indigenoustourismmanitoba.ca?subject=Explore%20Indigenous%20Space%20Inquiry">Email ambassadormgr@indigenoustourismmanitoba.ca</a></div>
       </div>
     </div>
   </div>
@@ -1519,6 +1544,253 @@ class ITM_M2_Pages_Migration {
 </div>
 </section>
 <!-- /wp:html -->',
+			],
+
+			// 17. Explore Indigenous for ITM Members — Event Space & Booking Form (Page ID 3196)
+			3196 => [
+				'title' => 'Explore Indigenous for ITM Members',
+				'slug'  => 'explore-indigenous-for-itm-members',
+				'content' => '<!-- wp:midflight/hero-block {"backgroundImage":{"url":"/wp-content/uploads/2025/10/Anne_Mulaire_Boutique_2025-2-scaled.jpg"},"showHoopOverlay":true,"overlayOpacity":45,"minHeight":62,"contentAlignment":"center","className":"member-forks-hero"} -->
+<span class="member-forks-hero-badge">ITM Member Benefit &bull; The Forks Market</span>
+<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">Explore Indigenous for ITM Members</h1>
+<p class="has-text-align-center has-white-color has-text-color member-forks-hero-subhead">Our public-facing retail and showcase space inside The Forks Market connects Manitoba’s Indigenous tourism operators and artisans directly with visitors &mdash; and gives ITM members a bookable venue to host events, workshops, demonstrations, and cultural programming.</p>
+<div class="wp-block-buttons is-content-justification-center">
+<div class="wp-block-button btn btn--gold"><a class="wp-block-button__link wp-element-button" href="#booking-request">Request to Book the Space</a></div>
+<div class="wp-block-button btn btn--outline"><a class="wp-block-button__link wp-element-button" href="/become-a-member/">Become an ITM Member</a></div>
+</div>
+<!-- /wp:midflight/hero-block -->
+
+<!-- wp:html -->
+<section class="page-section member-forks-overview-section constrained-content">
+<div class="member-overview-grid">
+  <div class="member-overview-text">
+    <span class="member-forks-section-badge">Member Benefit Overview</span>
+    <h2 class="overview-title">A Public Showcase Built for ITM Members</h2>
+    <p class="overview-lead">Connecting Manitoba’s Indigenous tourism businesses and makers directly with the public inside one of Winnipeg’s busiest year-round destinations.</p>
+    <p class="overview-body">Explore Indigenous at The Forks Market is an open, public-facing retail store and tourism showcase created and managed by Indigenous Tourism Manitoba. Every week, local Winnipeg shoppers, domestic travellers, and international guests step inside to shop authentic handcrafted goods and discover Indigenous experiences across Manitoba &mdash; giving urban, rural, and northern ITM members alike a high-visibility presence in the heart of the city.</p>
+    <div class="member-value-grid">
+      <div class="member-value-card">
+        <div class="value-card-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
+        <h3 class="value-card-title">High-Visibility Forks Location</h3>
+        <p class="value-card-desc">Positioned inside The Forks Market, welcoming steady foot traffic from local residents, tourists, and conference visitors.</p>
+      </div>
+      <div class="member-value-card">
+        <div class="value-card-icon"><i class="bi bi-people" aria-hidden="true"></i></div>
+        <h3 class="value-card-title">Direct Public Engagement</h3>
+        <p class="value-card-desc">An open door to the public where members share stories, demonstrate living culture, and inspire future trip bookings.</p>
+      </div>
+      <div class="member-value-card">
+        <div class="value-card-icon"><i class="bi bi-stars" aria-hidden="true"></i></div>
+        <h3 class="value-card-title">Culturally Grounded Venue</h3>
+        <p class="value-card-desc">Host guests in an intentional Indigenous-led space surrounded by authentic Manitoba artwork, retail crafts, and hospitality.</p>
+      </div>
+      <div class="member-value-card">
+        <div class="value-card-icon"><i class="bi bi-calendar2-check" aria-hidden="true"></i></div>
+        <h3 class="value-card-title">Turnkey Member Support</h3>
+        <p class="value-card-desc">Coordinated scheduling and on-site logistical guidance from ITM’s Ambassador &amp; Space Manager.</p>
+      </div>
+    </div>
+  </div>
+  <div class="member-overview-media">
+    <figure class="showcase-photo-frame">
+      <img src="/wp-content/uploads/2026/11/jordan-stranger-painting-wide-banner.jpg" alt="Live artistic demonstration beside an Indigenous Tourism Manitoba banner inside Explore Indigenous at The Forks Market" width="1024" height="682" loading="lazy" decoding="async" />
+    </figure>
+    <div class="showcase-public-note">
+      <span class="note-label">Open to Visitors &bull; Bookable by Members</span>
+      <p class="note-text">Explore Indigenous welcomes the public to discover member offerings &mdash; while ITM members enjoy priority access to book the space for workshops, launches, and cultural activations.</p>
+    </div>
+  </div>
+</div>
+</section>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<section class="page-section member-forks-formats-section constrained-content">
+<div class="section-header">
+  <span class="member-forks-section-badge member-forks-section-badge--gold">Bookable Event Formats</span>
+  <h2 class="section-title">Ways Members Can Use &amp; Book the Space</h2>
+  <p class="section-subtitle">As an Indigenous Tourism Manitoba member benefit, eligible operators, artisans, and community enterprises can request the space for a wide range of public-facing and industry activations.</p>
+</div>
+<div class="member-formats-grid">
+  <div class="event-format-card event-format-card--featured">
+    <div class="format-card-top">
+      <div class="format-icon-wrap format-icon-wrap--gold"><i class="bi bi-brush" aria-hidden="true"></i></div>
+      <span class="format-tag">Interactive</span>
+    </div>
+    <h3 class="format-title">Hands-On Workshops &amp; Demonstrations</h3>
+    <p class="format-desc">Lead interactive sessions where visitors learn directly from Indigenous makers, artists, and culinary creators.</p>
+    <ul class="format-examples">
+      <li>Beadwork, tufting, carving &amp; traditional crafts</li>
+      <li>Live artist demonstrations &amp; maker sessions</li>
+      <li>Indigenous culinary tastings &amp; tea teachings</li>
+    </ul>
+  </div>
+
+  <div class="event-format-card">
+    <div class="format-card-top">
+      <div class="format-icon-wrap"><i class="bi bi-chat-heart" aria-hidden="true"></i></div>
+      <span class="format-tag">Cultural Exchange</span>
+    </div>
+    <h3 class="format-title">Cultural Storytelling &amp; Programming</h3>
+    <p class="format-desc">Create meaningful moments of connection and shared understanding with Winnipeg locals and travellers visiting The Forks.</p>
+    <ul class="format-examples">
+      <li>Storytelling circles, author readings &amp; talks</li>
+      <li>Acoustic music, drum &amp; cultural presentations</li>
+      <li>Seasonal teachings &amp; heritage programming</li>
+    </ul>
+  </div>
+
+  <div class="event-format-card">
+    <div class="format-card-top">
+      <div class="format-icon-wrap"><i class="bi bi-bag-check" aria-hidden="true"></i></div>
+      <span class="format-tag">Artisan Retail</span>
+    </div>
+    <h3 class="format-title">Product Launches &amp; Artisan Showcases</h3>
+    <p class="format-desc">Spotlight new collections, limited-edition releases, and handcrafted goods with face-to-face customer engagement.</p>
+    <ul class="format-examples">
+      <li>Seasonal apparel, jewellery &amp; art debuts</li>
+      <li>Trunk shows &amp; meet-the-maker weekends</li>
+      <li>Featured print, book &amp; gift signings</li>
+    </ul>
+  </div>
+
+  <div class="event-format-card">
+    <div class="format-card-top">
+      <div class="format-icon-wrap"><i class="bi bi-compass" aria-hidden="true"></i></div>
+      <span class="format-tag">Destination Promo</span>
+    </div>
+    <h3 class="format-title">Tourism Operator Pop-Ups &amp; Itinerary Promotion</h3>
+    <p class="format-desc">Bring northern, rural, and regional Manitoba experiences directly to travellers planning their next adventure.</p>
+    <ul class="format-examples">
+      <li>Lodge, outfitter &amp; guided tour pop-up booths</li>
+      <li>Seasonal package &amp; regional itinerary showcases</li>
+      <li>Direct trip-planning conversations with guests</li>
+    </ul>
+  </div>
+
+  <div class="event-format-card">
+    <div class="format-card-top">
+      <div class="format-icon-wrap"><i class="bi bi-people-fill" aria-hidden="true"></i></div>
+      <span class="format-tag">Collaboration</span>
+    </div>
+    <h3 class="format-title">Community &amp; Industry Gatherings</h3>
+    <p class="format-desc">Convene partners, media, and fellow tourism operators in an intimate setting celebrating Indigenous entrepreneurship.</p>
+    <ul class="format-examples">
+      <li>Small partner receptions &amp; media previews</li>
+      <li>Collaborative operator announcements</li>
+      <li>Tourism industry &amp; community networking</li>
+    </ul>
+  </div>
+</div>
+</section>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<section class="page-section member-forks-guidelines-section constrained-content">
+<div class="guidelines-split-grid">
+  <div class="venue-details-card">
+    <span class="venue-badge">Venue Details</span>
+    <h3 class="venue-card-title">Location &amp; Standard Operating Hours</h3>
+    <div class="venue-hours-box">
+      <p class="hours-heading">Standard Public Store Hours</p>
+      <p class="hours-days">Thursday &ndash; Sunday</p>
+      <p class="hours-time">10:00 AM &ndash; 6:00 PM</p>
+      <p class="hours-note">*Extended seasonal hours or special event windows are coordinated directly with our Space Manager based on Forks Market guidelines.</p>
+    </div>
+    <ul class="venue-detail-list">
+      <li><i class="bi bi-pin-map-fill" aria-hidden="true"></i> <span><strong>Location:</strong> Inside The Forks Market, 1 Forks Market Rd, Winnipeg, MB R3C 4L9</span></li>
+      <li><i class="bi bi-person-check-fill" aria-hidden="true"></i> <span><strong>Eligibility:</strong> Event booking privileges are available as an ITM member benefit for Indigenous tourism operators, artisans, and organizations.</span></li>
+      <li><i class="bi bi-sliders" aria-hidden="true"></i> <span><strong>Setup Coordination:</strong> Flexible display, table, and seating configurations tailored to intimate workshops, pop-ups, and demonstrations.</span></li>
+    </ul>
+    <div class="venue-card-actions">
+      <div class="wp-block-button btn btn--gold"><a class="wp-block-button__link wp-element-button" href="/the-forks/">View Public Store Page &rarr;</a></div>
+    </div>
+  </div>
+
+  <div class="booking-process-card">
+    <span class="member-forks-section-badge">Booking Guidelines</span>
+    <h3 class="process-card-title">How Member Booking Requests Work</h3>
+    <p class="process-card-intro">To ensure every activation runs smoothly alongside retail operations inside The Forks Market, our team coordinates each booking step-by-step with participating members:</p>
+    <ol class="booking-steps-list">
+      <li>
+        <span class="step-number-circle">1</span>
+        <div class="step-body">
+          <h4>Submit Your Event Request</h4>
+          <p>Complete the booking request form below with your preferred date(s), time window, event format, and space setup needs.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-number-circle">2</span>
+        <div class="step-body">
+          <h4>Availability &amp; Logistics Review</h4>
+          <p>Space Manager Taytum reviews member status, store calendar availability, and Forks Market requirements, following up within 2&ndash;3 business days.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-number-circle">3</span>
+        <div class="step-body">
+          <h4>Confirm Schedule &amp; Showcase Details</h4>
+          <p>Finalize arrival times, table/layout arrangements, and promotional details to welcome visitors to your event.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+</section>
+<!-- /wp:html -->
+
+<!-- wp:group {"anchor":"booking-request","className":"page-section member-forks-booking-section constrained-content"} -->
+<div id="booking-request" class="wp-block-group page-section member-forks-booking-section constrained-content">
+<!-- wp:html -->
+<div class="section-header">
+  <span class="member-forks-section-badge">Request Event Dates</span>
+  <h2 class="section-title">Event Space Booking Request Form</h2>
+  <p class="section-subtitle">Ready to host a workshop, cultural showcase, product launch, or operator pop-up at Explore Indigenous? Submit your request below and our Space Manager will connect with you.</p>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:group {"className":"member-booking-layout"} -->
+<div class="wp-block-group member-booking-layout">
+<!-- wp:group {"className":"member-booking-main"} -->
+<div class="wp-block-group member-booking-main">
+<!-- wp:shortcode -->
+[itm_member_space_booking_form]
+<!-- /wp:shortcode -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<aside class="member-booking-sidebar" aria-label="Membership Eligibility and Space Manager Contact">
+  <div class="prospective-member-card">
+    <span class="prospective-badge">Not Yet an ITM Member?</span>
+    <h3 class="prospective-title">Unlock Member Event Space Privileges</h3>
+    <p class="prospective-body">Booking Explore Indigenous at The Forks Market to host events and showcases is one of many benefits available to Indigenous Tourism Manitoba members. Indigenous tourism businesses, artisans, and community organizations across Manitoba are invited to join our growing network.</p>
+    <div class="prospective-actions">
+      <div class="wp-block-button btn btn--gold"><a class="wp-block-button__link wp-element-button" href="/become-a-member/">Become an ITM Member</a></div>
+      <div class="wp-block-button btn btn--outline"><a class="wp-block-button__link wp-element-button" href="/member-benefits/">Explore All Member Benefits</a></div>
+    </div>
+  </div>
+
+  <div class="space-manager-sidebar-card">
+    <div class="manager-profile-row">
+      <img src="/wp-content/uploads/2026/03/Taytum-Assinaboine-headshot-2025-264x300.jpg" alt="Taytum Assinaboine, Explore Indigenous Space Manager at Indigenous Tourism Manitoba" width="264" height="300" loading="lazy" decoding="async" class="manager-avatar" />
+      <div class="manager-meta">
+        <h3 class="manager-name">Taytum Assinaboine</h3>
+        <p class="manager-role">Ambassador &amp; Space Manager, Explore Indigenous</p>
+      </div>
+    </div>
+    <p class="manager-note">Have questions about space dimensions, seasonal dates, or retail consignment opportunities before submitting a request? Reach out directly:</p>
+    <a class="manager-email-link" href="mailto:ambassadormgr@indigenoustourismmanitoba.ca?subject=Explore%20Indigenous%20Member%20Space%20Inquiry">
+      <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+      <span>ambassadormgr@indigenoustourismmanitoba.ca</span>
+    </a>
+  </div>
+</aside>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->',
 			],
 ];
 	}
@@ -1555,6 +1827,20 @@ class ITM_M2_Pages_Migration {
 				clean_post_cache( $id );
 				$updated_count++;
 				$log[] = "Updated Page ID {$id} ({$data['slug']}) with modernized Gutenberg block content.";
+			} elseif ( 'explore-indigenous-for-itm-members' === $data['slug'] ) {
+				$inserted_id = wp_insert_post( [
+					'post_title'     => $data['title'],
+					'post_name'      => $data['slug'],
+					'post_content'   => $data['content'],
+					'post_status'    => 'publish',
+					'post_type'      => 'page',
+					'comment_status' => 'closed',
+					'ping_status'    => 'closed',
+				] );
+				if ( $inserted_id && ! is_wp_error( $inserted_id ) ) {
+					$updated_count++;
+					$log[] = "Created Page ID {$inserted_id} ({$data['slug']}) with modernized Gutenberg block content.";
+				}
 			} else {
 				$log[] = "Warning: Page ID {$id} ({$data['slug']}) not found in database.";
 			}

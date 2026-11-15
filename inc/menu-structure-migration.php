@@ -3,7 +3,7 @@
  * Mega Menu Structure Migration
  *
  * Configures the Primary Menu with multi-column hierarchy for Explore,
- * About ITM, Guide Training Program, and Membership.
+ * About ITM, and Membership.
  *
  * @package kiwatinook
  */
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class ITM_Menu_Structure_Migration {
 
-	const MENU_VERSION = '1.1.0';
+	const MENU_VERSION = '1.2.0';
 
 	public static function init() {
 		// Menu migrations are completely disabled for production.
@@ -182,72 +182,7 @@ class ITM_Menu_Structure_Migration {
 		}
 
 		// ---------------------------------------------------------------------
-		// 3. Guide Training Program (Top-Level)
-		// ---------------------------------------------------------------------
-		$guide_parent_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Guide Training Program', 'kiwatinook' ),
-			'menu-item-url'     => '/guide-training-program/',
-			'menu-item-type'    => 'custom',
-			'menu-item-status'  => 'publish',
-			'menu-item-position'=> $order++,
-		] );
-
-		// Pathway Column
-		$guide_pathway_col_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Training Pathway', 'kiwatinook' ),
-			'menu-item-url'     => '#',
-			'menu-item-type'    => 'custom',
-			'menu-item-status'  => 'publish',
-			'menu-item-parent-id' => $guide_parent_id,
-			'menu-item-position'=> $order++,
-		] );
-
-		$guide_steps = [
-			[ 'title' => __( 'Step 1: Foundational Training', 'kiwatinook' ), 'url' => '/indigenous-guide-training-program-step-1/' ],
-			[ 'title' => __( 'Step 2: Practical Skills', 'kiwatinook' ), 'url' => '/indigenous-guide-training-program-step-2/' ],
-			[ 'title' => __( 'Step 3: Certification & Placement', 'kiwatinook' ), 'url' => '/indigenous-guide-training-program-step-3/' ],
-		];
-
-		foreach ( $guide_steps as $step ) {
-			wp_update_nav_menu_item( $menu_id, 0, [
-				'menu-item-title'   => $step['title'],
-				'menu-item-url'     => $step['url'],
-				'menu-item-type'    => 'custom',
-				'menu-item-status'  => 'publish',
-				'menu-item-parent-id' => $guide_pathway_col_id,
-				'menu-item-position'=> $order++,
-			] );
-		}
-
-		// Opportunities Column
-		$guide_opp_col_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Opportunities & Inquiry', 'kiwatinook' ),
-			'menu-item-url'     => '#',
-			'menu-item-type'    => 'custom',
-			'menu-item-status'  => 'publish',
-			'menu-item-parent-id' => $guide_parent_id,
-			'menu-item-position'=> $order++,
-		] );
-
-		$guide_opps = [
-			[ 'title' => __( 'Program Overview', 'kiwatinook' ), 'url' => '/guide-training-program/' ],
-			[ 'title' => __( 'More Learning Opportunities', 'kiwatinook' ), 'url' => '/indigenous-guide-training-program-more-learning-opportunities/' ],
-			[ 'title' => __( 'Inquire & Register', 'kiwatinook' ), 'url' => '/itm-indigenous-guide-training-program-inquiry-form/' ],
-		];
-
-		foreach ( $guide_opps as $opp ) {
-			wp_update_nav_menu_item( $menu_id, 0, [
-				'menu-item-title'   => $opp['title'],
-				'menu-item-url'     => $opp['url'],
-				'menu-item-type'    => 'custom',
-				'menu-item-status'  => 'publish',
-				'menu-item-parent-id' => $guide_opp_col_id,
-				'menu-item-position'=> $order++,
-			] );
-		}
-
-		// ---------------------------------------------------------------------
-		// 4. Membership (Top-Level)
+		// 3. Membership (Top-Level with Columns: Membership, Membership Benefits)
 		// ---------------------------------------------------------------------
 		$member_parent_id = wp_update_nav_menu_item( $menu_id, 0, [
 			'menu-item-title'   => __( 'Membership', 'kiwatinook' ),
@@ -257,34 +192,60 @@ class ITM_Menu_Structure_Migration {
 			'menu-item-position'=> $order++,
 		] );
 
+		// Column 1: Membership
 		$member_col_id = wp_update_nav_menu_item( $menu_id, 0, [
-			'menu-item-title'   => __( 'Membership', 'kiwatinook' ),
-			'menu-item-url'     => '#',
-			'menu-item-type'    => 'custom',
-			'menu-item-status'  => 'publish',
+			'menu-item-title'     => __( 'Membership', 'kiwatinook' ),
+			'menu-item-url'       => '#',
+			'menu-item-type'      => 'custom',
+			'menu-item-status'    => 'publish',
 			'menu-item-parent-id' => $member_parent_id,
-			'menu-item-position'=> $order++,
+			'menu-item-position'  => $order++,
 		] );
 
 		$member_links = [
 			[ 'title' => __( 'Become a Member', 'kiwatinook' ), 'url' => '/become-a-member/' ],
-			[ 'title' => __( 'Member Benefits', 'kiwatinook' ), 'url' => '/member-benefits/' ],
 			[ 'title' => __( 'New Account Request', 'kiwatinook' ), 'url' => '/new-account-request/' ],
 		];
 
 		foreach ( $member_links as $mlink ) {
 			wp_update_nav_menu_item( $menu_id, 0, [
-				'menu-item-title'   => $mlink['title'],
-				'menu-item-url'     => $mlink['url'],
-				'menu-item-type'    => 'custom',
-				'menu-item-status'  => 'publish',
+				'menu-item-title'     => $mlink['title'],
+				'menu-item-url'       => $mlink['url'],
+				'menu-item-type'      => 'custom',
+				'menu-item-status'    => 'publish',
 				'menu-item-parent-id' => $member_col_id,
-				'menu-item-position'=> $order++,
+				'menu-item-position'  => $order++,
+			] );
+		}
+
+		// Column 2: Membership Benefits
+		$member_benefits_col_id = wp_update_nav_menu_item( $menu_id, 0, [
+			'menu-item-title'     => __( 'Membership Benefits', 'kiwatinook' ),
+			'menu-item-url'       => '#',
+			'menu-item-type'      => 'custom',
+			'menu-item-status'    => 'publish',
+			'menu-item-parent-id' => $member_parent_id,
+			'menu-item-position'  => $order++,
+		] );
+
+		$member_benefits_links = [
+			[ 'title' => __( 'Member Benefits', 'kiwatinook' ), 'url' => '/member-benefits/' ],
+			[ 'title' => __( 'Explore Indigenous for ITM Members', 'kiwatinook' ), 'url' => '/explore-indigenous-for-itm-members/' ],
+		];
+
+		foreach ( $member_benefits_links as $mblink ) {
+			wp_update_nav_menu_item( $menu_id, 0, [
+				'menu-item-title'     => $mblink['title'],
+				'menu-item-url'       => $mblink['url'],
+				'menu-item-type'      => 'custom',
+				'menu-item-status'    => 'publish',
+				'menu-item-parent-id' => $member_benefits_col_id,
+				'menu-item-position'  => $order++,
 			] );
 		}
 
 		// ---------------------------------------------------------------------
-		// 5. Contact Us (Direct Top-Level Link)
+		// 4. Contact Us (Direct Top-Level Link)
 		// ---------------------------------------------------------------------
 		wp_update_nav_menu_item( $menu_id, 0, [
 			'menu-item-title'   => __( 'Contact Us', 'kiwatinook' ),

@@ -279,22 +279,6 @@ class GAC_Menu_Walker extends Walker_Nav_Menu
                 ];
                 break;
 
-            case 'guide-training-program':
-            case 'guide-training':
-                $image_url = wp_get_attachment_image_url(2975, 'large');
-                if (! $image_url) {
-                    $image_url = '/wp-content/uploads/2026/03/20250704-ReannaKhan540.jpg';
-                }
-                $featured = [
-                    'badge'       => __('Training Pathway', 'kiwatinook'),
-                    'title'       => __('Become a Certified Guide', 'kiwatinook'),
-                    'description' => __('Tuition-free, culturally-grounded training program with hands-on wilderness modules and paid placements.', 'kiwatinook'),
-                    'image_url'   => $image_url,
-                    'button_text' => __('Inquire & Apply', 'kiwatinook'),
-                    'button_url'  => '/itm-indigenous-guide-training-program-inquiry-form/',
-                ];
-                break;
-
             case 'membership':
                 $image_url = wp_get_attachment_image_url(2716, 'large');
                 if (! $image_url) {

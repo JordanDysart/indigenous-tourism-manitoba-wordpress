@@ -306,6 +306,11 @@ require get_template_directory() . '/inc/newsletter.php';
  */
 require get_template_directory() . '/inc/newsletter-sync.php';
 
+/**
+ * Modular Interim Event Space Booking Form for ITM Members.
+ */
+require get_template_directory() . '/inc/member-space-booking-form.php';
+
 function kiwatinook_theme_setup()
 {
 	add_theme_support('align-wide');

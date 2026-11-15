@@ -87,9 +87,26 @@ async function runMobileNavTests() {
       assert(isHamburgerActive, 'Hamburger has .is-active class');
       assert(openedHamburgerAria === 'true', 'Hamburger aria-expanded is "true"');
 
-      // 3. Inspect menu parents and accordion toggle buttons
+      // 3. Inspect menu parents, absence of Guide Training links, and accordion toggle buttons
+      const mobileGuideLinks = await page.$$eval('.main-navigation a', els =>
+        els
+          .map(a => ({ text: a.textContent.trim(), href: a.getAttribute('href') || '' }))
+          .filter(item => item.href.toLowerCase().includes('guide-training') || item.text.toLowerCase().includes('guide training'))
+      );
+      assert(
+        mobileGuideLinks.length === 0,
+        `Zero guide-training links in .main-navigation at ${width}px`,
+        mobileGuideLinks.length ? JSON.stringify(mobileGuideLinks) : ''
+      );
+
       const parentCount = await page.$$eval('.mega-menu-parent, .menu-item-has-children', els => els.length);
-      console.log(`  ℹ️ Found ${parentCount} menu items with submenus.`);
+      const topLevelParentCount = await page.$$eval('.nav-menu > li.mega-menu-parent', els => els.length);
+      console.log(`  ℹ️ Found ${topLevelParentCount} top-level submenu parents (${parentCount} total items with children).`);
+      assert(
+        topLevelParentCount === 3,
+        `Expected 3 top-level submenu parents (About ITM, Explore, Membership) at ${width}px`,
+        `Found: ${topLevelParentCount}`
+      );
 
       if (parentCount > 0) {
         // Test first menu parent toggle via chevron button
@@ -141,6 +158,34 @@ async function runMobileNavTests() {
           assert(isSecondOpen, 'Second menu item opened via parent link click');
           assert(wasFirstClosed, 'Single Active Accordion: First menu item automatically closed');
           assert(firstAriaAfterSwitch === 'false', 'First chevron button aria-expanded reset to "false"');
+
+          // 4b. Open Membership parent (3rd top-level parent) on mobile and verify 2 subgroup headings & links
+          const topParents = await page.$$('.nav-menu > li.mega-menu-parent');
+          if (topParents[2]) {
+            const membershipToggle = await topParents[2].$('.submenu-toggle-btn');
+            if (membershipToggle) {
+              await membershipToggle.click();
+              await page.waitForTimeout(300);
+            }
+            const mobileMembershipCheck = await page.evaluate(el => {
+              const isOpen = el.classList.contains('open');
+              const headings = Array.from(el.querySelectorAll('.mega-menu-column-heading')).map(h => h.textContent.trim());
+              const hrefs = Array.from(el.querySelectorAll('ul.nested-menu a')).map(a => a.getAttribute('href') || '');
+              return { isOpen, headings, hrefs };
+            }, topParents[2]);
+
+            assert(mobileMembershipCheck.isOpen, `Mobile Membership accordion opens cleanly at ${width}px`);
+            assert(
+              mobileMembershipCheck.headings.includes('Membership') &&
+                mobileMembershipCheck.headings.includes('Membership Benefits'),
+              `Mobile Membership accordion displays "Membership" and "Membership Benefits" subgroups at ${width}px`,
+              mobileMembershipCheck.headings.join(' | ')
+            );
+            assert(
+              mobileMembershipCheck.hrefs.some(h => h.includes('/explore-indigenous-for-itm-members/')),
+              `Mobile Membership accordion includes /explore-indigenous-for-itm-members/ at ${width}px`
+            );
+          }
         }
 
         // 5. Test close drawer resets all accordions
@@ -185,6 +230,17 @@ async function runMobileNavTests() {
   try {
     await desktopPage.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
     assert(desktopErrors.length === 0, 'Zero SyntaxErrors or navigation errors during desktop page load at 1280px', desktopErrors.join('; '));
+
+    const desktopGuideLinks = await desktopPage.$$eval('.main-navigation a', els =>
+      els
+        .map(a => ({ text: a.textContent.trim(), href: a.getAttribute('href') || '' }))
+        .filter(item => item.href.toLowerCase().includes('guide-training') || item.text.toLowerCase().includes('guide training'))
+    );
+    assert(
+      desktopGuideLinks.length === 0,
+      'Zero guide-training links in .main-navigation on desktop at 1280px',
+      desktopGuideLinks.length ? JSON.stringify(desktopGuideLinks) : ''
+    );
 
     const firstMenuParent = await desktopPage.$('.mega-menu-parent, .menu-item-has-children');
     if (firstMenuParent) {
@@ -237,18 +293,22 @@ async function runMobileNavTests() {
         const featured = parentEl.querySelector('.mega-menu-featured');
         const contentStyle = content ? window.getComputedStyle(content) : null;
         const listStyle = columnsList ? window.getComputedStyle(columnsList) : null;
+        const contentRect = content ? content.getBoundingClientRect() : null;
         const colRect = col ? col.getBoundingClientRect() : null;
         const featuredRect = featured ? featured.getBoundingClientRect() : null;
+
+        const leftSpacePx = contentRect && colRect ? Math.round(colRect.left - contentRect.left) : null;
+        const rightSpaceToFeaturedPx = colRect && featuredRect ? Math.round(featuredRect.left - colRect.right) : null;
 
         return {
           title,
           hasCols1Class: content ? content.classList.contains('mega-menu-cols-1') : false,
           justifyContent: contentStyle ? contentStyle.justifyContent : null,
-          gapCss: contentStyle ? contentStyle.columnGap || contentStyle.gap : null,
+          listJustifyContent: listStyle ? listStyle.justifyContent : null,
           listFlexGrow: listStyle ? listStyle.flexGrow : null,
           colWidth: colRect ? Math.round(colRect.width) : null,
-          horizontalGapPx:
-            colRect && featuredRect ? Math.round(featuredRect.left - colRect.right) : null,
+          leftSpacePx,
+          rightSpaceToFeaturedPx,
           panelBottom: parentEl.querySelector('.mega-menu-panel')
             ? Math.ceil(parentEl.querySelector('.mega-menu-panel').getBoundingClientRect().bottom)
             : 520,
@@ -260,13 +320,13 @@ async function runMobileNavTests() {
         `1-column mega menu ("${singleColMetrics.title}") has .mega-menu-cols-1 class`
       );
       assert(
-        singleColMetrics.justifyContent === 'flex-end',
-        `1-column mega menu ("${singleColMetrics.title}") computed justify-content is "flex-end"`,
-        `got: ${singleColMetrics.justifyContent}`
+        singleColMetrics.justifyContent === 'space-between' && singleColMetrics.listJustifyContent === 'center',
+        `1-column mega menu ("${singleColMetrics.title}") centers ul.mega-menu-columns while keeping featured card right-anchored`,
+        `content: ${singleColMetrics.justifyContent}, list: ${singleColMetrics.listJustifyContent}`
       );
       assert(
-        singleColMetrics.listFlexGrow === '0',
-        `1-column ul.mega-menu-columns does not stretch (flex-grow: 0)`,
+        singleColMetrics.listFlexGrow === '1',
+        `1-column ul.mega-menu-columns fills left region (flex-grow: 1) for centering`,
         `got: ${singleColMetrics.listFlexGrow}`
       );
       assert(
@@ -275,11 +335,11 @@ async function runMobileNavTests() {
         `got: ${singleColMetrics.colWidth}px`
       );
       assert(
-        singleColMetrics.horizontalGapPx !== null &&
-          singleColMetrics.horizontalGapPx >= 48 &&
-          singleColMetrics.horizontalGapPx <= 120,
-        `1-column horizontal gap to featured card is compact (<= 120px)`,
-        `got: ${singleColMetrics.horizontalGapPx}px`
+        singleColMetrics.leftSpacePx !== null &&
+          singleColMetrics.rightSpaceToFeaturedPx !== null &&
+          Math.abs(singleColMetrics.leftSpacePx - singleColMetrics.rightSpaceToFeaturedPx) <= 4,
+        `1-column lone column is balanced/centered in space left of featured card`,
+        `left: ${singleColMetrics.leftSpacePx}px, right-to-card: ${singleColMetrics.rightSpaceToFeaturedPx}px`
       );
 
       // Capture verification screenshot of open 1-column mega menu dropdown
@@ -346,6 +406,106 @@ async function runMobileNavTests() {
         `${multi.colCount}-column "${multi.title}" mega menu retains justify-content: space-between`,
         `got: ${multi.justifyContent}`
       );
+    }
+
+    // Explicit Membership 2-Column Mega Menu Hierarchy & Hover Verification
+    const membershipHandle = await desktopPage.evaluateHandle(() => {
+      const parents = Array.from(document.querySelectorAll('.nav-menu > li.mega-menu-parent'));
+      return (
+        parents.find(li => {
+          const text = li.querySelector(':scope > a, :scope > .menu-item')?.textContent?.trim() || '';
+          return text === 'Membership';
+        }) || null
+      );
+    });
+    const membershipEl = membershipHandle.asElement();
+    assert(membershipEl !== null, 'Found top-level "Membership" mega menu parent on desktop');
+
+    if (membershipEl) {
+      await membershipEl.hover();
+      await desktopPage.waitForTimeout(300);
+
+      const membershipDetails = await desktopPage.evaluate(parentEl => {
+        const content = parentEl.querySelector('.mega-menu-content');
+        const contentStyle = content ? window.getComputedStyle(content) : null;
+        const columns = Array.from(parentEl.querySelectorAll('li.mega-menu-column')).map(col => ({
+          heading: col.querySelector('.mega-menu-column-heading')?.textContent?.trim() || '',
+          links: Array.from(col.querySelectorAll('ul.nested-menu a')).map(a => ({
+            text: a.textContent.trim(),
+            href: a.getAttribute('href') || '',
+          })),
+        }));
+        const featuredTitle = parentEl.querySelector('.mega-menu-featured-title')?.textContent?.trim() || '';
+        const panelBottom = parentEl.querySelector('.mega-menu-panel')
+          ? Math.ceil(parentEl.querySelector('.mega-menu-panel').getBoundingClientRect().bottom)
+          : 520;
+
+        return {
+          hasCols2Class: content ? content.classList.contains('mega-menu-cols-2') : false,
+          justifyContent: contentStyle ? contentStyle.justifyContent : null,
+          columns,
+          featuredTitle,
+          panelBottom,
+        };
+      }, membershipEl);
+
+      assert(
+        membershipDetails.hasCols2Class && membershipDetails.columns.length === 2,
+        'Desktop "Membership" mega menu renders .mega-menu-cols-2 with 2 subgroup columns',
+        `Columns: ${membershipDetails.columns.length}`
+      );
+      assert(
+        membershipDetails.justifyContent === 'space-between',
+        'Desktop "Membership" mega menu computed justify-content is "space-between"',
+        `got: ${membershipDetails.justifyContent}`
+      );
+
+      const col1 = membershipDetails.columns[0];
+      const col2 = membershipDetails.columns[1];
+
+      assert(
+        Boolean(col1 && col1.heading === 'Membership' && col2 && col2.heading === 'Membership Benefits'),
+        'Desktop "Membership" mega menu renders column headings "Membership" and "Membership Benefits"',
+        `got: ${membershipDetails.columns.map(c => c.heading).join(' | ')}`
+      );
+
+      if (col1) {
+        const col1Hrefs = col1.links.map(l => l.href);
+        assert(
+          col1Hrefs.some(h => h.includes('/become-a-member/')) &&
+            col1Hrefs.some(h => h.includes('/new-account-request/')) &&
+            !col1Hrefs.some(h => h.includes('/member-benefits/')),
+          'Column 1 ("Membership") contains Become a Member and New Account Request (Member Benefits moved out)',
+          col1Hrefs.join(', ')
+        );
+      }
+
+      if (col2) {
+        const col2Hrefs = col2.links.map(l => l.href);
+        assert(
+          col2Hrefs.some(h => h.includes('/member-benefits/')) &&
+            col2Hrefs.some(h => h.includes('/explore-indigenous-for-itm-members/')),
+          'Column 2 ("Membership Benefits") contains /member-benefits/ and /explore-indigenous-for-itm-members/',
+          col2Hrefs.join(', ')
+        );
+      }
+
+      assert(
+        membershipDetails.featuredTitle.length > 0,
+        'Desktop "Membership" mega menu renders right-side featured showcase card',
+        membershipDetails.featuredTitle
+      );
+
+      const membershipShotPath = path.join(screenshotsDir, 'mega-menu-membership-2col-desktop.png');
+      const clipHeight = Math.min(800, Math.max(480, membershipDetails.panelBottom + 32));
+      await desktopPage.screenshot({
+        path: membershipShotPath,
+        clip: { x: 0, y: 0, width: 1280, height: clipHeight },
+      });
+      console.log(`  📸 Saved 2-column Membership mega menu screenshot: ${membershipShotPath}`);
+
+      await desktopPage.keyboard.press('Escape');
+      await desktopPage.waitForTimeout(200);
     }
   } catch (err) {
     console.error('Error during desktop navigation test:', err.message);

@@ -1,0 +1,1197 @@
+@import (reference) '../global/_variables.less';
+@import (reference) '../global/_mixins.less';
+
+// =============================================================================
+// Explore Indigenous for ITM Members — Event Space & Booking Form Page
+// (/explore-indigenous-for-itm-members/) + Cross-Page Featured Benefit Card
+// =============================================================================
+
+// Hero enhancements specific to Member Forks page
+.hero-block.member-forks-hero {
+  .member-forks-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background: rgba(224, 172, 15, 0.22);
+    border: 1px solid @color-gold;
+    color: @color-gold;
+    border-radius: @radius-pill;
+    font-family: @font-secondary;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+  }
+
+  .member-forks-hero-subhead {
+    font-size: 1.12rem;
+    max-width: 780px;
+    margin: 0 auto 28px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+
+    .breakpoint(@breakpoint-md, {
+      font-size: 1.2rem;
+    });
+  }
+
+  .wp-block-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+
+    .wp-block-button.btn--outline .wp-block-button__link {
+      color: #ffffff !important;
+      border: 2px solid rgba(255, 255, 255, 0.85) !important;
+      background-color: rgba(33, 43, 54, 0.4) !important;
+
+      &:hover,
+      &:focus {
+        background-color: #ffffff !important;
+        color: @color-dark !important;
+        border-color: #ffffff !important;
+      }
+    }
+
+    @media (max-width: 479px) {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+
+      .wp-block-button,
+      .wp-block-button__link {
+        width: 100%;
+        white-space: normal;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Shared pill badge for sections on the Member Forks page
+.member-forks-section-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(218, 82, 37, 0.1);
+  border: 1px solid rgba(218, 82, 37, 0.25);
+  color: @color-orange;
+  border-radius: @radius-pill;
+  font-family: @font-secondary;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+
+  &--gold {
+    background: rgba(224, 172, 15, 0.18);
+    border-color: rgba(224, 172, 15, 0.45);
+    color: #8a6200;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Section 1: Public Showcase Built for ITM Members (Overview & Value Pillars)
+// -----------------------------------------------------------------------------
+.member-forks-overview-section {
+  padding: 64px 0 56px;
+  background-color: #ffffff;
+
+  .member-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+
+    .breakpoint(@breakpoint-lg, {
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 52px;
+    });
+  }
+
+  .member-overview-text {
+    min-width: 0;
+
+    .overview-title {
+      font-family: @font-secondary;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: @color-dark;
+      line-height: 1.25;
+      margin: 0 0 16px;
+
+      .breakpoint(@breakpoint-md, {
+        font-size: 2.55rem;
+      });
+    }
+
+    .overview-lead {
+      font-family: @font-primary;
+      font-size: 1.14rem;
+      font-weight: 600;
+      color: @color-primary;
+      line-height: 1.55;
+      margin: 0 0 16px;
+    }
+
+    .overview-body {
+      font-size: 1rem;
+      color: @color-body-text;
+      line-height: 1.68;
+      margin: 0 0 28px;
+    }
+  }
+
+  .member-value-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+
+    .breakpoint(@breakpoint-sm, {
+      grid-template-columns: repeat(2, 1fr);
+    });
+  }
+
+  .member-value-card {
+    background: @color-off-white;
+    border: 1px solid rgba(145, 158, 171, 0.22);
+    border-radius: @radius-md;
+    padding: 20px 22px;
+    min-width: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      border-color: @color-gold;
+    }
+
+    .value-card-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: @radius-full;
+      background: rgba(224, 172, 15, 0.16);
+      color: @color-gold-dark;
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      flex-shrink: 0;
+    }
+
+    .value-card-title {
+      font-family: @font-secondary;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: @color-dark;
+      margin: 0 0 6px;
+    }
+
+    .value-card-desc {
+      font-size: 0.92rem;
+      color: @color-body-text;
+      line-height: 1.52;
+      margin: 0;
+    }
+  }
+
+  .member-overview-media {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    .showcase-photo-frame {
+      margin: 0;
+      border-radius: @radius-lg;
+      overflow: hidden;
+      overflow: clip;
+      box-shadow: 0 16px 38px rgba(33, 43, 54, 0.12);
+      border: 1px solid rgba(145, 158, 171, 0.2);
+      aspect-ratio: 3 / 2;
+      background: @color-dark;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .showcase-public-note {
+      background: #ffffff;
+      border: 1px solid rgba(224, 172, 15, 0.45);
+      border-left: 4px solid @color-orange;
+      border-radius: @radius-md;
+      padding: 18px 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+      .note-label {
+        display: inline-block;
+        font-family: @font-secondary;
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: @color-orange;
+        margin-bottom: 6px;
+      }
+
+      .note-text {
+        font-size: 0.93rem;
+        color: @color-dark;
+        line-height: 1.5;
+        margin: 0;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Section 2: Ways Members Can Use & Book the Space (5 Event Formats Grid)
+// -----------------------------------------------------------------------------
+.member-forks-formats-section {
+  padding: 72px 0;
+  background-color: @color-off-white;
+
+  .section-header {
+    max-width: 760px;
+    margin: 0 auto 46px;
+    text-align: center;
+
+    .section-title {
+      font-family: @font-secondary;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: @color-dark;
+      margin: 0 0 14px;
+
+      .breakpoint(@breakpoint-md, {
+        font-size: 2.55rem;
+      });
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: @color-mid-gray;
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+
+  .member-formats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    .breakpoint(@breakpoint-sm, {
+      grid-template-columns: repeat(2, 1fr);
+    });
+
+    .breakpoint(@breakpoint-lg, {
+      grid-template-columns: repeat(3, 1fr);
+    });
+  }
+
+  .event-format-card {
+    background: #ffffff;
+    border-radius: @radius-lg;
+    border: 1px solid rgba(145, 158, 171, 0.22);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+      border-color: @color-orange;
+    }
+
+    &--featured {
+      border-color: @color-gold;
+      background: linear-gradient(180deg, rgba(224, 172, 15, 0.05) 0%, #ffffff 100%);
+    }
+
+    .format-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .format-icon-wrap {
+      width: 52px;
+      height: 52px;
+      border-radius: @radius-full;
+      background: rgba(218, 82, 37, 0.1);
+      color: @color-orange;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+
+      &--gold {
+        background: rgba(224, 172, 15, 0.2);
+        color: @color-gold-dark;
+      }
+    }
+
+    .format-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      background: @color-off-white;
+      border: 1px solid rgba(145, 158, 171, 0.25);
+      border-radius: @radius-pill;
+      font-family: @font-secondary;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: @color-dark;
+      letter-spacing: 0.03em;
+    }
+
+    .format-title {
+      font-family: @font-secondary;
+      font-size: 1.28rem;
+      font-weight: 700;
+      color: @color-dark;
+      margin: 0 0 10px;
+      line-height: 1.3;
+    }
+
+    .format-desc {
+      font-size: 0.95rem;
+      color: @color-body-text;
+      line-height: 1.58;
+      margin: 0 0 16px;
+    }
+
+    .format-examples {
+      list-style: none;
+      margin: auto 0 0;
+      padding: 14px 0 0;
+      border-top: 1px solid rgba(145, 158, 171, 0.18);
+
+      li {
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: @color-dark;
+        margin-bottom: 6px;
+        padding-left: 18px;
+        position: relative;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          content: "•";
+          position: absolute;
+          left: 3px;
+          color: @color-orange;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Section 3: Venue Details & Booking Guidelines
+// -----------------------------------------------------------------------------
+.member-forks-guidelines-section {
+  padding: 68px 0;
+  background-color: #ffffff;
+
+  .guidelines-split-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    .breakpoint(@breakpoint-lg, {
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 36px;
+    });
+  }
+
+  .venue-details-card {
+    background: @color-dark;
+    color: #ffffff;
+    border-radius: @radius-lg;
+    padding: 34px 28px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    box-shadow: 0 12px 32px rgba(33, 43, 54, 0.14);
+
+    .breakpoint(@breakpoint-sm, {
+      padding: 38px 34px;
+    });
+
+    .venue-badge {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 5px 14px;
+      background: rgba(224, 172, 15, 0.2);
+      border: 1px solid @color-gold;
+      color: @color-gold;
+      border-radius: @radius-pill;
+      font-family: @font-secondary;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+
+    .venue-card-title {
+      font-family: @font-secondary;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 16px;
+    }
+
+    .venue-hours-box {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: @radius-md;
+      padding: 18px 20px;
+      margin-bottom: 20px;
+
+      .hours-heading {
+        font-family: @font-secondary;
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0 0 6px;
+      }
+
+      .hours-days {
+        font-family: @font-secondary;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: @color-gold;
+        margin: 0 0 4px;
+      }
+
+      .hours-time {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #ffffff;
+        margin: 0 0 8px;
+      }
+
+      .hours-note {
+        font-size: 0.86rem;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0;
+        line-height: 1.45;
+      }
+    }
+
+    .venue-detail-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.92);
+        line-height: 1.5;
+
+        i {
+          color: @color-gold;
+          font-size: 1.05rem;
+          margin-top: 2px;
+          flex-shrink: 0;
+        }
+      }
+    }
+
+    .venue-card-actions {
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      .wp-block-button,
+      .wp-block-button__link {
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+      }
+    }
+  }
+
+  .booking-process-card {
+    background: @color-off-white;
+    border-radius: @radius-lg;
+    border: 1px solid rgba(145, 158, 171, 0.25);
+    padding: 34px 28px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    .breakpoint(@breakpoint-sm, {
+      padding: 38px 34px;
+    });
+
+    .process-card-title {
+      font-family: @font-secondary;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: @color-dark;
+      margin: 0 0 12px;
+    }
+
+    .process-card-intro {
+      font-size: 0.96rem;
+      color: @color-body-text;
+      line-height: 1.58;
+      margin: 0 0 24px;
+    }
+
+    .booking-steps-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        background: #ffffff;
+        border: 1px solid rgba(145, 158, 171, 0.2);
+        border-radius: @radius-md;
+        padding: 16px 18px;
+      }
+
+      .step-number-circle {
+        width: 36px;
+        height: 36px;
+        border-radius: @radius-full;
+        background: @color-orange;
+        color: #ffffff;
+        font-family: @font-secondary;
+        font-size: 0.95rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .step-body {
+        min-width: 0;
+
+        h4 {
+          font-family: @font-secondary;
+          font-size: 1.05rem;
+          font-weight: 700;
+          color: @color-dark;
+          margin: 0 0 4px;
+        }
+
+        p {
+          font-size: 0.92rem;
+          color: @color-body-text;
+          line-height: 1.5;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Section 4: Event Space Booking Request Form (#booking-request) & Callouts
+// -----------------------------------------------------------------------------
+.member-forks-booking-section {
+  padding: 72px 0 88px;
+  background-color: @color-off-white;
+  scroll-margin-top: @header-height;
+
+  .section-header {
+    max-width: 760px;
+    margin: 0 auto 44px;
+    text-align: center;
+
+    .section-title {
+      font-family: @font-secondary;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: @color-dark;
+      margin: 0 0 12px;
+
+      .breakpoint(@breakpoint-md, {
+        font-size: 2.55rem;
+      });
+    }
+
+    .section-subtitle {
+      font-size: 1.04rem;
+      color: @color-mid-gray;
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+
+  .member-booking-layout:not(.wp-block-group),
+  .member-booking-layout.wp-block-group > .wp-block-group__inner-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: start;
+
+    .breakpoint(@breakpoint-lg, {
+      grid-template-columns: 1.32fr 0.68fr;
+      gap: 36px;
+    });
+  }
+
+  .member-booking-main,
+  .member-booking-sidebar {
+    min-width: 0;
+  }
+
+  .member-booking-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+// Modular Interim Booking Form Card ([itm_member_space_booking_form])
+.member-booking-form-card {
+  background: #ffffff;
+  border-radius: @radius-lg;
+  border: 1px solid rgba(145, 158, 171, 0.28);
+  border-top: 5px solid @color-orange;
+  box-shadow: 0 12px 34px rgba(33, 43, 54, 0.07);
+  padding: 28px 20px;
+  box-sizing: border-box;
+  min-width: 0;
+
+  .breakpoint(@breakpoint-sm, {
+    padding: 36px 32px;
+  });
+
+  &__header {
+    margin-bottom: 26px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(145, 158, 171, 0.2);
+
+    .form-card-badge {
+      display: inline-block;
+      padding: 5px 14px;
+      background: rgba(218, 82, 37, 0.1);
+      border: 1px solid rgba(218, 82, 37, 0.25);
+      color: @color-orange;
+      border-radius: @radius-pill;
+      font-family: @font-secondary;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+
+    .form-card-title {
+      font-family: @font-secondary;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: @color-dark;
+      margin: 0 0 8px;
+    }
+
+    .form-card-intro {
+      font-size: 0.95rem;
+      color: @color-mid-gray;
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+
+  .required-mark {
+    color: #c92a2a;
+    font-weight: 700;
+    margin-left: 2px;
+  }
+
+  .optional-tag {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: @color-mid-gray;
+    margin-left: 4px;
+  }
+
+  // Visually-hidden honeypot container
+  .booking-hp-wrap {
+    position: absolute !important;
+    clip-path: inset(50%) !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .booking-form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    .breakpoint(@breakpoint-md, {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px 20px;
+    });
+  }
+
+  .booking-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    &--full {
+      .breakpoint(@breakpoint-md, {
+        grid-column: 1 / -1;
+      });
+    }
+  }
+
+  .booking-fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+
+  .booking-label {
+    font-family: @font-primary;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: @color-dark;
+    margin-bottom: 6px;
+    line-height: 1.35;
+    display: block;
+  }
+
+  .booking-legend {
+    padding: 0;
+    margin-bottom: 4px;
+    float: none;
+    width: auto;
+  }
+
+  .booking-field-hint {
+    display: block;
+    font-size: 0.85rem;
+    color: @color-mid-gray;
+    line-height: 1.45;
+    margin-bottom: 10px;
+  }
+
+  .booking-input,
+  .booking-select,
+  .booking-textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: 11px 14px;
+    font-family: @font-primary;
+    font-size: 1rem;
+    line-height: 1.45;
+    color: @color-dark;
+    background-color: #ffffff;
+    border: 1.5px solid #768492;
+    border-radius: @radius-md;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+
+    &::placeholder {
+      color: #6f7d8c;
+      opacity: 1;
+    }
+
+    &:hover {
+      border-color: @color-dark;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: 2px solid @color-gold;
+      outline-offset: 2px;
+      border-color: @color-orange;
+      box-shadow: 0 0 0 4px rgba(224, 172, 15, 0.18);
+    }
+  }
+
+  .booking-textarea {
+    min-height: 124px;
+    resize: vertical;
+  }
+
+  .booking-radio-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+
+    .breakpoint(@breakpoint-sm, {
+      grid-template-columns: repeat(2, 1fr);
+    });
+  }
+
+  .booking-radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border: 1.5px solid #768492;
+    border-radius: @radius-md;
+    background: @color-off-white;
+    min-height: 48px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      border-color: @color-orange;
+      background: #ffffff;
+    }
+
+    &:focus-within {
+      outline: 2px solid @color-gold;
+      outline-offset: 2px;
+      border-color: @color-orange;
+      background: #ffffff;
+    }
+
+    input[type="radio"] {
+      width: 20px;
+      height: 20px;
+      margin: 0;
+      accent-color: @color-orange;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    .booking-radio-label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: @color-dark;
+      line-height: 1.35;
+      cursor: pointer;
+      flex: 1;
+      margin: 0;
+    }
+  }
+
+  .booking-field-error {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: #b42318;
+    line-height: 1.4;
+
+    i {
+      flex-shrink: 0;
+      font-size: 0.95rem;
+    }
+  }
+
+  // Contextual validation styling via :user-invalid and JS .is-invalid synchronization
+  .booking-input:user-invalid,
+  .booking-select:user-invalid,
+  .booking-textarea:user-invalid,
+  .booking-field.is-invalid .booking-input,
+  .booking-field.is-invalid .booking-select,
+  .booking-field.is-invalid .booking-textarea {
+    border-color: #b42318;
+    background-color: #fffbfa;
+  }
+
+  .booking-field.is-invalid .booking-radio-option {
+    border-color: #b42318;
+    background-color: #fffbfa;
+  }
+
+  .booking-input:user-invalid ~ .booking-field-error,
+  .booking-select:user-invalid ~ .booking-field-error,
+  .booking-textarea:user-invalid ~ .booking-field-error,
+  .booking-field.is-invalid .booking-field-error {
+    display: flex;
+  }
+
+  .booking-form-actions {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    .booking-submit-btn {
+      width: 100%;
+      white-space: normal;
+      text-align: center;
+
+      .breakpoint(@breakpoint-sm, {
+        width: auto;
+        min-width: 260px;
+      });
+
+      .btn-spinner {
+        display: none;
+        width: 18px;
+        height: 18px;
+        border: 2.5px solid rgba(255, 255, 255, 0.35);
+        border-top-color: #ffffff;
+        border-radius: @radius-full;
+        animation: itmBookingSpin 0.75s linear infinite;
+      }
+
+      &.is-loading .btn-spinner {
+        display: inline-block;
+      }
+    }
+
+    .booking-privacy-note {
+      font-size: 0.85rem;
+      color: @color-mid-gray;
+      margin: 0;
+      line-height: 1.45;
+    }
+  }
+
+  .booking-form-feedback {
+    display: none;
+    margin-top: 20px;
+    padding: 16px 18px;
+    border-radius: @radius-md;
+    font-size: 0.96rem;
+    font-weight: 600;
+    line-height: 1.5;
+
+    &.is-visible {
+      display: block;
+    }
+
+    &.is-success {
+      background-color: #ecfdf3;
+      border: 1.5px solid #067647;
+      color: #065f46;
+    }
+
+    &.is-error {
+      background-color: #fef3f2;
+      border: 1.5px solid #b42318;
+      color: #912018;
+    }
+  }
+}
+
+@keyframes itmBookingSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Sidebar Callouts beside the Booking Form
+.prospective-member-card {
+  background: linear-gradient(145deg, @color-dark 0%, #19222c 100%);
+  color: #ffffff;
+  border-radius: @radius-lg;
+  padding: 30px 26px;
+  box-shadow: 0 12px 30px rgba(33, 43, 54, 0.14);
+  min-width: 0;
+
+  .prospective-badge {
+    display: inline-block;
+    padding: 5px 14px;
+    background: rgba(224, 172, 15, 0.22);
+    border: 1px solid @color-gold;
+    color: @color-gold;
+    border-radius: @radius-pill;
+    font-family: @font-secondary;
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
+  }
+
+  .prospective-title {
+    font-family: @font-secondary;
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px;
+  }
+
+  .prospective-body {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin: 0 0 22px;
+  }
+
+  .prospective-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .wp-block-button,
+    .wp-block-button__link {
+      width: 100%;
+      white-space: normal;
+      text-align: center;
+    }
+
+    .wp-block-button.btn--outline .wp-block-button__link {
+      color: #ffffff !important;
+      border-color: rgba(255, 255, 255, 0.75) !important;
+
+      &:hover,
+      &:focus {
+        background-color: #ffffff !important;
+        color: @color-dark !important;
+        border-color: #ffffff !important;
+      }
+    }
+  }
+}
+
+.space-manager-sidebar-card {
+  background: #ffffff;
+  border-radius: @radius-lg;
+  border: 1px solid rgba(145, 158, 171, 0.28);
+  padding: 26px 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  min-width: 0;
+
+  .manager-profile-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+
+    .manager-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: @radius-full;
+      object-fit: cover;
+      border: 2px solid @color-gold;
+      flex-shrink: 0;
+      display: block;
+    }
+
+    .manager-meta {
+      min-width: 0;
+
+      .manager-name {
+        font-family: @font-secondary;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: @color-dark;
+        margin: 0 0 2px;
+      }
+
+      .manager-role {
+        font-size: 0.85rem;
+        color: @color-mid-gray;
+        margin: 0;
+        line-height: 1.35;
+      }
+    }
+  }
+
+  .manager-note {
+    font-size: 0.92rem;
+    color: @color-body-text;
+    line-height: 1.55;
+    margin: 0 0 14px;
+  }
+
+  .manager-email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: @color-orange;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+
+    &:hover,
+    &:focus {
+      color: @color-blue;
+      text-decoration: underline;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Cross-Link Feature Card on /member-benefits/
+// -----------------------------------------------------------------------------
+.benefit-card.benefit-card--featured-forks {
+  border-top: 5px solid @color-gold;
+  background: linear-gradient(135deg, #ffffff 0%, #fdfaf2 100%);
+  margin-top: 10px;
+  margin-bottom: 32px;
+
+  .benefit-featured-badge {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 5px 14px;
+    background: rgba(218, 82, 37, 0.12);
+    border: 1px solid rgba(218, 82, 37, 0.28);
+    color: @color-orange;
+    border-radius: @radius-pill;
+    font-family: @font-secondary;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
+  }
+
+  .wp-block-buttons {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    .wp-block-button__link {
+      white-space: normal;
+      text-align: center;
+    }
+  }
+}

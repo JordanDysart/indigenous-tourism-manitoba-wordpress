@@ -122,14 +122,14 @@ if ( ! $footer_logo ) {
 						</ul>
 					</div>
 
-					<!-- Column 4: Programs & Membership -->
+					<!-- Column 4: Membership -->
 					<div class="site-footer__nav-col">
-						<h4 class="site-footer__nav-heading">Programs &amp; Members</h4>
+						<h4 class="site-footer__nav-heading">Membership</h4>
 						<ul class="site-footer__nav-list">
-							<li><a href="<?php echo esc_url( home_url( '/guide-training-program/' ) ); ?>">Guide Training Program</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/become-a-member/' ) ); ?>">Become a Member</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/member-benefits/' ) ); ?>">Member Benefits</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/itm-indigenous-guide-training-program-inquiry-form/' ) ); ?>">Inquire &amp; Apply</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/explore-indigenous-for-itm-members/' ) ); ?>">Explore Indigenous for ITM Members</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/new-account-request/' ) ); ?>">New Account Request</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/sitemap/' ) ); ?>">Site Map</a></li>
 						</ul>
 					</div>
